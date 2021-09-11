@@ -2,12 +2,12 @@
 import React, { lazy } from "react";
 import { Redirect } from "react-router-dom";
 // const Home = lazy(()=>import('../views/pages/home'));
-const HomeTemplate = lazy(()=>import('../views/layout/homeTemplate'));
+const Home = lazy(()=>import('../views/pages/home'));
 
 const Routes = [
     {
         path: "/",
-        component: HomeTemplate,
+        component: Home,
         exact: true,
         default: true
     },
