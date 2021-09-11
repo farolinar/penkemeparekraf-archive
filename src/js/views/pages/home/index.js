@@ -1,8 +1,11 @@
 import React, { lazy } from "react";
+import LazyLoad from "react-lazyload";
 import highlightOne from '../../../../assets/img/pages/home/highlight-1.jpg';
 import highlightTwo from '../../../../assets/img/pages/home/highlight-2.jpg';
 import highlightThree from '../../../../assets/img/pages/home/highlight-3.jpg';
 import highlightFour from '../../../../assets/img/pages/home/highlight-4.jpg';
+import aboutUsUpperDivider from '../../../../assets/img/pages/home/about-us-shape.png';
+import aboutUsHero from '../../../../assets/img/pages/home/about-us-hero.png';
 import "./Home.scss";
 const Template = lazy(()=>import('../../layout/template'));
 const ImageCarousel = lazy(()=>import('../../component/imageCarousel/ImageCarousel'));
@@ -57,6 +60,31 @@ const Home = (props) => {
                     <p>Kementerian Pariwisata &amp; Ekonomi Kreatif / <br /> Badan Pariwisata &amp; Ekonomi Kreatif </p>
                 </div>
             </div>
+        </div>
+
+        <div className="home-about-us-wrapper">
+            <LazyLoad>
+                <img className="home-about-us-upper-divider" src={aboutUsUpperDivider} alt="" />
+            </LazyLoad>
+            <div className="home-about-us-content">
+                <div></div>
+                <div className="home-about-us-text">
+                    <h3>Tentang Kami</h3>
+                    <p>Program Pemulihan Ekonomi Nasional (Program PEN) adalah rangkaian kegiatan untuk pemulihan perekonomian nasional yang merupakan bagian dari kebijakan keuangan negara yang dilaksanakan oleh Pemerintah untuk mempercepat penanganan pandemi Coronavirus Disease 2019 (COVID-19).</p>
+                    <button onClick={() => window.location.href = "/tentang-kami"} className="green-button">
+                        Selengkapnya
+                    </button>
+                </div>
+                <div></div>
+                <LazyLoad>
+                    <img src={aboutUsHero} alt="about-us" />
+                </LazyLoad>
+                <div></div>
+            </div>
+        </div>
+
+        <div className="home-our-program-wrapper">
+
         </div>
     </Template>)
 }

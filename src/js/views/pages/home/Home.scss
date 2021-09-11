@@ -36,3 +36,56 @@
         }
     }
 }
+
+.home-about-us-wrapper {
+    background-color: #fff;
+
+    .home-about-us-upper-divider {
+        width: 125%;
+        margin-left: -15%;
+        margin-top: -55px;
+    }
+
+    .home-about-us-content {
+        padding: 80px;
+        // display: grid;
+        // grid-template-columns: 1fr auto 10px auto 1fr;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .home-about-us-text {
+            max-width: 40vw;
+
+            h3 {
+                font-size: 4.5vw;
+                font-weight: 700;
+                margin: 0px 0 40px;
+            }
+
+            p {
+                font-size: 2vw;
+                font-weight: 400;
+                margin: 0;
+            }
+
+            button {
+                padding: 20px 50px;
+                color: #fff;
+                border-radius: 10px;
+                margin-top: 60px;
+                cursor: pointer;
+                font-size: 2vw;
+                font-weight: 400;
+            }
+        }
+
+        .lazyload-wrapper {
+            // width: 45%;
+
+            img {
+                max-width: 45vw;
+            }
+        }
+    }
+}

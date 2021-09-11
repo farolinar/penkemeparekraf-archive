@@ -1,13 +1,39 @@
 :root {
   --main-blue: #3884c2;
   --main-dark-blue: #1F404F;
+  --main-light-green: #56ccb8;
+  --main-dark-green: #39887B;
 }
 
 .app {
   font-family: 'Signika', sans-serif;
+  overflow-x: hidden;
+
+  a {
+    color: #fff;
+    text-decoration: unset;
+    font-family: 'Signika', sans-serif;
+  }
 
   a:hover {
     color: var(--main-dark-blue);
+  }
+
+  button {
+    font-family: 'Signika', sans-serif;
+    border: unset;
+  }
+
+  .green-button {
+    background-color: var(--main-light-green);
+    color: #fff;
+    a:hover {
+      color: #fff;
+    }
+  }
+
+  .green-button:hover {
+    box-shadow: 0 6px 6px 0 var(--main-dark-green), 0 0 6px 0 var(--main-dark-green);
   }
 }
 
