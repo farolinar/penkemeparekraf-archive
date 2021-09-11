@@ -36,7 +36,7 @@
 
         .header-menu-item-children {
             position: absolute;
-            top: calc(100% + 50px);
+            top: calc(100%);
             left: 0;
             color: var(--main-blue);
             background-color: #fff;
@@ -50,6 +50,7 @@
                 padding: 10px 0;
                 cursor: pointer;
                 display: block;
+                color: var(--main-blue);
             }
         }
     }
