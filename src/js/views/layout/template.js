@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState, lazy } from "react";
+import React, { lazy } from "react";
 import "./layout.scss";
 const Header = lazy(()=>import('./header'));
 const Footer = lazy(()=>import('./footer'));

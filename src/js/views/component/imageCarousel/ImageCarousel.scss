@@ -1,0 +1,30 @@
+.carousel.carousel-slider .control-arrow {
+    opacity: 1;
+    background: unset;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background: unset;
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    border: unset;
+    content: url('../../../../assets/img/icons/ic-arrow-carousel.png');
+}
+
+.carousel .control-next.control-arrow:before {
+    transform: rotate(180deg);
+}
+
+.carousel .control-next.control-arrow {
+    right: 100px;
+}
+
+.carousel .control-prev.control-arrow {
+    left: 100px;
+}
+
+.carousel .slide {
+    height: 80vh;
+    object-fit: cover;
+}

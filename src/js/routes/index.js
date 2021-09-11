@@ -1,7 +1,5 @@
 
-import React, { lazy } from "react";
-import { Redirect } from "react-router-dom";
-// const Home = lazy(()=>import('../views/pages/home'));
+import { lazy } from "react";
 const Home = lazy(()=>import('../views/pages/home'));
 
 const Routes = [

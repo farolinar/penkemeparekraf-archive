@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState, lazy } from "react";
+import React from "react";
 import "./layout.scss";
 
 const Footer = () => {
