@@ -76,9 +76,9 @@ const Header = () => {
                 item.children && openChildren && <div className="header-menu-item-children">
                     {
                         item.children.map((child, idx) => {
-                            return <div key={idx} onClick={() => window.location.href = child.url}>
+                            return <a key={idx} onClick={() => window.location.href = child.url}>
                                 {child.name}
-                            </div>
+                            </a>
                         })
                     }
                 </div>

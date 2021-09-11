@@ -1,8 +1,38 @@
-// .carousel-image-wrapper {
-//     height: 90vh;
-//     object-fit: cover;
-//     img {
-//         height: 90vh;
-//         object-fit: cover;
-//     }
-// }
+.home-image-carousel-wrapper {
+    position: relative;
+    background-color: var(--main-blue);
+    .home-title-wrapper {
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        margin: -27vh auto;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        
+        h1 {
+            color: #ffffff;
+            font-size: 5.5vw;
+            font-weight: 700;
+            margin: auto;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 4.5vw;
+            font-weight: 400;
+            margin: auto;
+        }
+    }
+
+    .home-subtitle-wrapper {
+        margin: 7vh auto;
+
+        p {
+            color: #ffffff;
+            font-size: 3vw;
+            font-weight: 400;
+            margin: auto;
+        }
+    }
+}

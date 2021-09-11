@@ -34,22 +34,29 @@ const Home = (props) => {
                     SLIDER_IMAGES.map((item, index) => {
                         return <div style={{position: "relative"}} key={`highlight-${index}`} className="carousel-image-wrapper">
                             <img src={item.src} alt={item.name} />
-                            {/* <div 
+                            <div 
                                 style={{
                                     width: "100%",
                                     height: "100%",
-                                    backgroundColor: "var(--main-blue)",
-                                    opacity: "0.7",
-                                    zIndex: 2,
+                                    backgroundColor: "#000",
+                                    opacity: "0.3",
+                                    zIndex: 1,
                                     position: "absolute",
                                     top: 0,
                                     left: 0
                                 }}
-                            /> */}
+                            />
                         </div>
                     })
                 }
             </ImageCarousel>
+            <div className="home-title-wrapper">
+                <h1>Program <br /> Pemulihan Ekonomi Nasional</h1>
+                <h2>Subsektor Film</h2>
+                <div className="home-subtitle-wrapper">
+                    <p>Kementerian Pariwisata &amp; Ekonomi Kreatif / <br /> Badan Pariwisata &amp; Ekonomi Kreatif </p>
+                </div>
+            </div>
         </div>
     </Template>)
 }
