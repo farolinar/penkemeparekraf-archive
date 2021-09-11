@@ -92,7 +92,7 @@
 
 .home-our-program-wrapper {
     background-image: url("../../../../assets/img/pages/home/our-program-bg.jpg");
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     background-repeat: repeat-x;
     background-size: cover;
     padding: 5vw;
@@ -166,6 +166,49 @@
                     color: var(--main-light-blue);
                 }
             }
+        }
+    }
+}
+
+.home-register-wrapper {
+    background-image: url("../../../../assets/img/pages/home/register-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: hue-rotate(180deg);
+    text-align: left;
+    padding: 100px 5vw;
+
+    .home-register-content {
+        width: 60%;
+        h2 {
+            font-size: 4.5vw;
+            color: #fff;
+            margin: 0 auto 4.5vw;
+        }
+    
+        p {
+            color: #fff;
+            font-size: 2vw;
+            margin: 0;
+        }
+
+        .home-register-button {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 47px;
+
+            button {
+                background-color: #fff;
+                padding: 11px 20px;
+                border-radius: 10px;
+
+                a {
+                    color: #000;
+                    font-weight: 400;
+                    font-size: 2vw;
+                }
+            }
+            
         }
     }
 }

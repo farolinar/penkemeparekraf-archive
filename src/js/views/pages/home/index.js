@@ -8,7 +8,7 @@ import aboutUsUpperDivider from '../../../../assets/img/pages/home/about-us-shap
 import aboutUsHero from '../../../../assets/img/pages/home/about-us-hero.png';
 import icOurProgramTactical from '../../../../assets/img/pages/home/our-program-tactical-icon.png';
 import icOurProgramProduction from '../../../../assets/img/pages/home/our-program-production-icon.png';
-import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
+// import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
 import "./Home.scss";
 import { ROUTES } from "../../../constants";
 const Template = lazy(()=>import('../../layout/template'));
@@ -131,6 +131,29 @@ const Home = (props) => {
                 {
                     OurPrograms.map((item, idx) => <OurProgramItem key={idx} item={item} />)
                 }
+            </div>
+        </div>
+
+        <div className="home-register-wrapper">
+            <div className="home-register-content">
+                <h2>Pendaftaran</h2>
+                <p>Undangan bagi Rumah Produksi Film Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Bantuan Pemerintah Promosi Taktikal Film Indonesia dan Skema Bantuan Pemerintah Produksi Film Indonesia</p>
+                <br />
+                <br />
+                <br />
+                <p>Pendaftaran akan berlangsung mulai</p>
+                <p>15 - 30 September 2021</p>
+                <div className="home-register-button">
+                    <button>
+                        <a>Syarat Pendaftaran</a>
+                    </button>
+                    <button>
+                        <a href={ROUTES.downloadForm}>Unduh Formulir</a>
+                    </button>
+                    <button>
+                        <a href={ROUTES.uploadForm}>Unggah Formulir</a>
+                    </button>
+                </div>
             </div>
         </div>
     </Template>)
