@@ -3,16 +3,17 @@ import LazyLoad from "react-lazyload";
 import penLogo from '../../../assets/img/layout/header/pen-logo.png';
 import icDropdown from '../../../assets/img/icons/ic-arrow.png';
 import "./layout.scss";
+import { ROUTES } from "../../constants";
 
 const MENU = [
     {
         name: "Beranda",
-        url: "/",
+        url: ROUTES.home,
         children: null
     },
     {
         name: "Tentang Kami",
-        url: "/tentang-kami",
+        url: ROUTES.aboutUs,
         children: null
     },
     {
@@ -21,32 +22,32 @@ const MENU = [
         children: [
             {
                 name: "Bantuan Pemerintah Produksi Film Indonesia",
-                url: ""
+                url: ROUTES.programProduksiFilm
             },
             {
                 name: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
-                url: ""
+                url: ROUTES.programPromosiTaktikalFilm
             },
         ]
     },
     {
         name: "Pendaftaran",
-        url: "/daftar",
+        url: ROUTES.register,
         children: null
     },
     {
         name: "Unduh Formulir",
-        url: "/unduh-formulir",
+        url: ROUTES.downloadForm,
         children: null
     },
     {
         name: "Unggah Formulir",
-        url: "/unggah-formulir",
+        url: ROUTES.uploadForm,
         children: null
     },
     {
         name: "Kontak Kami",
-        url: "/kontak-kami",
+        url: ROUTES.contactUs,
         children: null
     },
 ]
@@ -101,7 +102,7 @@ const Header = () => {
     return(<div className="header-wrapper">
         <div className="header-content">
             <div>
-                <img onClick={() => window.location.href = "/"} src={penLogo} alt="PEN" className="header-logo-pen" />
+                <img onClick={() => window.location.href = ROUTES.home} src={penLogo} alt="PEN" className="header-logo-pen" />
             </div>
             {
                 MENU.map((item, index) => <MenuItem item={item} idx={index} key={index} />)

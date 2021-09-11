@@ -1,6 +1,7 @@
 :root {
   --main-blue: #3884c2;
-  --main-dark-blue: #1F404F;
+  --main-light-blue: #5495CA;
+  --main-darker-blue: #1F404F;
   --main-light-green: #56ccb8;
   --main-dark-green: #39887B;
 }
@@ -16,7 +17,7 @@
   }
 
   a:hover {
-    color: var(--main-dark-blue);
+    color: var(--main-darker-blue) !important;
   }
 
   button {
@@ -28,7 +29,7 @@
     background-color: var(--main-light-green);
     color: #fff;
     a:hover {
-      color: #fff;
+      color: #fff !important;
     }
   }
 

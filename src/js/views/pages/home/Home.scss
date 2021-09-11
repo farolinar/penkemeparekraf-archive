@@ -89,3 +89,83 @@
         }
     }
 }
+
+.home-our-program-wrapper {
+    background-image: url("../../../../assets/img/pages/home/our-program-bg.jpg");
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-size: cover;
+    padding: 5vw;
+    position: relative;
+
+    // .home-our-program-bg {
+    //     position: absolute;
+    //     width: 100%;
+    //     // height: fit-content;
+    //     left: 0;
+    //     top: 0;
+    // }
+
+    h2 {
+        font-size: 4.5vw;
+        color: #fff;
+        text-align: center;
+        margin: auto;
+    }
+
+    .home-our-program-content {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 90px;
+
+        .our-program-item-wrapper {
+            color: var(--main-light-blue);
+            // height: 100%;
+            .our-program-item-content {
+                background-color: #fff;
+                padding: 3vw;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                width: 40vw;
+                // height: fit-content;
+                // height: 100%;
+                height: 20vw;
+                box-sizing: border-box;
+
+                .lazyload-wrapper {
+                    margin-right: 20px;
+                    img {
+                        width: 7vw;
+                    }
+                }
+
+                .our-program-item-text {
+                    .our-program-title {
+                        font-size: 2vw;
+                        font-weight: 700;
+                        margin: 0 0 1.5vw;
+                    }
+    
+                    .our-program-desc {
+                        font-size: 1.5vw;
+                        font-weight: 400;
+                    }
+                }
+                
+            }
+
+            button {
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 13px 35px;
+                margin-top: 20px;
+                a {
+                    font-size: 28px;
+                    font-weight: 400;
+                    color: var(--main-light-blue);
+                }
+            }
+        }
+    }
+}

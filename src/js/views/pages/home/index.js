@@ -6,7 +6,11 @@ import highlightThree from '../../../../assets/img/pages/home/highlight-3.jpg';
 import highlightFour from '../../../../assets/img/pages/home/highlight-4.jpg';
 import aboutUsUpperDivider from '../../../../assets/img/pages/home/about-us-shape.png';
 import aboutUsHero from '../../../../assets/img/pages/home/about-us-hero.png';
+import icOurProgramTactical from '../../../../assets/img/pages/home/our-program-tactical-icon.png';
+import icOurProgramProduction from '../../../../assets/img/pages/home/our-program-production-icon.png';
+import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
 import "./Home.scss";
+import { ROUTES } from "../../../constants";
 const Template = lazy(()=>import('../../layout/template'));
 const ImageCarousel = lazy(()=>import('../../component/imageCarousel/ImageCarousel'));
 
@@ -29,7 +33,40 @@ const SLIDER_IMAGES = [
     },
 ]
 
+const OurPrograms = [
+    {
+        title: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
+        desc: "Program ini mempromosikan film-film Indonesia terpilih yang akan tayang di media layanan multiplatform pada periode Oktober hingga November 2021.",
+        image: icOurProgramTactical,
+        url: ROUTES.programPromosiTaktikalFilm
+    },
+    {
+        title: "Bantuan Pemerintah Produksi Film Indonesia",
+        desc: "Bantuan bagi rumah produksi perfilman untuk memproduksi film-film baru yang dapat ditayangkan melalui media penayangan multiplatform legal",
+        image: icOurProgramProduction,
+        url: ROUTES.programProduksiFilm
+    }
+]
+
 const Home = (props) => {
+
+    const OurProgramItem = ({item}) => {
+        return <div className="our-program-item-wrapper">
+            <div className="our-program-item-content">
+                <LazyLoad>
+                    <img src={item.image} alt="" />
+                </LazyLoad>
+                <div className="our-program-item-text">
+                    <p className="our-program-title">{item.title}</p>
+                    <p className="our-program-desc">{item.desc}</p>
+                </div>
+            </div>
+            <button>
+                <a href={item.url}>Selengkapnya</a>
+            </button>
+        </div>
+    }
+
     return(<Template>
         <div className="home-image-carousel-wrapper">
             <ImageCarousel>
@@ -71,7 +108,7 @@ const Home = (props) => {
                 <div className="home-about-us-text">
                     <h3>Tentang Kami</h3>
                     <p>Program Pemulihan Ekonomi Nasional (Program PEN) adalah rangkaian kegiatan untuk pemulihan perekonomian nasional yang merupakan bagian dari kebijakan keuangan negara yang dilaksanakan oleh Pemerintah untuk mempercepat penanganan pandemi Coronavirus Disease 2019 (COVID-19).</p>
-                    <button onClick={() => window.location.href = "/tentang-kami"} className="green-button">
+                    <button onClick={() => window.location.href = ROUTES.aboutUs} className="green-button">
                         Selengkapnya
                     </button>
                 </div>
@@ -84,7 +121,17 @@ const Home = (props) => {
         </div>
 
         <div className="home-our-program-wrapper">
-
+            {/* <div className="home-our-program-bg">
+                <LazyLoad>
+                    <img src={ourProgramBg} />
+                </LazyLoad>
+            </div> */}
+            <h2>Program Kami</h2>
+            <div className="home-our-program-content">
+                {
+                    OurPrograms.map((item, idx) => <OurProgramItem key={idx} item={item} />)
+                }
+            </div>
         </div>
     </Template>)
 }
