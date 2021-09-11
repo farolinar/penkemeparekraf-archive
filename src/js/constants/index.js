@@ -6,5 +6,6 @@ export const ROUTES = {
     register: "/daftar",
     downloadForm: "/unduh-formulir",
     uploadForm: "/unggah-formulir",
-    contactUs: "/kontak-kami"
+    contactUs: "/kontak-kami",
+    registerTerms: "/syarat-pendaftaran",
 }
