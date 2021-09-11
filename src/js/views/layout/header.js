@@ -72,6 +72,18 @@ const Header = () => {
                 </LazyLoad>
             }
 
+            {window.location.pathname === item.url && <div
+                style={{
+                    height: 8,
+                    width: "120%",
+                    backgroundColor: "#fff",
+                    borderRadius: 8,
+                    position: "absolute",
+                    bottom: 0,
+                    left: "-10%"
+                }}
+            ></div>}
+
             {
                 item.children && openChildren && <div className="header-menu-item-children">
                     {

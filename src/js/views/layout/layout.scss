@@ -1,19 +1,22 @@
 // HEADER
 .header-wrapper {
     background-color: var(--main-blue);
-    padding: 50px 80px;
+    padding: 0px 80px;
     color: #fff;
     font-size: 24px;
 
     .header-logo-pen {
         width: 15vw;
         cursor: pointer;
+        padding: 50px 0px;
     }
 
     .header-content {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        // padding: 50px 0px;
+        // background-color: var(--main-blue);
     }
 
     .header-menu-item {
@@ -25,6 +28,7 @@
         text-align: center;
         position: relative;
         cursor: pointer;
+        padding: 50px 0px;
 
         img {
             margin-left: 5px;
