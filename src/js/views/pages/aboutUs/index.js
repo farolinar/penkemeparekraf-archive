@@ -3,7 +3,6 @@ import LazyLoad from 'react-lazyload';
 import Template from '../../layout/template';
 import aboutUsText from '../../../../assets/img/pages/aboutUs/about-us-text.png';
 import aboutUsHero from '../../../../assets/img/pages/aboutUs/about-us-hero.jpg';
-import aboutUsBg from '../../../../assets/img/pages/aboutUs/about-us-bg.jpg';
 import aboutUsSelection from '../../../../assets/img/pages/aboutUs/about-us-selection-clean.png';
 import "./AboutUs.scss";
 

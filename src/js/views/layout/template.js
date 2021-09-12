@@ -7,7 +7,7 @@ const Template = (props) => {
     return(<div className="app">
         <Header />
             {props.children}
-        <Footer />
+        {!props.withoutFooter && <Footer />}
     </div>)
 }
 

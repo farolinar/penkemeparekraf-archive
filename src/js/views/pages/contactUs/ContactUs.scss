@@ -1,0 +1,76 @@
+.contact-us-wrapper {
+    background-color: var(--main-blue);
+    background-image: url("../../../../assets/img/pages/contactUs/contact-us-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+    padding: 72px;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    overflow-y: hidden;
+    position: relative;
+
+    .contact-us-filter {
+        background-color: var(--main-blue);
+        opacity: 0.25;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .contact-us-content {
+        position: absolute;
+        // top: 50%;
+        // margin: 15% auto 0;
+        top: 50vh;
+        margin-top: -25vh;
+        left: 50vw;
+        margin-left: -30vw;
+
+        h2 {
+            font-size: 4.5vw;
+            margin: 0 0 3.5vw;
+        }
+    
+        p {
+            font-size: 2vw;
+            margin-bottom: 30px;
+        }
+    
+        .footer-contact-wrapper {
+            display: flex;
+            justify-content: center;
+    
+            .footer-contact {
+                align-items: center;
+                justify-content: space-between;
+                display: flex;
+                cursor: pointer;
+    
+                a {
+                    margin: auto;
+                    font-size: 2vw;
+                }
+    
+                .lazyload-wrapper {
+                    margin-right: 7px;
+                }
+            }
+    
+            .footer-contact:first-child {
+                margin-right: 50px;
+            }
+    
+            .footer-contact:hover {
+                text-decoration: underline;
+            }
+    
+            a:hover {
+                color: #fff !important;
+            }
+        }
+    }
+}
