@@ -40,6 +40,10 @@
                 font-weight: 700;
                 width: 40%;
                 transition: ease 0.5s;
+
+                a:hover {
+                    color: #fff !important;
+                }
             }
 
             .our-program:hover {

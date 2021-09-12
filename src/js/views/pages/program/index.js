@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React, { lazy, useEffect } from 'react';
 import LazyLoad from 'react-lazyload';
 import Template from '../../layout/template';
 import programTacticalText from "../../../../assets/img/pages/program/program-tactical-text.png";
@@ -6,26 +6,35 @@ import programTacticalHero from "../../../../assets/img/pages/program/program-ta
 import programProductionText from "../../../../assets/img/pages/program/program-production-text.png";
 import programProductionHero from "../../../../assets/img/pages/program/program-production-hero.png";
 import "./Program.scss";
-import { ROUTES } from '../../../constants';
+import { ANCHOR, ROUTES } from '../../../constants';
 
 const Program = () => {
+
+    useEffect(() => {
+        if(window.location.search) {
+            let id = new URLSearchParams(window.location.search);
+            id = id.get('s');
+            window.location.href = `#${id}`
+        }
+    })
+
     return <Template>
         <div className="our-program-main-wrapper">
             <div className="our-program-filter"></div>
             <div className="our-program-main-content">
                 <h2>Program Kami</h2>
                 <div className="our-programs">
-                    <div className="our-program" onClick={() => window.location.href = ROUTES.registerTacticalTerms}>
-                        Bantuan Pemerintah<br />Promosi Taktikal Film Indonesia
+                    <div className="our-program">
+                        <a href={`#${ANCHOR.programPromosiTaktikalFilm}`}>Bantuan Pemerintah<br />Promosi Taktikal Film Indonesia</a>
                     </div>
-                    <div className="our-program" onClick={() => window.location.href = ROUTES.registerProductionTerms}>
-                        Bantuan Pemerintah<br />Produksi Film Indonesia
+                    <div className="our-program">
+                        <a href={`#${ANCHOR.programProduksiFilm}`}>Bantuan Pemerintah<br />Produksi Film Indonesia</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div className="our-program-tactical-wrapper">
+        <div className="our-program-tactical-wrapper" id={ANCHOR.programPromosiTaktikalFilm}>
             <h2>Bantuan Pemerintah Promosi Taktikal Film Indonesia</h2>
             <div className="our-program-tactical-content">
                 <div className="our-program-tactical-text">
@@ -37,7 +46,7 @@ const Program = () => {
             </div>
         </div>
 
-        <div className="our-program-production-wrapper">
+        <div className="our-program-production-wrapper" id={ANCHOR.programProduksiFilm}>
             <h2>Bantuan Pemerintah Produksi Film Indonesia</h2>
             <div className="our-program-production-content">
                 <LazyLoad>

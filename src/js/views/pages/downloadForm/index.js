@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { ANCHOR } from '../../../constants';
 import Template from '../../layout/template';
 import "./DownloadForm.scss";
 
@@ -53,6 +54,15 @@ const PRODUCTION_FORMS = [
 ]
 
 const DownloadForm = () => {
+
+    // useEffect(() => {
+    //     if(window.location.search) {
+    //         let id = new URLSearchParams(window.location.search);
+    //         id = id.get('s');
+    //         window.location.href = `#${id}`
+    //     }
+    // })
+
     return <Template>
         <div className="download-form-main-wrapper">
             <div className="our-program-filter"></div>
@@ -60,16 +70,16 @@ const DownloadForm = () => {
                 <h2>Unduh Formulir</h2>
                 <div className="our-programs">
                     <div className="our-program">
-                        <a href="#download-form-tactical-wrapper">Bantuan Pemerintah<br />Promosi Taktikal Film Indonesia</a>
+                        <a href={`#${ANCHOR.downloadTacticalForm}`}>Bantuan Pemerintah<br />Promosi Taktikal Film Indonesia</a>
                     </div>
                     <div className="our-program">
-                        <a href="#download-form-production-wrapper">Bantuan Pemerintah<br />Produksi Film Indonesia</a>
+                        <a href={`#${ANCHOR.downloadProductionForm}`}>Bantuan Pemerintah<br />Produksi Film Indonesia</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div className="download-form-tactical-wrapper download-form-wrapper" id="download-form-tactical-wrapper">
+        <div className="download-form-tactical-wrapper download-form-wrapper" id={ANCHOR.downloadTacticalForm}>
             <h2>Unduh Format Lampiran Bantuan Pemerintah Promosi Taktikal Film Indonesia</h2>
             <p>Berikut ini adalah form lampiran yang harus dilampirkan saat melakukan submit proposal</p>
             <div className="download-forms">
@@ -83,7 +93,7 @@ const DownloadForm = () => {
             </div>
         </div>
 
-        <div className="download-form-production-wrapper download-form-wrapper" id="download-form-production-wrapper">
+        <div className="download-form-production-wrapper download-form-wrapper" id={ANCHOR.downloadProductionForm}>
             <h2>Unduh Format Lampiran Bantuan Pemerintah Produksi Film Indonesia</h2>
             <p>Berikut ini adalah form lampiran yang harus dilampirkan saat melakukan submit proposal</p>
             <div className="download-forms">

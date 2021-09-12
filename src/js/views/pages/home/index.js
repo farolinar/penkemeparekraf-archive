@@ -10,7 +10,7 @@ import icOurProgramTactical from '../../../../assets/img/pages/home/our-program-
 import icOurProgramProduction from '../../../../assets/img/pages/home/our-program-production-icon.png';
 // import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
 import "./Home.scss";
-import { ROUTES } from "../../../constants";
+import { ANCHOR, ROUTES } from "../../../constants";
 const Template = lazy(()=>import('../../layout/template'));
 const ImageCarousel = lazy(()=>import('../../component/imageCarousel/ImageCarousel'));
 
@@ -38,13 +38,13 @@ const OurPrograms = [
         title: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
         desc: "Program ini mempromosikan film-film Indonesia terpilih yang akan tayang di media layanan multiplatform pada periode Oktober hingga November 2021.",
         image: icOurProgramTactical,
-        url: ROUTES.registerTacticalTerms
+        url: `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`
     },
     {
         title: "Bantuan Pemerintah Produksi Film Indonesia",
         desc: "Bantuan bagi rumah produksi perfilman untuk memproduksi film-film baru yang dapat ditayangkan melalui media penayangan multiplatform legal",
         image: icOurProgramProduction,
-        url: ROUTES.registerProductionTerms
+        url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
     }
 ]
 

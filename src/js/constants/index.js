@@ -1,8 +1,8 @@
 export const ROUTES = {
     home: "/",
     aboutUs: "/tentang-kami",
-    programPromosiTaktikalFilm: "/program-promosi-taktikal-film",
-    programProduksiFilm: "/program-produksi-film",
+    // programPromosiTaktikalFilm: "/program-promosi-taktikal-film",
+    // programProduksiFilm: "/program-produksi-film",
     register: "/daftar",
     downloadForm: "/unduh-formulir",
     uploadForm: "/unggah-formulir",
@@ -10,7 +10,14 @@ export const ROUTES = {
     uploadProductionForm: "/unggah-formulir-bantuan-produksi",
     contactUs: "/kontak-kami",
     registerTerms: "/syarat-pendaftaran",
-    registerProductionTerms: "/syarat-pendaftaran-bantuan-produksi",
-    registerTacticalTerms: "/syarat-pendaftaran-bantuan-promosi",
+    // registerProductionTerms: "/syarat-pendaftaran-bantuan-produksi",
+    // registerTacticalTerms: "/syarat-pendaftaran-bantuan-promosi",
     program: "/program"
+}
+
+export const ANCHOR = {
+    programPromosiTaktikalFilm: "program-promosi-taktikal-film",
+    programProduksiFilm: "program-produksi-film",
+    downloadTacticalForm: "download-form-tactical-wrapper",
+    downloadProductionForm: "download-form-production-wrapper",
 }

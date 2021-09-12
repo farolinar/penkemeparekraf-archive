@@ -3,7 +3,7 @@ import LazyLoad from "react-lazyload";
 import penLogo from '../../../assets/img/layout/header/pen-logo.png';
 import icDropdown from '../../../assets/img/icons/ic-arrow.png';
 import "./layout.scss";
-import { ROUTES } from "../../constants";
+import { ANCHOR, ROUTES } from "../../constants";
 
 const MENU = [
     {
@@ -22,17 +22,17 @@ const MENU = [
         children: [
             {
                 name: "Bantuan Pemerintah Produksi Film Indonesia",
-                url: ROUTES.registerProductionTerms
+                url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
             },
             {
                 name: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
-                url: ROUTES.registerTacticalTerms
+                url: `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`
             },
         ]
     },
     {
         name: "Pendaftaran",
-        url: [ROUTES.register, ROUTES.registerProductionTerms, ROUTES.registerTacticalTerms],
+        url: [ROUTES.register],
         children: null
     },
     {
@@ -70,7 +70,7 @@ const Header = () => {
             </p>
 
             { 
-                item.children && <LazyLoad>
+                item.children && <div>
                     <img 
                         style={{
                             transform: openChildren ? "rotate(180deg)" : ""
@@ -79,7 +79,7 @@ const Header = () => {
                         alt="dropdown"
                         onClick={() =>setOpenChildren(!openChildren)}
                     />
-                </LazyLoad>
+                </div>
             }
 
             {item.url && item.url.length && item.url.includes(window.location.pathname) && <div
