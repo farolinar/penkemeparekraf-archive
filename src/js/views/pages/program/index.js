@@ -16,7 +16,7 @@ const Program = () => {
             id = id.get('s');
             window.location.href = `#${id}`
         }
-    })
+    }, [])
 
     return <Template>
         <div className="our-program-main-wrapper">
