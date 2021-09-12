@@ -13,7 +13,7 @@ function App() {
               return <Route key={route.path} {...route} />
             })
           }
-          <Redirect to="/page/404" />
+          <Redirect to="/" />
         </Switch>
       </Router>
     </Suspense>

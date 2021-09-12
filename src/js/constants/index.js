@@ -8,4 +8,5 @@ export const ROUTES = {
     uploadForm: "/unggah-formulir",
     contactUs: "/kontak-kami",
     registerTerms: "/syarat-pendaftaran",
+    program: "/program"
 }

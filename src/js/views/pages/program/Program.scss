@@ -1,0 +1,51 @@
+.our-program-main-wrapper {
+    background-image: url("../../../../assets/img/pages/home/highlight-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8vw 8vw 100px;
+    height: 50vh;
+    position: relative;
+
+    .our-program-filter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-light-green);
+        opacity: 0.3;
+    }
+
+    .our-program-main-content {
+        color: #fff;
+        text-align: center;
+        position: relative;
+        h2 {
+            font-size: 4.5vw;
+            font-weight: 700;
+            margin: 0 0 5vw;
+        }
+
+        .our-programs {
+            display: flex;
+            justify-content: space-around;
+            // position: relative;
+
+            .our-program {
+                padding: 60px 30px 60px;
+                border-radius: 10px;
+                background-color: rgba(56, 132, 194, 0.8);
+                cursor: pointer;
+                font-size: 2vw;
+                font-weight: 700;
+                width: 40%;
+                transition: ease 0.5s;
+            }
+
+            .our-program:hover {
+                margin-top: -5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

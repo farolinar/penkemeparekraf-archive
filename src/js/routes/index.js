@@ -4,6 +4,7 @@ import { ROUTES } from "../constants";
 const Home = lazy(()=>import('../views/pages/home'));
 const AboutUs = lazy(()=>import('../views/pages/aboutUs'));
 const ContactUs = lazy(()=>import('../views/pages/contactUs'));
+const Program = lazy(()=>import('../views/pages/program'));
 
 const Routes = [
     {
@@ -21,6 +22,12 @@ const Routes = [
     {
         path: ROUTES.contactUs,
         component: ContactUs,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.program,
+        component: Program,
         exact: true,
         default: true
     },

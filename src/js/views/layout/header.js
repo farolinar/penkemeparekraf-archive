@@ -18,7 +18,7 @@ const MENU = [
     },
     {
         name: "Program",
-        url: "",
+        url: ROUTES.program,
         children: [
             {
                 name: "Bantuan Pemerintah Produksi Film Indonesia",
@@ -58,18 +58,27 @@ const Header = () => {
         return(<div 
             className="header-menu-item"
             key={`header-menu-item-key-${idx}`}
-            onClick={() => {
-                if(item.children) setOpenChildren(!openChildren)
-                else window.location.href = item.url
-            }}
+            // onClick={() => {
+            //     if(item.children) setOpenChildren(!openChildren)
+            //     else window.location.href = item.url
+            // }}
         >
-            <p>{item.name}</p>
+            <p
+                onClick={() => window.location.href = item.url}
+            >
+                {item.name}
+            </p>
 
             { 
                 item.children && <LazyLoad>
-                    <img style={{
-                        transform: openChildren ? "rotate(180deg)" : ""
-                    }} src={icDropdown} alt="dropdown" />
+                    <img 
+                        style={{
+                            transform: openChildren ? "rotate(180deg)" : ""
+                        }} 
+                        src={icDropdown} 
+                        alt="dropdown"
+                        onClick={() =>setOpenChildren(!openChildren)}
+                    />
                 </LazyLoad>
             }
 
