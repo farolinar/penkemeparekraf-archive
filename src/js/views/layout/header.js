@@ -8,17 +8,17 @@ import { ROUTES } from "../../constants";
 const MENU = [
     {
         name: "Beranda",
-        url: ROUTES.home,
+        url: [ROUTES.home],
         children: null
     },
     {
         name: "Tentang Kami",
-        url: ROUTES.aboutUs,
+        url: [ROUTES.aboutUs],
         children: null
     },
     {
         name: "Program",
-        url: ROUTES.program,
+        url: [ROUTES.program],
         children: [
             {
                 name: "Bantuan Pemerintah Produksi Film Indonesia",
@@ -32,22 +32,22 @@ const MENU = [
     },
     {
         name: "Pendaftaran",
-        url: ROUTES.register,
+        url: [ROUTES.register, ROUTES.registerProductionTerms, ROUTES.registerTacticalTerms],
         children: null
     },
     {
         name: "Unduh Formulir",
-        url: ROUTES.downloadForm,
+        url: [ROUTES.downloadForm],
         children: null
     },
     {
         name: "Unggah Formulir",
-        url: ROUTES.uploadForm,
+        url: [ROUTES.uploadForm, ROUTES.uploadProductionForm, ROUTES.uploadTacticalForm],
         children: null
     },
     {
         name: "Kontak Kami",
-        url: ROUTES.contactUs,
+        url: [ROUTES.contactUs],
         children: null
     },
 ]
@@ -64,7 +64,7 @@ const Header = () => {
             // }}
         >
             <p
-                onClick={() => window.location.href = item.url}
+                onClick={() => window.location.href = item.url[0]}
             >
                 {item.name}
             </p>
@@ -82,7 +82,7 @@ const Header = () => {
                 </LazyLoad>
             }
 
-            {window.location.pathname === item.url && <div
+            {item.url && item.url.length && item.url.includes(window.location.pathname) && <div
                 style={{
                     height: 8,
                     width: "120%",

@@ -6,6 +6,8 @@ export const ROUTES = {
     register: "/daftar",
     downloadForm: "/unduh-formulir",
     uploadForm: "/unggah-formulir",
+    uploadTacticalForm: "/unggah-formulir-bantuan-promosi",
+    uploadProductionForm: "/unggah-formulir-bantuan-produksi",
     contactUs: "/kontak-kami",
     registerTerms: "/syarat-pendaftaran",
     registerProductionTerms: "/syarat-pendaftaran-bantuan-produksi",

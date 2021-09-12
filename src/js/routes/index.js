@@ -7,6 +7,7 @@ const ContactUs = lazy(()=>import('../views/pages/contactUs'));
 const Program = lazy(()=>import('../views/pages/program'));
 const OpenCall = lazy(()=>import('../views/pages/openCall'));
 const DownloadForm = lazy(()=>import('../views/pages/downloadForm'));
+const UploadForm = lazy(()=>import('../views/pages/uploadForm'));
 
 const Routes = [
     {
@@ -42,6 +43,12 @@ const Routes = [
     {
         path: ROUTES.downloadForm,
         component: DownloadForm,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.uploadForm,
+        component: UploadForm,
         exact: true,
         default: true
     },
