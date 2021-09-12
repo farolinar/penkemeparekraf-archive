@@ -6,7 +6,7 @@ import programTacticalHero from "../../../../assets/img/pages/program/program-ta
 import programProductionText from "../../../../assets/img/pages/program/program-production-text.png";
 import programProductionHero from "../../../../assets/img/pages/program/program-production-hero.png";
 import "./Program.scss";
-import { ANCHOR, ROUTES } from '../../../constants';
+import { ANCHOR } from '../../../constants';
 
 const Program = () => {
 

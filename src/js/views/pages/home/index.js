@@ -145,7 +145,7 @@ const Home = (props) => {
                 <p>15 - 30 September 2021</p>
                 <div className="home-register-button">
                     <button>
-                        <a href={ROUTES.program}>Syarat Pendaftaran</a>
+                        <a href={ROUTES.registerTerms}>Syarat Pendaftaran</a>
                     </button>
                     <button>
                         <a href={ROUTES.downloadForm}>Unduh Formulir</a>

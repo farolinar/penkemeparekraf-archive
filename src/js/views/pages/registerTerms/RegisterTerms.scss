@@ -1,0 +1,65 @@
+.register-terms-main-wrapper {
+    padding: 40px 0 0;
+    h2 {
+        font-size: 4.5vw;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .register-terms-wrapper {
+        h2 {
+            color: #000;
+            font-weight: 700;
+            font-size: 2vw;
+            margin-top: 0;
+        }
+        .register-terms-dropdown {
+            border-radius: 10px;
+            color: #fff;
+            padding: 12px 35px;
+            font-size: 2vw;
+            font-weight: 700;
+            cursor: pointer;
+            margin: 3vw 4vw 2vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                margin: 0;
+            }
+
+            div {
+                display: inline-block;
+                width: 1.5vw;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        ul {
+            list-style: auto;
+            margin: 0 4vw 50px;
+            li {
+                margin: 12px;
+                font-size: 28px;
+            }
+            .register-term-children {
+                margin-left: 2vw;
+            }
+        }
+
+        .register-terms-lower-section {
+            padding: 40px 0;
+            color: #fff;
+
+            h2 {
+                color: #fff;
+            }
+        }
+    }
+}
