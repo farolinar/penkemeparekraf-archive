@@ -22,6 +22,21 @@ const UploadTacticalForm = () => {
     const [tandaPemberitahuanPembuatanFilmFile, setTandaPemberitahuanPembuatanFilmFile] = useState({name: "", file: ""})
     const [keteranganDomisiliUsahaFile, setKeteranganDomisiliUsahaFile] = useState({name: "", file: ""})
 
+    const [pernyataanRumahProduksiFile, setPernyataanRumahProduksiFile] = useState({name: "", file: ""})
+    const [pernyataanTangguungJawabFile, setPernyataanTangguungJawabFile] = useState({name: "", file: ""})
+    const [permohonanBantuanPemerintahFile, setPermohonanBantuanPemerintahFile] = useState({name: "", file: ""})
+    const [pernyataanFilmJadwalRilisFile, setPernyataanFilmJadwalRilisFile] = useState({name: "", file: ""})
+    const [profilPengurusProposalFile, setprofilPengurusProposalFile] = useState({name: "", file: ""})
+    const [proposalPermohonanFile, setProposalPermohonanFile] = useState({name: "", file: ""})
+
+    const [link, setLink] = useState()
+
+    const acceptedFileFormat = {
+        image: ["image/jpeg"],
+        pdf: ["application/pdf"],
+        docx: [".doc", ".docx"]
+    }
+
     const UploadFileField = ({
         title="",
         subtitle="(File docx, max. 5MB, Lengkapi dengan Nama Pendaftar)",
@@ -31,8 +46,8 @@ const UploadTacticalForm = () => {
         setData = () => {}
     }) => {
         function readURL(input) {
-            let validImageTypes = (type === "image" ? "image/jpeg" : "application/pdf");
-            if (validImageTypes === input.files[0]["type"]) {
+            // let validImageTypes = (type === "image" ? "image/jpeg" : "application/pdf");
+            if (acceptedFileFormat[type].includes(input.files[0]["type"])) {
                 if (input.files && input.files[0]) {
                     var reader = new FileReader();
                     reader.onload = function (e) {
@@ -42,7 +57,7 @@ const UploadTacticalForm = () => {
                 }
             } else if (!fileName) {
                 setData({name: "", file: ""})
-                alert(`Harap masukkan file ${validImageTypes}`)
+                alert(`Harap masukkan file tipe ${type}`)
             }
         }
 
@@ -59,18 +74,12 @@ const UploadTacticalForm = () => {
                 <div className="upload-file-button">
                     <label>
                         Unggah File
-                        {type === "image" && <input
+                        <input
                             id={id}
                             type="file"
-                            accept="image/jpeg"
+                            accept={acceptedFileFormat[type]}
                             style={{ display: "none", width: "100%" }}
-                        />}
-                        {type === "file" && <input
-                            id={id}
-                            type="file"
-                            accept="application/pdf"
-                            style={{ display: "none", width: "100%" }}
-                        />}
+                        />
                     </label>
                 </div>
                 {fileName && <p>{fileName} <span onClick={() => {
@@ -193,7 +202,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH AKTA PENDIRIAN ATAS NAMA BADAN USAHA *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-akta-pendirian-file"
-                        type="file"
+                        type="pdf"
                         fileName={aktaPendirianFile.name}
                         setData = {(data) => setAktaPendirianFile({...data})}
                     />
@@ -204,7 +213,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH AKTA PERUBAHAN ATAS NAMA BADAN USAHA *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-akta-perubahan-file"
-                        type="file"
+                        type="pdf"
                         fileName={aktaPerubahanFile.name}
                         setData = {(data) => setAktaPerubahanFile({...data})}
                     />
@@ -215,7 +224,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH SK KEMENHUMKAM HAM ATAS AKTA PENDIRIAN DAN PERUBAHAN *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-sk-kemenhumkan-file"
-                        type="file"
+                        type="pdf"
                         fileName={skKemenhumkanFile.name}
                         setData = {(data) => setSKKemenhumkanFile({...data})}
                     />
@@ -226,7 +235,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH NOMOR INDUK BERUSAHA *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-nomor-induk-file"
-                        type="file"
+                        type="pdf"
                         fileName={nomorIndukFile.name}
                         setData = {(data) => setNomorIndukFile({...data})}
                     />
@@ -237,7 +246,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH TANDA DAFTAR USAHA PERFILMAN *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-tanda-daftar-usaha-file"
-                        type="file"
+                        type="pdf"
                         fileName={tandaDaftarUsahaFile.name}
                         setData = {(data) => setTandaDaftarUsahaFile({...data})}
                     />
@@ -248,7 +257,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH TANDA PEMBERITAHUAN PEMBUATAN FILM *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-tanda-pemberitahuan-pembuatan-file"
-                        type="file"
+                        type="pdf"
                         fileName={tandaPemberitahuanPembuatanFilmFile.name}
                         setData = {(data) => setTandaPemberitahuanPembuatanFilmFile({...data})}
                     />
@@ -259,11 +268,103 @@ const UploadTacticalForm = () => {
                         title="UNGGAH SURAT KETERANGAN DOMISILI USAHA *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-keterangan-domisili-usaha-file"
-                        type="file"
+                        type="pdf"
                         fileName={keteranganDomisiliUsahaFile.name}
                         setData = {(data) => setKeteranganDomisiliUsahaFile({...data})}
                     />
                 </div>
+            </div>
+
+            <div className="upload-form-section">
+                <div className="upload-form-title">
+                    <div className="upload-form-label">KELENGKAPAN BERKAS</div>
+                    <span>*Wajib diisi</span>
+                </div>
+
+                <div className="upload-form-content-wrapper">
+                    <UploadFileField
+                        title="UNGGAH SURAT PERNYATAAN RUMAH PRODUKSI * "
+                        subtitle="(File docx, max. 5MB, Lengkapi dengan Nama Pendaftar)"
+                        id="upload-form-pernyataan-rumah-produksi-file"
+                        type="docx"
+                        fileName={pernyataanRumahProduksiFile.name}
+                        setData = {(data) => setPernyataanRumahProduksiFile({...data})}
+                    />
+                </div>
+
+                <div className="upload-form-content-wrapper">
+                    <UploadFileField
+                        title="UNGGAH SURAT PERNYATAAN TANGGUNG JAWAB MUTLAK * "
+                        subtitle="(File docx, max. 5MB, Lengkapi dengan Nama Pendaftar)"
+                        id="upload-form-pernyataan-tanggung-jawab-file"
+                        type="docx"
+                        fileName={pernyataanTangguungJawabFile.name}
+                        setData = {(data) => setPernyataanTangguungJawabFile({...data})}
+                    />
+                </div>
+
+                <div className="upload-form-content-wrapper">
+                    <UploadFileField
+                        title="UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PROMOSI TAKTIKAL FILM INDONESIA *"
+                        subtitle="(File docx, max. 5MB, Lengkapi dengan Nama Pendaftar)"
+                        id="upload-form-permohonan-bantuan-pemerintah-file"
+                        type="docx"
+                        fileName={permohonanBantuanPemerintahFile.name}
+                        setData = {(data) => setPermohonanBantuanPemerintahFile({...data})}
+                    />
+                </div>
+
+                <div className="upload-form-content-wrapper">
+                    <UploadFileField
+                        title="UNGGAH SURAT PERNYATAAN FILM YANG DIAJUKAN TELAH MEMILIKI JADWAL TAYANG RILIS DAN MEDIA PENAYANGAN *"
+                        subtitle="(File docx, max. 5MB, Lengkapi dengan Nama Pendaftar)"
+                        id="upload-form-pernyataan-film-jadwal-rilis-file"
+                        type="docx"
+                        fileName={pernyataanFilmJadwalRilisFile.name}
+                        setData = {(data) => setPernyataanFilmJadwalRilisFile({...data})}
+                    />
+                </div>
+
+                <div className="upload-form-content-wrapper">
+                    <UploadFileField
+                        title="UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN PEMERINTAH BAGI PROMOSI TAKTIKAL FILM INDONESIA *"
+                        subtitle="(File docx, max. 5MB, Lengkapi dengan Nama Pendaftar)"
+                        id="upload-profil-pengusul-proposal-file"
+                        type="docx"
+                        fileName={profilPengurusProposalFile.name}
+                        setData = {(data) => setprofilPengurusProposalFile({...data})}
+                    />
+                </div>
+
+                <div className="upload-form-content-wrapper">
+                    <UploadFileField
+                        title="UNGGAH PROPOSAL PERMOHONAN BANTUAN PEMERINTAH BAGI PROMOSI TAKTIKAL FILM INDONESIA *"
+                        subtitle="(File docx, max. 5MB, Lengkapi dengan Nama Pendaftar)"
+                        id="upload-proposal-permohonan-file"
+                        type="docx"
+                        fileName={proposalPermohonanFile.name}
+                        setData = {(data) => setProposalPermohonanFile({...data})}
+                    />
+                </div>
+
+                <div className="upload-form-content-wrapper">
+                    <div className="upload-form-field">
+                        <label htmlFor="link">UNGGAH LINK DOKUMEN FILM YANG DIAJUKAN *</label>
+                        <p>(Link Google Drive, Youtube,dsb)</p>
+                        <input 
+                            name="link"
+                            defaultValue={link}
+                            onChange={(e) => setLink(e.target.value)}
+                        ></input>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                onClick={() => {}}
+                className="submit-button"
+            >
+                Submit
             </div>
         </div>
     </Template>
