@@ -1,9 +1,8 @@
-import React, { lazy, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Template from '../../layout/template';
 import { LOWER_TERMS, MAIN_TERMS } from './constants';
 import "./RegisterTerms.scss";
 import icArrow from "../../../../assets/img/icons/ic-arrow.png";
-import LazyLoad from 'react-lazyload';
 
 const REGISTER_TERMS = [
     {

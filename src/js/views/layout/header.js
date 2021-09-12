@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import LazyLoad from "react-lazyload";
 import penLogo from '../../../assets/img/layout/header/pen-logo.png';
 import icDropdown from '../../../assets/img/icons/ic-arrow.png';
 import "./layout.scss";
@@ -73,7 +72,8 @@ const Header = () => {
                 item.children && <div>
                     <img 
                         style={{
-                            transform: openChildren ? "rotate(180deg)" : ""
+                            transform: openChildren ? "rotate(180deg)" : "",
+                            cursor: "pointer"
                         }} 
                         src={icDropdown} 
                         alt="dropdown"
@@ -98,7 +98,7 @@ const Header = () => {
                 item.children && openChildren && <div className="header-menu-item-children">
                     {
                         item.children.map((child, idx) => {
-                            return <a key={idx} onClick={() => window.location.href = child.url}>
+                            return <a key={idx} href={child.url}>
                                 {child.name}
                             </a>
                         })

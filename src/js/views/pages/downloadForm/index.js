@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ANCHOR } from '../../../constants';
 import Template from '../../layout/template';
 import "./DownloadForm.scss";
@@ -85,7 +85,7 @@ const DownloadForm = () => {
             <div className="download-forms">
                 {
                     TACTICAL_FORMS.map((item, index) => {
-                        return <a key={index} href={item.url} target="_blank" className="download-form">
+                        return <a key={index} href={item.url} target="_blank" rel="noreferrer" className="download-form">
                             {item.name}
                         </a>
                     })
@@ -99,7 +99,7 @@ const DownloadForm = () => {
             <div className="download-forms">
                 {
                     PRODUCTION_FORMS.map((item, index) => {
-                        return <a key={index} href={item.url} target="_blank" className="download-form">
+                        return <a key={index} href={item.url} target="_blank" rel="noreferrer" className="download-form">
                             {item.name}
                         </a>
                     })

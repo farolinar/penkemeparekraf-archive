@@ -1,4 +1,4 @@
-import React, { lazy, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import LazyLoad from 'react-lazyload';
 import Template from '../../layout/template';
 import programTacticalText from "../../../../assets/img/pages/program/program-tactical-text.png";

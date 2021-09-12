@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import LazyLoad from 'react-lazyload';
 import Template from '../../layout/template';
 import aboutUsText from '../../../../assets/img/pages/aboutUs/about-us-text.png';

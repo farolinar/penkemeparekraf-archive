@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import LazyLoad from 'react-lazyload';
 import Template from '../../layout/template';
 import "./ContactUs.scss";
@@ -17,13 +17,13 @@ const ContactUs = () => {
                         <LazyLoad>
                             <img src={icEmail} alt="email" />
                         </LazyLoad>
-                        <a href="mailto:penfilm@kemenparekraf.go.id" target="_blank">penfilm@kemenparekraf.go.id</a>
+                        <a href="mailto:penfilm@kemenparekraf.go.id" target="_blank" rel="noreferrer">penfilm@kemenparekraf.go.id</a>
                     </div>
                     <div className="footer-contact">
                         <LazyLoad>
                             <img src={icWa} alt="wa" />
                         </LazyLoad>
-                        <a href="https://wa.me/6288888888888" target="_blank">0888 8888 8888</a>
+                        <a href="https://wa.me/6288888888888" target="_blank" rel="noreferrer">0888 8888 8888</a>
                     </div>
                 </div>
             </div>

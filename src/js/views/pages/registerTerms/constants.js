@@ -151,8 +151,7 @@ export const LOWER_TERMS = {
             text: "Proposal harus memuat informasi dasar sebagai berikut (LAMPIRAN 6 Sistematika Proposal Bantuan Pemerintah bagi Promosi Taktikal Film Indonesia):",
             children: [
                 "a.	HALAMAN MUKA: Judul Film untuk Tayang/Film Siap Tayang ",
-                "b.	INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Daftar Nama\
-                Pemain Utama dan Pendukung, dan platform atau media penayangan filmnya. Status Film: (wajib) picture lock;",
+                "b.	INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Daftar Nama Pemain Utama dan Pendukung, dan platform atau media penayangan filmnya. Status Film: (wajib) picture lock;",
                 "c.	Logline (3 kalimat) dan Sinopsis (200 – 400 kata);",
                 "d.	Ulasan tentang Siapa Target Penonton (max 400 kata);",
                 "e.	Director’s Statement (200-400 kata);",
@@ -181,8 +180,7 @@ export const LOWER_TERMS = {
             text: "Proposal harus memuat informasi dasar sebagai berikut (Lampiran 5 Sistematika Proposal Bantuan Pemerintah bagi Produksi Film Indonesia):",
             children: [
                 "a.	Halaman muka: judul, film untuk produksi.",
-                "b.	Informasi dasar: judul, durasi film, genre, nama penulis, nama sutradara, nama produser, nama animator, daftar nama\
-                pemain utama dan pendukung dan target penonton. ",
+                "b.	Informasi dasar: judul, durasi film, genre, nama penulis, nama sutradara, nama produser, nama animator, daftar nama pemain utama dan pendukung dan target penonton. ",
                 "c.	Logline (3 kalimat) dan Sinopsis (200 – 400 kata);",
                 "d.	Director’s treatment (200-400 kata).",
                 "e.	Visi Produser (200-400 kata);",
