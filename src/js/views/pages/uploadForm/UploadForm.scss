@@ -54,3 +54,113 @@
         }
     }
 }
+
+.upload-form-wrapper {
+    padding: 100px 8vw;
+
+    h2 {
+        font-size: 4.5vw;
+        font-family: 700;
+        color: #fff;
+    }
+
+    .upload-form-section {
+        margin: 0px 0 75px;
+    }
+
+    .upload-form-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .upload-form-label {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 7px 15px;
+            border-radius: 6px;
+            width: fit-content;
+            letter-spacing: 2px;
+        }
+    
+        span {
+            color: #fff;
+            font-size: 24px;
+            font-weight: normal;
+        }
+    }
+
+    .upload-form-content-wrapper {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px 70px 30px 55px;
+        margin: 25px 0;
+
+        .upload-form-field {
+            color: var(--main-blue);
+            margin: 15px 0;
+            width: 100%;
+            label {
+                text-transform: capitalize;
+                font-size: 24px;
+            }
+
+            input {
+                border-radius: 6px;
+                border: solid 3px var(--main-blue);
+                padding: 8px;
+                font-size: 24px;
+                display: block;
+                width: 97%;
+                color: var(--main-blue);
+            }
+        }
+
+        .upload-file-wrapper {
+            color: var(--main-blue);
+            .upload-file-title {
+                text-transform: capitalize;
+                font-size: 24px;
+            }
+
+            .upload-file-subtitle {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .upload-file-button {
+                cursor: pointer;
+                border: solid 2px var(--main-blue);
+                padding: 10px 70px;
+                font-size: 24px;
+                border-radius: 6px;
+                width: fit-content;
+                margin: 15px 0;
+                
+                label {
+                    cursor: pointer;
+                }
+            }
+
+            p {
+                font-size: 24px;
+                margin: 0 15px;
+                line-height: normal;
+
+                span {
+                    vertical-align: middle;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.upload-tactical-form-wrapper {
+    background-color: var(--main-light-green);
+
+    .upload-form-label {
+        background-color: var(--main-blue);
+    }
+}
