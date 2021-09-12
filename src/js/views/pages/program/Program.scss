@@ -49,3 +49,68 @@
         }
     }
 }
+
+.our-program-tactical-wrapper {
+    color: #000;
+    padding: 10px 6vw;
+    background-color: #fff;
+    
+    h2 {
+        font-size: 4vw;
+        font-weight: 700;
+        width: 60%;
+        margin-bottom: 0;
+    }
+
+    .our-program-tactical-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .our-program-tactical-text {
+            width: 45%;
+            img {
+                width: 100%;
+            }
+        }
+        .lazyload-wrapper {
+            width: 55%;
+            img {
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+.our-program-production-wrapper {
+    color: #fff;
+    padding: 10px 6vw 100px;
+    background-color: var(--main-blue);
+    
+    h2 {
+        font-size: 4vw;
+        font-weight: 700;
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    .our-program-production-content {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        .our-program-production-hero {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+        .lazyload-wrapper {
+            width: 45%;
+            margin-top: -100px;
+            img {
+                width: 100%;
+            }
+        }
+        
+    }
+}

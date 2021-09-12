@@ -38,13 +38,13 @@ const OurPrograms = [
         title: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
         desc: "Program ini mempromosikan film-film Indonesia terpilih yang akan tayang di media layanan multiplatform pada periode Oktober hingga November 2021.",
         image: icOurProgramTactical,
-        url: ROUTES.programPromosiTaktikalFilm
+        url: ROUTES.registerTacticalTerms
     },
     {
         title: "Bantuan Pemerintah Produksi Film Indonesia",
         desc: "Bantuan bagi rumah produksi perfilman untuk memproduksi film-film baru yang dapat ditayangkan melalui media penayangan multiplatform legal",
         image: icOurProgramProduction,
-        url: ROUTES.programProduksiFilm
+        url: ROUTES.registerProductionTerms
     }
 ]
 
@@ -145,7 +145,7 @@ const Home = (props) => {
                 <p>15 - 30 September 2021</p>
                 <div className="home-register-button">
                     <button>
-                        <a href={ROUTES.registerTerms}>Syarat Pendaftaran</a>
+                        <a href={ROUTES.program}>Syarat Pendaftaran</a>
                     </button>
                     <button>
                         <a href={ROUTES.downloadForm}>Unduh Formulir</a>

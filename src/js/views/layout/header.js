@@ -22,11 +22,11 @@ const MENU = [
         children: [
             {
                 name: "Bantuan Pemerintah Produksi Film Indonesia",
-                url: ROUTES.programProduksiFilm
+                url: ROUTES.registerProductionTerms
             },
             {
                 name: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
-                url: ROUTES.programPromosiTaktikalFilm
+                url: ROUTES.registerTacticalTerms
             },
         ]
     },
