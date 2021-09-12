@@ -1,5 +1,4 @@
-import React, { lazy } from 'react';
-import LazyLoad from 'react-lazyload';
+import React from 'react';
 import { ROUTES } from '../../../constants';
 import Template from '../../layout/template';
 import "./OpenCall.scss";

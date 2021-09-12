@@ -1,0 +1,94 @@
+.download-form-main-wrapper {
+    background-image: url("../../../../assets/img/pages/downloadForm/download-form-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;
+    padding: 8vw 8vw 100px;
+    height: 50vh;
+    position: relative;
+
+    .our-program-filter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-blue);
+        opacity: 0.3;
+    }
+
+    .our-program-main-content {
+        color: #fff;
+        text-align: center;
+        position: relative;
+        h2 {
+            font-size: 4.5vw;
+            font-weight: 700;
+            margin: 0 0 5vw;
+        }
+
+        .our-programs {
+            display: flex;
+            justify-content: space-around;
+            // position: relative;
+
+            .our-program {
+                padding: 60px 30px 60px;
+                border-radius: 10px;
+                background-color: rgba(86, 204, 184, 0.8);
+                cursor: pointer;
+                font-size: 2vw;
+                font-weight: 700;
+                width: 40%;
+                transition: ease 0.5s;
+
+                a:hover {
+                    color: #fff !important;
+                }
+            }
+
+            .our-program:hover {
+                margin-top: -5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.download-form-wrapper {
+    padding: 100px 4vw;
+    h2 {
+        font-size: 4.5vw;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+    .download-forms {
+        a {
+            text-decoration: underline;
+            font-weight: 400;
+            font-size: 1.5vw;
+            display: block;
+            margin-bottom: 7px;
+        }
+    }
+}
+
+.download-form-tactical-wrapper {
+    background-color: #fff;
+    color: var(--main-blue);
+    a {
+        color: var(--main-blue);
+    }
+}
+
+.download-form-production-wrapper {
+    background-color: var(--main-light-green);
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
