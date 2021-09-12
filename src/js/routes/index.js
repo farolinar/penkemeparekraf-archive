@@ -5,6 +5,7 @@ const Home = lazy(()=>import('../views/pages/home'));
 const AboutUs = lazy(()=>import('../views/pages/aboutUs'));
 const ContactUs = lazy(()=>import('../views/pages/contactUs'));
 const Program = lazy(()=>import('../views/pages/program'));
+const OpenCall = lazy(()=>import('../views/pages/openCall'));
 
 const Routes = [
     {
@@ -28,6 +29,12 @@ const Routes = [
     {
         path: ROUTES.program,
         component: Program,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.register,
+        component: OpenCall,
         exact: true,
         default: true
     },

@@ -1,0 +1,58 @@
+.open-call-wrapper {
+    background-image: url("../../../../assets/img/pages/openCall/open-call-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 70%;
+    padding: 100px 8vw;
+    position: relative;
+
+    .open-call-filter {
+        background-color: #fff;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .open-call-content {
+        width: 60%;
+        margin-left: 40%;
+        position: relative;
+        h2 {
+            font-size: 4.5vw;
+            color: #000;
+            margin: 0 auto 4.5vw;
+        }
+    
+        p {
+            color: #000;
+            font-size: 2vw;
+            margin: 0;
+        }
+
+        .home-register-button {
+            display: flex;
+            // justify-content: space-between;
+            margin-top: 47px;
+
+            button {
+                background-color: var(--main-blue);
+                padding: 11px 20px;
+                border-radius: 10px;
+
+                a {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 1.5vw;
+                }
+            }
+
+            button:nth-child(2) {
+                margin: 0 10px;
+            }
+            
+        }
+    }
+}
