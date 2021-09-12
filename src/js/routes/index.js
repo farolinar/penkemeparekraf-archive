@@ -8,6 +8,8 @@ const Program = lazy(()=>import('../views/pages/program'));
 const OpenCall = lazy(()=>import('../views/pages/openCall'));
 const DownloadForm = lazy(()=>import('../views/pages/downloadForm'));
 const UploadForm = lazy(()=>import('../views/pages/uploadForm'));
+const UploadTacticalForm = lazy(()=>import('../views/pages/uploadForm/UploadTacticalForm'));
+const UploadProductionForm = lazy(()=>import('../views/pages/uploadForm/UploadProductionForm'));
 
 const Routes = [
     {
@@ -49,6 +51,18 @@ const Routes = [
     {
         path: ROUTES.uploadForm,
         component: UploadForm,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.uploadTacticalForm,
+        component: UploadTacticalForm,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.uploadProductionForm,
+        component: UploadProductionForm,
         exact: true,
         default: true
     },
