@@ -19,10 +19,10 @@ const MENU = [
         name: "Program",
         url: [ROUTES.program],
         children: [
-            {
-                name: "Bantuan Pemerintah Produksi Film Indonesia",
-                url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
-            },
+            // {
+            //     name: "Bantuan Pemerintah Produksi Film Indonesia",
+            //     url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
+            // },
             {
                 name: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
                 url: `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`

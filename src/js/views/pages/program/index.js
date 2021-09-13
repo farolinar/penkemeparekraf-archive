@@ -27,9 +27,9 @@ const Program = () => {
                     <div className="our-program">
                         <a href={`#${ANCHOR.programPromosiTaktikalFilm}`}>Bantuan Pemerintah<br />Promosi Taktikal Film Indonesia</a>
                     </div>
-                    <div className="our-program">
+                    {/* <div className="our-program">
                         <a href={`#${ANCHOR.programProduksiFilm}`}>Bantuan Pemerintah<br />Produksi Film Indonesia</a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@ const Program = () => {
             </div>
         </div>
 
-        <div className="our-program-production-wrapper" id={ANCHOR.programProduksiFilm}>
+        {/* <div className="our-program-production-wrapper" id={ANCHOR.programProduksiFilm}>
             <h2>Bantuan Pemerintah Produksi Film Indonesia</h2>
             <div className="our-program-production-content">
                 <LazyLoad>
@@ -56,7 +56,7 @@ const Program = () => {
                     <img src={programProductionText} alt="program-tactical" />
                 </div>
             </div>
-        </div>
+        </div> */}
     </Template>
 }
 
