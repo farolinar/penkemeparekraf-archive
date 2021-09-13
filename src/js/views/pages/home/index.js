@@ -8,6 +8,7 @@ import aboutUsUpperDivider from '../../../../assets/img/pages/home/about-us-shap
 import aboutUsHero from '../../../../assets/img/pages/home/about-us-hero.png';
 import icOurProgramTactical from '../../../../assets/img/pages/home/our-program-tactical-icon.png';
 import icOurProgramProduction from '../../../../assets/img/pages/home/our-program-production-icon.png';
+import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-hero.png";
 // import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
 import "./Home.scss";
 import { ANCHOR, ROUTES } from "../../../constants";
@@ -126,11 +127,24 @@ const Home = (props) => {
                     <img src={ourProgramBg} />
                 </LazyLoad>
             </div> */}
-            <h2>Program Kami</h2>
+            {/* <h2>Program Kami</h2> */}
             <div className="home-our-program-content">
-                {
+                {/* {
                     OurPrograms.map((item, idx) => <OurProgramItem key={idx} item={item} />)
-                }
+                } */}
+                <div className="our-program-content-new">
+                    <LazyLoad>
+                        <img src={programTacticalHero} alt="program-kami" />
+                    </LazyLoad>
+                    <div className="our-program-content-text">
+                        <h2>Program Kami</h2>
+                        <h3>Bantuan Pemerintah Promosi Taktikal Film Indonesia</h3>
+                        <p>Bertujuan untuk meningkatkan awareness masyarakat untuk tetap mendukung kemajuan dan pengembangan industri perfilman Indonesia melalui kegiatan promosi Film Indonesia Siap Tayang yang telah memiliki jadwal tayang di media penayangan multiplatform legal pada jangka waktu Oktober - November 2021.</p>
+                        <button>
+                            <a href={ROUTES.program}>Selengkapnya</a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
