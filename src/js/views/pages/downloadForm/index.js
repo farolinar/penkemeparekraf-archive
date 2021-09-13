@@ -6,27 +6,31 @@ import "./DownloadForm.scss";
 const TACTICAL_FORMS = [
     {
         name: "Unduh Lampiran 1 - Format Surat Pernyataan Rumah Produksi",
-        url: ""
+        url: "https://drive.google.com/uc?export=download&id=1yLnjwIvv9tQu4XkhApNdmEcBy5deLMxg"
     },
     {
         name: "Unduh Lampiran 2 - Format Surat Pernyataan Tanggung Jawab Mutlak",
-        url: ""
+        url: "https://drive.google.com/uc?export=download&id=1Xjc1yexliPU9Lp6LMidQr0xr5r6dkZNU"
     },
     {
         name: "Unduh Lampiran 3 - Format Surat Permohonan Bantuan Pemerintah Bagi Promosi Taktikal Film Indonesia",
-        url: ""
+        url: "https://drive.google.com/uc?export=download&id=13k1Oy_gX-ryd-sa0w1Sg926zHUhQSxuo"
     },
     {
         name: "Unduh Lampiran 4 - Format Surat Pernyataan Film yang Diajukan Telah Memiliki Jadwal Tayang Rilis dan Media Penayangan",
-        url: ""
+        url: "https://drive.google.com/uc?export=download&id=1cVaWjLh_p2_rJgWqimVk8coujoEJBc29"
     },
     {
         name: "Unduh Lampiran 5 - Format Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Taktikal Film Indonesia",
-        url: ""
+        url: "https://drive.google.com/uc?export=download&id=14GPEQHn8USKpti_--bhlm_iqPmACb-O1"
     },
     {
         name: "Unduh Lampiran 6 - Format Sistematika Proposal Bantuan Pemerintah bagi Promosi Taktikal Film Indonesia",
-        url: ""
+        url: "https://drive.google.com/uc?export=download&id=1HljsRrfrRb9sOIRoSdObjhAcYtIXT6Q2"
+    },
+    {
+        name: "Unduh Lampiran 7 - Format Rincian Anggaran Biaya (RAB) Bantuan Pemerintah bagi Promosi Taktikal Film Indonesia",
+        url: "https://drive.google.com/uc?export=download&id=1XMsyYpIeUMysSsTcbBaMttROkO9mB9jd"
     },
 ]
 
@@ -72,9 +76,9 @@ const DownloadForm = () => {
                     <div className="our-program">
                         <a href={`#${ANCHOR.downloadTacticalForm}`}>Bantuan Pemerintah<br />Promosi Taktikal Film Indonesia</a>
                     </div>
-                    <div className="our-program">
+                    {/* <div className="our-program">
                         <a href={`#${ANCHOR.downloadProductionForm}`}>Bantuan Pemerintah<br />Produksi Film Indonesia</a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
@@ -93,7 +97,7 @@ const DownloadForm = () => {
             </div>
         </div>
 
-        <div className="download-form-production-wrapper download-form-wrapper" id={ANCHOR.downloadProductionForm}>
+        {/* <div className="download-form-production-wrapper download-form-wrapper" id={ANCHOR.downloadProductionForm}>
             <h2>Unduh Format Lampiran Bantuan Pemerintah Produksi Film Indonesia</h2>
             <p>Berikut ini adalah form lampiran yang harus dilampirkan saat melakukan submit proposal</p>
             <div className="download-forms">
@@ -105,7 +109,7 @@ const DownloadForm = () => {
                     })
                 }
             </div>
-        </div>
+        </div> */}
 
 
     </Template>
