@@ -33,6 +33,42 @@ const UploadTacticalForm = () => {
 
     const [link, setLink] = useState()
 
+    const dispatch = useDispatch();
+
+    const validations = () => {
+        // if(idNumber && idNumber.length !== 16) return false;
+        return name
+            && idNumber
+            && companyName
+            && email
+            && waNumber
+            && idNumberFile.file
+            && cardNumberFile.file
+            && npwpFile.file
+            && taxFile.file
+            && aktaPendirianFile.file
+            && nomorIndukFile.file
+            && tandaDaftarUsahaFile.file
+            && tandaPemberitahuanPembuatanFilmFile.file
+            && keteranganDomisiliUsahaFile.file
+            && pernyataanRumahProduksiFile.file
+            && pernyataanTangguungJawabFile.file
+            && permohonanBantuanPemerintahFile.file
+            && pernyataanFilmJadwalRilisFile.file
+            && profilPengurusProposalFile.file
+            && proposalPermohonanFile.file
+            && portofolioProdukFilmFile.file
+            && pengajuanRABProduksiFile.file;
+    }
+
+    const submitData = () => {
+        if(validations()) {
+
+        } else {
+            alert("Harap isi semua data.");
+        }
+    }
+
     const acceptedFileFormat = {
         image: ["image/jpeg"],
         pdf: ["application/pdf"],
@@ -117,7 +153,10 @@ const UploadTacticalForm = () => {
                         <input 
                             name="id-number"
                             defaultValue={idNumber}
-                            onChange={(e) => setIDNumber(e.target.value)}
+                            onChange={(e) => {
+                                setIDNumber(e.target.value)
+                            }}
+                            
                         ></input>
                     </div>
 
@@ -143,8 +182,14 @@ const UploadTacticalForm = () => {
                         <label htmlFor="whatsapp-number">NOMOR WHATSAPP *</label>
                         <input 
                             name="whatsapp-number"
-                            defaultValue={waNumber}
-                            onChange={(e) => setWANumber(e.target.value)}
+                            value={waNumber}
+                            onChange={(e) => {
+                                var number = e.target.value;
+                                number = new RegExp(/^[0-9]*$/).test(number)
+                                    ? number
+                                    : waNumber;
+                                setWANumber(number);
+                            }}
                         ></input>
                     </div>
                 </div>

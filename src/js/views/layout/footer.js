@@ -1,7 +1,7 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
 import "./layout.scss";
-import icWa from "../../../assets/img/icons/ic-wa.png";
+// import icWa from "../../../assets/img/icons/ic-wa.png";
 import icEmail from "../../../assets/img/icons/ic-email.png";
 
 const Footer = () => {
