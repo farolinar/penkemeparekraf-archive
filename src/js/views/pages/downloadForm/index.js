@@ -34,28 +34,28 @@ const TACTICAL_FORMS = [
     },
 ]
 
-const PRODUCTION_FORMS = [
-    {
-        name: "Unduh Lampiran 1 - Format Surat Pernyataan Rumah Produksi",
-        url: ""
-    },
-    {
-        name: "Unduh Lampiran 2 - Format Surat Pernyataan Tanggung Jawab Mutlak",
-        url: ""
-    },
-    {
-        name: "Unduh Lampiran 3 - Format Surat Permohonan Bantuan Pemerintah Bagi Produksi Film Indonesia",
-        url: ""
-    },
-    {
-        name: "Unduh Lampiran 4 - Format Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Produksi Film Indonesia",
-        url: ""
-    },
-    {
-        name: "Unduh Lampiran 5 - Format Sistematika Proposal Bantuan Pemerintah bagi Produksi Film Indonesia",
-        url: ""
-    },
-]
+// const PRODUCTION_FORMS = [
+//     {
+//         name: "Unduh Lampiran 1 - Format Surat Pernyataan Rumah Produksi",
+//         url: ""
+//     },
+//     {
+//         name: "Unduh Lampiran 2 - Format Surat Pernyataan Tanggung Jawab Mutlak",
+//         url: ""
+//     },
+//     {
+//         name: "Unduh Lampiran 3 - Format Surat Permohonan Bantuan Pemerintah Bagi Produksi Film Indonesia",
+//         url: ""
+//     },
+//     {
+//         name: "Unduh Lampiran 4 - Format Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Produksi Film Indonesia",
+//         url: ""
+//     },
+//     {
+//         name: "Unduh Lampiran 5 - Format Sistematika Proposal Bantuan Pemerintah bagi Produksi Film Indonesia",
+//         url: ""
+//     },
+// ]
 
 const DownloadForm = () => {
 

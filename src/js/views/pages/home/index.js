@@ -6,12 +6,12 @@ import highlightThree from '../../../../assets/img/pages/home/highlight-3.jpg';
 import highlightFour from '../../../../assets/img/pages/home/highlight-4.jpg';
 import aboutUsUpperDivider from '../../../../assets/img/pages/home/about-us-shape.png';
 import aboutUsHero from '../../../../assets/img/pages/home/about-us-hero.png';
-import icOurProgramTactical from '../../../../assets/img/pages/home/our-program-tactical-icon.png';
-import icOurProgramProduction from '../../../../assets/img/pages/home/our-program-production-icon.png';
+// import icOurProgramTactical from '../../../../assets/img/pages/home/our-program-tactical-icon.png';
+// import icOurProgramProduction from '../../../../assets/img/pages/home/our-program-production-icon.png';
 import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-hero.png";
 // import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
 import "./Home.scss";
-import { ANCHOR, ROUTES } from "../../../constants";
+import { ROUTES } from "../../../constants";
 const Template = lazy(()=>import('../../layout/template'));
 const ImageCarousel = lazy(()=>import('../../component/imageCarousel/ImageCarousel'));
 
@@ -34,39 +34,39 @@ const SLIDER_IMAGES = [
     },
 ]
 
-const OurPrograms = [
-    {
-        title: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
-        desc: "Program ini mempromosikan film-film Indonesia terpilih yang akan tayang di media layanan multiplatform pada periode Oktober hingga November 2021.",
-        image: icOurProgramTactical,
-        url: `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`
-    },
-    {
-        title: "Bantuan Pemerintah Produksi Film Indonesia",
-        desc: "Bantuan bagi rumah produksi perfilman untuk memproduksi film-film baru yang dapat ditayangkan melalui media penayangan multiplatform legal",
-        image: icOurProgramProduction,
-        url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
-    }
-]
+// const OurPrograms = [
+//     {
+//         title: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
+//         desc: "Program ini mempromosikan film-film Indonesia terpilih yang akan tayang di media layanan multiplatform pada periode Oktober hingga November 2021.",
+//         image: icOurProgramTactical,
+//         url: `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`
+//     },
+//     {
+//         title: "Bantuan Pemerintah Produksi Film Indonesia",
+//         desc: "Bantuan bagi rumah produksi perfilman untuk memproduksi film-film baru yang dapat ditayangkan melalui media penayangan multiplatform legal",
+//         image: icOurProgramProduction,
+//         url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
+//     }
+// ]
 
 const Home = (props) => {
 
-    const OurProgramItem = ({item}) => {
-        return <div className="our-program-item-wrapper">
-            <div className="our-program-item-content">
-                <LazyLoad>
-                    <img src={item.image} alt="" />
-                </LazyLoad>
-                <div className="our-program-item-text">
-                    <p className="our-program-title">{item.title}</p>
-                    <p className="our-program-desc">{item.desc}</p>
-                </div>
-            </div>
-            <button>
-                <a href={item.url}>Selengkapnya</a>
-            </button>
-        </div>
-    }
+    // const OurProgramItem = ({item}) => {
+    //     return <div className="our-program-item-wrapper">
+    //         <div className="our-program-item-content">
+    //             <LazyLoad>
+    //                 <img src={item.image} alt="" />
+    //             </LazyLoad>
+    //             <div className="our-program-item-text">
+    //                 <p className="our-program-title">{item.title}</p>
+    //                 <p className="our-program-desc">{item.desc}</p>
+    //             </div>
+    //         </div>
+    //         <button>
+    //             <a href={item.url}>Selengkapnya</a>
+    //         </button>
+    //     </div>
+    // }
 
     return(<Template>
         <div className="home-image-carousel-wrapper">
