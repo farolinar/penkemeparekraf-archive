@@ -19,12 +19,12 @@ const ContactUs = () => {
                         </LazyLoad>
                         <a href="mailto:penfilm@kemenparekraf.go.id" target="_blank" rel="noreferrer">penfilm@kemenparekraf.go.id</a>
                     </div>
-                    <div className="footer-contact">
+                    {/* <div className="footer-contact">
                         <LazyLoad>
                             <img src={icWa} alt="wa" />
                         </LazyLoad>
                         <a href="https://wa.me/6288888888888" target="_blank" rel="noreferrer">0888 8888 8888</a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
