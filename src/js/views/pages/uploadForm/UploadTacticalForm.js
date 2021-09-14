@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Template from '../../layout/template';
 import "./UploadForm.scss";
 import $ from 'jquery';
+import { postData } from '../../../fetch';
 
 const UploadTacticalForm = () => {
     const [name, setName] = useState()
@@ -33,10 +34,9 @@ const UploadTacticalForm = () => {
 
     const [link, setLink] = useState()
 
-    const dispatch = useDispatch();
-
     const validations = () => {
         // if(idNumber && idNumber.length !== 16) return false;
+        // return true;
         return name
             && idNumber
             && companyName
@@ -58,12 +58,82 @@ const UploadTacticalForm = () => {
             && profilPengurusProposalFile.file
             && proposalPermohonanFile.file
             && portofolioProdukFilmFile.file
-            && pengajuanRABProduksiFile.file;
+            && pengajuanRABProduksiFile.file
+            && link;
     }
+
+    
 
     const submitData = () => {
         if(validations()) {
+            let data = {
+                fullname: name,
+                nik: idNumber,
+                production_house: companyName,
+                email: email,
+                whatsapp: waNumber,
+                ktp_dir_fname: idNumberFile.name,
+                ktp_dir_file: idNumberFile.file,
+                rekening_fname: cardNumberFile.name,
+                rekening_file: cardNumberFile.file,
+                npwp_fname: npwpFile.name,
+                npwp_file: npwpFile.file,
+                spt_fname: taxFile.name,
+                spt_file: taxFile.file,
+                ap_fname: aktaPendirianFile.name,
+                ap_file: aktaPendirianFile.file,
+                nib_fname: nomorIndukFile.name,
+                nib_file: nomorIndukFile.file,
+                tdup_fname: tandaDaftarUsahaFile.name,
+                tdup_file: tandaDaftarUsahaFile.file,
+                tppf_fname: tandaPemberitahuanPembuatanFilmFile.name,
+                tppf_file: tandaPemberitahuanPembuatanFilmFile.file,
+                l1_sp_production_house_fname: pernyataanRumahProduksiFile.name,
+                l1_sp_production_house_file: pernyataanRumahProduksiFile.file,
+                l2_sp_tgg_jwb_fname: pernyataanTangguungJawabFile.name,
+                l2_sp_tgg_jwb_file: pernyataanTangguungJawabFile.file,
+                l3_sp_bantuan_fname: permohonanBantuanPemerintahFile.name,
+                l3_sp_bantuan_file: permohonanBantuanPemerintahFile.file,
+                l4_sp_sensor_fname: pernyataanFilmJadwalRilisFile.name,
+                l4_sp_sensor_file: pernyataanFilmJadwalRilisFile.file,
+                l5_profile_fname: profilPengurusProposalFile.name,
+                l5_profile_file: profilPengurusProposalFile.file,
+                l6_proposal_fname: proposalPermohonanFile.name,
+                l6_proposal_file: proposalPermohonanFile.file,
+                portfolio_fname: portofolioProdukFilmFile.name,
+                portfolio_file: portofolioProdukFilmFile.file,
+                l7_anggaran_biaya_fname: pengajuanRABProduksiFile.name,
+                l7_anggaran_biaya_file: pengajuanRABProduksiFile.file,
+                skdu_fname: keteranganDomisiliUsahaFile.name,
+                skdu_file: keteranganDomisiliUsahaFile.file,
+                movie_link: link
+            }
+            let formData = new FormData();
+            for (let field in data) {
+                formData.append(field, data[field]);
+            }
 
+            fetch('http://34.126.152.199:9000/register',  {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                })
+            .then(response => response.json())
+            .then(result => {
+                console.log('Success:', result);
+                // return result;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert(error);
+                // return error;
+            });
+                // .then(data => {
+                //     console.log(data);
+                //     if(data && data.field_code) {
+                //         alert(data.message)
+                //     }
+                // });
         } else {
             alert("Harap isi semua data.");
         }
@@ -433,7 +503,7 @@ const UploadTacticalForm = () => {
             </div>
 
             <div
-                onClick={() => {}}
+                onClick={() => submitData()}
                 className="submit-button"
             >
                 Submit
