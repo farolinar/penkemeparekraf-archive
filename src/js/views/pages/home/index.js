@@ -108,7 +108,7 @@ const Home = (props) => {
                 <div></div>
                 <div className="home-about-us-text">
                     <h3>Tentang Kami</h3>
-                    <p>Program Pemulihan Ekonomi Nasional (Program PEN) adalah rangkaian kegiatan untuk pemulihan perekonomian nasional yang merupakan bagian dari kebijakan keuangan negara yang dilaksanakan oleh Pemerintah untuk mempercepat penanganan pandemi Coronavirus Disease 2019 (COVID-19).</p>
+                    <p>Program Pemulihan Ekonomi Nasional yang selanjutnya disebut Program PEN adalah rangkaian kegiatan untuk pemulihan perekonomian nasional yang merupakan bagian dari kebijakan keuangan negara yang dilaksanakan oleh Pemerintah untuk mempercepat penanganan pandemi Coronavirus Disease 2019 (COVID-19) dan/atau menghadapi ancaman yang membahayakan perekonomian nasional dan/atau stabilitas sistem keuangan serta penyelamatan ekonomi nasional (PP No. 43/2020).</p>
                     <button onClick={() => window.location.href = ROUTES.aboutUs} className="green-button">
                         Selengkapnya
                     </button>
@@ -139,7 +139,7 @@ const Home = (props) => {
                     <div className="our-program-content-text">
                         <h2>Program Kami</h2>
                         <h3>Bantuan Pemerintah Promosi Taktikal Film Indonesia</h3>
-                        <p>Bertujuan untuk meningkatkan awareness masyarakat untuk tetap mendukung kemajuan dan pengembangan industri perfilman Indonesia melalui kegiatan promosi Film Indonesia Siap Tayang yang telah memiliki jadwal tayang di media penayangan multiplatform legal pada jangka waktu Oktober - November 2021.</p>
+                        <p>Bertujuan untuk meningkatkan awareness masyarakat untuk tetap mendukung kemajuan dan pengembangan industri perfilman Indonesia melalui kegiatan promosi Film Indonesia yang akan tayang di media penayangan multiplatform legal, untuk dipromosikan pada jangka waktu Oktober-November 2021.</p>
                         <button>
                             <a href={ROUTES.program}>Selengkapnya</a>
                         </button>
@@ -151,7 +151,7 @@ const Home = (props) => {
         <div className="home-register-wrapper">
             <div className="home-register-content">
                 <h2>Pendaftaran</h2>
-                <p>Undangan bagi Rumah Produksi Film Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Bantuan Pemerintah Promosi Taktikal Film Indonesia dan Skema Bantuan Pemerintah Produksi Film Indonesia</p>
+                <p>Undangan bagi Rumah Produksi Film Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Bantuan Pemerintah Promosi Film Indonesia</p>
                 <br />
                 <br />
                 <br />

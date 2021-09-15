@@ -2,6 +2,7 @@ import React from 'react';
 import { ROUTES } from '../../../constants';
 import Template from '../../layout/template';
 import "./UploadForm.scss";
+import UploadTacticalForm from './UploadTacticalForm';
 
 const UploadForm = () => {
     return <Template>
@@ -19,6 +20,7 @@ const UploadForm = () => {
                 </div>
             </div>
         </div>
+        <UploadTacticalForm />
     </Template>
 }
 

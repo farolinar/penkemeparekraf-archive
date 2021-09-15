@@ -9,7 +9,7 @@ const OpenCall = () => {
             <div className="open-call-filter"></div>
             <div className="open-call-content">
                 <h2>Pendaftaran</h2>
-                <p>Undangan bagi Rumah Produksi Film Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Bantuan Pemerintah Promosi Taktikal Film Indonesia dan Skema Bantuan Pemerintah Produksi Film Indonesia</p>
+                <p>Undangan bagi Rumah Produksi Film Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Bantuan Pemerintah Promosi Film Indonesia</p>
                 <br />
                 <br />
                 <br />

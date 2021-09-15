@@ -26,7 +26,7 @@ const RegisterTerms = () => {
     const RegisterTerms = ({item}) => {
         const [showOne, setShowOne] = useState(false);
         const [showTwo, setShowTwo] = useState(false);
-        const [showThree, setShowThree] = useState(true);
+        const [showThree, setShowThree] = useState(false);
         return <div className="register-terms-wrapper">
             <div className="register-terms-dropdown" style={{ backgroundColor: item.color }}>
                 <p>{item.name}</p>

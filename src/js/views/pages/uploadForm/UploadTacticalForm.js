@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Template from '../../layout/template';
+import React, { Fragment, useEffect, useState } from 'react';
+// import Template from '../../layout/template';
 import "./UploadForm.scss";
 import $ from 'jquery';
 import Loading from '../../component/loading';
@@ -202,10 +202,10 @@ const UploadTacticalForm = () => {
         }
     }
 
-    return <Template>
+    return <Fragment>
         <Loading visibility={isLoading} />
         <div className="upload-form-wrapper upload-tactical-form-wrapper">
-            <h2>Pendaftaran Program Bantuan Pemerintah Promosi Taktikal Film Indonesia</h2>
+            <h2>Pendaftaran Program Bantuan Pemerintah Promosi Film Indonesia</h2>
 
             <ul className="upload-form-note">
                 <li>
@@ -524,7 +524,7 @@ const UploadTacticalForm = () => {
                 Submit
             </div>
         </div>
-    </Template>
+    </Fragment>
 }
 
 export default UploadTacticalForm;
