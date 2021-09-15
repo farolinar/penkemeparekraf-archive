@@ -29,7 +29,7 @@ export const MAIN_TERMS = {
             text: "Wajib melengkapi persyaratan administrasi dokumen sesuai format yang telah ditentukan",
         },
         {
-            text: "Rumah Produksi yang terpilih sebagai Penerima Bantuan Pemerintah Bagi Promosi Taktikal Film Indonesia tidak diperkenankan menerima bantuan K/L lainnya",
+            text: "Rumah Produksi yang terpilih sebagai Penerima Bantuan Pemerintah Bagi Promosi Film Indonesia tidak diperkenankan menerima bantuan K/L lainnya",
         },
         {
             text: "Rumah Produksi yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam pemerintahan",
@@ -68,7 +68,7 @@ export const MAIN_TERMS = {
             text: "Rumah Produksi wajib menandatangani Surat Pernyataan Tanggung Jawab Mutlak (LAMPIRAN 2 Surat Pernyataan Tanggung Jawab Mutlak);",
         },
         {
-            text: "Rumah Produksi mengisi surat permohonan Bantuan Pemerintah Bagi Promosi Taktikal Film Indonesia yang ditujukan kepada Deputi Bidang Ekonomi Digital dan Produk Kreatif c.q. Direktorat Musik, Film dan Animasi (LAMPIRAN 3 Format Surat Permohonan Bantuan Pemerintah bagi Promosi Taktikal Film Indonesia);",
+            text: "Rumah Produksi mengisi surat permohonan Bantuan Pemerintah Bagi Promosi Film Indonesia yang ditujukan kepada Deputi Bidang Ekonomi Digital dan Produk Kreatif c.q. Direktorat Musik, Film dan Animasi (LAMPIRAN 3 Format Surat Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia);",
         },
         {
             text: "Rumah Produksi wajib melampirkan Surat Pernyataan Kebenaran Data dan memberikan dokumen yang benar dan bersedia mempertanggungjawabkannya secara hukum baik secara perdata maupun pidana jika data yang diberikan tidak benar (LAMPIRAN 1 Surat Pernyataan Rumah Produksi);",
@@ -83,7 +83,7 @@ export const MAIN_TERMS = {
             text: "Rumah Produksi tidak sedang berada dalam kondisi perkara pengadilan baik secara perdata maupun pidana (LAMPIRAN 1 Surat Pernyataan Rumah Produksi);",
         },
         {
-            text: "Rumah Produksi yang terpilih sebagai Penerima Bantuan Pemerintah Bagi Produksi Film Indonesia tidak diperkenankan menerima Dana Bantuan Pemerintah Promosi Taktikal Film Indonesia (LAMPIRAN 8 Surat Pernyataan Tidak Menerima Bantuan Pemerintah Promosi Taktikal Film Indonesia);",
+            text: "Rumah Produksi yang terpilih sebagai Penerima Bantuan Pemerintah Bagi Produksi Film Indonesia tidak diperkenankan menerima Dana Bantuan Pemerintah Promosi Film Indonesia (LAMPIRAN 8 Surat Pernyataan Tidak Menerima Bantuan Pemerintah Promosi Film Indonesia);",
         },
         {
             text: "Bersedia mengikuti proses seleksi dan wajib menandatangani surat pernyataan menerima hasil seleksi dan tidak akan menggugat hasil keputusan Tim Kurator dalam bentuk apapun (LAMPIRAN 1 Surat Pernyataan Rumah Produksi);",
@@ -190,7 +190,7 @@ export const DOCUMENT_TERMS = {
             text: "Dokumen Rekening atas nama Badan Usaha Rumah Produksi"
         },
         {
-            text: "Surat Pernyataan Rumah Produksi (format pada Unduh Dokumen Promosi Taktikal Lampiran 1), berisi tentang :",
+            text: "Surat Pernyataan Rumah Produksi (format pada Unduh Dokumen Promosi Lampiran 1), berisi tentang :",
             children: [
                 "a.	Data dokumen dan lampiran pendukung yang diberikan adalah benar, dokumen asli dan dapat dipertanggungjawabkan secara hukum (tidak dalam penguasaan pihak lain dan/atau sengketa hak kekayaan intelektual);",
                 "b.	Tidak dalam keadaan Pailit dan/atau dalam keadaan penundaan kewajiban pembayaran hutang (“PKPU”);",
@@ -204,7 +204,7 @@ export const DOCUMENT_TERMS = {
             ]
         },
         {
-            text: "Surat Pernyataan Tanggung Jawab Mutlak (format pada Unduh Dokumen Promosi Taktikal Lampiran 2),  berisi tentang :",
+            text: "Surat Pernyataan Tanggung Jawab Mutlak (format pada Unduh Dokumen Promosi Lampiran 2),  berisi tentang :",
             children: [
                 "a.	Wajib melaporkan apabila mendapatkan pembiayaan dari investor atau perusahaan lain dalam pelaksanaan promosi film yang diajukan dan pembiayaan tersebut bukan untuk membiayai item yang sama;",
                 "b.	Wajib menyerahkan laporan pelaksanaan kegiatan dilengkapi dengan dokumentasi dan menyerahkan laporan penggunaan anggaran dilengkapi dengan kuitansi/invoice/nota/bukti pembayaran sah lainnya;",
@@ -216,16 +216,16 @@ export const DOCUMENT_TERMS = {
             ]
         },
         {
-            text: "Surat Permohonan Bantuan Pemerintah Bagi Promosi Taktikal Film Indonesia (format pada Unduh Dokumen Promosi Taktikal Lampiran 3)"
+            text: "Surat Permohonan Bantuan Pemerintah Bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 3)"
         },
         {
-            text: "Surat Pernyataan Film Lulus Sensor dan Telah Memiliki Jadwal Tayang Rilis di Media Penayangan  (format pada Unduh Dokumen Promosi Taktikal Lampiran 4)"
+            text: "Surat Pernyataan Film Lulus Sensor dan Telah Memiliki Jadwal Tayang Rilis di Media Penayangan  (format pada Unduh Dokumen Promosi Lampiran 4)"
         },
         {
-            text: "Ringkas Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Taktikal Film Indonesia (format pada Unduh Dokumen Promosi Taktikal Lampiran 5)"
+            text: "Ringkas Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 5)"
         },
         {
-            text: "Proposal Bantuan Pemerintah bagi Promosi Taktikal Film Indonesia untuk Film Siap Tayang 2021 (format pada Unduh Dokumen Promosi Taktikal Lampiran 6) berisi tentang :",
+            text: "Proposal Bantuan Pemerintah bagi Promosi Film Indonesia untuk Film Siap Tayang 2021 (format pada Unduh Dokumen Promosi Lampiran 6) berisi tentang :",
             children: [
                 "a.	HALAMAN MUKA: Judul Film untuk Tayang/Film Siap Tayang ",
                 "b.	INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Daftar Nama Pemain Utama dan Pendukung, dan platform atau media penayangan filmnya. Status Film: (wajib) picture lock;",
@@ -241,7 +241,7 @@ export const DOCUMENT_TERMS = {
             ]
         },
         {
-            text: "Pengajuan Rincian Anggaran Biaya Produksi Film (format pada Unduh Dokumen Promosi Taktikal Lampiran 7)"
+            text: "Pengajuan Rincian Anggaran Biaya Produksi Film (format pada Unduh Dokumen Promosi Lampiran 7)"
         },
         {
             text: "Portofolio Produk film yang telah dihasilkan"

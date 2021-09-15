@@ -24,7 +24,7 @@ const MENU = [
             //     url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
             // },
             {
-                name: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
+                name: "Bantuan Pemerintah Promosi Film Indonesia",
                 url: `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`
             },
         ]

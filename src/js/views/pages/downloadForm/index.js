@@ -13,7 +13,7 @@ const TACTICAL_FORMS = [
         url: "https://drive.google.com/uc?export=download&id=1Xjc1yexliPU9Lp6LMidQr0xr5r6dkZNU"
     },
     {
-        name: "Unduh Lampiran 3 - Format Surat Permohonan Bantuan Pemerintah Bagi Promosi Taktikal Film Indonesia",
+        name: "Unduh Lampiran 3 - Format Surat Permohonan Bantuan Pemerintah Bagi Promosi Film Indonesia",
         url: "https://drive.google.com/uc?export=download&id=13k1Oy_gX-ryd-sa0w1Sg926zHUhQSxuo"
     },
     {
@@ -21,15 +21,15 @@ const TACTICAL_FORMS = [
         url: "https://drive.google.com/uc?export=download&id=1cVaWjLh_p2_rJgWqimVk8coujoEJBc29"
     },
     {
-        name: "Unduh Lampiran 5 - Format Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Taktikal Film Indonesia",
+        name: "Unduh Lampiran 5 - Format Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia",
         url: "https://drive.google.com/uc?export=download&id=14GPEQHn8USKpti_--bhlm_iqPmACb-O1"
     },
     {
-        name: "Unduh Lampiran 6 - Format Sistematika Proposal Bantuan Pemerintah bagi Promosi Taktikal Film Indonesia",
+        name: "Unduh Lampiran 6 - Format Sistematika Proposal Bantuan Pemerintah bagi Promosi Film Indonesia",
         url: "https://drive.google.com/uc?export=download&id=1HljsRrfrRb9sOIRoSdObjhAcYtIXT6Q2"
     },
     {
-        name: "Unduh Lampiran 7 - Format Rincian Anggaran Biaya (RAB) Bantuan Pemerintah bagi Promosi Taktikal Film Indonesia",
+        name: "Unduh Lampiran 7 - Format Rincian Anggaran Biaya (RAB) Bantuan Pemerintah bagi Promosi Film Indonesia",
         url: "https://drive.google.com/uc?export=download&id=1XMsyYpIeUMysSsTcbBaMttROkO9mB9jd"
     },
 ]
@@ -74,7 +74,7 @@ const DownloadForm = () => {
                 <h2>Unduh Formulir</h2>
                 <div className="our-programs">
                     <div className="our-program">
-                        <a href={`#${ANCHOR.downloadTacticalForm}`}>Bantuan Pemerintah<br />Promosi Taktikal Film Indonesia</a>
+                        <a href={`#${ANCHOR.downloadTacticalForm}`}>Bantuan Pemerintah<br />Promosi Film Indonesia</a>
                     </div>
                     {/* <div className="our-program">
                         <a href={`#${ANCHOR.downloadProductionForm}`}>Bantuan Pemerintah<br />Produksi Film Indonesia</a>
@@ -84,7 +84,7 @@ const DownloadForm = () => {
         </div>
 
         <div className="download-form-tactical-wrapper download-form-wrapper" id={ANCHOR.downloadTacticalForm}>
-            <h2>Unduh Format Lampiran Bantuan Pemerintah Promosi Taktikal Film Indonesia</h2>
+            <h2>Unduh Format Lampiran Bantuan Pemerintah Promosi Film Indonesia</h2>
             <h3>FORMULIR PENDAFTARAN</h3>
             <p>1. Seluruh dokumen asli legalitas dan identitas badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)
             <br />

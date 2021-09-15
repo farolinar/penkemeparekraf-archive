@@ -12,7 +12,7 @@ const UploadForm = () => {
                 <h2>Unggah Formulir</h2>
                 <div className="our-programs">
                     <div className="our-program">
-                        <a href={ROUTES.uploadTacticalForm}>Bantuan Pemerintah<br />Promosi Taktikal Film Indonesia</a>
+                        <a>Bantuan Pemerintah<br />Promosi Film Indonesia</a>
                     </div>
                     {/* <div className="our-program">
                         <a href={ROUTES.uploadProductionForm}>Bantuan Pemerintah<br />Produksi Film Indonesia</a>

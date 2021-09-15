@@ -16,7 +16,7 @@ export const ROUTES = {
 }
 
 export const ANCHOR = {
-    programPromosiTaktikalFilm: "program-promosi-taktikal-film",
+    programPromosiTaktikalFilm: "program-promosi-film",
     programProduksiFilm: "program-produksi-film",
     downloadTacticalForm: "download-form-tactical-wrapper",
     downloadProductionForm: "download-form-production-wrapper",

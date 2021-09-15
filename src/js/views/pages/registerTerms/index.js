@@ -7,7 +7,7 @@ import icArrowWhite from "../../../../assets/img/icons/ic-arrow-white.png";
 
 const REGISTER_TERMS = [
     {
-        name: "Bantuan Pemerintah Promosi Taktikal Film Indonesia",
+        name: "Bantuan Pemerintah Promosi Film Indonesia",
         color: "var(--main-light-green)",
         mainTerms: MAIN_TERMS.tactical,
         lowerTerms: LOWER_TERMS.tactical,
