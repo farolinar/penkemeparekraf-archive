@@ -219,7 +219,7 @@ export const DOCUMENT_TERMS = {
             text: "Surat Permohonan Bantuan Pemerintah Bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 3)"
         },
         {
-            text: "Surat Pernyataan Film Lulus Sensor dan Telah Memiliki Jadwal Tayang Rilis di Media Penayangan  (format pada Unduh Dokumen Promosi Lampiran 4)"
+            text: "Surat Pernyataan Film yang Diajukan Wajib Tayang di Media Penayangan Multiplatform Legal (format pada Unduh Dokumen Promosi Lampiran 4)"
         },
         {
             text: "Ringkas Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 5)"
@@ -227,8 +227,8 @@ export const DOCUMENT_TERMS = {
         {
             text: "Proposal Bantuan Pemerintah bagi Promosi Film Indonesia untuk Film Siap Tayang 2021 (format pada Unduh Dokumen Promosi Lampiran 6) berisi tentang :",
             children: [
-                "a.	HALAMAN MUKA: Judul Film untuk Tayang/Film Siap Tayang ",
-                "b.	INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Daftar Nama Pemain Utama dan Pendukung, dan platform atau media penayangan filmnya. Status Film: (wajib) picture lock;",
+                "a.	HALAMAN MUKA: Judul Film",
+                "b.	INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Daftar Nama Pemain Utama dan Pendukung, dan rencana platform atau media penayangan film;",
                 "c.	Logline (3 kalimat) dan Sinopsis (200 – 400 kata);",
                 "d.	Ulasan tentang Siapa Target Penonton (max 400 kata);",
                 "e.	Director’s Statement (200-400 kata);",
@@ -247,16 +247,19 @@ export const DOCUMENT_TERMS = {
             text: "Portofolio Produk film yang telah dihasilkan"
         },
         {
-            text: "Link dokumen Film yang diajukan format DCP *kriteria minimal picture lock"
+            text: "Link dokumen Film yang diajukan"
         },
         {
             text: "Dokumen legalitas badan usaha rumah produksi pada poin 1 - 9 wajib diunggah melalui website pendaftaran pada kolom yang telah disediakan"
         },
         {
-            text: "Dokumen Asli Tandatangan pada poin 10 - 16 selain wajib diunggah melalui website pendaftaran pada kolom yang telah disediakan, juga wajib untuk dikirimkan selama jangka waktu pendaftaran dan seleksi administrasi ke alamat berikut:",
-            children: [
-                "Tim PEN Film, Direktorat Musik, Film dan Animasi – Deputi Bidang Ekonomi Digital dan Produk KreatifKementerian Pariwisata dan Ekonomi Kreatif, Gedung Kementerian BUMN Lt.17, Jalan Medan Merdeka Selatan No.13, Jakarta Pusat 10110",
-            ]
+            text: "Seluruh dokumen asli legalitas dan identitas badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)",
+            // children: [
+            //     "Tim PEN Film, Direktorat Musik, Film dan Animasi – Deputi Bidang Ekonomi Digital dan Produk KreatifKementerian Pariwisata dan Ekonomi Kreatif, Gedung Kementerian BUMN Lt.17, Jalan Medan Merdeka Selatan No.13, Jakarta Pusat 10110",
+            // ]
+        },
+        {
+            text: "Penjelasan poin 20 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan"
         },
         {
             text: "Seluruh dokumen pendukung, dokumen legalitas, dan dokumen permohonan yang dikirimkan disusun dengan urutan yang benar, lengkap dengan halaman muka yang merujuk dengan jelas nama Rumah Produksi"
