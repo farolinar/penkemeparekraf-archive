@@ -17,7 +17,7 @@ const TACTICAL_FORMS = [
         url: "https://drive.google.com/uc?export=download&id=13k1Oy_gX-ryd-sa0w1Sg926zHUhQSxuo"
     },
     {
-        name: "Unduh Lampiran 4 - Format Surat Pernyataan Film yang Diajukan Telah Memiliki Jadwal Tayang Rilis dan Media Penayangan",
+        name: "Unduh Lampiran 4 - Format Surat Pernyataan Film yang Diajukan Wajib Tayang di Media Penayangan Multiplatform Legal",
         url: "https://drive.google.com/uc?export=download&id=1cVaWjLh_p2_rJgWqimVk8coujoEJBc29"
     },
     {
