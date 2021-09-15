@@ -451,7 +451,7 @@ const UploadTacticalForm = () => {
 
                 <div className="upload-form-content-wrapper">
                     <UploadFileField
-                        title="UNGGAH SURAT PERNYATAAN FILM LULUS SENSOR DAN TELAH MEMILIKI JADWAL TAYANG RILIS DI MEDIA PENAYANGAN MULTIPLATFORM LEGAL (LAMPIRAN 4) *"
+                        title="UNGGAH SURAT PERNYATAAN FILM YANG DIAJUKAN WAJIB TAYANG DI MEDIA PENAYANGAN MULTIPLATFORM LEGAL (LAMPIRAN 4) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-pernyataan-film-jadwal-rilis-file"
                         type="pdf"
