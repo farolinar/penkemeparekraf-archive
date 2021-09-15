@@ -10,7 +10,7 @@ const UploadTacticalForm = () => {
     const [idNumber, setIDNumber] = useState()
     const [companyName, setCompanyName] = useState()
     const [email, setEmail] = useState()
-    const [waNumber, setWANumber] = useState()
+    const [waNumber, setWANumber] = useState("")
 
     const [idNumberFile, setIDNumberFile] = useState({name: "", file: ""})
     const [cardNumberFile, setCardNumberFile] = useState({name: "", file: ""})
@@ -117,48 +117,27 @@ const UploadTacticalForm = () => {
                 formData.append(field, data[field]);
             }
 
-            // $.ajax({
-            //     url: 'http://34.126.152.199:9000/register',
-            //     data: formData,
-            //     processData: false,
-            //     contentType: false,
-            //     type: 'POST',
-            //     crossDomain: true,
-            //     headers: {
-            //         // "accept": "application/json",
-            //         "Access-Control-Allow-Origin":"*"
-            //     },
-            //     success: function(data){
-            //       alert(data);
-            //     },
-            //     error: function (xhr, status) {
-            //         alert("error");
-            //     }
-            //   });
-
             fetch('http://34.126.152.199:9000/register',  {
                     method: 'POST',
-                    mode: 'no-cors',
+                    // mode: 'no-cors',
                     body: formData
                 })
-            .then(response => response.json())
+            .then(response =>  response.json())
             .then(result => {
-                console.log('Success:', result);
+                // console.log('Success:', result);
                 setIsLoading(false);
-                // return result;
+                if(result.field_code) {
+                    alert(result.message);
+                } else {
+                    alert('Sukses mendaftar!');
+                    window.location.href = "/"
+                }
             })
             .catch(error => {
-                console.error('Error:', error);
+                // console.error('Error:', error);
                 alert(error);
                 setIsLoading(false);
-                // return error;
             });
-                // .then(data => {
-                //     console.log(data);
-                //     if(data && data.field_code) {
-                //         alert(data.message)
-                //     }
-                // });
         } else {
             alert("Harap isi semua data.");
         }
@@ -277,6 +256,7 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-field">
                         <label htmlFor="whatsapp-number">NOMOR WHATSAPP *</label>
                         <input 
+                            type="text"
                             name="whatsapp-number"
                             value={waNumber}
                             onChange={(e) => {
@@ -286,7 +266,7 @@ const UploadTacticalForm = () => {
                                     : waNumber;
                                 setWANumber(number);
                             }}
-                        ></input>
+                        />
                     </div>
                 </div>
             </div>
