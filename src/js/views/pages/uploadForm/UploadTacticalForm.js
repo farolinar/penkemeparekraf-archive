@@ -506,7 +506,7 @@ const UploadTacticalForm = () => {
 
                 <div className="upload-form-content-wrapper">
                     <div className="upload-form-field">
-                        <label htmlFor="link">UNGGAH LINK DOKUMEN FILM YANG DIAJUKAN FORMAT DCP (KRITERIA MINIMAL PICTURE LOCK)*</label>
+                        <label htmlFor="link">UNGGAH LINK DOKUMEN FILM YANG DIAJUKAN *</label>
                         <p>(Link Google Drive, Youtube,dsb)</p>
                         <input 
                             name="link"
