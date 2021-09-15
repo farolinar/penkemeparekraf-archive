@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Template from '../../layout/template';
 import "./UploadForm.scss";
 import $ from 'jquery';
-import { postData } from '../../../fetch';
+import Loading from '../../component/loading';
+// import { postData } from '../../../fetch';
 
 const UploadTacticalForm = () => {
     const [name, setName] = useState()
@@ -33,6 +34,8 @@ const UploadTacticalForm = () => {
     const [pengajuanRABProduksiFile, setPengajuanRABProduksiFile] = useState({name: "", file: ""})
 
     const [link, setLink] = useState()
+
+    const [isLoading, setIsLoading] = useState(false)
 
     const validations = () => {
         // if(idNumber && idNumber.length !== 16) return false;
@@ -66,6 +69,7 @@ const UploadTacticalForm = () => {
 
     const submitData = () => {
         if(validations()) {
+            setIsLoading(true)
             let data = {
                 fullname: name,
                 nik: idNumber,
@@ -113,6 +117,25 @@ const UploadTacticalForm = () => {
                 formData.append(field, data[field]);
             }
 
+            // $.ajax({
+            //     url: 'http://34.126.152.199:9000/register',
+            //     data: formData,
+            //     processData: false,
+            //     contentType: false,
+            //     type: 'POST',
+            //     crossDomain: true,
+            //     headers: {
+            //         // "accept": "application/json",
+            //         "Access-Control-Allow-Origin":"*"
+            //     },
+            //     success: function(data){
+            //       alert(data);
+            //     },
+            //     error: function (xhr, status) {
+            //         alert("error");
+            //     }
+            //   });
+
             fetch('http://34.126.152.199:9000/register',  {
                     method: 'POST',
                     mode: 'no-cors',
@@ -121,11 +144,13 @@ const UploadTacticalForm = () => {
             .then(response => response.json())
             .then(result => {
                 console.log('Success:', result);
+                setIsLoading(false);
                 // return result;
             })
             .catch(error => {
                 console.error('Error:', error);
                 alert(error);
+                setIsLoading(false);
                 // return error;
             });
                 // .then(data => {
@@ -199,6 +224,7 @@ const UploadTacticalForm = () => {
     }
 
     return <Template>
+        <Loading visibility={isLoading} />
         <div className="upload-form-wrapper upload-tactical-form-wrapper">
             <h2>Pendaftaran Program Bantuan Pemerintah Promosi Taktikal Film Indonesia</h2>
 
