@@ -449,18 +449,6 @@ const UploadTacticalForm = () => {
                     />
                 </div>
 
-                //
-                // <div className="upload-form-content-wrapper">
-                //     <UploadFileField
-                //         title="UNGGAH SURAT PERNYATAAN FILM YANG DIAJUKAN WAJIB TAYANG DI MEDIA PENAYANGAN MULTIPLATFORM LEGAL (LAMPIRAN 4) *"
-                //         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                //         id="upload-form-pernyataan-film-jadwal-rilis-file"
-                //         type="pdf"
-                //         fileName={pernyataanFilmJadwalRilisFile.name}
-                //         setData = {(data) => setPernyataanFilmJadwalRilisFile({...data})}
-                //     />
-                // </div>
-
                 <div className="upload-form-content-wrapper">
                     <UploadFileField
                         title="UNGGAH RINGKAS PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 4) *"
