@@ -86,7 +86,7 @@ const UploadTacticalForm = () => {
     const [pernyataanRumahProduksiFile, setPernyataanRumahProduksiFile] = useState({name: "", file: ""})
     const [pernyataanTangguungJawabFile, setPernyataanTangguungJawabFile] = useState({name: "", file: ""})
     const [permohonanBantuanPemerintahFile, setPermohonanBantuanPemerintahFile] = useState({name: "", file: ""})
-    const [pernyataanFilmJadwalRilisFile, setPernyataanFilmJadwalRilisFile] = useState({name: "", file: ""})
+    // const [pernyataanFilmJadwalRilisFile, setPernyataanFilmJadwalRilisFile] = useState({name: "", file: ""})
     const [profilPengurusProposalFile, setprofilPengurusProposalFile] = useState({name: "", file: ""})
     const [proposalPermohonanFile, setProposalPermohonanFile] = useState({name: "", file: ""})
     const [portofolioProdukFilmFile, setPortofolioProdukFilmFile] = useState({name: "", file: ""})
@@ -116,7 +116,7 @@ const UploadTacticalForm = () => {
             && pernyataanRumahProduksiFile.file
             && pernyataanTangguungJawabFile.file
             && permohonanBantuanPemerintahFile.file
-            && pernyataanFilmJadwalRilisFile.file
+            // && pernyataanFilmJadwalRilisFile.file
             && profilPengurusProposalFile.file
             && proposalPermohonanFile.file
             && portofolioProdukFilmFile.file
@@ -157,8 +157,8 @@ const UploadTacticalForm = () => {
                 l2_sp_tgg_jwb_file: pernyataanTangguungJawabFile.file,
                 l3_sp_bantuan_fname: permohonanBantuanPemerintahFile.name,
                 l3_sp_bantuan_file: permohonanBantuanPemerintahFile.file,
-                l4_sp_sensor_fname: pernyataanFilmJadwalRilisFile.name,
-                l4_sp_sensor_file: pernyataanFilmJadwalRilisFile.file,
+                // l4_sp_sensor_fname: pernyataanFilmJadwalRilisFile.name,
+                // l4_sp_sensor_file: pernyataanFilmJadwalRilisFile.file,
                 l5_profile_fname: profilPengurusProposalFile.name,
                 l5_profile_file: profilPengurusProposalFile.file,
                 l6_proposal_fname: proposalPermohonanFile.name,
@@ -449,7 +449,7 @@ const UploadTacticalForm = () => {
                     />
                 </div>
 
-                <div className="upload-form-content-wrapper">
+                {/* <div className="upload-form-content-wrapper">
                     <UploadFileField
                         title="UNGGAH SURAT PERNYATAAN FILM YANG DIAJUKAN WAJIB TAYANG DI MEDIA PENAYANGAN MULTIPLATFORM LEGAL (LAMPIRAN 4) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
@@ -458,7 +458,7 @@ const UploadTacticalForm = () => {
                         fileName={pernyataanFilmJadwalRilisFile.name}
                         setData = {(data) => setPernyataanFilmJadwalRilisFile({...data})}
                     />
-                </div>
+                </div> */}
 
                 <div className="upload-form-content-wrapper">
                     <UploadFileField
