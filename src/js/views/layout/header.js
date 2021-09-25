@@ -24,8 +24,19 @@ const MENU = [
             //     url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
             // },
             {
-                name: "Bantuan Pemerintah Promosi Film Indonesia",
+                name: "Promosi",
+                class: "",
                 url: `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`
+            },
+            {
+                name: "Lisensi",
+                class: "not-clickable",
+                url: null
+            },
+            {
+                name: "Produksi",
+                class: "not-clickable",
+                url: null
             },
         ]
     },
@@ -98,7 +109,7 @@ const Header = () => {
                 item.children && openChildren && <div className="header-menu-item-children">
                     {
                         item.children.map((child, idx) => {
-                            return <a key={idx} href={child.url}>
+                            return <a key={idx} href={child.url} className={child.class}>
                                 {child.name}
                             </a>
                         })

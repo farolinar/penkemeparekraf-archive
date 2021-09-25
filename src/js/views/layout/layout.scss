@@ -44,16 +44,24 @@
             color: var(--main-blue);
             background-color: #fff;
             text-align: left;
-            width: 300%;
+            width: 100%;
             padding: 10px 15px;
-            // border: solid 1px var(--main-blue);
+            border: solid 1px var(--main-blue);
             z-index: 9;
 
             a {
                 padding: 10px 0;
-                cursor: pointer;
                 display: block;
                 color: var(--main-blue);
+                cursor: pointer;
+            }
+
+            .not-clickable {
+                cursor: default;
+            }
+
+            .not-clickable:hover {
+                color: var(--main-blue) !important;
             }
         }
     }

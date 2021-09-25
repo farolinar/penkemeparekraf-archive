@@ -176,7 +176,7 @@ const UploadTacticalForm = () => {
                 formData.append(field, data[field]);
             }
 
-            fetch('https://api-penfilm.kemenparekraf.go.id/register',  {
+            fetch('https://api-penfilm.kemenparekraf.go.id/v2/register',  {
                     method: 'POST',
                     // mode: 'no-cors',
                     body: formData

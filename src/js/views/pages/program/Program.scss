@@ -5,6 +5,9 @@
     padding: 8vw 8vw 100px;
     height: 50vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .our-program-filter {
         position: absolute;
@@ -20,6 +23,7 @@
         color: #fff;
         text-align: center;
         position: relative;
+        flex: 0 0 100%;
         h2 {
             font-size: 4.5vw;
             font-weight: 700;
@@ -32,13 +36,13 @@
             // position: relative;
 
             .our-program {
-                padding: 60px 30px 60px;
+                padding: 15px 20px;
                 border-radius: 10px;
                 background-color: rgba(56, 132, 194, 0.8);
                 cursor: pointer;
                 font-size: 2vw;
                 font-weight: 700;
-                width: 40%;
+                width: 20%;
                 transition: ease 0.5s;
 
                 a:hover {

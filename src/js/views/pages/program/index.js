@@ -25,7 +25,13 @@ const Program = () => {
                 <h2>Program Kami</h2>
                 <div className="our-programs">
                     <div className="our-program">
-                        <a href={`#${ANCHOR.programPromosiTaktikalFilm}`}>Bantuan Pemerintah<br />Promosi Film Indonesia</a>
+                        <a href="">Promosi</a>
+                    </div>
+                    <div className="our-program">
+                        <a href="">Lisensi</a>
+                    </div>
+                    <div className="our-program">
+                        <a href="">Produksi</a>
                     </div>
                     {/* <div className="our-program">
                         <a href={`#${ANCHOR.programProduksiFilm}`}>Bantuan Pemerintah<br />Produksi Film Indonesia</a>
