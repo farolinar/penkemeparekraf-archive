@@ -1,7 +1,10 @@
 export const MAIN_TERMS = {
     tactical: [
         {
-            text: "Rumah Produksi telah berbadan usaha dalam bentuk Perseroan Terbatas (PT) yang kepemilikan sahamnya dimiliki oleh Warga Negara Indonesia (WNI), atau badan hukum Indonesia, dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia, sudah berdiri sebelum tanggal 1 Januari 2019.",
+            text: "Rumah Produksi mengirimkan 1 (satu) proposal film untuk dipromosikan dengan jangka waktu promosi yang dilaksanakan pada bulan Oktober s/d November 2021",
+        },
+        {
+            text: "Rumah Produksi yang berhak mendaftar telah berbadan usaha dalam bentuk Perseroan Terbatas (PT) yang kepemilikan sahamnya dimiliki oleh Warga Negara Indonesia (WNI), atau badan hukum Indonesia, dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia, sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan akta pendirian badan usaha.",
         },
         {
             text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan, dimana tidak terjadi pergantian anggota nama pemegang saham, nama dewan komisaris/dewan direksi, dan nama eksekutif penanggung jawab perusahaan setelah tanggal 1 Januari 2021.",
@@ -12,8 +15,8 @@ export const MAIN_TERMS = {
         {
             text: "Penanggung Jawab Rumah Produksi cakap secara hukum (berusia minimal 21 tahun atau sudah menikah sebelum berusia 21 tahun) yang dibuktikan dengan Kartu Tanda Penduduk (KTP), merujuk pada Pasal 330 KUH Perdata, dan:",
             children: [
-                "a.	tidak sedang menjalani hukuman (dibuktikan dengan Surat Keterangan dari Pengadilan);",
-                "b.	berjiwa sehat/berakal sehat (dibuktikan dengan Surat Keterangan Sehat)."
+                "a.	tidak sedang menjalani hukuman",
+                "b.	berjiwa sehat/berakal sehat"
             ]
         },
         {
@@ -27,9 +30,6 @@ export const MAIN_TERMS = {
         },
         {
             text: "Wajib melengkapi persyaratan administrasi dokumen sesuai format yang telah ditentukan",
-        },
-        {
-            text: "Rumah Produksi yang terpilih sebagai Penerima Bantuan Pemerintah Bagi Promosi Film Indonesia tidak diperkenankan menerima bantuan K/L lainnya",
         },
         {
             text: "Rumah Produksi yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam pemerintahan",
@@ -103,22 +103,13 @@ export const MAIN_TERMS = {
 export const LOWER_TERMS = {
     tactical: [
         {
-            text: "Film yang diajukan sebanyak 1 (satu) buah Film Siap Tayang yang telah mendapatkan jadwal tayang di media layanan multiplatform legal selama periode program (bulan Oktober-November 2021)"
+            text: "Film Indonesia Siap Tayang (film sudah memiliki rencana penayangan yang menjadi tanggung jawab Rumah Produksi) di berbagai media penayangan multiplatform legal;"
         },
         {
-            text: "Film yang didaftarkan adalah film berkualitas yang siap tayang dan dapat membangkitkan keinginan penonton untuk menonton film Indonesia di berbagai media penayangan;"
+            text: "Film Panjang (film berdurasi cukup panjang untuk diputar sebagai film utama atau satu-satunya film pada sebuah acara pemutaran film dengan rata-rata durasi film antara 90-210 menit);"
         },
         {
-            text: "Film yang didaftarkan harus dalam tahap ‘picture lock’."
-        },
-        {
-            text: "Film sudah lulus dari lembaga sensor film Indonesia;"
-        },
-        {
-            text: "Film sudah siap tayang dan telah memiliki jadwal tayang yang dibuktikan dengan surat kontrak dengan media penayangan atau surat pernyataan bahwa film tersebut akan ditayangkan pada periode Oktober-November 2021;"
-        },
-        {
-            text: "Film dilampirkan dalam format DCP (Digital Cinema Package) dan juga high resolution MP4;"
+            text: "Film yang didaftarkan wajib menyelesaikan pelaksanaan promosi dari dana bantuan pada periode bulan Oktober s/d November 2021."
         },
         {
             text: "Konten film merujuk pada UU no. 33 tahun 2009 tentang perfilman dan tidak mengandung adegan pornografi, kekerasan, radikal (sara) dan hal-hal lain yang dilarang dalam peraturan perundangan tersebut",
@@ -219,13 +210,10 @@ export const DOCUMENT_TERMS = {
             text: "Surat Permohonan Bantuan Pemerintah Bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 3)"
         },
         {
-            text: "Surat Pernyataan Film yang Diajukan Wajib Tayang di Media Penayangan Multiplatform Legal (format pada Unduh Dokumen Promosi Lampiran 4)"
+            text: "Ringkas Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 4)"
         },
         {
-            text: "Ringkas Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 5)"
-        },
-        {
-            text: "Proposal Bantuan Pemerintah bagi Promosi Film Indonesia untuk Film Siap Tayang 2021 (format pada Unduh Dokumen Promosi Lampiran 6) berisi tentang :",
+            text: "Proposal Bantuan Pemerintah bagi Promosi Film Indonesia untuk Film Siap Tayang 2021 (format pada Unduh Dokumen Promosi Lampiran 5) berisi tentang :",
             children: [
                 "a.	HALAMAN MUKA: Judul Film",
                 "b.	INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Daftar Nama Pemain Utama dan Pendukung, dan rencana platform atau media penayangan film;",
@@ -234,20 +222,21 @@ export const DOCUMENT_TERMS = {
                 "e.	Director’s Statement (200-400 kata);",
                 "f.	Visi Produser (200-400 kata);",
                 "g.	Rencana promosi dan konten promosi dari filmnya;",
-                "h.	Rencana anggaran biaya (RAB);",
-                "i.	Teaser Poster atau Poster atau still photo yang dapat menggambarkan filmnya;",
-                "j.	Target Penyelesaian pekerjaan dalam jangka waktu pelaksanaan program tahun 2021;",
-                "k.	Proposal dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film",
+                "h. Rencana jadwal dan timeline promosi;",
+                "i. Rencana jadwal dan timeline penayangan;",
+                "j.	Rencana anggaran biaya (RAB);",
+                "k.	Teaser Poster atau Poster atau still photo yang dapat menggambarkan filmnya;",
+                "l.	Proposal dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film",
             ]
         },
         {
-            text: "Pengajuan Rincian Anggaran Biaya Produksi Film (format pada Unduh Dokumen Promosi Lampiran 7)"
+            text: "Pengajuan Rincian Anggaran Biaya Promosi Film (format pada Unduh Dokumen Promosi Lampiran 6)"
         },
         {
             text: "Portofolio Produk film yang telah dihasilkan"
         },
         {
-            text: "Link dokumen Film yang diajukan"
+            text: "Link dokumen Film yang diajukan dalam format video"
         },
         {
             text: "Dokumen legalitas badan usaha rumah produksi pada poin 1 - 9 wajib diunggah melalui website pendaftaran pada kolom yang telah disediakan"

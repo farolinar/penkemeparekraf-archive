@@ -449,20 +449,21 @@ const UploadTacticalForm = () => {
                     />
                 </div>
 
-                <div className="upload-form-content-wrapper">
-                    <UploadFileField
-                        title="UNGGAH SURAT PERNYATAAN FILM YANG DIAJUKAN WAJIB TAYANG DI MEDIA PENAYANGAN MULTIPLATFORM LEGAL (LAMPIRAN 4) *"
-                        subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                        id="upload-form-pernyataan-film-jadwal-rilis-file"
-                        type="pdf"
-                        fileName={pernyataanFilmJadwalRilisFile.name}
-                        setData = {(data) => setPernyataanFilmJadwalRilisFile({...data})}
-                    />
-                </div>
+                //
+                // <div className="upload-form-content-wrapper">
+                //     <UploadFileField
+                //         title="UNGGAH SURAT PERNYATAAN FILM YANG DIAJUKAN WAJIB TAYANG DI MEDIA PENAYANGAN MULTIPLATFORM LEGAL (LAMPIRAN 4) *"
+                //         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                //         id="upload-form-pernyataan-film-jadwal-rilis-file"
+                //         type="pdf"
+                //         fileName={pernyataanFilmJadwalRilisFile.name}
+                //         setData = {(data) => setPernyataanFilmJadwalRilisFile({...data})}
+                //     />
+                // </div>
 
                 <div className="upload-form-content-wrapper">
                     <UploadFileField
-                        title="UNGGAH RINGKAS PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 5) *"
+                        title="UNGGAH RINGKAS PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 4) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-profil-pengusul-proposal-file"
                         type="pdf"
@@ -473,7 +474,7 @@ const UploadTacticalForm = () => {
 
                 <div className="upload-form-content-wrapper">
                     <UploadFileField
-                        title="UNGGAH PROPOSAL BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA UNTUK FILM SIAP TAYANG 2021 (LAMPIRAN 6)*"
+                        title="UNGGAH PROPOSAL BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA UNTUK FILM SIAP TAYANG 2021 (LAMPIRAN 5)*"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-proposal-permohonan-file"
                         type="pdf"
@@ -484,7 +485,7 @@ const UploadTacticalForm = () => {
 
                 <div className="upload-form-content-wrapper">
                     <UploadFileField
-                        title="UNGGAH PENGAJUAN RINCIAN ANGGARAN BIAYA PRODUKSI FILM (LAMPIRAN 7) *"
+                        title="UNGGAH PENGAJUAN RINCIAN ANGGARAN BIAYA PRODUKSI FILM (LAMPIRAN 6) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-pengajuan-rab-produksi-file"
                         type="pdf"
