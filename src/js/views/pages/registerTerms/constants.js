@@ -226,9 +226,11 @@ export const DOCUMENT_TERMS = {
                 "i. Rencana jadwal dan timeline penayangan;",
                 "j.	Rincian anggaran biaya;",
                 "k.	Teaser Poster atau Poster atau still photo yang dapat menggambarkan filmnya;",
-                "l.	Target Penyelesaian pekerjaan dalam jangka waktu pelaksanaan program tahun 2021. Proposal dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film",
+                "l.	Target Penyelesaian pekerjaan dalam jangka waktu pelaksanaan program tahun 2021.",
+                "Proposal dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film."
             ]
         },
+
         {
             text: "Pengajuan Rincian Anggaran Biaya Promosi Film (format pada Unduh Dokumen Promosi Lampiran 6)"
         },
