@@ -221,12 +221,12 @@ export const DOCUMENT_TERMS = {
                 "d.	Ulasan tentang Siapa Target Penonton (max 400 kata);",
                 "e.	Director’s Statement (200-400 kata);",
                 "f.	Visi Produser (200-400 kata);",
-                "g.	Rencana promosi dan konten promosi dari filmnya;",
+                "g.	Strategi promosi dan konten promosi dari filmnya;",
                 "h. Rencana jadwal dan timeline promosi;",
                 "i. Rencana jadwal dan timeline penayangan;",
-                "j.	Rencana anggaran biaya (RAB);",
+                "j.	Rincian anggaran biaya;",
                 "k.	Teaser Poster atau Poster atau still photo yang dapat menggambarkan filmnya;",
-                "l.	Proposal dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film",
+                "l.	Target Penyelesaian pekerjaan dalam jangka waktu pelaksanaan program tahun 2021. Proposal dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film",
             ]
         },
         {
@@ -239,7 +239,7 @@ export const DOCUMENT_TERMS = {
             text: "Link dokumen Film yang diajukan dalam format video"
         },
         {
-            text: "Dokumen legalitas badan usaha rumah produksi pada poin 1 - 9 wajib diunggah melalui website pendaftaran pada kolom yang telah disediakan"
+            text: "Dokumen legalitas badan usaha rumah produksi pada poin 1 - 17 wajib diunggah melalui website pendaftaran pada kolom yang telah disediakan"
         },
         {
             text: "Seluruh dokumen asli legalitas dan identitas badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)",
@@ -248,7 +248,7 @@ export const DOCUMENT_TERMS = {
             // ]
         },
         {
-            text: "Penjelasan poin 20 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan"
+            text: "Penjelasan poin 19 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan"
         },
         {
             text: "Seluruh dokumen pendukung, dokumen legalitas, dan dokumen permohonan yang dikirimkan disusun dengan urutan yang benar, lengkap dengan halaman muka yang merujuk dengan jelas nama Rumah Produksi"
