@@ -16,20 +16,20 @@ const TACTICAL_FORMS = [
         name: "Unduh Lampiran 3 - Format Surat Permohonan Bantuan Pemerintah Bagi Promosi Film Indonesia",
         url: "https://drive.google.com/uc?export=download&id=13k1Oy_gX-ryd-sa0w1Sg926zHUhQSxuo"
     },
+    // {
+    //     name: "Unduh Lampiran 4 - Format Surat Pernyataan Film yang Diajukan Wajib Tayang di Media Penayangan Multiplatform Legal",
+    //     url: "https://drive.google.com/uc?export=download&id=1cVaWjLh_p2_rJgWqimVk8coujoEJBc29"
+    // },
     {
-        name: "Unduh Lampiran 4 - Format Surat Pernyataan Film yang Diajukan Wajib Tayang di Media Penayangan Multiplatform Legal",
-        url: "https://drive.google.com/uc?export=download&id=1cVaWjLh_p2_rJgWqimVk8coujoEJBc29"
-    },
-    {
-        name: "Unduh Lampiran 5 - Format Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia",
+        name: "Unduh Lampiran 4 - Format Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia",
         url: "https://drive.google.com/uc?export=download&id=14GPEQHn8USKpti_--bhlm_iqPmACb-O1"
     },
     {
-        name: "Unduh Lampiran 6 - Format Sistematika Proposal Bantuan Pemerintah bagi Promosi Film Indonesia",
+        name: "Unduh Lampiran 5 - Format Sistematika Proposal Bantuan Pemerintah bagi Promosi Film Indonesia",
         url: "https://drive.google.com/uc?export=download&id=1HljsRrfrRb9sOIRoSdObjhAcYtIXT6Q2"
     },
     {
-        name: "Unduh Lampiran 7 - Format Rincian Anggaran Biaya (RAB) Bantuan Pemerintah bagi Promosi Film Indonesia",
+        name: "Unduh Lampiran 6 - Format Rincian Anggaran Biaya (RAB) Bantuan Pemerintah bagi Promosi Film Indonesia",
         url: "https://drive.google.com/uc?export=download&id=1XMsyYpIeUMysSsTcbBaMttROkO9mB9jd"
     },
 ]
