@@ -19,7 +19,7 @@ const UploadFileField = ({
     fileName="",
     setData = () => {}
 }) => {
-    function readURL(input, id='') {
+    function readURL(input, id) {
         // let validImageTypes = (type === "image" ? "image/jpeg" : "application/pdf");
         if (input.files && input.files[0]) {
             let fileSize = (input.files[0]["size"] ? (input.files[0]["size"] / 1024 / 1024) : 0)
