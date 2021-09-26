@@ -414,7 +414,7 @@ const UploadTacticalForm = () => {
 
             <div className="upload-form-section">
                 <div className="upload-form-title">
-                    <div className="upload-form-label">KELENGKAPAN BERKAS</div>
+                    <div className="upload-form-label">BERKAS LAMPIRAN</div>
                     <span>*Wajib diisi</span>
                 </div>
 

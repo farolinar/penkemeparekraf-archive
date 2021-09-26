@@ -1,16 +1,16 @@
 export const MAIN_TERMS = {
     tactical: [
         {
-            text: "Rumah Produksi mengirimkan 1 (satu) proposal film untuk dipromosikan dengan jangka waktu promosi yang dilaksanakan pada bulan Oktober s/d November 2021",
+            text: "Rumah Produksi mengirimkan 1 (satu) proposal film untuk dipromosikan dengan jangka waktu promosi yang dilaksanakan pada bulan Oktober s/d November 2021;",
         },
         {
-            text: "Rumah Produksi yang berhak mendaftar telah berbadan usaha dalam bentuk Perseroan Terbatas (PT) yang kepemilikan sahamnya dimiliki oleh Warga Negara Indonesia (WNI), atau badan hukum Indonesia, dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia, sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan akta pendirian badan usaha.",
+            text: "Rumah Produksi yang berhak mendaftar telah berbadan usaha dalam bentuk Perseroan Terbatas (PT) yang kepemilikan sahamnya dimiliki oleh Warga Negara Indonesia (WNI), atau badan hukum Indonesia, dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia, sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan akta pendirian badan usaha;",
         },
         {
-            text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan, dimana tidak terjadi pergantian anggota nama pemegang saham, nama dewan komisaris/dewan direksi, dan nama eksekutif penanggung jawab perusahaan setelah tanggal 1 Januari 2021.",
+            text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan, dimana tidak terjadi pergantian anggota nama pemegang saham, nama dewan komisaris/dewan direksi, dan nama eksekutif penanggung jawab perusahaan setelah tanggal 1 Januari 2021;",
         },
         {
-            text: "Pihak yang mendaftarkan Rumah Produksi tersebut adalah orang yang secara hukum sah mewakili Rumah Produksi sesuai dengan Akta dan/atau AD/ART Rumah Produksi/selevel direksi dan merupakan Warga Negara Indonesia yang dibuktikan dengan kepemilikan Kartu Tanda Penduduk.",
+            text: "Pihak yang mendaftarkan Rumah Produksi tersebut adalah orang yang secara hukum sah mewakili Rumah Produksi sesuai dengan Akta dan/atau AD/ART Rumah Produksi/selevel direksi dan merupakan Warga Negara Indonesia yang dibuktikan dengan kepemilikan Kartu Tanda Penduduk;",
         },
         {
             text: "Penanggung Jawab Rumah Produksi cakap secara hukum (berusia minimal 21 tahun atau sudah menikah sebelum berusia 21 tahun) yang dibuktikan dengan Kartu Tanda Penduduk (KTP), merujuk pada Pasal 330 KUH Perdata, dan:",
@@ -29,10 +29,10 @@ export const MAIN_TERMS = {
             text: "Wajib melampirkan salinan kartu Nomor Pokok Wajib Pajak (NPWP) atas nama Badan Usaha Rumah Produksi dan salinan Surat Pemberitahuan Tahunan (SPT) Pajak 1 tahun terakhir;",
         },
         {
-            text: "Wajib melengkapi persyaratan administrasi dokumen sesuai format yang telah ditentukan",
+            text: "Wajib melengkapi persyaratan administrasi dokumen sesuai format yang telah ditentukan;",
         },
         {
-            text: "Rumah Produksi yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam pemerintahan",
+            text: "Rumah Produksi yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam pemerintahan;",
         },
     ],
     production : [
@@ -213,9 +213,9 @@ export const DOCUMENT_TERMS = {
             text: "Ringkas Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 4)"
         },
         {
-            text: "Proposal Bantuan Pemerintah bagi Promosi Film Indonesia untuk Film Siap Tayang 2021 (format pada Unduh Dokumen Promosi Lampiran 5) berisi tentang :",
+            text: "Proposal Bantuan Pemerintah bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 5) berisi tentang :",
             children: [
-                "a.	HALAMAN MUKA: Judul Film",
+                "a.	HALAMAN MUKA: Judul Film;",
                 "b.	INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Daftar Nama Pemain Utama dan Pendukung, dan rencana platform atau media penayangan film;",
                 "c.	Logline (3 kalimat) dan Sinopsis (200 – 400 kata);",
                 "d.	Ulasan tentang Siapa Target Penonton (max 400 kata);",
