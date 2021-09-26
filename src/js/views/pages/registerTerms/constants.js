@@ -20,13 +20,13 @@ export const MAIN_TERMS = {
             ]
         },
         {
-            text: "Wajib memiliki Nomor Induk Berusaha (NIB) yang terdaftar pada sistem OSS (Online Single Submission) – Kementerian Investasi/BKPM (Badan Koordinasi Penanaman Modal) atas nama Rumah Produksi sekaligus sebagai Tanda Daftar Usaha Perfilman (TDUP) dan wajib memiliki Tanda Pemberitahuan Pembuatan Film (TPPF) yang masih berlaku, yang dibuktikan dengan melampirkan Salinan NIB dan/atau TDUP serta TPPF yang masih berlaku;",
+            text: "Wajib memiliki Nomor Induk Berusaha (NIB) yang terdaftar pada sistem OSS (Online Single Submission) – Kementerian Investasi/BKPM (Badan Koordinasi Penanaman Modal) atas nama Rumah Produksi serta wajib memiliki Tanda Daftar Usaha Perfilman (TDUP) yang masih berlaku, Tanda Pemberitahuan Pembuatan Film (TPPF) yang masih berlaku, dengan melampirkan bukti Salinan NIB, TDUP dan TPPF yang masih berlaku;",
         },
         {
             text: "Wajib memiliki rekening di bank atas nama Rumah Produksi dengan status aktif;",
         },
         {
-            text: "Wajib melampirkan salinan kartu Nomor Pokok Wajib Pajak (NPWP) atas nama Badan Usaha Rumah Produksi dan salinan Surat Pemberitahuan Tahunan (SPT) Pajak 1 tahun terakhir;",
+            text: "Wajib melampirkan salinan kartu Nomor Pokok Wajib Pajak (NPWP) atas nama Badan Usaha Rumah Produksi dan Bukti Pelaporan Surat Pemberitahuan Tahunan (SPT) Pajak untuk 1 tahun terakhir;",
         },
         {
             text: "Wajib melengkapi persyaratan administrasi dokumen sesuai format yang telah ditentukan;",
