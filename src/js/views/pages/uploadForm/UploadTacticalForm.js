@@ -6,9 +6,24 @@ import Loading from '../../component/loading';
 // import { postData } from '../../../fetch';
 
 const acceptedFileFormat = {
-    image: ["image/jpeg"],
+    image: ["image/png", "image/jpeg"],
     pdf: ["application/pdf"],
-    docx: [".doc", ".docx"]
+    docx: [".doc", ".docx"],
+    all: ["image/png", "image/jpeg", "application/pdf"]
+}
+
+const acceptedFileFormatString = {
+    image: "image",
+    pdf: "pdf",
+    docx: "docx",
+    all: "all"
+}
+
+const acceptedFileFormatValidation = {
+    image: "jpg, jpeg, atau png",
+    pdf: "pdf",
+    docx: ".doc atau .docx",
+    all: "jpg, jpeg, png, atau pdf"
 }
 
 const UploadFileField = ({
@@ -32,7 +47,7 @@ const UploadFileField = ({
             } else if (!fileName) {
                 setData({name: "", file: ""})
                 $(`#${id}`).val('');
-                alert(`Harap masukkan file tipe ${type} dengan maks. ukuran 5 MB`)
+                alert(`Harap masukkan file tipe ${acceptedFileFormatValidation[type]} dengan maks. ukuran 5 MB`)
             }
         } 
     }
@@ -293,7 +308,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH AKTA PENDIRIAN DAN MINIMAL SUDAH BERDIRI SEJAK 1 JANUARI 2019 *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-akta-pendirian-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={aktaPendirianFile.name}
                         setData = {(data) => setAktaPendirianFile({...data})}
                     />
@@ -302,9 +317,9 @@ const UploadTacticalForm = () => {
                 <div className="upload-form-content-wrapper">
                     <UploadFileField
                         title="UNGGAH SALINAN KTP PENANGGUNG JAWAB / DIREKTUR PH *"
-                        subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                        subtitle="(File PDF, JPG, JPEG, atau PNG, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-id-number-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.all}
                         fileName={idNumberFile.name}
                         setData = {(data) => setIDNumberFile({...data})}
                     />
@@ -315,7 +330,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH SURAT KETERANGAN DOMISILI USAHA *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-keterangan-domisili-usaha-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={keteranganDomisiliUsahaFile.name}
                         setData = {(data) => setKeteranganDomisiliUsahaFile({...data})}
                     />
@@ -326,7 +341,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH NOMOR INDUK BERUSAHA (NIB) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-nomor-induk-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={nomorIndukFile.name}
                         setData = {(data) => setNomorIndukFile({...data})}
                     />
@@ -337,7 +352,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH TANDA DAFTAR USAHA PERFILMAN (TDUP)*"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-tanda-daftar-usaha-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={tandaDaftarUsahaFile.name}
                         setData = {(data) => setTandaDaftarUsahaFile({...data})}
                     />
@@ -348,7 +363,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH TANDA PEMBERITAHUAN PEMBUATAN FILM (TPPF)*"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-tanda-pemberitahuan-pembuatan-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={tandaPemberitahuanPembuatanFilmFile.name}
                         setData = {(data) => setTandaPemberitahuanPembuatanFilmFile({...data})}
                     />
@@ -359,7 +374,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH DOKUMEN NOMOR POKOK WAJIB PAJAK ATAS NAMA BADAN USAHA *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-npwp-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={npwpFile.name}
                         setData = {(data) => setNPWPFile({...data})}
                     />
@@ -370,7 +385,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH SURAT PEMBERITAHUAN TAHUNAN (SPT) PAJAK 1 TAHUN TERAKHIR *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-tax-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={taxFile.name}
                         setData = {(data) => setTaxFile({...data})}
                     />
@@ -381,7 +396,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH DOKUMEN REKENING ATAS NAMA BADAN USAHA *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-card-number-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={cardNumberFile.name}
                         setData = {(data) => setCardNumberFile({...data})}
                     />
@@ -394,7 +409,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH AKTA PERUBAHAN ATAS NAMA BADAN USAHA *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-akta-perubahan-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={aktaPerubahanFile.name}
                         setData = {(data) => setAktaPerubahanFile({...data})}
                     />
@@ -405,7 +420,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH SK KEMENHUMKAM HAM ATAS AKTA PENDIRIAN DAN PERUBAHAN *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-sk-kemenhumkan-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={skKemenhumkanFile.name}
                         setData = {(data) => setSKKemenhumkanFile({...data})}
                     />
@@ -423,7 +438,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH SURAT PERNYATAAN RUMAH PRODUKSI (LAMPIRAN 1) * "
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-pernyataan-rumah-produksi-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={pernyataanRumahProduksiFile.name}
                         setData = {(data) => setPernyataanRumahProduksiFile({...data})}
                     />
@@ -434,7 +449,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH SURAT PERNYATAAN TANGGUNG JAWAB MUTLAK (LAMPIRAN 2) * "
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-pernyataan-tanggung-jawab-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={pernyataanTangguungJawabFile.name}
                         setData = {(data) => setPernyataanTangguungJawabFile({...data})}
                     />
@@ -445,7 +460,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 3) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-permohonan-bantuan-pemerintah-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={permohonanBantuanPemerintahFile.name}
                         setData = {(data) => setPermohonanBantuanPemerintahFile({...data})}
                     />
@@ -456,7 +471,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH SURAT PERNYATAAN FILM YANG DIAJUKAN WAJIB TAYANG DI MEDIA PENAYANGAN MULTIPLATFORM LEGAL (LAMPIRAN 4) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-form-pernyataan-film-jadwal-rilis-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={pernyataanFilmJadwalRilisFile.name}
                         setData = {(data) => setPernyataanFilmJadwalRilisFile({...data})}
                     />
@@ -467,7 +482,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 4) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-profil-pengusul-proposal-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={profilPengurusProposalFile.name}
                         setData = {(data) => setprofilPengurusProposalFile({...data})}
                     />
@@ -478,7 +493,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH PROPOSAL BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 5)*"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-proposal-permohonan-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={proposalPermohonanFile.name}
                         setData = {(data) => setProposalPermohonanFile({...data})}
                     />
@@ -489,7 +504,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH RINCIAN ANGGARAN BIAYA (RAB) BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 6) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-pengajuan-rab-produksi-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={pengajuanRABProduksiFile.name}
                         setData = {(data) => setPengajuanRABProduksiFile({...data})}
                     />
@@ -500,7 +515,7 @@ const UploadTacticalForm = () => {
                         title="UNGGAH PORTOFOLIO PRODUK FILM YANG TELAH DIHASILKAN *"
                         subtitle="(File PDF, max. 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-portofolio-produk-film-file"
-                        type="pdf"
+                        type={acceptedFileFormatString.pdf}
                         fileName={portofolioProdukFilmFile.name}
                         setData = {(data) => setPortofolioProdukFilmFile({...data})}
                     />
