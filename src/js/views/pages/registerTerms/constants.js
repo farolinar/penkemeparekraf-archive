@@ -210,7 +210,7 @@ export const DOCUMENT_TERMS = {
             text: "Surat Permohonan Bantuan Pemerintah Bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 3)"
         },
         {
-            text: "Ringkas Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 4)"
+            text: "Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 4)"
         },
         {
             text: "Proposal Bantuan Pemerintah bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 5) berisi tentang :",
@@ -221,18 +221,18 @@ export const DOCUMENT_TERMS = {
                 "d.	Ulasan tentang Siapa Target Penonton (max 400 kata);",
                 "e.	Director’s Statement (200-400 kata);",
                 "f.	Visi Produser (200-400 kata);",
-                "g.	Strategi promosi dan konten promosi dari filmnya;",
-                "h. Rencana jadwal dan timeline promosi;",
-                "i. Rencana jadwal dan timeline penayangan;",
-                "j.	Rincian anggaran biaya;",
-                "k.	Teaser Poster atau Poster atau still photo yang dapat menggambarkan filmnya;",
-                "l.	Target Penyelesaian pekerjaan dalam jangka waktu pelaksanaan program tahun 2021.",
+                "g. Rincian Anggaran Biaya (RAB) : Rp ______________(terlampir);",
+                "h. Rencana jadwal pelaksanaan : (terlampir dan didetailkan proyeksi penggunaan dananya);",
+                "i. Strategi promosi, konten dan materi promosi serta media promosi yang digunakan;",
+                "j. Rencana jadwal dan timeline promosi;",
+                "k. Rencana jadwal & timeline penayangan;",
+                "l. Teaser Poster atau Poster atau still photo yang dapat menggambarkan filmnya;",
                 "Proposal dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film."
             ]
         },
 
         {
-            text: "Pengajuan Rincian Anggaran Biaya Promosi Film (format pada Unduh Dokumen Promosi Lampiran 6)"
+            text: "Pengajuan Rincian Anggaran Biaya Produksi Film (format pada Unduh Dokumen Promosi Lampiran 6)"
         },
         {
             text: "Portofolio Produk film yang telah dihasilkan"
@@ -241,7 +241,7 @@ export const DOCUMENT_TERMS = {
             text: "Link dokumen Film yang diajukan dalam format video"
         },
         {
-            text: "Dokumen legalitas badan usaha rumah produksi pada poin 1 - 17 wajib diunggah melalui website pendaftaran pada kolom yang telah disediakan"
+            text: "Dokumen persyaratan pada poin 1 - 17 wajib diunggah melalui website pendaftaran pada kolom yang telah disediakan"
         },
         {
             text: "Seluruh dokumen asli legalitas dan identitas badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)",
