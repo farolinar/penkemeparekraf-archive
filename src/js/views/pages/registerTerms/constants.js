@@ -195,11 +195,11 @@ export const DOCUMENT_TERMS = {
             ]
         },
         {
-            text: "Surat Pernyataan Tanggung Jawab Mutlak (format pada Unduh Dokumen Promosi Lampiran 2),  berisi tentang :",
+            text: "Surat Pernyataan Tanggung Jawab Mutlak (format pada Unduh Dokumen Promosi Lampiran 2), berisi tentang :",
             children: [
                 "a.	Wajib melaporkan apabila mendapatkan pembiayaan dari investor atau perusahaan lain dalam pelaksanaan promosi film yang diajukan dan pembiayaan tersebut bukan untuk membiayai item yang sama;",
-                "b.	Wajib menyerahkan laporan pelaksanaan kegiatan dilengkapi dengan dokumentasi dan menyerahkan laporan penggunaan anggaran dilengkapi dengan kuitansi/invoice/nota/bukti pembayaran sah lainnya;",
-                "c.	Sanggup menggunakan dana Bantuan Pemerintah untuk melaksanakan pekerjaan dalam periode pelaksanaan program sesuai dengan anggaran yang disetujui; ",
+                "b. Wajib menyerahkan laporan pelaksanaan kegiatan yang dilengkapi dengan dokumentasi bahan materi dan pembuktian promosi pada periode pelaksanaan program, serta menyerahkan laporan penggunaan anggaran yang dilengkapi dengan kuitansi/invoice/nota/bukti pembayaran sah lainnya",
+                "c.	Sanggup menggunakan dana Bantuan Pemerintah untuk melaksanakan kegiatan Promosi Film Indonesia dalam periode pelaksanaan program sesuai dengan anggaran yang disetujui;",
                 "d.	Wajib mengikuti proses audit sehubungan dengan penggunaan dana Bantuan Pemerintah yang diberikan;",
                 "e.	Bersedia mengembalikan sisa anggaran Bantuan Pemerintah yang tidak terpakai, dengan melampirkan bukti setoran kepada kas negara dan disertai dengan laporan justifikasi; ",
                 "f.	Bersedia untuk mengembalikan seluruh dana Bantuan Pemerintah apabila ditemukan terdapat kecurangan, dan/atau tidak digunakan dana Bantuan Pemerintah tersebut sesuai dengan peruntukkan yang telah ditetapkan;",
