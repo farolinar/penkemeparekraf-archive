@@ -4,8 +4,8 @@
         font-size: 4.5vw;
         font-weight: 700;
         margin-bottom: 0;
-        margin-left: 4vw;
-        margin-right: 4vw;
+        margin-left: 12vw;
+        margin-right: 12vw;
     }
 
     .register-terms-wrapper {
@@ -22,7 +22,7 @@
             font-size: 2vw;
             font-weight: 700;
             // cursor: pointer;
-            margin: 3vw 4vw 2vw;
+            margin: 3vw 12vw 2vw;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -46,8 +46,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-left: 4vw;
-            margin-right: 4vw;
+            margin-left: 12vw;
+            margin-right: 12vw;
             margin-bottom: 30px;
 
             h2 {
@@ -67,7 +67,7 @@
 
         ul {
             list-style: auto;
-            margin: 0 4vw 50px;
+            margin: 0 12vw 50px;
             li {
                 margin: 12px;
                 font-size: 28px;
@@ -78,7 +78,7 @@
         }
 
         .register-terms-content-subtitle {
-            margin: 12px 4vw;
+            margin: 12px 12vw;
             font-size: 28px;
         }
 
