@@ -54,9 +54,9 @@ const Home = (props) => {
     // const OurProgramItem = ({item}) => {
     //     return <div className="our-program-item-wrapper">
     //         <div className="our-program-item-content">
-    //             <LazyLoad>
+    //             <div className="lazyload-wrapper">
     //                 <img src={item.image} alt="" />
-    //             </LazyLoad>
+    //             </div>
     //             <div className="our-program-item-text">
     //                 <p className="our-program-title">{item.title}</p>
     //                 <p className="our-program-desc">{item.desc}</p>
@@ -101,9 +101,9 @@ const Home = (props) => {
         </div>
 
         <div className="home-about-us-wrapper">
-            <LazyLoad>
+            <div className="lazyload-wrapper">
                 <img className="home-about-us-upper-divider" src={aboutUsUpperDivider} alt="" />
-            </LazyLoad>
+            </div>
             <div className="home-about-us-content">
                 <div></div>
                 <div className="home-about-us-text">
@@ -114,18 +114,18 @@ const Home = (props) => {
                     </button>
                 </div>
                 <div></div>
-                <LazyLoad>
+                <div className="lazyload-wrapper">
                     <img src={aboutUsHero} alt="about-us" />
-                </LazyLoad>
+                </div>
                 <div></div>
             </div>
         </div>
 
         <div className="home-our-program-wrapper">
             {/* <div className="home-our-program-bg">
-                <LazyLoad>
+                <div className="lazyload-wrapper">
                     <img src={ourProgramBg} />
-                </LazyLoad>
+                </div>
             </div> */}
             {/* <h2>Program Kami</h2> */}
             <div className="home-our-program-content">
@@ -133,9 +133,9 @@ const Home = (props) => {
                     OurPrograms.map((item, idx) => <OurProgramItem key={idx} item={item} />)
                 } */}
                 <div className="our-program-content-new">
-                    <LazyLoad>
+                    <div className="lazyload-wrapper">
                         <img src={programTacticalHero} alt="program-kami" />
-                    </LazyLoad>
+                    </div>
                     <div className="our-program-content-text">
                         <h2>Program Kami</h2>
                         <h3>Bantuan Pemerintah Promosi Film Indonesia</h3>

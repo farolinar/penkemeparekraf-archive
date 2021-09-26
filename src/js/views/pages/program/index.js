@@ -46,18 +46,18 @@ const Program = () => {
                 <div className="our-program-tactical-text">
                     <img src={programTacticalText} alt="program-tactical" />
                 </div>
-                <LazyLoad>
+                <div className="lazyload-wrapper">
                     <img src={programTacticalHero} alt="program-tactical" />
-                </LazyLoad>
+                </div>
             </div>
         </div>
 
         {/* <div className="our-program-production-wrapper" id={ANCHOR.programProduksiFilm}>
             <h2>Bantuan Pemerintah Produksi Film Indonesia</h2>
             <div className="our-program-production-content">
-                <LazyLoad>
+                <div className="lazyload-wrapper">
                     <img src={programProductionHero} alt="program-tactical" />
-                </LazyLoad>
+                </div>
                 <div className="our-program-production-hero">
                     <img src={programProductionText} alt="program-tactical" />
                 </div>

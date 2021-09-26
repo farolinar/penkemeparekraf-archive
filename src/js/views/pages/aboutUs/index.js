@@ -14,25 +14,25 @@ const AboutUs = () => {
                 <div>
                     <img src={aboutUsText} alt="about-us" />
                 </div>
-                <LazyLoad>
+                <div className="lazyload-wrapper">
                     <img src={aboutUsHero} alt="about-us" />
-                </LazyLoad>
+                </div>
             </div>
         </div>
 
         <div className="about-us-selection-wrapper">
             {/* <div className="about-us-bg">
-                <LazyLoad>
+                <div className="lazyload-wrapper">
                     <img src={aboutUsBg} alt="about-us" />
-                </LazyLoad>
+                </div>
             </div> */}
             <div className="about-us-bg-filter"></div>
             <h2>Alur Seleksi Proposal Program PEN Film</h2>
             <div className="about-us-selection-content-wrapper">
                 <div className="about-us-selection-content">
-                    <LazyLoad>
+                    <div className="lazyload-wrapper">
                         <img src={aboutUsSelection} alt="about-us" />
-                    </LazyLoad>
+                    </div>
                 </div>
             </div>
         </div>

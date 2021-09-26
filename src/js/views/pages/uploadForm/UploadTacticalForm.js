@@ -198,7 +198,7 @@ const UploadTacticalForm = () => {
                 setIsLoading(false);
             });
         } else {
-            alert("Harap isi semua data.");
+            // alert("Harap isi semua data.");
         }
     }
 
