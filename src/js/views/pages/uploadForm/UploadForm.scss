@@ -33,13 +33,13 @@
             // position: relative;
 
             .our-program {
-                padding: 60px 30px 60px;
+                padding: 15px 20px;
                 border-radius: 10px;
                 background-color: rgba(56, 132, 194, 0.8);
                 cursor: pointer;
                 font-size: 2vw;
                 font-weight: 700;
-                width: 40%;
+                width: 20%;
                 transition: ease 0.5s;
 
                 a:hover {
@@ -131,7 +131,7 @@
             .upload-file-button {
                 cursor: pointer;
                 border: solid 2px var(--main-blue);
-                padding: 10px 70px;
+                // padding: 10px 70px;
                 font-size: 24px;
                 border-radius: 6px;
                 width: fit-content;
@@ -139,6 +139,11 @@
                 
                 label {
                     cursor: pointer;
+                    height: 50px;
+                    width: 200px;
+                    display: block;
+                    text-align: center;
+                    line-height: 50px;
                 }
             }
 

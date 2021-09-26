@@ -74,8 +74,17 @@ const DownloadForm = () => {
                 <h2>Unduh Formulir</h2>
                 <div className="our-programs">
                     <div className="our-program">
-                        <a href={`#${ANCHOR.downloadTacticalForm}`}>Bantuan Pemerintah<br />Promosi Film Indonesia</a>
+                        <a href={`#${ANCHOR.downloadTacticalForm}`}>Promosi</a>
                     </div>
+                    <div className="our-program">
+                        <a>Lisensi</a>
+                    </div>
+                    <div className="our-program">
+                        <a>Produksi</a>
+                    </div>
+                    {/* <div className="our-program">
+                        <a href={`#${ANCHOR.downloadTacticalForm}`}>Bantuan Pemerintah<br />Promosi Film Indonesia</a>
+                    </div> */}
                     {/* <div className="our-program">
                         <a href={`#${ANCHOR.downloadProductionForm}`}>Bantuan Pemerintah<br />Produksi Film Indonesia</a>
                     </div> */}
