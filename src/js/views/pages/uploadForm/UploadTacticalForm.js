@@ -19,7 +19,7 @@ const UploadFileField = ({
     fileName="",
     setData = () => {}
 }) => {
-    function readURL(input) {
+    function readURL(input, id='') {
         // let validImageTypes = (type === "image" ? "image/jpeg" : "application/pdf");
         if (input.files && input.files[0]) {
             let fileSize = (input.files[0]["size"] ? (input.files[0]["size"] / 1024 / 1024) : 0)
@@ -31,6 +31,7 @@ const UploadFileField = ({
                 reader.readAsDataURL(input.files[0]);
             } else if (!fileName) {
                 setData({name: "", file: ""})
+                $(`#${id}`).val('');
                 alert(`Harap masukkan file tipe ${type} dengan maks. ukuran 5 MB`)
             }
         } 
@@ -38,7 +39,7 @@ const UploadFileField = ({
 
     useEffect(() => {
         $(document).on("change", `#${id}`, function () {
-            readURL(this);
+            readURL(this, id);
         });
     }, [])
 
@@ -59,6 +60,7 @@ const UploadFileField = ({
             </div>
             {fileName && <p>{fileName} <span onClick={() => {
                 setData({name: "", file: ""})
+                $(`#${id}`).val('');
             }}>X</span></p>}
         </div>
     </div>
@@ -198,7 +200,7 @@ const UploadTacticalForm = () => {
                 setIsLoading(false);
             });
         } else {
-            // alert("Harap isi semua data.");
+            alert("Harap isi semua data.");
         }
     }
 
