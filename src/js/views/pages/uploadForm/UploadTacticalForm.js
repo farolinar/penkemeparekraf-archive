@@ -464,7 +464,7 @@ const UploadTacticalForm = () => {
 
                 <div className="upload-form-content-wrapper">
                     <UploadFileField
-                        title="UNGGAH RINGKAS PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 4) *"
+                        title="UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 4) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-profil-pengusul-proposal-file"
                         type="pdf"
@@ -475,7 +475,7 @@ const UploadTacticalForm = () => {
 
                 <div className="upload-form-content-wrapper">
                     <UploadFileField
-                        title="UNGGAH PROPOSAL BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA UNTUK FILM SIAP TAYANG 2021 (LAMPIRAN 5)*"
+                        title="UNGGAH PROPOSAL BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 5)*"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-proposal-permohonan-file"
                         type="pdf"
@@ -486,7 +486,7 @@ const UploadTacticalForm = () => {
 
                 <div className="upload-form-content-wrapper">
                     <UploadFileField
-                        title="UNGGAH PENGAJUAN RINCIAN ANGGARAN BIAYA PRODUKSI FILM (LAMPIRAN 6) *"
+                        title="UNGGAH RINCIAN ANGGARAN BIAYA (RAB) BANTUAN PEMERINTAH BAGI PROMOSI FILM INDONESIA (LAMPIRAN 6) *"
                         subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                         id="upload-pengajuan-rab-produksi-file"
                         type="pdf"
