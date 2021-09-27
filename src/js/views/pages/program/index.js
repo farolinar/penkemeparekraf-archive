@@ -44,7 +44,12 @@ const Program = () => {
             <h2>Bantuan Pemerintah Promosi Film Indonesia</h2>
             <div className="our-program-tactical-content">
                 <div className="our-program-tactical-text">
-                    <img src={programTacticalText} alt="program-tactical" />
+                    {/* <img src={programTacticalText} alt="program-tactical" /> */}
+                    <p>Sebagai bagian dari Program Bantuan Pemerintah sub Sektor film yang terdiri dari Skema Promosi - Lisensi - Produksi.</p>
+                    <p>Bertujuan meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih yang akan ditayangkan di media penayangan multiplatform legal dan mendukung kemajuan industri perfilman melalui kegiatan promosi film.</p>
+                    <p>Pelaksanaan Promosi dilakukan pada jangka waktu 
+                    Oktober-November 2021</p>
+                    <p>Target penerima bantuan sebanyak 40 Rumah Produksi dengan nilai bantuan sebesar Rp. 1.500.000.000,- per rumah produksi.</p>
                 </div>
                 <div className="lazyload-wrapper">
                     <img src={programTacticalHero} alt="program-tactical" />

@@ -77,6 +77,10 @@
         // align-items: center;
         .our-program-tactical-text {
             width: 50%;
+            font-size: 1.75vw;
+            p:first-child {
+                margin-top: 0;
+            }
             img {
                 width: 100%;
             }
