@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import LazyLoad from 'react-lazyload';
 import Template from '../../layout/template';
-import programTacticalText from "../../../../assets/img/pages/program/program-tactical-text.png";
+import programTacticalText from "../../../../assets/img/pages/program/program-tactical-text.jpg";
 import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-hero.png";
 // import programProductionText from "../../../../assets/img/pages/program/program-production-text.png";
 // import programProductionHero from "../../../../assets/img/pages/program/program-production-hero.png";

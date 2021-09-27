@@ -232,7 +232,7 @@ export const DOCUMENT_TERMS = {
         },
 
         {
-            text: "Pengajuan Rincian Anggaran Biaya Produksi Film (format pada Unduh Dokumen Promosi Lampiran 6)"
+            text: "Pengajuan Rincian Anggaran Biaya Promosi Film (format pada Unduh Dokumen Promosi Lampiran 6)"
         },
         {
             text: "Portofolio Produk film yang telah dihasilkan"
