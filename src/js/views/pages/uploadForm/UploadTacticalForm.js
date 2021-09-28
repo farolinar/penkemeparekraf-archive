@@ -1,4 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
+import Checkbox from "react-custom-checkbox";
+import { FaCheckSquare } from "react-icons/fa"
 // import Template from '../../layout/template';
 import "./UploadForm.scss";
 import $ from 'jquery';
@@ -110,6 +112,8 @@ const UploadTacticalForm = () => {
     const [pengajuanRABProduksiFile, setPengajuanRABProduksiFile] = useState({name: "", file: ""})
 
     const [link, setLink] = useState()
+    const [secondLink, setSecondLink] = useState()
+    const [verifyCheck, setVerifyCheck] = useState(false)
 
     const [isLoading, setIsLoading] = useState(false)
 
@@ -138,7 +142,8 @@ const UploadTacticalForm = () => {
             && proposalPermohonanFile.file
             && portofolioProdukFilmFile.file
             && pengajuanRABProduksiFile.file
-            && link;
+            && link
+            && verifyCheck;
     }
 
     
@@ -186,7 +191,8 @@ const UploadTacticalForm = () => {
                 l7_anggaran_biaya_file: pengajuanRABProduksiFile.file,
                 skdu_fname: keteranganDomisiliUsahaFile.name,
                 skdu_file: keteranganDomisiliUsahaFile.file,
-                movie_link: link
+                movie_link: link,
+                document_link: secondLink
             }
             let formData = new FormData();
             for (let field in data) {
@@ -215,7 +221,8 @@ const UploadTacticalForm = () => {
                 setIsLoading(false);
             });
         } else {
-            alert("Harap isi semua data.");
+            if(!verifyCheck) alert("Harap berikan tanda centang pada pernyataan.")
+            else alert("Harap isi semua data.");
         }
     }
 
@@ -539,16 +546,52 @@ const UploadTacticalForm = () => {
                         <p>(Link Google Drive, Youtube,dsb. Link harus diawali dengan https:// atau http://)</p>
                         <input 
                             name="link"
-                            defaultValue={link}
-                            onChange={(e) => setLink(e.target.value)}
+                            defaultValue={secondLink}
+                            onChange={(e) => setSecondLink(e.target.value)}
                         ></input>
                     </div>
                 </div>
             </div>
 
+            <Checkbox
+                checked={verifyCheck}
+                icon={
+                <div
+                    style={{
+                    display: "flex",
+                    flex: 1,
+                    backgroundColor: "white",
+                    alignSelf: "center"
+                    }}
+                >
+                    <FaCheckSquare color="#3884C2" size={32} />
+                </div>
+                }
+                borderColor="#3884C2"
+                // borderWidth={0}
+                // borderRadius={20}
+                style={{ overflow: "hidden", backgroundColor: "white" }}
+                size={28}
+                label={<p>Saya menyatakan bahwa seluruh data yang saya isi adalah benar.</p>}
+                labelStyle={{
+                    color: "white",
+                    marginLeft: 10,
+                    fontSize: 26
+                }}
+                onChange={(checked) => setVerifyCheck(checked)}
+                containerStyle={{
+                    cursor: "pointer"
+                }}
+            />
+
             <div
-                onClick={() => submitData()}
+                onClick={() => {if(validations()) submitData()}}
                 className="submit-button"
+                style={validations() ? {} : {
+                    backgroundColor: "#e5e5e5",
+                    color: "white",
+                    cursor: "not-allowed"
+                }}
             >
                 Submit
             </div>
