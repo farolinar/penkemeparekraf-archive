@@ -523,7 +523,7 @@ const UploadTacticalForm = () => {
 
                 <div className="upload-form-content-wrapper">
                     <div className="upload-form-field">
-                        <label htmlFor="link">UNGGAH LINK DOKUMEN FILM YANG DIAJUKAN</label>
+                        <label htmlFor="link">UNGGAH LINK DOKUMEN TRAILER FILM YANG DIAJUKAN *</label>
                         <p>(Link Google Drive, Youtube,dsb. Link harus diawali dengan https:// atau http://)</p>
                         <input 
                             name="link"
