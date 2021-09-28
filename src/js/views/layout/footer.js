@@ -7,7 +7,7 @@ import icEmail from "../../../assets/img/icons/ic-email.png";
 const Footer = () => {
     return(<div className="footer-wrapper">
         <h2>Kontak Kami</h2>
-        <p>Hubungi kontak person dibawah ini untuk terhubung dengan kami</p>
+        <p>Hubungi email dibawah ini untuk terhubung dengan kami</p>
         <div className="footer-contact-wrapper">
             <div className="footer-contact">
                 <div className="lazyload-wrapper">
