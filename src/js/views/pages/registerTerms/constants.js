@@ -1,7 +1,7 @@
 export const MAIN_TERMS = {
     tactical: [
         {
-            text: "Rumah Produksi mengirimkan 1 (satu) proposal film untuk dipromosikan dengan jangka waktu promosi yang dilaksanakan pada bulan Oktober s/d November 2021;",
+            text: "Rumah Produksi mengirimkan 1 (satu) proposal film untuk dipromosikan dengan jangka waktu promosi yang dilaksanakan pada bulan Oktober – 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih);",
         },
         {
             text: "Rumah Produksi yang berhak mendaftar telah berbadan usaha dalam bentuk Perseroan Terbatas (PT) yang kepemilikan sahamnya dimiliki oleh Warga Negara Indonesia (WNI), atau badan hukum Indonesia, dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia, sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan akta pendirian badan usaha;",
@@ -103,13 +103,13 @@ export const MAIN_TERMS = {
 export const LOWER_TERMS = {
     tactical: [
         {
-            text: "Film Indonesia Siap Tayang (film sudah memiliki rencana penayangan yang menjadi tanggung jawab Rumah Produksi) di berbagai media penayangan multiplatform legal;"
+            text: "Film Indonesia Siap Tayang (film sudah memiliki rencana penayangan yang menjadi tanggung jawab Rumah Produksi)"
         },
         {
-            text: "Film Panjang (film berdurasi cukup panjang untuk diputar sebagai film utama atau satu-satunya film pada sebuah acara pemutaran film dengan rata-rata durasi film antara 90-210 menit);"
+            text: "Film Panjang/Film Layar Lebar (film berdurasi cukup panjang untuk diputar sebagai film utama atau satu-satunya film pada sebuah acara pemutaran film dengan durasi minimal 80 menit);"
         },
         {
-            text: "Film yang didaftarkan wajib menyelesaikan pelaksanaan promosi dari dana bantuan pada periode bulan Oktober s/d November 2021."
+            text: "Film yang didaftarkan wajib menyelesaikan pelaksanaan promosi dari dana bantuan pada periode bulan Oktober – 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih);"
         },
         {
             text: "Konten film merujuk pada UU no. 33 tahun 2009 tentang perfilman dan tidak mengandung adegan pornografi, kekerasan, radikal (sara) dan hal-hal lain yang dilarang dalam peraturan perundangan tersebut",
@@ -215,18 +215,18 @@ export const DOCUMENT_TERMS = {
         {
             text: "Proposal Bantuan Pemerintah bagi Promosi Film Indonesia (format pada Unduh Dokumen Promosi Lampiran 5) berisi tentang :",
             children: [
-                "a.	HALAMAN MUKA: Judul Film;",
-                "b.	INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Daftar Nama Pemain Utama dan Pendukung, dan rencana platform atau media penayangan film;",
-                "c.	Logline (3 kalimat) dan Sinopsis (200 – 400 kata);",
-                "d.	Ulasan tentang Siapa Target Penonton (max 400 kata);",
-                "e.	Director’s Statement (200-400 kata);",
-                "f.	Visi Produser (200-400 kata);",
-                "g. Rincian Anggaran Biaya (RAB) : Rp ______________(terlampir);",
-                "h. Rencana jadwal pelaksanaan : (terlampir dan didetailkan proyeksi penggunaan dananya);",
-                "i. Strategi promosi, konten dan materi promosi serta media promosi yang digunakan;",
-                "j. Rencana jadwal dan timeline promosi;",
-                "k. Rencana jadwal & timeline penayangan;",
-                "l. Teaser Poster atau Poster atau still photo yang dapat menggambarkan filmnya;",
+                "a.  HALAMAN MUKA: Judul Film;",
+                "b.  INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Daftar Nama Pemain Utama dan Pendukung",
+                "c.  Logline (3 kalimat) dan Sinopsis (200 – 400 kata);",
+                "d.  Ulasan tentang Siapa Target Penonton (max 400 kata);",
+                "e.  Director’s Statement (200-400 kata);",
+                "f.  Visi Produser (200-400 kata);",
+                "g.  Rincian Anggaran Biaya (RAB) : Rp ______________(terlampir);",
+                "h.  Rencana jadwal pelaksanaan : (terlampir dan didetailkan proyeksi penggunaan dananya);",
+                "i.  Strategi promosi, konten dan materi promosi serta media promosi yang digunakan;",
+                "j.  Rencana jadwal dan timeline promosi (Periode pelaksanaan promosi dari bulan Oktober – 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih));",
+                "k.  Rencana jadwal & timeline penayangan;",
+                "l.  Teaser Poster atau Poster atau still photo yang dapat menggambarkan filmnya;",
                 "Proposal dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film."
             ]
         },
@@ -238,19 +238,22 @@ export const DOCUMENT_TERMS = {
             text: "Portofolio Produk film yang telah dihasilkan"
         },
         {
-            text: "Link dokumen Film yang diajukan dalam format video"
+            text: "Link dokumen trailer film yang diajukan dalam format video bersifat mandatory"
         },
         {
-            text: "Dokumen persyaratan pada poin 1 - 17 wajib diunggah melalui website pendaftaran pada kolom yang telah disediakan"
+            text: "Link dokumen film yang diajukan dalam format video bersifat non-mandatory"
         },
         {
-            text: "Seluruh dokumen asli legalitas dan identitas badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)",
+            text: "Dokumen persyaratan pada poin 1 - 17 wajib diunggah melalui website pendaftaran pada kolom yang telah disediakan",
             // children: [
             //     "Tim PEN Film, Direktorat Musik, Film dan Animasi – Deputi Bidang Ekonomi Digital dan Produk KreatifKementerian Pariwisata dan Ekonomi Kreatif, Gedung Kementerian BUMN Lt.17, Jalan Medan Merdeka Selatan No.13, Jakarta Pusat 10110",
             // ]
         },
         {
-            text: "Penjelasan poin 19 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan"
+            text: "Seluruh dokumen asli legalitas dan identitas badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)"
+        },
+        {
+            text: "Penjelasan poin 20 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan"
         },
         {
             text: "Seluruh dokumen pendukung, dokumen legalitas, dan dokumen permohonan yang dikirimkan disusun dengan urutan yang benar, lengkap dengan halaman muka yang merujuk dengan jelas nama Rumah Produksi"
