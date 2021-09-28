@@ -46,7 +46,7 @@ const Program = () => {
                 <div className="our-program-tactical-text">
                     {/* <img src={programTacticalText} alt="program-tactical" /> */}
                     <p>Sebagai bagian dari Program Bantuan Pemerintah sub Sektor film yang terdiri dari Skema Promosi - Lisensi - Produksi.</p>
-                    <p>Bertujuan meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih yang akan ditayangkan di media penayangan multiplatform legal dan mendukung kemajuan industri perfilman melalui kegiatan promosi film.</p>
+                    <p>Bertujuan meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih dan mendukung kemajuan industri perfilman melalui kegiatan promosi film.</p>
                     <p>Pelaksanaan Promosi dilakukan pada jangka waktu 
                     Oktober – 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih)</p>
                     <p>Target penerima bantuan sebanyak 40 Rumah Produksi dengan nilai bantuan sebesar Rp. 1.500.000.000,- per rumah produksi.</p>

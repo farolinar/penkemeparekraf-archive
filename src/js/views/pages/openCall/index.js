@@ -14,7 +14,7 @@ const OpenCall = () => {
                 <br />
                 <br />
                 <p>Pendaftaran akan berlangsung mulai dari</p>
-                <p>30 September - 10 Oktober 2021</p>
+                <p>1 - 10 Oktober 2021</p>
                 <div className="home-register-button">
                     <button>
                         <a href={ROUTES.registerTerms}>Syarat Pendaftaran</a>

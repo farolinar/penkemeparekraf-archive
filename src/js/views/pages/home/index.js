@@ -141,7 +141,7 @@ const Home = (props) => {
                         <h3>Bantuan Pemerintah Promosi Film Indonesia</h3>
                         <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor film yang terdiri dari Skema Promosi - Lisensi - Produksi</p>
                         {/* <br /> */}
-                        <p>Bertujuan untuk meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih yang akan ditayangkan di media penayangan multiplatform legal dan mendukung kemajuan industri perfilman melalui kegiatan promosi film</p>
+                        <p>Bertujuan untuk meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih dan mendukung kemajuan industri perfilman melalui kegiatan promosi film</p>
                         {/* <br /> */}
                         <p>Pelaksanaan Promosi dilakukan pada jangka waktu Oktober - 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih)</p>
                         <button>
@@ -160,7 +160,7 @@ const Home = (props) => {
                 <br />
                 <br />
                 <p>Pendaftaran akan berlangsung mulai dari</p>
-                <p>30 September - 10 Oktober 2021</p>
+                <p>1 - 10 Oktober 2021</p>
                 <div className="home-register-button">
                     <button>
                         <a href={ROUTES.registerTerms}>Syarat Pendaftaran</a>
