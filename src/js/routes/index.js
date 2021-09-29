@@ -11,6 +11,7 @@ const UploadForm = lazy(()=>import('../views/pages/uploadForm'));
 const UploadTacticalForm = lazy(()=>import('../views/pages/uploadForm/UploadTacticalForm'));
 const UploadProductionForm = lazy(()=>import('../views/pages/uploadForm/UploadProductionForm'));
 const RegisterTerms = lazy(()=>import('../views/pages/registerTerms'));
+const DownloadTacticalForm = lazy(()=>import('../views/pages/downloadForm/DownloadForm'));
 
 const Routes = [
     {
@@ -46,6 +47,12 @@ const Routes = [
     {
         path: ROUTES.downloadForm,
         component: DownloadForm,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.downloadTacticalForm,
+        component: DownloadTacticalForm,
         exact: true,
         default: true
     },

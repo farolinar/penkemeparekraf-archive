@@ -1,5 +1,5 @@
 import React from 'react';
-import { ANCHOR } from '../../../constants';
+import { ANCHOR, ROUTES } from '../../../constants';
 import Template from '../../layout/template';
 import "./UploadForm.scss";
 import UploadTacticalForm from './UploadTacticalForm';
@@ -12,7 +12,7 @@ const UploadForm = () => {
                 <h2>Unggah Formulir</h2>
                 <div className="our-programs">
                     <div className="our-program">
-                        <a href={`#${ANCHOR.programPromosiTaktikalFilm}`}>Promosi</a>
+                        <a href={ROUTES.uploadTacticalForm}>Promosi</a>
                     </div>
                     <div className="our-program">
                         <a>Lisensi</a>
@@ -26,9 +26,9 @@ const UploadForm = () => {
                 </div>
             </div>
         </div>
-        <div id={ANCHOR.programPromosiTaktikalFilm}>
+        {/* <div id={ANCHOR.programPromosiTaktikalFilm}>
             <UploadTacticalForm />
-        </div>
+        </div> */}
     </Template>
 }
 

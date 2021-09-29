@@ -5,6 +5,7 @@ import { FaCheckSquare } from "react-icons/fa"
 import "./UploadForm.scss";
 import $ from 'jquery';
 import Loading from '../../component/loading';
+import Template from '../../layout/template';
 // import { postData } from '../../../fetch';
 
 const acceptedFileFormat = {
@@ -226,7 +227,7 @@ const UploadTacticalForm = () => {
         }
     }
 
-    return <Fragment>
+    return <Template>
         <Loading visibility={isLoading} />
         <div className="upload-form-wrapper upload-tactical-form-wrapper">
             <h2>Pendaftaran Program Bantuan Pemerintah Promosi Film Indonesia</h2>
@@ -596,7 +597,7 @@ const UploadTacticalForm = () => {
                 Submit
             </div>
         </div>
-    </Fragment>
+    </Template>
 }
 
 export default UploadTacticalForm;

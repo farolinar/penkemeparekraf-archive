@@ -7,6 +7,7 @@ export const ROUTES = {
     downloadForm: "/unduh-formulir",
     uploadForm: "/unggah-formulir",
     uploadTacticalForm: "/unggah-formulir-bantuan-promosi",
+    downloadTacticalForm: "/unduh-formulir-bantuan-promosi",
     uploadProductionForm: "/unggah-formulir-bantuan-produksi",
     contactUs: "/kontak-kami",
     registerTerms: "/syarat-pendaftaran",
