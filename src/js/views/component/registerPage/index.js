@@ -7,7 +7,7 @@ const RegisterPage = () => {
         <div className="register-container">
             <div className="register-title">
                 <h2>Pendaftaran</h2>
-                <p>Undangan bagi Rumah Produksi Film Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Promosi - Lisensi - Produksi</p>
+                <p>Undangan bagi Rumah Produksi Film Indonesia untuk berpartisipasi dan<br />mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film<br />melalui Skema Promosi - Lisensi - Produksi</p>
             </div>
             <div className="register-block register-promosi">
                 <div className="register-block-content">

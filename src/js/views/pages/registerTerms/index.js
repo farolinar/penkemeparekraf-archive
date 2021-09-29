@@ -28,17 +28,14 @@ const RegisterTerms = () => {
         const [showTwo, setShowTwo] = useState(false);
         const [showThree, setShowThree] = useState(false);
         return <div className="register-terms-wrapper">
-            <div className="register-terms-dropdown" style={{ backgroundColor: item.color }}>
+            {/* <div className="register-terms-dropdown" style={{ backgroundColor: item.color }}>
                 <p>{item.name}</p>
-                {/* <div>
-                    <img src={icArrow} alt="" style={{transform: showChildren ? "rotate(180deg)" : ""}} />
-                </div> */}
-            </div>
+            </div> */}
             <div 
                 onClick={() => setShowOne(!showOne)}
                 className="register-terms-dropdown-section"
             >
-                <h2>PERSYARATAN UMUM RUMAH PRODUKSI</h2>
+                <h5>PERSYARATAN UMUM RUMAH PRODUKSI</h5>
                 <div>
                     <img src={icArrowBlack} alt="" style={{transform: showOne ? "rotate(90deg)" : ""}} />
                 </div>
@@ -70,7 +67,7 @@ const RegisterTerms = () => {
                 onClick={() => setShowTwo(true)}
                 className="register-terms-dropdown-section"
             >
-                <h2>PERSYARATAN FILM YANG DIAJUKAN</h2>
+                <h5>PERSYARATAN FILM YANG DIAJUKAN</h5>
                 <div>
                     <img src={icArrowBlack} alt="" />
                 </div>
@@ -81,7 +78,7 @@ const RegisterTerms = () => {
                     onClick={() => setShowTwo(false)}
                     className="register-terms-dropdown-section"
                 >
-                    <h2>PERSYARATAN FILM YANG DIAJUKAN</h2>
+                    <h5>PERSYARATAN FILM YANG DIAJUKAN</h5>
                     <div>
                         <img src={icArrowWhite} alt="" style={{transform: "rotate(90deg)"}} />
                     </div>
@@ -112,7 +109,7 @@ const RegisterTerms = () => {
                 onClick={() => setShowThree(!showThree)}
                 className="register-terms-dropdown-section"
             >
-                <h2>PERSYARATAN ADMINISTRASI DOKUMEN</h2>
+                <h5>PERSYARATAN ADMINISTRASI DOKUMEN</h5>
                 <div>
                     <img src={icArrowBlack} alt="" style={{transform: showThree ? "rotate(90deg)" : ""}} />
                 </div>
@@ -147,7 +144,7 @@ const RegisterTerms = () => {
 
     return <Template>
         <div className="register-terms-main-wrapper">
-            <h2>Syarat Pendaftaran</h2>
+            <h2>Syarat Pendaftaran Bantuan Pemerintah<br />Promosi Film Indonesia</h2>
             {
                 REGISTER_TERMS.map((item, index) => <RegisterTerms item={item} key={index} />)
             }

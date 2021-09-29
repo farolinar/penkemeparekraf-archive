@@ -1,18 +1,26 @@
 .register-terms-main-wrapper {
     padding: 40px 0 100px;
-    h2 {
-        font-size: 4.5vw;
+    h2, h5 {
+        // font-size: 4.5vw;
         font-weight: 700;
         margin-bottom: 0;
         margin-left: 12vw;
         margin-right: 12vw;
     }
 
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    h5 {
+        margin-top: 0;
+    }
+
     .register-terms-wrapper {
         h2 {
             color: #000;
             font-weight: 700;
-            font-size: 2vw;
+            // font-size: 2vw;
             margin-top: 0;
         }
         .register-terms-dropdown {
@@ -29,6 +37,7 @@
 
             p {
                 margin: 0;
+                font-size: 24px;
             }
 
             div {
@@ -50,7 +59,7 @@
             margin-right: 12vw;
             margin-bottom: 30px;
 
-            h2 {
+            h5 {
                 margin-left: 0;
                 margin-right: 0;
             }
@@ -70,7 +79,7 @@
             margin: 0 12vw 50px;
             li {
                 margin: 12px;
-                font-size: 28px;
+                font-size: 18px;
             }
             .register-term-children {
                 margin-left: 2vw;
@@ -79,7 +88,7 @@
 
         .register-terms-content-subtitle {
             margin: 12px 12vw;
-            font-size: 28px;
+            font-size: 18px;
         }
 
         .register-terms-lower-section {

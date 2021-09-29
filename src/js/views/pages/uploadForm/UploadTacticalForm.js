@@ -573,11 +573,11 @@ const UploadTacticalForm = () => {
                 // borderRadius={20}
                 style={{ overflow: "hidden", backgroundColor: "white" }}
                 size={28}
-                label={<p>Saya menyatakan bahwa seluruh data yang saya isi adalah benar.</p>}
+                label={<p style={{fontSize: 24}}>Saya menyatakan bahwa seluruh data yang saya isi adalah benar.</p>}
                 labelStyle={{
                     color: "white",
                     marginLeft: 10,
-                    fontSize: 26
+                    fontSize: 24
                 }}
                 onChange={(checked) => setVerifyCheck(checked)}
                 containerStyle={{

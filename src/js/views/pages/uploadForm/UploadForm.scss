@@ -22,7 +22,7 @@
         text-align: center;
         position: relative;
         h2 {
-            font-size: 4.5vw;
+            // font-size: 4.5vw;
             font-weight: 700;
             margin: 0 0 5vw;
         }
@@ -37,7 +37,8 @@
                 border-radius: 10px;
                 background-color: rgba(56, 132, 194, 0.8);
                 cursor: pointer;
-                font-size: 2vw;
+                // font-size: 2vw;
+                font-size: 24px;
                 font-weight: 700;
                 width: 20%;
                 transition: ease 0.5s;
@@ -59,7 +60,7 @@
     padding: 100px 12vw;
 
     h2 {
-        font-size: 4.5vw;
+        // font-size: 4.5vw;
         font-family: 700;
         color: #fff;
     }
@@ -154,7 +155,7 @@
             }
 
             p {
-                font-size: 24px;
+                // font-size: 24px;
                 margin: 0 15px;
                 line-height: normal;
 
@@ -183,7 +184,7 @@
     }
 
     .upload-form-note {
-        font-size: 24px;
+        font-size: 18px;
         color: #fff;
         list-style: auto;
         margin-bottom: 40px;
