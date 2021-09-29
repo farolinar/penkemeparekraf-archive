@@ -27,16 +27,17 @@
         // margin: 15% auto 0;
         top: 50vh;
         margin-top: -25vh;
-        left: 50vw;
-        margin-left: -30vw;
+        left: 50%;
+        margin-left: -50%;
+        width: 100%;
 
         h2 {
-            font-size: 4.5vw;
+            // font-size: 4.5vw;
             margin: 0 0 3.5vw;
         }
     
         p {
-            font-size: 2vw;
+            // font-size: 2vw;
             margin-bottom: 30px;
         }
     
@@ -52,7 +53,7 @@
     
                 a {
                     margin: auto;
-                    font-size: 2vw;
+                    font-size: 18px;
                 }
     
                 .lazyload-wrapper {
