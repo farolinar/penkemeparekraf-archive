@@ -1,2 +1,0 @@
-(this["webpackJsonpweb-pen"]=this["webpackJsonpweb-pen"]||[]).push([[17],{38:function(n,e,t){},39:function(n,e,t){"use strict";t.r(e);var c=t(0),i=(t(38),t(1)),u=Object(c.lazy)((function(){return t.e(19).then(t.bind(null,46))})),s=Object(c.lazy)((function(){return t.e(10).then(t.bind(null,45))}));e.default=function(n){return Object(i.jsxs)("div",{className:"app",children:[Object(i.jsx)(u,{}),n.children,!n.withoutFooter&&Object(i.jsx)(s,{})]})}}}]);
-//# sourceMappingURL=17.ef24455e.chunk.js.map
