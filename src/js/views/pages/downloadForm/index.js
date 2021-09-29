@@ -95,7 +95,7 @@ const DownloadForm = () => {
         <div className="download-form-tactical-wrapper download-form-wrapper" id={ANCHOR.downloadTacticalForm}>
             <h2>Unduh Format Lampiran Bantuan Pemerintah Promosi Film Indonesia</h2>
             <h3>FORMULIR PENDAFTARAN</h3>
-            <p>1. Seluruh dokumen asli legalitas, identitas dan stempel badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatsngan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasana jima rumah produksi terpilih sebagai Penerina Bantuan (rencana lokasi di Jakarta)
+            <p>1. Seluruh dokumen asli legalitas, identitas dan stempel badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasana jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)
             <br />
             2. Penjelasan poin 1 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan</p>
             <div className="download-forms">
