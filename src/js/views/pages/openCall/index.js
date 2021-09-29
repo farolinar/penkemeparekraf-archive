@@ -1,11 +1,12 @@
 import React from 'react';
-import { ROUTES } from '../../../constants';
+import RegisterPage from '../../component/registerPage';
 import Template from '../../layout/template';
 import "./OpenCall.scss";
 
 const OpenCall = () => {
     return <Template>
-        <div className="open-call-wrapper">
+        <RegisterPage />
+        {/* <div className="open-call-wrapper">
             <div className="open-call-filter"></div>
             <div className="open-call-content">
                 <h2>Pendaftaran</h2>
@@ -27,7 +28,7 @@ const OpenCall = () => {
                     </button>
                 </div>
             </div>
-        </div>
+        </div> */}
     </Template>
 }
 

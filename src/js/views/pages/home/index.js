@@ -12,6 +12,7 @@ import programTacticalHero from "../../../../assets/img/pages/program/program-ta
 // import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
 import "./Home.scss";
 import { ROUTES } from "../../../constants";
+import RegisterPage from "../../component/registerPage";
 const Template = lazy(()=>import('../../layout/template'));
 const ImageCarousel = lazy(()=>import('../../component/imageCarousel/ImageCarousel'));
 
@@ -151,8 +152,8 @@ const Home = (props) => {
                 </div>
             </div>
         </div>
-
-        <div className="home-register-wrapper">
+        <RegisterPage />
+        {/* <div className="home-register-wrapper">
             <div className="home-register-content">
                 <h2>Pendaftaran</h2>
                 <p>Undangan bagi Rumah Produksi Film Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Bantuan Pemerintah Promosi Film Indonesia</p>
@@ -173,7 +174,7 @@ const Home = (props) => {
                     </button>
                 </div>
             </div>
-        </div>
+        </div> */}
     </Template>)
 }
 

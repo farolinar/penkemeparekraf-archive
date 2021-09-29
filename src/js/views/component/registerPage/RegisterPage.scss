@@ -1,0 +1,85 @@
+.register-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    height: 800px;
+
+    h2 {
+        margin-bottom: 26px;
+    }
+
+    p {
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 35px;
+    }
+
+    .register-title {
+        position: absolute;
+        top: 100px;
+        z-index: 1;
+        text-align: center;
+        width: 70%;
+        margin-left: -35%;
+        left: 50%;
+    }
+
+    .register-block {
+        flex: 0 0 33.3%;
+        position: relative;
+        text-align: center;
+
+        .register-block-content {
+            height: 400px;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+
+            .button-wrapper {
+                text-align: center;
+                a {
+                    display: block;
+                    padding: 8px 20px;
+                    background-color: #fff;
+                    color: black;
+                    font-weight: 400;
+                    border-radius: 10px;
+                    width: 45%;
+                    margin: 0 auto 20px;
+                    font-size: 18px;
+                }
+            }
+        }   
+
+        &.register-promosi {
+            background-image: url(../../../../assets/img/pages/register/register-promosi-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .register-block-content {
+                background-color: rgba(56, 132, 194, 0.7);
+            }
+        }
+
+        &.register-produksi {
+            background-image: url(../../../../assets/img/pages/register/register-produksi-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .register-block-content {
+                background-color: rgba(255, 162, 0, 0.7);
+            }
+        }
+
+        &.register-lisensi {
+            background-image: url(../../../../assets/img/pages/register/register-lisensi-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .register-block-content {
+                background-color: rgba(58, 181, 158, 0.7);
+            }
+        }
+    }
+}
