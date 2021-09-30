@@ -161,6 +161,7 @@ const Home = (props) => {
                 <br />
                 <br />
                 <p>Pendaftaran akan berlangsung mulai dari</p>
+                <br />
                 <p>1 - 10 Oktober 2021</p>
                 <div className="home-register-button">
                     <button>
