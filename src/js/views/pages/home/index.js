@@ -109,7 +109,7 @@ const Home = (props) => {
                 <div></div>
                 <div className="home-about-us-text">
                     <h2>Tentang Kami</h2>
-                    <p>Program Pemulihan Ekonomi Nasional yang selanjutnya disebut Program PEN adalah rangkaian kegiatan untuk pemulihan perekonomian nasional yang merupakan bagian dari kebijakan keuangan negara yang dilaksanakan oleh Pemerintah untuk mempercepat penanganan pandemi Coronavirus Disease 2019 (COVID-19) dan/atau menghadapi ancaman yang membahayakan perekonomian nasional dan/atau stabilitas sistem keuangan serta penyelamatan ekonomi nasional <br /> (PP No. 43/2020).</p>
+                    <p>Program Pemulihan Ekonomi Nasional yang selanjutnya disebut Program PEN adalah rangkaian kegiatan untuk pemulihan perekonomian nasional yang merupakan bagian dari kebijakan keuangan negara yang dilaksanakan oleh Pemerintah untuk mempercepat penanganan pandemi Coronavirus Disease 2019 (COVID-19) dan/atau menghadapi ancaman yang membahayakan perekonomian nasional dan/atau stabilitas sistem keuangan serta penyelamatan ekonomi nasional (PP No. 43/2020).</p>
                     <button onClick={() => window.location.href = ROUTES.aboutUs} className="green-button">
                         Selengkapnya
                     </button>
