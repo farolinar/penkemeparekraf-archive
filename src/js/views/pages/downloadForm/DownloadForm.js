@@ -6,15 +6,15 @@ import "./DownloadForm.scss";
 const TACTICAL_FORMS = [
     {
         name: "Unduh Lampiran 1 - Format Surat Pernyataan Rumah Produksi",
-        url: "https://drive.google.com/uc?export=download&id=1yLnjwIvv9tQu4XkhApNdmEcBy5deLMxg"
+        url: "https://drive.google.com/uc?export=download&id=12Np9iNS_nuRPLw5TMhUYk-jHgjSYXXRm"
     },
     {
         name: "Unduh Lampiran 2 - Format Surat Pernyataan Tanggung Jawab Mutlak",
-        url: "https://drive.google.com/uc?export=download&id=1Xjc1yexliPU9Lp6LMidQr0xr5r6dkZNU"
+        url: "https://drive.google.com/uc?export=download&id=14reQzyqPe6l7BPdaag_Kh-dCvk2e_9XA"
     },
     {
         name: "Unduh Lampiran 3 - Format Surat Permohonan Bantuan Pemerintah Bagi Promosi Film Indonesia",
-        url: "https://drive.google.com/uc?export=download&id=13k1Oy_gX-ryd-sa0w1Sg926zHUhQSxuo"
+        url: "https://drive.google.com/uc?export=download&id=1c32fO_WZhyy2zDDcLF6nEKB2xthZWOJD"
     },
     // {
     //     name: "Unduh Lampiran 4 - Format Surat Pernyataan Film yang Diajukan Wajib Tayang di Media Penayangan Multiplatform Legal",
@@ -22,15 +22,15 @@ const TACTICAL_FORMS = [
     // },
     {
         name: "Unduh Lampiran 4 - Format Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah bagi Promosi Film Indonesia",
-        url: "https://drive.google.com/uc?export=download&id=14GPEQHn8USKpti_--bhlm_iqPmACb-O1"
+        url: "https://drive.google.com/uc?export=download&id=1IqyX1VJpeGsWwvncsOZ1EEmvZ3GYfpdV"
     },
     {
         name: "Unduh Lampiran 5 - Format Sistematika Proposal Bantuan Pemerintah bagi Promosi Film Indonesia",
-        url: "https://drive.google.com/uc?export=download&id=1HljsRrfrRb9sOIRoSdObjhAcYtIXT6Q2"
+        url: "https://drive.google.com/uc?export=download&id=19R7wV_A4W0Mxl-2_VtU5HzH0h4OMoekH"
     },
     {
         name: "Unduh Lampiran 6 - Format Rincian Anggaran Biaya (RAB) Bantuan Pemerintah bagi Promosi Film Indonesia",
-        url: "https://drive.google.com/uc?export=download&id=1XMsyYpIeUMysSsTcbBaMttROkO9mB9jd"
+        url: "https://drive.google.com/uc?export=download&id=1iS9dF-bxnf1xsFvUBWwOKopnm2_uQ_O6"
     },
 ]
 
