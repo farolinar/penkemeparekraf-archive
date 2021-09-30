@@ -12,7 +12,7 @@ const RegisterPage = () => {
             <div className="register-block register-promosi">
                 <div className="register-block-content">
                     <h2>Promosi</h2>
-                    <p>Pendaftaran akan berlangsung mulai dari 1 - 10 Oktober 2021</p>
+                    <p>Pendaftaran akan berlangsung mulai dari<br />1 - 10 Oktober 2021</p>
                     <div className="button-wrapper">
                         <a href={ROUTES.registerTerms} className="register-button">Syarat Pendaftaran</a>
                         <a href={ROUTES.downloadTacticalForm} className="register-button">Unduh Formulir</a>
