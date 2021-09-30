@@ -76,7 +76,7 @@
 
         .upload-form-label {
             color: #fff;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 600;
             padding: 7px 15px;
             border-radius: 6px;
@@ -86,7 +86,7 @@
     
         span {
             color: #fff;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: normal;
         }
     }
@@ -103,14 +103,14 @@
             width: 100%;
             label {
                 text-transform: capitalize;
-                font-size: 24px;
+                font-size: 18px;
             }
 
             input {
                 border-radius: 6px;
                 border: solid 3px var(--main-blue);
                 padding: 8px;
-                font-size: 24px;
+                font-size: 18px;
                 display: block;
                 width: 97%;
                 color: var(--main-blue);
@@ -118,7 +118,7 @@
         }
 
         .upload-file-subtitle {
-            font-size: 24px;
+            font-size: 18px;
             margin-bottom: 25px;
             margin-top: 0;
         }
@@ -127,11 +127,11 @@
             color: var(--main-blue);
             .upload-file-title {
                 text-transform: capitalize;
-                font-size: 24px;
+                font-size: 18px;
             }
 
             .upload-file-subtitle {
-                font-size: 24px;
+                font-size: 18px;
                 margin-bottom: 15px;
             }
 
@@ -139,18 +139,18 @@
                 cursor: pointer;
                 border: solid 2px var(--main-blue);
                 // padding: 10px 70px;
-                font-size: 24px;
+                font-size: 18px;
                 border-radius: 6px;
                 width: fit-content;
-                margin: 15px 0;
+                margin: 0 0 15px;
                 
                 label {
                     cursor: pointer;
-                    height: 50px;
+                    height: 40px;
                     width: 200px;
                     display: block;
                     text-align: center;
-                    line-height: 50px;
+                    line-height: 40px;
                 }
             }
 
@@ -173,7 +173,7 @@
         color: var(--main-blue);
         cursor: pointer;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 24px;
         padding: 15px 70px;
         width: fit-content;
         border-radius: 6px;
