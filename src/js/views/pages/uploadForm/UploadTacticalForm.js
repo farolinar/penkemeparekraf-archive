@@ -112,8 +112,8 @@ const UploadTacticalForm = () => {
     const [portofolioProdukFilmFile, setPortofolioProdukFilmFile] = useState({name: "", file: ""})
     const [pengajuanRABProduksiFile, setPengajuanRABProduksiFile] = useState({name: "", file: ""})
 
-    const [link, setLink] = useState()
-    const [secondLink, setSecondLink] = useState()
+    const [link, setLink] = useState("")
+    const [secondLink, setSecondLink] = useState("")
     const [verifyCheck, setVerifyCheck] = useState(false)
 
     const [isLoading, setIsLoading] = useState(false)
