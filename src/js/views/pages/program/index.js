@@ -3,8 +3,8 @@ import LazyLoad from 'react-lazyload';
 import Template from '../../layout/template';
 import programTacticalText from "../../../../assets/img/pages/program/program-tactical-text.jpg";
 import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-hero.png";
-// import programProductionText from "../../../../assets/img/pages/program/program-production-text.png";
-// import programProductionHero from "../../../../assets/img/pages/program/program-production-hero.png";
+import programProductionText from "../../../../assets/img/pages/program/program-production-text.png";
+import programProductionHero from "../../../../assets/img/pages/program/program-production-hero.png";
 import "./Program.scss";
 import { ANCHOR } from '../../../constants';
 
@@ -57,7 +57,7 @@ const Program = () => {
             </div>
         </div>
 
-        {/* <div className="our-program-production-wrapper" id={ANCHOR.programProduksiFilm}>
+        <div className="our-program-production-wrapper" id={ANCHOR.programProduksiFilm}>
             <h2>Bantuan Pemerintah Produksi Film Indonesia</h2>
             <div className="our-program-production-content">
                 <div className="lazyload-wrapper">
@@ -67,7 +67,7 @@ const Program = () => {
                     <img src={programProductionText} alt="program-tactical" />
                 </div>
             </div>
-        </div> */}
+        </div>
     </Template>
 }
 

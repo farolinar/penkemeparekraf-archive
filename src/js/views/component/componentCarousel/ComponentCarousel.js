@@ -1,21 +1,21 @@
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import "./ImageCarousel.scss";
+import "./ComponentCarousel.scss";
 
-const ImageCarousel = (props) => {
+const ComponentCarousel = (props) => {
     return <Carousel 
-        autoPlay
+        autoPlay={false}
         dynamicHeight={false}
         emulateTouch 
         infiniteLoop
         showIndicators={false}
         showStatus={false}
         showThumbs={false}
-        className="image-carousel-wrapper"
+        className="component-carousel-wrapper"
     >
         {props.children}
     </Carousel>
 }
 
-export default ImageCarousel;
+export default ComponentCarousel;

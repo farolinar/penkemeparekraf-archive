@@ -169,12 +169,19 @@
 
         .our-program-content-new {
             background-color: #fff;
-            padding: 55px;
-            display: flex;
+            // display: flex;
             color: var(--main-light-blue);
-            justify-content: space-between;
-            padding: 100px 50px;
+            // justify-content: space-between;
+            padding: 100px 0px;
             border-radius: 10px;
+            text-align: left;
+
+            .our-program-content {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+                padding: 0 200px;
+            }
 
             .lazyload-wrapper {
                 width: 50%;

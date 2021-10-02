@@ -1,45 +1,47 @@
-.image-carousel-wrapper {
+.component-carousel-wrapper {
     .carousel.carousel-slider .control-arrow {
         opacity: 1;
         background: unset;
     }
-    
+
     .carousel.carousel-slider .control-arrow:hover {
         background: unset;
     }
-    
+
     .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
         border: unset;
-        content: url('../../../../assets/img/icons/ic-arrow-carousel.png');
+        content: url('../../../../assets/img/icons/ic-arrow-component.png');
     }
-    
+
     .carousel .control-next.control-arrow:before {
+        // transform: rotate(180deg);
+        z-index: 9;
+    }
+
+    .carousel .control-prev.control-arrow:before {
         transform: rotate(180deg);
         z-index: 9;
     }
-    
-    .carousel .control-prev.control-arrow:before {
-        z-index: 9;
-    }
-    
+
     .carousel .control-next.control-arrow {
-        right: 5vw;
+        right: 0;
+        background-color: #fff !important;
         z-index: 9;
     }
-    
+
     .carousel .control-prev.control-arrow {
-        left: 5vw;
+        left: 0;
+        background-color: #fff;
         z-index: 9;
     }
-    
+
     .carousel .slide {
         height: fit-content;
         object-fit: cover;
     }
-    
-    .carousel .slide img {
-        height: 45vw;
-        object-fit: cover;
-    }
 }
 
+// .carousel .slide img {
+//     height: auto;
+//     object-fit: initial;
+// }

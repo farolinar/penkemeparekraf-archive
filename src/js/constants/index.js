@@ -9,10 +9,10 @@ export const ROUTES = {
     uploadTacticalForm: "/unggah-formulir-bantuan-promosi",
     downloadTacticalForm: "/unduh-formulir-bantuan-promosi",
     uploadProductionForm: "/unggah-formulir-bantuan-produksi",
+    downloadProductionForm: "/unduh-formulir-bantuan-promosi",
     contactUs: "/kontak-kami",
-    registerTerms: "/syarat-pendaftaran",
-    // registerProductionTerms: "/syarat-pendaftaran-bantuan-produksi",
-    // registerTacticalTerms: "/syarat-pendaftaran-bantuan-promosi",
+    registerTacticalTerms: "/syarat-pendaftaran-bantuan-promosi",
+    registerProductionTerms: "/syarat-pendaftaran-bantuan-produksi",
     program: "/program"
 }
 

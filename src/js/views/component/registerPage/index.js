@@ -14,7 +14,7 @@ const RegisterPage = () => {
                     <h2>Promosi</h2>
                     <p>Pendaftaran akan berlangsung mulai dari<br />1 - 10 Oktober 2021</p>
                     <div className="button-wrapper">
-                        <a href={ROUTES.registerTerms} className="register-button">Syarat Pendaftaran</a>
+                        <a href={ROUTES.registerTacticalTerms} className="register-button">Syarat Pendaftaran</a>
                         <a href={ROUTES.downloadTacticalForm} className="register-button">Unduh Formulir</a>
                         <a href={ROUTES.uploadTacticalForm} className="register-button">Unggah Formulir</a>
                     </div>
@@ -31,7 +31,12 @@ const RegisterPage = () => {
             <div className="register-block register-lisensi">
                 <div className="register-block-content">
                     <h2>Produksi</h2>
-                    <p>Segera Hadir</p>
+                    <p>Pendaftaran akan berlangsung mulai dari<br />4 - 10 Oktober 2021</p>
+                    <div className="button-wrapper">
+                        <a href={ROUTES.registerProductionTerms} className="register-button">Syarat Pendaftaran</a>
+                        <a href={ROUTES.downloadProductionForm} className="register-button">Unduh Formulir</a>
+                        <a href={ROUTES.uploadProductionForm} className="register-button">Unggah Formulir</a>
+                    </div>
                 </div>
             </div>
         </div>
