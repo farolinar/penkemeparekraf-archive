@@ -9,6 +9,7 @@ import aboutUsHero from '../../../../assets/img/pages/home/about-us-hero.png';
 // import icOurProgramTactical from '../../../../assets/img/pages/home/our-program-tactical-icon.png';
 // import icOurProgramProduction from '../../../../assets/img/pages/home/our-program-production-icon.png';
 import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-hero.png";
+import programProductionHero from "../../../../assets/img/pages/program/program-production-hero.png";
 // import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
 import "./Home.scss";
 import { ANCHOR, ROUTES } from "../../../constants";
@@ -156,7 +157,7 @@ const Home = (props) => {
                         </div>
                         <div className="our-program-content">
                             <div className="lazyload-wrapper">
-                                <img src={programTacticalHero} alt="program-kami" />
+                                <img src={programProductionHero} alt="program-kami" />
                             </div>
                             <div className="our-program-content-text">
                                 <h2>Program Kami</h2>

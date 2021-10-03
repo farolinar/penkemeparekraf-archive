@@ -62,22 +62,23 @@
 
 .our-program-tactical-wrapper {
     color: #000;
-    padding: 10px 6vw 50px;
+    padding: 50px 0;
     background-color: #fff;
     
     h2 {
         // font-size: 4vw;
         font-weight: 700;
         width: 60%;
+        margin-left: 120px;
         // margin-bottom: 0;
     }
 
     .our-program-tactical-content {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         // align-items: center;
         .our-program-tactical-text {
-            width: 50%;
+            width: fit-content;
             // font-size: 1.75vw;
             p:first-child {
                 margin-top: 0;
@@ -87,7 +88,7 @@
             }
         }
         .lazyload-wrapper {
-            width: 45%;
+            width: 35%;
             img {
                 width: 100%;
             }
@@ -97,32 +98,62 @@
 }
 
 .our-program-production-wrapper {
-    color: #fff;
-    padding: 10px 6vw 100px;
-    background-color: var(--main-blue);
+    color: black;
+    padding: 50px 0;
+    // background-color: var(--main-blue);
     
     h2 {
         // font-size: 4vw;
         font-weight: 700;
-        width: 50%;
-        margin-left: 50%;
+        // width: 50%;
+        // margin-left: 50px;
     }
 
     .our-program-production-content {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
         // align-items: center;
+
+        div:first-child {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        div:nth-child(3) {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
         .our-program-production-hero {
-            width: 50%;
+            width: fit-content;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 2;
+
             img {
                 width: 100%;
             }
         }
         .lazyload-wrapper {
-            width: 45%;
+            // width: 30%;
             margin-top: -100px;
+            margin-right: 90px;
+            text-align: end;
+
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
             img {
-                width: 100%;
+                width: 70%;
             }
         }
         

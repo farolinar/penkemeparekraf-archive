@@ -31,7 +31,7 @@ const Program = () => {
                         <a href={null}>Lisensi</a>
                     </div>
                     <div className="our-program">
-                        <a href={null}>Produksi</a>
+                        <a href={`#${ANCHOR.programProduksiFilm}`}>Produksi</a>
                     </div>
                     {/* <div className="our-program">
                         <a href={`#${ANCHOR.programProduksiFilm}`}>Bantuan Pemerintah<br />Produksi Film Indonesia</a>
@@ -39,34 +39,50 @@ const Program = () => {
                 </div>
             </div>
         </div>
-
-        <div className="our-program-tactical-wrapper" id={ANCHOR.programPromosiTaktikalFilm}>
-            <h2>Bantuan Pemerintah Promosi Film Indonesia</h2>
-            <div className="our-program-tactical-content">
-                <div className="our-program-tactical-text">
-                    {/* <img src={programTacticalText} alt="program-tactical" /> */}
-                    <p>Sebagai bagian dari Program Bantuan Pemerintah sub Sektor film yang terdiri dari Skema Promosi - Lisensi - Produksi.</p>
-                    <p>Bertujuan meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih dan mendukung kemajuan industri perfilman melalui kegiatan promosi film.</p>
-                    <p>Pelaksanaan Promosi dilakukan pada jangka waktu 
-                    Oktober – 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih)</p>
-                    <p>Target penerima bantuan sebanyak 40 Rumah Produksi dengan nilai bantuan sebesar Rp. 1.500.000.000,- per rumah produksi.</p>
-                </div>
-                <div className="lazyload-wrapper">
-                    <img src={programTacticalHero} alt="program-tactical" />
+        
+        <div className="grid-wrapper">
+            <div></div>
+            <div className="our-program-tactical-wrapper" id={ANCHOR.programPromosiTaktikalFilm}>
+                <h2>Bantuan Pemerintah<br />Promosi Film Indonesia</h2>
+                <div className="our-program-tactical-content">
+                    <div className="our-program-tactical-text">
+                        {/* <img src={programTacticalText} alt="program-tactical" /> */}
+                        <p>Sebagai bagian dari Program Bantuan Pemerintah sub<br />Sektor film yang terdiri dari Skema Promosi - Lisensi - Produksi.</p>
+                        <p>Bertujuan meningkatkan minat masyarakat menonton Film<br />Indonesia Siap Tayang Terpilih dan mendukung kemajuan industri<br />perfilman melalui kegiatan promosi film.</p>
+                        <p>Pelaksanaan Promosi dilakukan pada jangka waktu<br />
+                        Oktober – 10 Desember 2021 (dimulai sejak tanggal penetapan<br />penerima bantuan terpilih)</p>
+                        <p>Target penerima bantuan sebanyak 40 Rumah Produksi dengan<br />nilai bantuan sebesar Rp. 1.500.000.000,- per rumah produksi.</p>
+                    </div>
+                    <div className="lazyload-wrapper">
+                        <img src={programTacticalHero} alt="program-tactical" />
+                    </div>
                 </div>
             </div>
+            <div></div>
         </div>
-
-        <div className="our-program-production-wrapper" id={ANCHOR.programProduksiFilm}>
-            <h2>Bantuan Pemerintah Produksi Film Indonesia</h2>
-            <div className="our-program-production-content">
-                <div className="lazyload-wrapper">
-                    <img src={programProductionHero} alt="program-tactical" />
-                </div>
-                <div className="our-program-production-hero">
-                    <img src={programProductionText} alt="program-tactical" />
+        
+        <div className="grid-wrapper">
+            <div></div>
+            <div className="our-program-production-wrapper" id={ANCHOR.programProduksiFilm}>
+                {/* <div className="grid-title-right">
+                    <div></div>
+                    <h2>Bantuan Pemerintah<br />Produksi Film Indonesia</h2>
+                </div> */}
+                <div className="our-program-production-content">
+                    <div></div>
+                    <div className="lazyload-wrapper">
+                        <img src={programProductionHero} alt="program-tactical" />
+                    </div>
+                    <div><h2>Bantuan Pemerintah<br />Produksi Film Indonesia</h2></div>
+                    <div className="our-program-production-hero">
+                        <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub<br />Sektor Film yang terdiri dari Skema Promosi - Lisensi -<br />Produksi.</p>
+                        <p>Bertujuan mendorong produksi karya kreatif film pendek dan<br />film dokumenter pendek, untuk penyerapan tenaga kerja di<br />industri perfilman dan menggerakkan Ekosistem Perfilman<br />Indonesia.</p>
+                        <p>Pelaksanaan Produksi Film Yang Terpilih wajib selesai hingga<br />tahap final pada akhir periode program sampai dengan 10<br />Desember 2021.</p>
+                        <p>Target Penerima Bantuan sebanyak 60 Rumah Produksi atau<br />Komunitas Perfilman yang masing-masing menghasilkan 1 film<br />Indonesia, dengan kategori film untuk 30 film pendek dan 30<br />film dokumenter pendek. Nilai bantuan yang diberikan sebesar<br />Rp. 250.000.000,- per rumah produksi/ komunitas perfilman.</p>
+                    </div>
                 </div>
             </div>
+            <div></div>
         </div>
     </Template>
 }
