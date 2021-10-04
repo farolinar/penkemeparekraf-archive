@@ -186,9 +186,11 @@
             .lazyload-wrapper {
                 width: 50%;
                 margin-right: 20px;
+                display: flex;
 
                 img {
                     width: 100%;
+                    align-self: center;
                 }
             }
 
@@ -205,10 +207,10 @@
             }
 
             h3 {
-                font-size: 3vw;
+                // font-size: 3vw;
                 font-weight: 400;
                 margin: 0;
-                line-height: 3vw;
+                // line-height: 3vw;
             }
 
             // p {

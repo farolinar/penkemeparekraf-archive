@@ -8,8 +8,8 @@ import aboutUsUpperDivider from '../../../../assets/img/pages/home/about-us-shap
 import aboutUsHero from '../../../../assets/img/pages/home/about-us-hero.png';
 // import icOurProgramTactical from '../../../../assets/img/pages/home/our-program-tactical-icon.png';
 // import icOurProgramProduction from '../../../../assets/img/pages/home/our-program-production-icon.png';
-import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-hero.png";
-import programProductionHero from "../../../../assets/img/pages/program/program-production-hero.png";
+import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-home-hero.png";
+import programProductionHero from "../../../../assets/img/pages/program/program-production-home-hero.png";
 // import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
 import "./Home.scss";
 import { ANCHOR, ROUTES } from "../../../constants";
@@ -144,7 +144,7 @@ const Home = (props) => {
                             </div>
                             <div className="our-program-content-text">
                                 <h2>Program Kami</h2>
-                                <h3>Bantuan Pemerintah Promosi Film Indonesia</h3>
+                                <h3>Bantuan Pemerintah<br />Promosi Film Indonesia</h3>
                                 <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor film yang terdiri dari Skema Promosi - Lisensi - Produksi</p>
                                 {/* <br /> */}
                                 <p>Bertujuan untuk meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih dan mendukung kemajuan industri perfilman melalui kegiatan promosi film</p>
@@ -161,7 +161,7 @@ const Home = (props) => {
                             </div>
                             <div className="our-program-content-text">
                                 <h2>Program Kami</h2>
-                                <h3>Bantuan Pemerintah Produksi Film Indonesia</h3>
+                                <h3>Bantuan Pemerintah<br />Produksi Film Indonesia</h3>
                                 <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor Film yang terdiri dari Skema Promosi - Lisensi - Produksi.</p>
                                 {/* <br /> */}
                                 <p>Bertujuan mendorong produksi karya kreatif film pendek dan film dokumenter pendek, untuk penyerapan tenaga kerja di industri perfilman dan menggerakkan Ekosistem Perfilman Indonesia.</p>
