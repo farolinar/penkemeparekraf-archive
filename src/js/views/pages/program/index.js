@@ -61,7 +61,7 @@ const Program = () => {
             <div></div>
         </div>
         
-        <div className="grid-wrapper">
+        <div className="grid-wrapper our-program-production-wrapper">
             <div></div>
             <div className="our-program-production-wrapper" id={ANCHOR.programProduksiFilm}>
                 {/* <div className="grid-title-right">
