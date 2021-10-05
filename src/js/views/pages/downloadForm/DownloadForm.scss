@@ -69,6 +69,11 @@
         margin: 0;
     }
 
+    h6 {
+        // font-size: 2vw;
+        margin-bottom: 30px;
+    }
+
     p {
         // font-size: 1.5vw;
         margin-left: 2vw;
@@ -99,9 +104,12 @@
 }
 
 .download-form-production-wrapper {
-    background-color: var(--main-light-green);
-    color: #fff;
+    background-color: #fff;
+    color: var(--main-light-green);
+    h3 {
+        margin-top: 0;
+    }
     a {
-        color: #fff;
+        color: var(--main-light-green);
     }
 }
