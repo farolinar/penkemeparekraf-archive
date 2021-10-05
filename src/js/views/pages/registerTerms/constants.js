@@ -70,6 +70,39 @@ export const MAIN_TERMS = {
         {
             text: "Rumah Produksi yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam pemerintahan",
         },
+    ],
+    komunitas : [
+        {
+            text: "Komunitas Perfilman mengajukan 1 (satu) film siap produksi atau film yang dalam tahap penyelesaian produksi di tahun 2021",
+        },
+        {
+            text: "Komunitas Perfilman yang berhak mendaftar berbentuk yayasan atau perkumpulan yang dimiliki oleh Warga Negara Indonesia (WNI) dan sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan AD/ART Komunitas",
+        },
+        {
+            text: "Komunitas Perfilman yang berhak mendaftar adalah komunitas film yang terdaftar sebagai stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia (BPI). Apabila komunitas film bukanlah stakeholder unsur kegiatan perfilman dalam BPI, maka wajib melampirkan surat rekomendasi resmi dari asosiasi/lembaga/institusi yang merupakan stakeholder resmi Badan Perfilman Indonesia yang menyatakan jaminan kebenaran keberadaan komunitas film tersebut.",
+        },
+        {
+            text: "Komunitas Perfilman wajib menyampaikan secara resmi struktur kepengurusan komunitas, dimana tidak terjadi pergantian kepengurusan setelah tanggal 1 Januari 2021",
+        },
+        {
+            text: "Pihak yang mendaftarkan Komunitas Perfilman tersebut adalah orang yang secara hukum sah mewakili Komunitas Perfilman sesuai dengan Akta dan/atau AD/ART Komunitas Perfilman dan merupakan Warga Negara Indonesia yang dibuktikan dengan kepemilikan Kartu Tanda Penduduk",
+        },
+        {
+            text: "Penanggung Jawab Komunitas Perfilman cakap secara hukum (berusia minimal 21 tahun atau sudah menikah sebelum berusia 21 tahun) yang dibuktikan dengan Kartu Tanda Penduduk (KTP), merujuk pada Pasal 330 KUH Perdata, dan:",
+            children: [
+                "a.	tidak sedang menjalani hukuman",
+                "b.	berjiwa sehat/berakal sehat"
+            ]
+        },
+        {
+            text: "Memiliki rekening bank atas nama Komunitas Perfilman dengan status aktif. Jika tidak memiliki rekening bank atas nama Komunitas Perfilman, maka dapat menggunakan rekening atas nama pribadi yang merupakan perwakilan sah secara hukum untuk mewakili Komunitas Perfilman dengan melampirkan surat pernyataan",
+        },
+        {
+            text: "Wajib melengkapi persyaratan administrasi dokumen sesuai format yang telah ditentukan",
+        },
+        {
+            text: "Komunitas Perfilman yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam pemerintahan",
+        },
     ]
 }
 
@@ -91,35 +124,24 @@ export const LOWER_TERMS = {
             text: "Hak Kekayaan Intelektual produk tetap dimiliki oleh Rumah Produksi, karena dana Penanggulangan Ekonomi Nasional Perfilman merupakan bantuan pemerintah dalam keadaan Coronavirus Disease 2019. Pihak Kemenparekraf/Baparekraf dan/atau instansi negara lainnya tetap dapat menggunakan materi dan konten promosi pada kegiatan-kegiatan kementerian/lembaga/instansi pemerintah non komersial"
         },
     ],
-    production: [
+    komunitas: [
         {
-            text: "Film Siap Produksi atau Film Dalam Tahap Penyelesaian Produksi merupakan film mencakup semua genre film termasuk juga di dalamnya Film Animasi yang produksinya siap diselesaikan pada tahapan rough cut, pre-visualization atau picture lock di tahun 2021"
+            text: "Film Siap Produksi (film yang siap diproduksi dalam jangka waktu pelaksanaan program di  bulan Oktober – 10 Desember 2021) atau Film Dalam Tahap Penyelesaian Produksi (film yang minimal telah menyelesaikan tahap syuting dan hendak diselesaikan dalam jangka waktu pelaksanaan program sampai dengan 10 Desember 2021)"
         },
         {
-            text: "Konten film merujuk pada UU no. 33 tahun 2009 tentang perfilman dan tidak mengandung adegan pornografi, kekerasan, radikal (sara) dan hal-hal lain yang dilarang dalam peraturan perundangan tersebut"
+            text: "Meliputi semua genre film berbentuk film pendek (film cerita fiksi) dan/atau film dokumenter pendek (film cerita yang mendokumentasikan kenyataan/ non fiksi) berdurasi maksimal 30 menit"
         },
         {
-            text: "Film yang diusulkan wajib selesai hingga tahap rough cut, pre-visualization atau picture lock pada akhir periode program Bantuan Pemerintah Bagi Produksi Film Indonesia"
+            text: "Konten film merujuk pada UU no. 33 tahun 2009 tentang perfilman dan tidak mengandung adegan pornografi, kekerasan, radikal (SARA) dan hal-hal lain yang dilarang dalam peraturan perundangan tersebut"
         },
         {
-            text: "Proposal harus memuat informasi dasar sebagai berikut (Lampiran 5 Sistematika Proposal Bantuan Pemerintah bagi Produksi Film Indonesia):",
-            children: [
-                "a.	Halaman muka: judul, film untuk produksi",
-                "b.	Informasi dasar: judul, durasi film, genre, nama penulis, nama sutradara, nama produser, nama animator, daftar nama pemain utama dan pendukung dan target penonton",
-                "c.	Logline (3 kalimat) dan Sinopsis (200 – 400 kata)",
-                "d.	Director’s treatment (200-400 kata)",
-                "e.	Visi Produser (200-400 kata)",
-                "f.	Estimasi total budget (lihat contoh)",
-                "g.	Jadwal, Timeline produksi dan Target Penyelesaian pekerjaan dalam jangka waktu pelaksanaan program tahun 2021",
-                "h.	Profil para produser atau rumah produksi yang terlibat (200-400 kata)",
-                "i.	Profil sutradara (200-400 kata)",
-                "j.	Daftar rekanan kerja sama: rental, sound studio, hotel, semua instansi/perusahaan terkait",
-                "k.	Informasi produksi: estimasi jumlah tenaga kerja (kru dan pemain), lokasi pembuatan film",
-                "l.	 Tautan daring dari contoh hasil karya sutradara, produser dan/atau animator"
-            ]
+            text: "Film yang diusulkan wajib selesai hingga tahap final (telah menyelesaikan seluruh tahapan produksi dan siap untuk ditampilkan tanpa pengerjaan lebih lanjut) pada akhir periode program sampai dengan 10 Desember 2021",
         },
         {
-            text: "Semua dokumen pendukung proposal harus digabungkan ke dalam proposal utama dalam satu dokumen berbentuk PDF dengan urutan yang benar, lengkap dengan halaman muka yang merujuk dengan jelas judul masing-masing film"
+            text: "Film masih dalam tahap perencanaan/persiapan produksi ataupun tahap produksi dan belum pernah didistribusikan untuk program dan acara lain, serta penyelesaian kebutuhan dan kewajibaan Hak Kekayaan Intelektual atas film tersebut menjadi tanggung jawab pihak Rumah Produksi atau Komunitas Perfilman"
+        },
+        {
+            text: "Hak Kekayaan Intelektual tetap dimiliki oleh pihak dari Rumah Produksi atau Komunitas Perfilman, karena dana Penanggulangan Ekonomi Nasional Perfilman merupakan bantuan pemerintah dalam keadaan Coronavirus Disease 2019. Pihak Kemenparekraf/Baparekraf dan/atau instansi negara lainnya tetap dapat menggunakan hasil produksi untuk bahan promosi pada kegiatan-kegiatan kementerian/lembaga/instansi pemerintah non komersial"
         },
     ]
 }
@@ -359,5 +381,120 @@ export const DOCUMENT_TERMS = {
         {
             text: "Seluruh dokumen pendukung, dokumen legalitas, dan dokumen permohonan yang dikirimkan disusun dengan urutan yang benar, lengkap dengan halaman muka yang merujuk dengan jelas nama Rumah Produksi"
         },
+    ],
+    komunitas : [
+        {
+            text: "AD/ART Komunitas Perfilman dan minimal sudah berdiri sejak 1 Januari 2019",
+        },
+        {
+            text: "Salinan KTP Penanggung jawab / Ketua dari Komunitas Perfilman",
+        },
+        {
+            text: "Surat Pernyataan Komunitas Perfilman (format pada Unduh Dokumen Produksi Lampiran B.1), berisi tentang:",
+            children: [
+                "a.	Data dokumen dan lampiran pendukung yang diberikan adalah benar, dokumen asli dan dapat\
+                dipertanggungjawabkan secara hukum (tidak dalam penguasaan pihak lain dan/atau sengketa hak kekayaan\
+                intelektual)",
+                "b.	Tidak dalam keadaan Pailit dan/atau dalam keadaan penundaan kewajiban pembayaran hutang (PKPU)",
+                "c.	Tidak sedang berada dalam kondisi perkara pengadilan baik secara perdata maupun pidana",
+                "d.	Tidak pernah, tidak sedang dan tidak akan melakukan pengajuan dan/atau menerima bantuan sejenis dari\
+                pemerintah pusat maupun daerah, dan/atau Badan Usaha Milik Negara (BUMN)",
+                "e.	Tidak ada konflik internal dan/atau kepengurusan ganda, serta tidak berafiliasi kepada salah satu Partai\
+                Politik",
+                "f.	Bersedia mengikuti seluruh proses kurasi yang diadakan oleh Kementerian Pariwisata dan Ekonomi\
+                Kreatif/Badan Pariwisata dan Ekonomi Kreatif",
+                "g.	Menerima kriteria dan persyaratan pemilihan",
+                "h.	Menerima seluruh hasil yang akan diputuskan tanpa ada upaya apapun termasuk dan tidak terbatas pada\
+                upaya hukum maupun upaya lain yang berpotensi menimbulkan kerugian bagi Tim Kurator dan/atau\
+                Kemenparekraf/Baparekraf",
+                "i.	Sanggup untuk bertanggung jawab baik secara perdata maupun secara pidana terhadap seluruh dana Bantuan\
+                Pemerintah yang diberikan."
+            ]
+        },
+        {
+            text: "Surat Pernyataan Tanggung Jawab Mutlak (format pada Unduh Dokumen Produksi Lampiran 1), berisi tentang:",
+            children: [
+                "a.	Wajib melaporkan apabila mendapatkan pembiayaan dari investor atau perusahaan lain dalam pelaksanaan\
+                Produksi Film yang diajukan dan pembiayaan tersebut bukan untuk membiayai item yang sama",
+                "b.	Wajib menyerahkan laporan pelaksanaan kegiatan yang dilengkapi dengan dokumentasi dan menyerahkan\
+                laporan penggunaan anggaran yang dilengkapi dengan kuitansi/invoice/nota/bukti pembayaran sah lainnya",
+                "c.	Sanggup menggunakan dana Bantuan Pemerintah untuk membuat dan/atau memproduksi satu film dengan\
+                penyelesaian sampai pada tahap final dalam periode pelaksanaan program sesuai dengan perencanaan jadwal\
+                produksi dan rencana penggunaan anggaran yang disetujui",
+                "d.	Wajib mengikuti proses audit sehubungan dengan penggunaan dana Bantuan Pemerintah yang diberikan",
+                "e.	Bersedia untuk mengembalikan sisa anggaran Bantuan Pemerintah yang tidak terpakai, dengan melampirkan\
+                bukti setoran kepada kas negara dan disertai dengan laporan justifikasi",
+                "f.	Bersedia untuk mengembalikan seluruh dana Bantuan Pemerintah apabila ditemukan terdapat kecurangan,\
+                dan/atau tidak digunakan dana Bantuan Pemerintah tersebut sesuai dengan peruntukkan yang telah\
+                ditetapkan",
+                "g.	Sanggup untuk bertanggung jawab baik secara perdata maupun secara pidana terhadap seluruh dana Bantuan\
+                Pemerintah yang diberikan.",
+            ]
+        },
+        {
+            text: "Surat Pernyataan Tidak Menerima Bantuan Pemerintah Promosi Film Indonesia dan/atau Bantuan K/L Lainnya (format pada Unduh Dokumen Produksi Lampiran 2)",
+        },
+        {
+            text: "Surat Pernyataan Film Masih Dalam Tahap Perencanaan atau Produksi, yang menyatakan bahwa film yang diajukan belum pernah dibuat dan masih tahap perencanaan atau produksi serta telah menyelesaikan semua kebutuhan dan kewajiban Hak Kekayaan Intelektualnya (format pada Unduh Dokumen Produksi Lampiran 3)"
+        },
+        {
+            text: "Surat Permohonan Bantuan Pemerintah bagi Produksi Film Indonesia (format pada Unduh Dokumen Produksi Lampiran 4)",
+        },
+        {
+            text: "Ringkasan Profil Pengusul Proposal Permohonan Bantuan bagi Produksi Film Indonesia (format pada Unduh Dokumen Produksi Lampiran 5)",
+        },
+        {
+            text: "Proposal yang akan diisi pada form yang tersedia di website pendaftaran Bantuan Pemerintah bagi Produksi Film Indonesia, berisi informasi dasar sebagai berikut:",
+            children: [
+                "a.	Informasi dasar : Judul film, durasi film, genre, nama penulis, nama sutradara, nama produser, nama\
+                animator, daftar nama pemain utama dan pendukung dan target penonton",
+                "b.	Logline (3 kalimat) dan sinopsis (200–400 kata)",
+                "c.	Director’s Statement (200-400 kata)",
+                "d.	Visi produser (200-400 kata).",
+                "e.	Daftar pendanaan produksi dari sumber lain /investor lain (jika ada)",
+                "f.	Profil produser dan komunitas perfilman yang terlibat (200-400 kata)",
+                "g.	Profil sutradara (200-400 kata)",
+                "h.	Prestasi dari tenaga kerja (kru dan pemain) [contoh: pernah memenangkan piala citra, dll]",
+                "i.	Tautan daring dari contoh hasil karya sutradara dan produser",
+                "j.	Tautan daring dari hasil karya (portofolio) Komunitas Perfilman tahun 2019 - 2021"
+            ]
+        },
+        {
+            text: "Dokumen Pendukung Proposal Bantuan Pemerintah bagi Produksi Film Indonesia (format pada Unduh Dokumen Produksi Lampiran 6), berisi tentang:",
+            children: [
+                "a.	Halaman muka: Judul Film",
+                "b.	Estimasi total budget produksi dengan total RAB sebesar Rp. 250.000.000,- (diberikan justifikasi dan\
+                    penjelasan terkait peruntukan anggaran tersebut)",
+                "c.	Jadwal, Timeline produksi dan Target Penyelesaian pekerjaan dengan waktu pengumpulan pekerjaan sampai\
+                dengan 10 Desember 2021",
+                "d.	Informasi Produksi: Estimasi jumlah tenaga kerja (kru dan pemain) dan lokasi produksi film",
+                "e.	Rencana distribusi dan pemutaran film",
+            ],
+            detail: "Dokumen dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film."
+        },
+        {
+            text: "Pengajuan Rincian Anggaran Biaya Produksi Film (format pada Unduh Dokumen Produksi Lampiran 7)",
+        },
+        {
+            text: "Surat Rekomendasi Stakeholder Resmi BPI untuk Komunitas Perfilman (Lampiran B.2) [khusus untuk Komunitas yang tidak terdaftar sebagai stakeholder resmi BPI]",
+        },
+        {
+            text: "Dokumen Rekening atas nama Komunitas Perfilman atau atas nama pribadi yang merupakan perwakilan sah secara hukum untuk mewakili Komunitas Perfilman",
+        },
+        {
+            text: "Surat Pernyataan Penggunaan Rekening atas Nama Pribadi untuk Mewakili Komunitas Perfilman (format pada Unduh Dokumen Produksi Lampiran B.3) [khusus untuk yang tidak memiliki dokumen Rekening atas nama Komunitas]",
+        },
+        {
+            text: "Dokumen persyaratan pada poin 1 - 14 diunggah melalui website pendaftaran pada kolom yang telah disediakan",
+        },
+        {
+            text: "Seluruh dokumen asli legalitas, identitas dan stempel Komunitas serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika komunitas terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)",
+        },
+        {
+            text: "Penjelasan poin 16 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan",
+        },
+        {
+            text: "Seluruh dokumen pendukung, dokumen legalitas, dan dokumen permohonan yang dikirimkan disusun dengan urutan yang benar, lengkap dengan halaman muka yang merujuk dengan jelas nama Komunitas Perfilman"
+        }
     ]
 }
