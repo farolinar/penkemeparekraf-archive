@@ -9,6 +9,8 @@ export const ROUTES = {
     uploadTacticalForm: "/unggah-formulir/bantuan-promosi",
     downloadTacticalForm: "/unduh-formulir/bantuan-promosi",
     uploadProductionForm: "/unggah-formulir/bantuan-produksi",
+    uploadProductionHouseForm: "/unggah-formulir/bantuan-produksi/rumah-produksi",
+    uploadCommunityForm: "/unggah-formulir/bantuan-produksi/komunitas-perfilman",
     downloadProductionForm: "/unduh-formulir/bantuan-produksi",
     contactUs: "/kontak-kami",
     registerTacticalTerms: "/syarat-pendaftaran/bantuan-promosi",

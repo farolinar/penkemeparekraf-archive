@@ -9,7 +9,8 @@ const OpenCall = lazy(()=>import('../views/pages/openCall'));
 const DownloadForm = lazy(()=>import('../views/pages/downloadForm'));
 const UploadForm = lazy(()=>import('../views/pages/uploadForm'));
 const UploadTacticalForm = lazy(()=>import('../views/pages/uploadForm/UploadTacticalForm'));
-const UploadProductionForm = lazy(()=>import('../views/pages/uploadForm/UploadProductionForm'));
+const UploadProductionForm = lazy(()=>import('../views/pages/uploadForm/uploadProductionForm/index'));
+const UploadProductionHouseForm = lazy(()=>import('../views/pages/uploadForm/uploadProductionForm/UploadProductionHouseForm'));
 const RegisterTacticalTerms = lazy(()=>import('../views/pages/registerTerms/RegsiterTacticalTerms'));
 const RegisterProductionTerms = lazy(()=>import('../views/pages/registerTerms/RegisterProductionTerms'));
 const DownloadTacticalForm = lazy(()=>import('../views/pages/downloadForm/DownloadForm'));
@@ -79,6 +80,12 @@ const Routes = [
     {
         path: ROUTES.uploadProductionForm,
         component: UploadProductionForm,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.uploadProductionHouseForm,
+        component: UploadProductionHouseForm,
         exact: true,
         default: true
     },

@@ -106,7 +106,7 @@
                 font-size: 18px;
             }
 
-            input {
+            input, textarea {
                 border-radius: 6px;
                 border: solid 3px var(--main-blue);
                 padding: 8px;
@@ -114,6 +114,7 @@
                 display: block;
                 width: 97%;
                 color: var(--main-blue);
+                resize: none;
             }
         }
 
