@@ -66,7 +66,7 @@ const UploadFileField = ({
     return <div className="upload-file-wrapper">
         <div className="upload-file-title">{title}</div>
         <div className="upload-file-subtitle">{subtitle}</div>
-        <div style={{display: "flex", alignItems: "center"}}>
+        <div style={{display: "flex", alignItems: "baseline"}}>
             <div className="upload-file-button">
                 <label>
                     Unggah File
@@ -206,14 +206,11 @@ const UploadTacticalForm = () => {
 
     const [idNumberFile, setIDNumberFile] = useState({name: "", file: ""})
     const [cardNumberFile, setCardNumberFile] = useState({name: "", file: ""})
-    const [npwpFile, setNPWPFile] = useState({name: "", file: ""})
-    const [taxFile, setTaxFile] = useState({name: "", file: ""})
     const [aktaPendirianFile, setAktaPendirianFile] = useState({name: "", file: ""})
-    const [nomorIndukFile, setNomorIndukFile] = useState({name: "", file: ""})
-    const [tandaDaftarUsahaFile, setTandaDaftarUsahaFile] = useState({name: "", file: ""})
-    const [keteranganDomisiliUsahaFile, setKeteranganDomisiliUsahaFile] = useState({name: "", file: ""})
+    const [rekeningANBadanUsaha, setRekeningANBadanUsaha] = useState("")
+    const [stakeholderResmi, setStakeholderResmi] = useState("")
 
-    const [lampiranA1, setLampiranA1] = useState({name: "", file: ""})
+    const [lampiranB1, setLampiranB1] = useState({name: "", file: ""})
     const [lampiran1, setLampiran1] = useState({name: "", file: ""})
     const [lampiran2, setLampiran2] = useState({name: "", file: ""})
     const [lampiran3, setLampiran3] = useState({name: "", file: ""})
@@ -221,6 +218,8 @@ const UploadTacticalForm = () => {
     const [lampiran5, setLampiran5] = useState({name: "", file: ""})
     const [lampiran6, setLampiran6] = useState({name: "", file: ""})
     const [lampiran7, setLampiran7] = useState({name: "", file: ""})
+    const [lampiranB2, setLampiranB2] = useState({name: "", file: ""})
+    const [lampiranB3, setLampiranB3] = useState({name: "", file: ""})
 
     const [verifyCheck, setVerifyCheck] = useState(false)
 
@@ -268,22 +267,25 @@ const UploadTacticalForm = () => {
     }
 
     const validationsTwo = () => {
+        if(rekeningANBadanUsaha === 0) {
+            return lampiranB3.file
+        }
+        if(stakeholderResmi === 0) {
+            return lampiranB2.file
+        }
         return aktaPendirianFile.file
-        && idNumberFile.file
-        && cardNumberFile.file
-        && npwpFile.file
-        && taxFile.file
-        && nomorIndukFile.file
-        && tandaDaftarUsahaFile.file
-        && keteranganDomisiliUsahaFile.file
-        && lampiranA1.file
-        && lampiran1.file
-        && lampiran2.file
-        && lampiran3.file
-        && lampiran4.file
-        && lampiran5.file
-        && lampiran6.file
-        && lampiran7.file;
+            && idNumberFile.file
+            && cardNumberFile.file
+            && (rekeningANBadanUsaha === 1 || rekeningANBadanUsaha === 0)
+            && (stakeholderResmi === 1 || stakeholderResmi === 0)
+            && lampiranB1.file
+            && lampiran1.file
+            && lampiran2.file
+            && lampiran3.file
+            && lampiran4.file
+            && lampiran5.file
+            && lampiran6.file
+            && lampiran7.file;
     }
 
     const validations = () => {
@@ -716,13 +718,13 @@ const UploadTacticalForm = () => {
                 </div>
 
                 <div
-                    onClick={() => {if(validationsOne()) setPage(2)}}
+                    onClick={() => setPage(2)}
                     className="submit-button"
-                    style={validationsOne() ? {} : {
-                        backgroundColor: "#e5e5e5",
-                        color: "white",
-                        cursor: "not-allowed"
-                    }}
+                    // style={validationsOne() ? {} : {
+                    //     backgroundColor: "#e5e5e5",
+                    //     color: "white",
+                    //     cursor: "not-allowed"
+                    // }}
                 >
                     Next
                 </div>
@@ -737,7 +739,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH AKTA PENDIRIAN DAN MINIMAL SUDAH BERDIRI SEJAK 1 JANUARI 2019 *"
+                            title="UNGGAH AD/ART KOMUNITAS PERFILMAN DAN MINIMAL SUDAH BERDIRI SEJAK 1 JANUARI 2019 *"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.pdf}
@@ -748,7 +750,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SALINAN KTP PENANGGUNG JAWAB / DIREKTUR PH *"
+                            title="UNGGAH SALINAN KTP PENANGGUNG JAWAB / KETUA DARI KOMUNITAS PERFILMAN *"
                             subtitle="(File PDF, JPG, JPEG, atau PNG, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-id-number-file"
                             type={acceptedFileFormatString.all}
@@ -759,62 +761,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT KETERANGAN DOMISILI USAHA *"
-                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-keterangan-domisili-usaha-file"
-                            type={acceptedFileFormatString.pdf}
-                            fileName={keteranganDomisiliUsahaFile.name}
-                            setData = {(data) => setKeteranganDomisiliUsahaFile({...data})}
-                        />
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <UploadFileField
-                            title="UNGGAH NOMOR INDUK BERUSAHA (NIB) *"
-                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-nomor-induk-file"
-                            type={acceptedFileFormatString.pdf}
-                            fileName={nomorIndukFile.name}
-                            setData = {(data) => setNomorIndukFile({...data})}
-                        />
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <UploadFileField
-                            title="UNGGAH TANDA DAFTAR USAHA PERFILMAN (TDUP)*"
-                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-tanda-daftar-usaha-file"
-                            type={acceptedFileFormatString.pdf}
-                            fileName={tandaDaftarUsahaFile.name}
-                            setData = {(data) => setTandaDaftarUsahaFile({...data})}
-                        />
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <UploadFileField
-                            title="UNGGAH DOKUMEN NOMOR POKOK WAJIB PAJAK ATAS NAMA BADAN USAHA *"
-                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-npwp-file"
-                            type={acceptedFileFormatString.pdf}
-                            fileName={npwpFile.name}
-                            setData = {(data) => setNPWPFile({...data})}
-                        />
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <UploadFileField
-                            title="UNGGAH SURAT PEMBERITAHUAN TAHUNAN (SPT) PAJAK 1 TAHUN TERAKHIR *"
-                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-tax-file"
-                            type={acceptedFileFormatString.pdf}
-                            fileName={taxFile.name}
-                            setData = {(data) => setTaxFile({...data})}
-                        />
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <UploadFileField
-                            title="UNGGAH DOKUMEN REKENING ATAS NAMA BADAN USAHA *"
+                            title="UNGGAH DOKUMEN REKENING ATAS NAMA KOMUNITAS PERFILMAN ATAU ATAS NAMA PRIBADI YANG MERUPAKAN PERWAKILAN SAH SECARA HUKUM UNTUK MEWAKILI KOMUNITAS PERFILMAN *"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-card-number-file"
                             type={acceptedFileFormatString.pdf}
@@ -822,6 +769,49 @@ const UploadTacticalForm = () => {
                             setData = {(data) => setCardNumberFile({...data})}
                         />
                     </div>
+
+                    <div className="upload-form-content-wrapper">
+                        <div className="upload-form-field radio-button">
+                            <label htmlFor="company-name">APAKAH DOKUMEN REKENING ATAS NAMA KOMUNITAS? *</label>
+                            <RadioButton
+                                onChange={(val) => setRekeningANBadanUsaha(Number(val))}
+                                radioButtons={[
+                                    {
+                                        val: "1",
+                                        text: "Ya"
+                                    },
+                                    {
+                                        val: "0",
+                                        text: "Tidak"
+                                    }
+                                ]}
+                                unselectedColor="var(--main-light-green)"
+                                selectedColor="var(--main-light-green)"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="upload-form-content-wrapper">
+                        <div className="upload-form-field radio-button">
+                            <label htmlFor="company-name">APAKAH KOMUNITAS TERDAFTAR SEBAGAI STAKEHOLDER RESMI BADAN PERFILMAN INDONESIA?  *</label>
+                            <RadioButton
+                                onChange={(val) => setStakeholderResmi(Number(val))}
+                                radioButtons={[
+                                    {
+                                        val: "1",
+                                        text: "Ya"
+                                    },
+                                    {
+                                        val: "0",
+                                        text: "Tidak"
+                                    }
+                                ]}
+                                unselectedColor="var(--main-light-green)"
+                                selectedColor="var(--main-light-green)"
+                            />
+                        </div>
+                    </div>
+
                 </div>
 
                 <div className="upload-form-section">
@@ -832,12 +822,12 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN KOMUNITAS PERFILMAN (LAMPIRAN A.1) *"
+                            title="UNGGAH SURAT PERNYATAAN KOMUNITAS PERFILMAN (LAMPIRAN B.1) *"
                             subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.docx}
-                            fileName={lampiranA1.name}
-                            setData = {(data) => setLampiranA1({...data})}
+                            fileName={lampiranB1.name}
+                            setData = {(data) => setLampiranB1({...data})}
                         />
                     </div>
 
@@ -854,8 +844,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN TIDAK MENERIMA BANTUAN PEMERINTAH PROMOSI FILM\
-                            INDONESIA DAN/ATAU BANTUAN K/L LAINNYA (LAMPIRAN 2) *"
+                            title="UNGGAH SURAT PERNYATAAN TIDAK MENERIMA BANTUAN PEMERINTAH PROMOSI FILM INDONESIA DAN/ATAU BANTUAN K/L LAINNYA (LAMPIRAN 2) *"
                             subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.docx}
@@ -866,8 +855,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN FILM MASIH DALAM TAHAP PERENCANAAN/\
-                            PRODUKSI  (LAMPIRAN 3) *"
+                            title="UNGGAH SURAT PERNYATAAN FILM MASIH DALAM TAHAP PERENCANAAN/PRODUKSI  (LAMPIRAN 3) *"
                             subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.docx}
@@ -878,8 +866,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PRODUKSI FILM\
-                            INDONESIA (LAMPIRAN 4) *"
+                            title="UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 4) *"
                             subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.docx}
@@ -890,8 +877,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN\
-                            BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 5) *"
+                            title="UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 5) *"
                             subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.docx}
@@ -902,8 +888,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH DOKUMEN PENDUKUNG PROPOSAL BANTUAN PEMERINTAH BAGI\
-                            PRODUKSI FILM INDONESIA (LAMPIRAN 6) *"
+                            title="UNGGAH DOKUMEN PENDUKUNG PROPOSAL BANTUAN PEMERINTAH BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 6) *"
                             subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.docx}
@@ -914,12 +899,34 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="Unggah Pengajuan Rincian Anggaran Biaya Produksi Film (Lampiran 7) *"
+                            title="UNGGAH PENGAJUAN RINCIAN ANGGARAN BIAYA PRODUKSI FILM (LAMPIRAN 7) *"
                             subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.docx}
                             fileName={lampiran7.name}
                             setData = {(data) => setLampiran7({...data})}
+                        />
+                    </div>
+
+                    <div className="upload-form-content-wrapper">
+                        <UploadFileField
+                            title={`UNGGAH SURAT REKOMENDASI STAKEHOLDER RESMI BPI UNTUK KOMUNITAS PERFILMAN (LAMPIRAN B.2) ${stakeholderResmi === 0 ? "*" : ""}`}
+                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-akta-pendirian-file"
+                            type={acceptedFileFormatString.docx}
+                            fileName={lampiranB2.name}
+                            setData = {(data) => setLampiranB2({...data})}
+                        />
+                    </div>
+
+                    <div className="upload-form-content-wrapper">
+                        <UploadFileField
+                            title={`UNGGAH SURAT PERNYATAAN PENGGUNAAN REKENING ATAS NAMA PRIBADI UNTUK MEWAKILI KOMUNITAS PERFILMAN.(LAMPIRAN B.3) ${rekeningANBadanUsaha === 0 ? "*" : ""}`}
+                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-akta-pendirian-file"
+                            type={acceptedFileFormatString.docx}
+                            fileName={lampiranB3.name}
+                            setData = {(data) => setLampiranB3({...data})}
                         />
                     </div>
                 </div>
@@ -968,13 +975,8 @@ const UploadTacticalForm = () => {
                     </div>
 
                     <div
-                        onClick={() => {if(validationsTwo()) setPage(1)}}
+                        onClick={() => setPage(1)}
                         className="submit-button"
-                        style={validationsTwo() ? {} : {
-                            backgroundColor: "#e5e5e5",
-                            color: "white",
-                            cursor: "not-allowed"
-                        }}
                     >
                         Back
                     </div>

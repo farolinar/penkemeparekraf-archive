@@ -65,7 +65,7 @@ const UploadFileField = ({
     return <div className="upload-file-wrapper">
         <div className="upload-file-title">{title}</div>
         <div className="upload-file-subtitle">{subtitle}</div>
-        <div style={{display: "flex", alignItems: "center"}}>
+        <div style={{display: "flex", alignItems: "baseline"}}>
             <div className="upload-file-button">
                 <label>
                     Unggah File
@@ -600,13 +600,13 @@ const UploadTacticalForm = () => {
                 </div>
 
                 <div
-                    onClick={() => {if(validationsOne()) setPage(2)}}
+                    onClick={() => setPage(2)}
                     className="submit-button"
-                    style={validationsOne() ? {} : {
-                        backgroundColor: "#e5e5e5",
-                        color: "white",
-                        cursor: "not-allowed"
-                    }}
+                    // style={validationsOne() ? {} : {
+                    //     backgroundColor: "#e5e5e5",
+                    //     color: "white",
+                    //     cursor: "not-allowed"
+                    // }}
                 >
                     Next
                 </div>
@@ -798,7 +798,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="Unggah Pengajuan Rincian Anggaran Biaya Produksi Film (Lampiran 7) *"
+                            title="UNGGAH PENGAJUAN RINCIAN ANGGARAN BIAYA PRODUKSI FILM (LAMPIRAN 7) *"
                             subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.docx}
