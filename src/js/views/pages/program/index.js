@@ -76,9 +76,9 @@ const Program = () => {
                     <div><h2>Bantuan Pemerintah<br />Produksi Film Indonesia</h2></div>
                     <div className="our-program-production-hero">
                         <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub<br />Sektor Film yang terdiri dari Skema Promosi - Lisensi -<br />Produksi.</p>
-                        <p>Bertujuan mendorong produksi karya kreatif film pendek dan<br />film dokumenter pendek, untuk penyerapan tenaga kerja di<br />industri perfilman dan menggerakkan Ekosistem Perfilman<br />Indonesia.</p>
-                        <p>Pelaksanaan Produksi Film Yang Terpilih wajib selesai hingga<br />tahap final pada akhir periode program sampai dengan 10<br />Desember 2021.</p>
-                        <p>Target Penerima Bantuan sebanyak 60 Rumah Produksi atau<br />Komunitas Perfilman yang masing-masing menghasilkan 1 film<br />Indonesia, dengan kategori film untuk 30 film pendek dan 30<br />film dokumenter pendek. Nilai bantuan yang diberikan sebesar<br />Rp. 250.000.000,- per rumah produksi/ komunitas perfilman.</p>
+                        <p>Bertujuan mendorong produksi karya kreatif Film Pendek<br />dan Film Dokumenter Pendek, untuk penyerapan tenaga<br />kerja dan menggerakan ekosistem perfilman Indonesia.</p>
+                        <p>Pelaksanaan produksi Film Terpilih wajib selesai hingga<br />tahap final pada akhir periode program sampai dengan<br />tanggal 10 Desember 2021.</p>
+                        <p>Target Penerima Bantuan sebanyak 60 Rumah Produksi atau<br />Komunitas Perfilman yang masing-masing menghasilkan 1 film<br />Indonesia, dengan kategori film untuk 30 Film Pendek dan 30<br />Film Dokumenter Pendek. Nilai bantuan yang diberikan sebesar<br />Rp. 250.000.000,- per rumah produksi/komunitas perfilman.</p>
                     </div>
                 </div>
             </div>

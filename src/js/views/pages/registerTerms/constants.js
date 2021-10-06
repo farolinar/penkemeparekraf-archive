@@ -40,10 +40,10 @@ export const MAIN_TERMS = {
             text: "Rumah Produksi mengajukan 1 (satu) film siap produksi atau film yang dalam tahap penyelesaian produksi di tahun 2021",
         },
         {
-            text: "Rumah Produksi yang berhak mendaftar telah berbadan usaha dalam bentuk Perseroan Terbatas (PT) yang kepemilikan sahamnya dimiliki oleh Warga Negara Indonesia (WNI), atau badan hukum Indonesia, dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia, sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan akta pendirian badan usaha",
+            text: "Rumah Produksi yang berhak mendaftar telah berbadan usaha dalam bentuk Perseroan Terbatas (PT) atau Perseroan Komanditer (CV) yang kepemilikan sahamnya dimiliki oleh Warga Negara Indonesia (WNI), dan sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan akta pendirian badan usaha",
         },
         {
-            text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan, dimana tidak terjadi pergantian anggota nama pemegang saham, nama dewan komisaris/dewan direksi, dan nama eksekutif penanggung jawab perusahaan setelah tanggal 1 Januari 2021",
+            text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan",
         },
         {
             text: "Pihak yang mendaftarkan Rumah Produksi tersebut adalah orang yang secara hukum sah mewakili Rumah Produksi sesuai dengan Akta dan/atau AD/ART Rumah Produksi/selevel direksi dan merupakan Warga Negara Indonesia yang dibuktikan dengan kepemilikan Kartu Tanda Penduduk",
@@ -79,7 +79,7 @@ export const MAIN_TERMS = {
             text: "Komunitas Perfilman yang berhak mendaftar berbentuk yayasan atau perkumpulan yang dimiliki oleh Warga Negara Indonesia (WNI) dan sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan AD/ART Komunitas",
         },
         {
-            text: "Komunitas Perfilman yang berhak mendaftar adalah komunitas film yang terdaftar sebagai stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia (BPI). Apabila komunitas film bukanlah stakeholder unsur kegiatan perfilman dalam BPI, maka wajib melampirkan surat rekomendasi resmi dari asosiasi/lembaga/institusi yang merupakan stakeholder resmi Badan Perfilman Indonesia yang menyatakan jaminan kebenaran keberadaan komunitas film tersebut.",
+            text: "Komunitas Perfilman yang berhak mendaftar adalah komunitas film yang terdaftar sebagai stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia (BPI). Apabila komunitas film bukanlah stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia, maka wajib melampirkan surat rekomendasi resmi dari asosiasi/lembaga/institusi yang merupakan stakeholder resmi Badan Perfilman Indonesia yang menyatakan jaminan kebenaran keberadaan komunitas film tersebut.",
         },
         {
             text: "Komunitas Perfilman wajib menyampaikan secara resmi struktur kepengurusan komunitas, dimana tidak terjadi pergantian kepengurusan setelah tanggal 1 Januari 2021",
@@ -476,7 +476,7 @@ export const DOCUMENT_TERMS = {
             text: "Pengajuan Rincian Anggaran Biaya Produksi Film (format pada Unduh Dokumen Produksi Lampiran 7)",
         },
         {
-            text: "Surat Rekomendasi Stakeholder Resmi BPI untuk Komunitas Perfilman (Lampiran B.2) [khusus untuk Komunitas yang tidak terdaftar sebagai stakeholder resmi BPI]",
+            text: "Surat Rekomendasi Stakeholder Resmi Badan Perfilman Indonesia untuk Komunitas Perfilman (Lampiran B.2) [khusus untuk Komunitas yang tidak terdaftar sebagai stakeholder resmi Badan Perfilman Indonesia]",
         },
         {
             text: "Dokumen Rekening atas nama Komunitas Perfilman atau atas nama pribadi yang merupakan perwakilan sah secara hukum untuk mewakili Komunitas Perfilman",

@@ -49,8 +49,8 @@ const KOMUNITAS_PERFILMAN_FORMS = [
         url: "https://drive.google.com/uc?export=download&id=1L2iw-DyubETTZWc3yacu2j-Spx3Y5SOV"
     },
     {
-        name: "Unduh Lampiran B.2 - Format Surat Rekomendasi Stakeholder Resmi BPI untuk Komunitas Perfilman",
-        url: "https://drive.google.com/uc?export=download&id=1JvKUxTEE-JxBIn33FfwWuk3TtmevzBYl"
+        name: "Unduh Lampiran B.2 - Format Surat Rekomendasi Stakeholder Resmi Badan Perfilman Indonesia untuk Komunitas Perfilman",
+        url: "https://drive.google.com/uc?export=download&id=1khnp_zZapKc_9ciTNiw4c7-GqNEN1y_m"
     },
     {
         name: "Unduh Lampiran B.3 - Format Surat Pernyataan Penggunaan Rekening atas Nama Pribadi untuk Mewakili Komunitas Perfilman",

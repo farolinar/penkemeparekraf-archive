@@ -164,9 +164,9 @@ const Home = (props) => {
                                 <h3>Bantuan Pemerintah<br />Produksi Film Indonesia</h3>
                                 <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor Film yang terdiri dari Skema Promosi - Lisensi - Produksi.</p>
                                 {/* <br /> */}
-                                <p>Bertujuan mendorong produksi karya kreatif film pendek dan film dokumenter pendek, untuk penyerapan tenaga kerja di industri perfilman dan menggerakkan Ekosistem Perfilman Indonesia.</p>
+                                <p>Bertujuan mendorong produksi karya kreatif Film Pendek dan Film Dokumenter Pendek, untuk penyerapan tenaga kerja dan menggerakan ekosistem perfilman Indonesia.</p>
                                 {/* <br /> */}
-                                <p>Pelaksanaan Produksi Film Yang Terpilih wajib selesai hingga tahap final pada akhir periode program sampai dengan 10 Desember 2021.</p>
+                                <p>Pelaksanaan produksi Film Terpilih wajib selesai hingga tahap final pada akhir periode program sampai dengan 10 Desember 2021.</p>
                                 <button>
                                     <a href={`${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`}>Selengkapnya</a>
                                 </button>
@@ -180,13 +180,13 @@ const Home = (props) => {
         {/* <div className="home-register-wrapper">
             <div className="home-register-content">
                 <h2>Pendaftaran</h2>
-                <p>Undangan bagi Rumah Produksi Film Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Bantuan Pemerintah Promosi Film Indonesia</p>
+                <p>Undangan bagi Insan Perfilman Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Promosi - Lisensi - Produksi</p>
                 <br />
                 <br />
                 <br />
                 <p>Pendaftaran akan berlangsung mulai dari</p>
                 <br />
-                <p>1 - 10 Oktober 2021</p>
+                <p>8 - 15 Oktober 2021</p>
                 <div className="home-register-button">
                     <button>
                         <a href={ROUTES.registerTacticalTerms}>Syarat Pendaftaran</a>
