@@ -1,0 +1,115 @@
+.modal-wrapper {
+    font-family: 'Signika', sans-serif;
+
+    .modal-content {
+        border-radius: 35px;
+        padding: 50px;
+    }
+    
+    &.modal-dialog {
+        max-width: 60% !important;
+        margin: 100px auto;
+    }
+
+    .modal-header {
+        border-bottom: none;
+        text-align: center;
+        justify-content: center;
+
+        .modal-title {
+            font-size: 42px;
+            color: var(--main-light-green);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .modal-body {
+        color: var(--main-light-green);
+        height: 45vh;
+        overflow: auto;
+    }
+
+    .modal-body::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px #fff;
+        box-shadow: inset 0 0 6px #fff;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+
+    .modal-body::-webkit-scrollbar
+    {
+        width: 12px;
+        background-color: #F5F5F5;
+    }
+
+    .modal-body::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px #fff;
+        box-shadow: inset 0 0 6px #fff;
+        background-color: rgba(0,0,0, 0.2);
+    }
+
+    .modal-footer {
+        border-top: none;
+        justify-content: center;
+
+        ul {
+            list-style: none;
+            padding: 0px;
+        }
+        
+        ul li:first-child:before
+        {
+            content: '*';
+            margin: 0 1em;
+        }
+
+        ul li:nth-child(2):before
+        {
+            content: '**';
+            margin: 0 1em;
+        }
+
+        button {
+            margin-top: 30px;
+            border-radius: 10px;
+            background-color: var(--main-light-green);
+            color: #fff;
+            padding: 10px 30px;
+            font-size: 24px;
+            font-weight: 700;
+            border: solid 1px var(--main-light-green);
+        }
+
+        button:hover {
+            background-color: var(--main-dark-green);
+        }
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    h3 {
+        font-size: 38px;
+    }
+
+    h4 {
+        font-size: 32px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}

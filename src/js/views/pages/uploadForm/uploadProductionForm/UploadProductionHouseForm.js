@@ -8,6 +8,7 @@ import Loading from '../../../component/loading';
 import Template from '../../../layout/template';
 import RadioButton from '../../../component/radioButton';
 import TextAreaWithCounter from '../../../component/textAreaWithCounter';
+import PopupOneButton from '../../../component/popupOneButton';
 
 const acceptedFileFormat = {
     image: ["image/png", "image/jpeg"],
@@ -170,6 +171,7 @@ const UploadTacticalForm = () => {
 
     const [isLoading, setIsLoading] = useState(false)
     const [page, setPage] = useState(1)
+    const [showDisclaimer, setShowDisclaimer] = useState(true)
 
     const validationsOne = () => {
         // return true;
@@ -862,6 +864,54 @@ const UploadTacticalForm = () => {
 
             
         </div>
+        <PopupOneButton
+            visibility = {showDisclaimer}
+            title = "PERHATIAN!"
+            buttonText = "OK, Saya Mengerti"
+            onClickButton = {() => setShowDisclaimer(false)}
+            className = "modal-disclaimer-production"
+            backdrop="static"
+        >
+            <h4>
+                Pastikan Anda telah menyiapkan dokumen-dokumen persyaratan khusus{" "} 
+                <span style={{textDecoration: "underline"}}>Rumah Produksi</span> seperti:
+            </h4>
+            <div className="modal-disclaimer-content">
+                <div className="modal-disclaimer-content-title">
+                    A. Dokumen Legalitas :
+                </div>
+                <ul>
+                    <li>Akta pendirian dan minimal sudah berdiri sejak 1 Januari 2019</li>
+                    <li>Salinan KTP Penanggung jawab / Direktur PH</li>
+                    <li>Surat Keterangan Domisili Usaha</li>
+                    <li>Nomor Induk Berusaha (NIB)</li>
+                    <li>Tanda Daftar Usaha Perfilman (TDUP)</li>
+                    <li>Dokumen Nomor Pokok Wajib Pajak atas nama Badan Usaha</li>
+                    <li>Surat Pemberitahuan Tahunan (SPT) Pajak 1 tahun terakhir</li>
+                    <li>Dokumen Rekening atas nama Badan Usaha</li>
+                </ul>
+
+                <div className="modal-disclaimer-content-title">
+                    B. Berkas Lampiran :
+                </div>
+                <ul>
+                    <li>Surat Pernyataan Rumah Produksi (Lampiran A.1)</li>
+                    <li>Surat Pernyataan Tanggung Jawab Mutlak (Lampiran 1)</li> 
+                    <li>Surat Pernyataan Tidak Menerima Bantuan Pemerintah 
+                        Promosi Film Indonesia dan/atau Bantuan K/L Lainnya 
+                        (Lampiran 2)</li>
+                    <li>Surat Pernyataan Film Masih Dalam Tahap Perencanaan/ 
+                        Produksi  (Lampiran 3)</li>
+                    <li>Surat Permohonan Bantuan Pemerintah bagi Produksi Film 
+                        Indonesia (Lampiran 4)</li>
+                    <li>Ringkasan Profil Pengusul Proposal Permohonan Bantuan bagi 
+                        Produksi Film Indonesia (Lampiran 5)</li>
+                    <li>Dokumen Pendukung Proposal Bantuan Pemerintah bagi 
+                        Produksi Film Indonesia (Lampiran 6)</li>
+                    <li>Pengajuan Rincian Anggaran Biaya Produksi Film (Lampiran 7)</li>
+                </ul>
+            </div>
+        </PopupOneButton>
     </Template>
 }
 
