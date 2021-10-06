@@ -150,6 +150,7 @@ const Home = (props) => {
                                 <p>Bertujuan untuk meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih dan mendukung kemajuan industri perfilman melalui kegiatan promosi film</p>
                                 {/* <br /> */}
                                 <p>Pelaksanaan Promosi dilakukan pada jangka waktu Oktober - 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih)</p>
+                                <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film</p>
                                 <button>
                                     <a href={`${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`}>Selengkapnya</a>
                                 </button>
@@ -167,6 +168,7 @@ const Home = (props) => {
                                 <p>Bertujuan mendorong produksi karya kreatif Film Pendek dan Film Dokumenter Pendek, untuk penyerapan tenaga kerja dan menggerakan ekosistem perfilman Indonesia.</p>
                                 {/* <br /> */}
                                 <p>Pelaksanaan produksi Film Terpilih wajib selesai hingga tahap final pada akhir periode program sampai dengan 10 Desember 2021.</p>
+                                <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film</p>
                                 <button>
                                     <a href={`${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`}>Selengkapnya</a>
                                 </button>
