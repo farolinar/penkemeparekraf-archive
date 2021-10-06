@@ -127,39 +127,39 @@ const KATEGORI_FILM = {
 const LEGAL_FORMAL_NONE_OPTIONS = [
     {
         text: "Shortlist film pendek / film dokumenter pendek nominasi Festival Film Indonesia 2019-2021",
-        val: "shortlistFFI"
+        val: "option_1"
     },
     {
         text: "Masuk dalam program pemutaran/kompetisi film dokumenter pendek Festival Film Dokumenter, Yogyakarta 2019-2021",
-        val: "ffdYogya"
+        val: "option_2"
     },
     {
         text: "Masuk dalam kurasi Minikino Film Week, Denpasar 2019-2021",
-        val: "minikino"
+        val: "option_3"
     },
     {
         text: "Masuk dalam program pemutaran Jogja-NETPAC Asian Film Festival, Yogyakarta 2019-2021",
-        val: "netpac"
+        val: "option_4"
     },
     {
         text: "Masuk dalam kurasi Arkipel Jakarta International Documentary & Experimental Film Festival, Jakarta 2019-2021",
-        val: "arkipel"
+        val: "option_5"
     },
     {
         text: "Masuk dalam kurasi kegiatan Film, Musik, Makan, Jakarta 2019-2021",
-        val: "fmmJakarta"
+        val: "option_6"
     },
     {
         text: "Masuk dalam kurasi program pemutaran di Klub DIY Menonton, Yogyakarta 2019-2021",
-        val: "diyMenonton"
+        val: "option_7"
     },
     {
         text: "Masuk dalam kurasi program pemutaran di Kinosaurus, Jakarta 2019-2021",
-        val: "kinosaurus"
+        val: "option_8"
     },
     {
         text: "Masuk dalam kurasi program pemutaran di Kineforum, Jakarta 2019-2021",
-        val: "kineforum"
+        val: "option_9"
     },
 ]
 
@@ -170,15 +170,15 @@ const UploadTacticalForm = () => {
     const [companyName, setCompanyName] = useState()
     const [legalFormalType, setLegalFormalType] = useState("")
     const [legalFormalNoneOptions, setLegalFormalNoneOptions] = useState({
-        shortlistFFI: false,
-        ffdYogya: false,
-        minikino: false,
-        netpac: false,
-        arkipel: false,
-        fmmJakarta: false,
-        diyMenonton: false,
-        kinosaurus: false,
-        kineforum: false
+        option_1: false,
+        option_2: false,
+        option_3: false,
+        option_4: false,
+        option_5: false,
+        option_6: false,
+        option_7: false,
+        option_8: false,
+        option_9: false
     })
     const [kriteriaFilm, setKriteriaFilm] = useState("")
     const [kategoriFilm, setKategoriFilm] = useState("")
@@ -231,15 +231,15 @@ const UploadTacticalForm = () => {
     const validationsOne = () => {
         // return true;
         if(legalFormalType === LEGAL_FORMAL_TYPES.none.val) {
-            return legalFormalNoneOptions.shortlistFFI ||
-                legalFormalNoneOptions.ffdYogya ||
-                legalFormalNoneOptions.minikino ||
-                legalFormalNoneOptions.netpac ||
-                legalFormalNoneOptions.arkipel ||
-                legalFormalNoneOptions.fmmJakarta ||
-                legalFormalNoneOptions.diyMenonton ||
-                legalFormalNoneOptions.kinosaurus ||
-                legalFormalNoneOptions.kineforum
+            return legalFormalNoneOptions.option_1 ||
+                legalFormalNoneOptions.option_2 ||
+                legalFormalNoneOptions.option_3 ||
+                legalFormalNoneOptions.option_4 ||
+                legalFormalNoneOptions.option_5 ||
+                legalFormalNoneOptions.option_6 ||
+                legalFormalNoneOptions.option_7 ||
+                legalFormalNoneOptions.option_8 ||
+                legalFormalNoneOptions.option_9
         }
         return name
             && idNumber
@@ -294,21 +294,84 @@ const UploadTacticalForm = () => {
         return validationsOne() && validationsTwo() && verifyCheck;
     }
 
+    const getParticipateOptions = () => {
+        let keys = Object.keys(legalFormalNoneOptions);
+
+        let filtered = keys.filter(function(key) {
+            return legalFormalNoneOptions[key]
+        });
+
+        return filtered.join('|');
+    }
+
     const submitData = () => {
         if(validations()) {
             setIsLoading(true)
             let data = {
                 fullname: name,
-                nik: idNumber,
-                production_house: companyName,
+                identity_id: idNumber,
+                film_community_name: companyName,
                 whatsapp: waNumber,
+                bentuk_legal_formal: legalFormalType,
+                participated_portfolio_option: getParticipateOptions(),
+                email: email,
+                film_criteria: kriteriaFilm,
+                film_category: kategoriFilm,
+                proposal_film_title: movieTitle,
+                proposal_duration: movieDuration,
+                proposal_genre: movieGenre,
+                proposal_writer: movieWriter,
+                proposal_director: movieDirector,
+                proposal_producer: movieProducer,
+                proposal_animator: movieAnimator,
+                proposal_actors: movieCast,
+                proposal_target_audience: movieTarget,
+                proposal_logline: movieLogline,
+                proposal_synopsis: movieSynopsis,
+                proposal_director_statement: movieStatement,
+                proposal_producer_vision: movieVision,
+                proposal_funding_list: movieOtherResource,
+                proposal_producer_profile: movieProdHouseDetail,
+                proposal_director_profile: movieDirectorDetail,
+                proposal_crew_achievements: movieCrewMilestone,
+                proposal_hasil_karya_link_sutradara: movieDirectorExample,
+                proposal_hasil_karya_link_produser: movieProducerExample,
+                proposal_portfolio_link: movieProdHouseExample,
+                is_rekening_under_community: rekeningANBadanUsaha,
+                is_authorized_community: stakeholderResmi,
+                ad_art_komunitas_fname: aktaPendirianFile.name,
+                ad_art_komunitas_file: aktaPendirianFile.file,
+                ktp_direktur_fname: idNumberFile.name,
+                ktp_direktur_file: idNumberFile.file,
+                spkp_fname: lampiranB1.name,
+                spkp_file: lampiranB1.file,
+                rekening_fname: cardNumberFile.name,
+                rekening_file: cardNumberFile.file,
+                sptjm_fname: lampiran1.name,
+                sptjm_file: lampiran1.file,
+                sptmbppfi_fname: lampiran2.name,
+                sptmbppfi_file: lampiran2.file,
+                spfmdtp_fname: lampiran3.name,
+                spfmdtp_file: lampiran3.name,
+                spbppfi_fname: lampiran4.name,
+                spbppfi_file: lampiran4.file,
+                ringkasan_profil_fname: lampiran5.name,
+                ringkasan_profil_file: lampiran5.file,
+                dokumen_pendukung_fname: lampiran6.name,
+                dokumen_pendukung_file: lampiran6.file,
+                rabp_fname: lampiran7.name,
+                rabp_file: lampiran7.file,
+                surat_rekomendasi_bpi_fname: lampiranB2.name,
+                surat_rekomendasi_bpi_file: lampiranB2.file,
+                surat_pernyataan_rekening_komunitas_fname: lampiranB3.name,
+                surat_pernyataan_rekening_komunitas_file: lampiranB3.file
             }
             let formData = new FormData();
             for (let field in data) {
                 formData.append(field, data[field]);
             }
 
-            fetch('https://api-penfilm.kemenparekraf.go.id/v2/register',  {
+            fetch('https://api-penfilm.kemenparekraf.go.id/v1/register-produksi/community',  {
                     method: 'POST',
                     // mode: 'no-cors',
                     body: formData
