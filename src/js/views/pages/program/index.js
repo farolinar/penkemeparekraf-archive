@@ -50,6 +50,7 @@ const Program = () => {
                     <p>Pelaksanaan Promosi dilakukan pada jangka waktu 
                     Oktober – 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih)</p>
                     <p>Target penerima bantuan sebanyak 40 Rumah Produksi dengan nilai bantuan sebesar Rp. 1.500.000.000,- per rumah produksi.</p>
+                    <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film</p>
                 </div>
                 <div className="lazyload-wrapper">
                     <img src={programTacticalHero} alt="program-tactical" />
