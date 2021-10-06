@@ -97,7 +97,45 @@
                 border-radius: 10px;
             }
         }
-    } 
+    }
+
+    .radio-button-dropdown {
+        border: solid 3px var(--main-light-green);
+        border-radius: 10px;
+        padding: 25px 60px;
+        position: relative;
+        
+        label {
+            // align-items: baseline !important;
+        }
+        p {
+            color: var(--main-light-green);
+        }
+        .legal-formal-none-checkbox {
+            justify-content: unset !important;
+            margin: 18px 10px 18px 0;
+
+            input {
+                visibility: hidden;
+            }
+        }
+    }
+
+    .radio-button-dropdown:before {
+        // layout
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 100%;
+        right: 29.5%; // offset should move with padding of parent
+        border: .75rem solid transparent;
+        border-top: none;
+
+        // looks
+        border-bottom-color: #fff;
+        filter: drop-shadow(0 -0.0625rem 0.0625rem var(--main-light-green));
+    }
 
     .upload-submit-button-wrapper {
         display: flex;
