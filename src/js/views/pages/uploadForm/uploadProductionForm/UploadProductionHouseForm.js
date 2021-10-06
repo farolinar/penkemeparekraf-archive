@@ -852,13 +852,8 @@ const UploadTacticalForm = () => {
                     </div>
 
                     <div
-                        onClick={() => {if(validationsTwo()) setPage(1)}}
+                        onClick={() => {setPage(1)}}
                         className="submit-button"
-                        style={validationsTwo() ? {} : {
-                            backgroundColor: "#e5e5e5",
-                            color: "white",
-                            cursor: "not-allowed"
-                        }}
                     >
                         Back
                     </div>
