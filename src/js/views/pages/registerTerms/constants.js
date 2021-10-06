@@ -70,6 +70,9 @@ export const MAIN_TERMS = {
         {
             text: "Rumah Produksi yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam pemerintahan",
         },
+                {
+            text: "Anggaran Bantuan Pemerintah Bagi Produksi Film Indonesia saat ini masih berproses di Kementerian Keuangan, Rumah Produksi yang melakukan pendaftaran pada skema produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kementerian Pariwisata dan Ekonomi Kreatif/Badan Pariwisata dan Ekonomi Kreatif apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia.",
+        },
     ],
     komunitas : [
         {
@@ -102,6 +105,9 @@ export const MAIN_TERMS = {
         },
         {
             text: "Komunitas Perfilman yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam pemerintahan",
+        },
+        {
+            text: "Anggaran Bantuan Pemerintah Bagi Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan, Komunitas Perfilman yang melakukan pendaftaran pada skema produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kementerian Pariwisata dan Ekonomi Kreatif/Badan Pariwisata dan Ekonomi Kreatif apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia",
         },
     ]
 }
@@ -297,7 +303,8 @@ export const DOCUMENT_TERMS = {
                 "h.	Menerima seluruh hasil yang akan diputuskan tanpa ada upaya apapun termasuk dan tidak terbatas pada\
                 upaya hukum maupun upaya lain yang berpotensi menimbulkan kerugian bagi Tim Kurator dan/atau\
                 Kemenparekraf/Baparekraf",
-                "i.	Sanggup untuk bertanggung jawab baik secara perdata maupun secara pidana terhadap seluruh dana Bantuan\
+                "i. Memahami ketentuan pengajuan proposal mengenai Anggaran Bantuan Pemerintah Bagi Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan, Rumah Produksi yang melakukan pendaftaran pada skema produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kemenparekraf/ Baparekraf apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia",
+                "j.	Sanggup untuk bertanggung jawab baik secara perdata maupun secara pidana terhadap seluruh dana Bantuan\
                 Pemerintah yang diberikan.",
             ]
         },
@@ -407,8 +414,9 @@ export const DOCUMENT_TERMS = {
                 "h.	Menerima seluruh hasil yang akan diputuskan tanpa ada upaya apapun termasuk dan tidak terbatas pada\
                 upaya hukum maupun upaya lain yang berpotensi menimbulkan kerugian bagi Tim Kurator dan/atau\
                 Kemenparekraf/Baparekraf",
-                "i.	Sanggup untuk bertanggung jawab baik secara perdata maupun secara pidana terhadap seluruh dana Bantuan\
-                Pemerintah yang diberikan."
+                "i. emahami ketentuan pengajuan proposal mengenai Anggaran Bantuan Pemerintah Bagi Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan, Komunitas Perfilman yang melakukan pendaftaran pada skema produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kemenparekraf/ Baparekraf apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia",
+                "j.	Sanggup untuk bertanggung jawab baik secara perdata maupun secara pidana terhadap seluruh dana Bantuan\
+                Pemerintah yang diberikan"
             ]
         },
         {
