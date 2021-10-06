@@ -52,6 +52,7 @@ const Program = () => {
                         <p>Pelaksanaan Promosi dilakukan pada jangka waktu<br />
                         Oktober – 10 Desember 2021 (dimulai sejak tanggal penetapan<br />penerima bantuan terpilih)</p>
                         <p>Target penerima bantuan sebanyak 40 Rumah Produksi dengan<br />nilai bantuan sebesar Rp. 1.500.000.000,- per rumah produksi.</p>
+                        <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film</p>
                     </div>
                     <div className="lazyload-wrapper">
                         <img src={programTacticalHero} alt="program-tactical" />
@@ -79,6 +80,7 @@ const Program = () => {
                         <p>Bertujuan mendorong produksi karya kreatif Film Pendek<br />dan Film Dokumenter Pendek, untuk penyerapan tenaga<br />kerja dan menggerakan ekosistem perfilman Indonesia.</p>
                         <p>Pelaksanaan produksi Film Terpilih wajib selesai hingga<br />tahap final pada akhir periode program sampai dengan<br />tanggal 10 Desember 2021.</p>
                         <p>Target Penerima Bantuan sebanyak 60 Rumah Produksi atau<br />Komunitas Perfilman yang masing-masing menghasilkan 1 film<br />Indonesia, dengan kategori film untuk 30 Film Pendek dan 30<br />Film Dokumenter Pendek. Nilai bantuan yang diberikan sebesar<br />Rp. 250.000.000,- per rumah produksi/komunitas perfilman.</p>
+                        <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film</p>
                     </div>
                 </div>
             </div>
