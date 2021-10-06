@@ -31,6 +31,39 @@ const acceptedFileFormatValidation = {
     all: "jpg, jpeg, png, atau pdf"
 }
 
+const BADAN_USAHA_TYPES = {
+    pt: {
+        text: "Perseroan Terbatas (PT)",
+        val: "badan-usaha-pt"
+    },
+    cv: {
+        text: "Perseroan Komanditer (CV)",
+        val: "badan-usaha-cv"
+    },
+}
+
+const KRITERIA_FILM = {
+    siap_produksi: {
+        text: "Film Siap Produksi",
+        val: "ready_production"
+    },
+    dalam_penyelesaian: {
+        text: "Film Dalam Tahap Penyelesaian",
+        val: "on_progress"
+    }
+}
+
+const KATEGORI_FILM = {
+    film_pendek: {
+        text: "Film Pendek",
+        val: "movie"
+    },
+    film_dokumenter: {
+        text: "Film Dokumenter Pendek",
+        val: "documentary"
+    }
+}
+
 const UploadFileField = ({
     title="",
     subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)",
@@ -86,41 +119,9 @@ const UploadFileField = ({
     </div>
 }
 
-const BADAN_USAHA_TYPES = {
-    pt: {
-        text: "Perseroan Terbatas (PT)",
-        val: "badan-usaha-pt"
-    },
-    cv: {
-        text: "Perseroan Komanditer (CV)",
-        val: "badan-usaha-cv"
-    },
-}
-
-const KRITERIA_FILM = {
-    siap_produksi: {
-        text: "Film Siap Produksi",
-        val: "kriteria-siap-produksi"
-    },
-    dalam_penyelesaian: {
-        text: "Film Dalam Tahap Penyelesaian",
-        val: "kriteria-dalam-penyelesaian"
-    }
-}
-
-const KATEGORI_FILM = {
-    film_pendek: {
-        text: "Film Pendek",
-        val: "kategori-film-pendek"
-    },
-    film_dokumenter: {
-        text: "Film Dokumenter Pendek",
-        val: "kategori-film-dokumenter"
-    }
-}
-
 const UploadTacticalForm = () => {
     const [name, setName] = useState()
+    const [email, setEmail] = useState()
     const [idNumber, setIDNumber] = useState()
     const [companyName, setCompanyName] = useState()
     const [badanUsahaType, setBadanUsahaType] = useState("")
@@ -176,6 +177,7 @@ const UploadTacticalForm = () => {
     const validationsOne = () => {
         // return true;
         return name
+            && email
             && idNumber
             && companyName
             && waNumber
@@ -229,16 +231,72 @@ const UploadTacticalForm = () => {
             setIsLoading(true)
             let data = {
                 fullname: name,
-                nik: idNumber,
+                identity_id: idNumber,
                 production_house: companyName,
                 whatsapp: waNumber,
+                bentuk_badan_usaha: badanUsahaType,
+                email: email,
+                film_criteria: kriteriaFilm,
+                film_category: kategoriFilm,
+                proposal_film_title: movieTitle,
+                proposal_duration: movieDuration,
+                proposal_genre: movieGenre,
+                proposal_writer: movieWriter,
+                proposal_director: movieDirector,
+                proposal_producer: movieProducer,
+                proposal_animator: movieAnimator,
+                proposal_actors: movieCast,
+                proposal_target_audience: movieTarget,
+                proposal_logline: movieLogline,
+                proposal_synopsis: movieSynopsis,
+                proposal_director_statement: movieStatement,
+                proposal_producer_vision: movieVision,
+                proposal_funding_list: movieOtherResource,
+                proposal_producer_profile: movieProdHouseDetail,
+                proposal_director_profile: movieDirectorDetail,
+                proposal_crew_achievements: movieCrewMilestone,
+                proposal_hasil_karya_link_sutradara: movieDirectorExample,
+                proposal_hasil_karya_link_produser: movieProducerExample,
+                proposal_portfolio_link: movieProdHouseExample,
+                akta_pendirian_fname: aktaPendirianFile.name,
+                akta_pendirian_file: aktaPendirianFile.file,
+                ktp_direktur_fname: idNumberFile.name,
+                ktp_direktur_file: idNumberFile.file,
+                sk_domisili_usaha_fname: keteranganDomisiliUsahaFile.name,
+                sk_domisili_usaha_file: keteranganDomisiliUsahaFile.file,
+                nib_fname: nomorIndukFile.name,
+                nib_file: nomorIndukFile.file,
+                tdup_fname: tandaDaftarUsahaFile.name,
+                tdup_file: tandaDaftarUsahaFile.file,
+                npwp_fname: npwpFile.name,
+                npwp_file: npwpFile.file,
+                spt_fname: taxFile.name,
+                spt_file: taxFile.file,
+                rekening_fname: cardNumberFile.name,
+                rekening_file: cardNumberFile.file,
+                sprp_fname: lampiranA1.name,
+                sprp_file: lampiranA1.file,
+                sptjm_fname: lampiran1.name,
+                sptjm_file: lampiran1.file,
+                sptmbppfi_fname: lampiran2.name,
+                sptmbppfi_file: lampiran2.file,
+                spfmdtp_fname: lampiran3.name,
+                spfmdtp_file: lampiran3.name,
+                spbppfi_fname: lampiran4.name,
+                spbppfi_file: lampiran4.file,
+                ringkasan_profil_fname: lampiran5.name,
+                ringkasan_profil_file: lampiran5.file,
+                dokumen_pendukung_fname: lampiran6.name,
+                dokumen_pendukung_file: lampiran6.file,
+                rabp_fname: lampiran7.name,
+                rabp_file: lampiran7.file
             }
             let formData = new FormData();
             for (let field in data) {
                 formData.append(field, data[field]);
             }
 
-            fetch('https://api-penfilm.kemenparekraf.go.id/v2/register',  {
+            fetch('https://api-penfilm.kemenparekraf.go.id/v1/register-produksi/productionhouse',  {
                     method: 'POST',
                     // mode: 'no-cors',
                     body: formData
@@ -324,6 +382,15 @@ const UploadTacticalForm = () => {
                                 unselectedColor="var(--main-light-green)"
                                 selectedColor="var(--main-light-green)"
                             />
+                        </div>
+
+                        <div className="upload-form-field">
+                            <label htmlFor="email">ALAMAT EMAIL *</label>
+                            <input 
+                                name="email"
+                                defaultValue={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            ></input>
                         </div>
 
                         <div className="upload-form-field">
