@@ -89,7 +89,27 @@
                 border: solid 3px var(--main-dark-green);
             }
         }
+        .upload-file-wrapper {
+            color: var(--main-light-green);
+
+            .upload-file-button {
+                border: solid 3px var(--main-light-green);
+                border-radius: 10px;
+            }
+        }
     } 
+
+    .upload-submit-button-wrapper {
+        display: flex;
+        .submit-button {
+            width: 180px;
+            box-sizing: border-box;
+        }
+
+        .submit-button:first-child {
+            margin-right: 40px;
+        }
+    }
 
     .submit-button {
         border-radius: 10px;
