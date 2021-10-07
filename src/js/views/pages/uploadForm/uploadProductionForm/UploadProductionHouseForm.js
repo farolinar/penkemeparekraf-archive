@@ -34,11 +34,11 @@ const acceptedFileFormatValidation = {
 const BADAN_USAHA_TYPES = {
     pt: {
         text: "Perseroan Terbatas (PT)",
-        val: "badan-usaha-pt"
+        val: "pt"
     },
     cv: {
         text: "Perseroan Komanditer (CV)",
-        val: "badan-usaha-cv"
+        val: "cv"
     },
 }
 
