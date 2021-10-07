@@ -38,6 +38,7 @@ const UploadFileField = ({
     id="",
     type="image",
     fileName="",
+    info="",
     setData = () => {}
 }) => {
     function readURL(input, id) {
@@ -66,6 +67,7 @@ const UploadFileField = ({
 
     return <div className="upload-file-wrapper">
         <div className="upload-file-title">{title}</div>
+        {info && <div className="upload-file-info">{info}</div>}
         <div className="upload-file-subtitle">{subtitle}</div>
         <div style={{display: "flex", alignItems: "baseline"}}>
             <div className="upload-file-button">
@@ -991,6 +993,7 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title={`UNGGAH SURAT REKOMENDASI STAKEHOLDER RESMI BPI UNTUK KOMUNITAS PERFILMAN (LAMPIRAN B.2) ${stakeholderResmi === 0 ? "*" : ""}`}
+                            info="Keterangan: Wajib dilampirkan apabila Komunitas belum terdaftar sebagai stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia (BPI)"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-srsrbpi"
                             type={acceptedFileFormatString.pdf}
@@ -1002,6 +1005,7 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title={`UNGGAH SURAT PERNYATAAN PENGGUNAAN REKENING ATAS NAMA PRIBADI UNTUK MEWAKILI KOMUNITAS PERFILMAN.(LAMPIRAN B.3) ${rekeningANBadanUsaha === 0 ? "*" : ""}`}
+                            info="Keterangan: Wajib dilampirkan apabila tidak memiliki rekening bank atas nama Komunitas Pefilman"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-sppranp"
                             type={acceptedFileFormatString.pdf}
