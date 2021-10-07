@@ -201,7 +201,7 @@ const RegisterTerms = () => {
             {showThree && <Fragment><div className="register-terms-content">
                 <ul>
                     {
-                        item.mainTerms.map((term, idx) => {
+                        item.lowerTerms.map((term, idx) => {
                             return <li key={`${item.name}-main-${idx}`}>
                                 {term.text}
                                 {
