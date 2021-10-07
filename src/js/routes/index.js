@@ -9,9 +9,13 @@ const OpenCall = lazy(()=>import('../views/pages/openCall'));
 const DownloadForm = lazy(()=>import('../views/pages/downloadForm'));
 const UploadForm = lazy(()=>import('../views/pages/uploadForm'));
 const UploadTacticalForm = lazy(()=>import('../views/pages/uploadForm/UploadTacticalForm'));
-const UploadProductionForm = lazy(()=>import('../views/pages/uploadForm/UploadProductionForm'));
-const RegisterTerms = lazy(()=>import('../views/pages/registerTerms'));
+const UploadProductionForm = lazy(()=>import('../views/pages/uploadForm/uploadProductionForm/index'));
+const UploadProductionHouseForm = lazy(()=>import('../views/pages/uploadForm/uploadProductionForm/UploadProductionHouseForm'));
+const UploadCommunityForm = lazy(()=>import('../views/pages/uploadForm/uploadProductionForm/UploadCommunityForm'));
+const RegisterTacticalTerms = lazy(()=>import('../views/pages/registerTerms/RegsiterTacticalTerms'));
+const RegisterProductionTerms = lazy(()=>import('../views/pages/registerTerms/RegisterProductionTerms'));
 const DownloadTacticalForm = lazy(()=>import('../views/pages/downloadForm/DownloadForm'));
+const DownloadProductionForm = lazy(()=>import('../views/pages/downloadForm/DownloadProductionForm'));
 
 const Routes = [
     {
@@ -57,6 +61,12 @@ const Routes = [
         default: true
     },
     {
+        path: ROUTES.downloadProductionForm,
+        component: DownloadProductionForm,
+        exact: true,
+        default: true
+    },
+    {
         path: ROUTES.uploadForm,
         component: UploadForm,
         exact: true,
@@ -75,8 +85,26 @@ const Routes = [
         default: true
     },
     {
-        path: ROUTES.registerTerms,
-        component: RegisterTerms,
+        path: ROUTES.uploadProductionHouseForm,
+        component: UploadProductionHouseForm,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.uploadCommunityForm,
+        component: UploadCommunityForm,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.registerTacticalTerms,
+        component: RegisterTacticalTerms,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.registerProductionTerms,
+        component: RegisterProductionTerms,
         exact: true,
         default: true
     },

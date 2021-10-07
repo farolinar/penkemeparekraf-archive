@@ -18,7 +18,7 @@ const OpenCall = () => {
                 <p>1 - 10 Oktober 2021</p>
                 <div className="home-register-button">
                     <button>
-                        <a href={ROUTES.registerTerms}>Syarat Pendaftaran</a>
+                        <a href={ROUTES.registerTacticalTerms}>Syarat Pendaftaran</a>
                     </button>
                     <button>
                         <a href={ROUTES.downloadForm}>Unduh Formulir</a>

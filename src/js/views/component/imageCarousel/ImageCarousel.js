@@ -12,6 +12,7 @@ const ImageCarousel = (props) => {
         showIndicators={false}
         showStatus={false}
         showThumbs={false}
+        className="image-carousel-wrapper"
     >
         {props.children}
     </Carousel>

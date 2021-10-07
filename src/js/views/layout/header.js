@@ -7,17 +7,17 @@ import { ANCHOR, ROUTES } from "../../constants";
 const MENU = [
     {
         name: "Beranda",
-        url: [ROUTES.home],
+        url: ROUTES.home,
         children: null
     },
     {
         name: "Tentang Kami",
-        url: [ROUTES.aboutUs],
+        url: ROUTES.aboutUs,
         children: null
     },
     {
         name: "Program",
-        url: [ROUTES.program],
+        url: ROUTES.program,
         children: [
             // {
             //     name: "Bantuan Pemerintah Produksi Film Indonesia",
@@ -35,29 +35,29 @@ const MENU = [
             },
             {
                 name: "Produksi",
-                class: "not-clickable",
-                url: null
+                class: "",
+                url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
             },
         ]
     },
     {
         name: "Pendaftaran",
-        url: [ROUTES.register],
+        url: ROUTES.register,
         children: null
     },
     {
         name: "Unduh Formulir",
-        url: [ROUTES.downloadForm],
+        url: ROUTES.downloadForm,
         children: null
     },
     {
         name: "Unggah Formulir",
-        url: [ROUTES.uploadForm, ROUTES.uploadProductionForm, ROUTES.uploadTacticalForm],
+        url: ROUTES.uploadForm,
         children: null
     },
     {
         name: "Kontak Kami",
-        url: [ROUTES.contactUs],
+        url: ROUTES.contactUs,
         children: null
     },
 ]
@@ -74,7 +74,7 @@ const Header = () => {
             // }}
         >
             <p
-                onClick={() => window.location.href = item.url[0]}
+                onClick={() => window.location.href = item.url}
             >
                 {item.name}
             </p>
@@ -93,7 +93,19 @@ const Header = () => {
                 </div>
             }
 
-            {item.url && item.url.length && item.url.includes(window.location.pathname) && <div
+            {item.url == ROUTES.home && window.location.pathname === "/" && <div
+                style={{
+                    height: 8,
+                    width: "120%",
+                    backgroundColor: "#fff",
+                    borderRadius: 8,
+                    position: "absolute",
+                    bottom: 0,
+                    left: "-10%"
+                }}
+            ></div>}
+
+            {item.url && item.url != ROUTES.home && window.location.pathname.includes(item.url) && <div
                 style={{
                     height: 8,
                     width: "120%",

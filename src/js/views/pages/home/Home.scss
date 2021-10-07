@@ -74,7 +74,7 @@
                 border-radius: 10px;
                 margin-top: 60px;
                 cursor: pointer;
-                font-size: 2vw;
+                font-size: 24px;
                 font-weight: 400;
             }
         }
@@ -83,7 +83,7 @@
             // width: 45%;
 
             img {
-                max-width: 40vw;
+                max-width: 30vw;
             }
         }
     }
@@ -160,7 +160,7 @@
                 padding: 13px 35px;
                 margin-top: 20px;
                 a {
-                    font-size: 28px;
+                    font-size: 24px;
                     font-weight: 400;
                     color: var(--main-light-blue);
                 }
@@ -169,19 +169,28 @@
 
         .our-program-content-new {
             background-color: #fff;
-            padding: 55px;
-            display: flex;
+            // display: flex;
             color: var(--main-light-blue);
-            justify-content: space-between;
-            padding: 100px 50px;
+            // justify-content: space-between;
+            padding: 100px 0px;
             border-radius: 10px;
+            text-align: left;
+
+            .our-program-content {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+                padding: 0 200px;
+            }
 
             .lazyload-wrapper {
                 width: 50%;
                 margin-right: 20px;
+                display: flex;
 
                 img {
                     width: 100%;
+                    align-self: center;
                 }
             }
 
@@ -198,10 +207,10 @@
             }
 
             h3 {
-                font-size: 3vw;
+                font-size: 30px;
                 font-weight: 400;
                 margin: 0;
-                line-height: 3vw;
+                // line-height: 3vw;
             }
 
             // p {
@@ -214,7 +223,7 @@
                 padding: 13px 35px;
                 margin-top: 20px;
                 a {
-                    font-size: 28px;
+                    font-size: 24px;
                     font-weight: 400;
                     color: #fff;
                 }

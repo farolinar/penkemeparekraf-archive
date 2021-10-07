@@ -6,13 +6,15 @@ export const ROUTES = {
     register: "/daftar",
     downloadForm: "/unduh-formulir",
     uploadForm: "/unggah-formulir",
-    uploadTacticalForm: "/unggah-formulir-bantuan-promosi",
-    downloadTacticalForm: "/unduh-formulir-bantuan-promosi",
-    uploadProductionForm: "/unggah-formulir-bantuan-produksi",
+    uploadTacticalForm: "/unggah-formulir/bantuan-promosi",
+    downloadTacticalForm: "/unduh-formulir/bantuan-promosi",
+    uploadProductionForm: "/unggah-formulir/bantuan-produksi",
+    uploadProductionHouseForm: "/unggah-formulir/bantuan-produksi/rumah-produksi",
+    uploadCommunityForm: "/unggah-formulir/bantuan-produksi/komunitas-perfilman",
+    downloadProductionForm: "/unduh-formulir/bantuan-produksi",
     contactUs: "/kontak-kami",
-    registerTerms: "/syarat-pendaftaran",
-    // registerProductionTerms: "/syarat-pendaftaran-bantuan-produksi",
-    // registerTacticalTerms: "/syarat-pendaftaran-bantuan-promosi",
+    registerTacticalTerms: "/syarat-pendaftaran/bantuan-promosi",
+    registerProductionTerms: "/syarat-pendaftaran/bantuan-produksi",
     program: "/program"
 }
 

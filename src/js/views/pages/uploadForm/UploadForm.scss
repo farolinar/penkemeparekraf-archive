@@ -106,7 +106,7 @@
                 font-size: 18px;
             }
 
-            input {
+            input, textarea {
                 border-radius: 6px;
                 border: solid 3px var(--main-blue);
                 padding: 8px;
@@ -114,7 +114,13 @@
                 display: block;
                 width: 97%;
                 color: var(--main-blue);
+                resize: none;
             }
+        }
+
+        .upload-file-info {
+            font-size: 16px;
+            margin: 5px 0;
         }
 
         .upload-file-subtitle {

@@ -8,11 +8,14 @@ import aboutUsUpperDivider from '../../../../assets/img/pages/home/about-us-shap
 import aboutUsHero from '../../../../assets/img/pages/home/about-us-hero.png';
 // import icOurProgramTactical from '../../../../assets/img/pages/home/our-program-tactical-icon.png';
 // import icOurProgramProduction from '../../../../assets/img/pages/home/our-program-production-icon.png';
-import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-hero.png";
+import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-home-hero.png";
+import programProductionHero from "../../../../assets/img/pages/program/program-production-home-hero.png";
 // import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
 import "./Home.scss";
-import { ROUTES } from "../../../constants";
+import { ANCHOR, ROUTES } from "../../../constants";
 import RegisterPage from "../../component/registerPage";
+import { Fragment } from "react";
+import ComponentCarousel from "../../component/componentCarousel/ComponentCarousel";
 const Template = lazy(()=>import('../../layout/template'));
 const ImageCarousel = lazy(()=>import('../../component/imageCarousel/ImageCarousel'));
 
@@ -134,22 +137,44 @@ const Home = (props) => {
                     OurPrograms.map((item, idx) => <OurProgramItem key={idx} item={item} />)
                 } */}
                 <div className="our-program-content-new">
-                    <div className="lazyload-wrapper">
-                        <img src={programTacticalHero} alt="program-kami" />
-                    </div>
-                    <div className="our-program-content-text">
-                        <h2>Program Kami</h2>
-                        <h3>Bantuan Pemerintah Promosi Film Indonesia</h3>
-                        <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor film yang terdiri dari Skema Promosi - Lisensi - Produksi</p>
-                        {/* <br /> */}
-                        <p>Bertujuan untuk meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih dan mendukung kemajuan industri perfilman melalui kegiatan promosi film</p>
-                        {/* <br /> */}
-                        <p>Pelaksanaan Promosi dilakukan pada jangka waktu Oktober - 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih)</p>
-                        <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film</p>
-                        <button>
-                            <a href={ROUTES.program}>Selengkapnya</a>
-                        </button>
-                    </div>
+                    <ComponentCarousel>
+                        <div className="our-program-content">
+                            <div className="lazyload-wrapper">
+                                <img src={programTacticalHero} alt="program-kami" />
+                            </div>
+                            <div className="our-program-content-text">
+                                <h2>Program Kami</h2>
+                                <h3>Bantuan Pemerintah<br />Promosi Film Indonesia</h3>
+                                <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor film yang terdiri dari Skema Promosi - Lisensi - Produksi</p>
+                                {/* <br /> */}
+                                <p>Bertujuan untuk meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih dan mendukung kemajuan industri perfilman melalui kegiatan promosi film</p>
+                                {/* <br /> */}
+                                <p>Pelaksanaan Promosi dilakukan pada jangka waktu Oktober - 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih)</p>
+                                <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film</p>
+                                <button>
+                                    <a href={`${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`}>Selengkapnya</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="our-program-content">
+                            <div className="lazyload-wrapper">
+                                <img src={programProductionHero} alt="program-kami" />
+                            </div>
+                            <div className="our-program-content-text">
+                                <h2>Program Kami</h2>
+                                <h3>Bantuan Pemerintah<br />Produksi Film Indonesia</h3>
+                                <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor Film yang terdiri dari Skema Promosi - Lisensi - Produksi.</p>
+                                {/* <br /> */}
+                                <p>Bertujuan mendorong produksi karya kreatif Film Pendek dan Film Dokumenter Pendek, untuk penyerapan tenaga kerja dan menggerakan ekosistem perfilman Indonesia.</p>
+                                {/* <br /> */}
+                                <p>Pelaksanaan produksi Film Terpilih wajib selesai hingga tahap final pada akhir periode program sampai dengan 10 Desember 2021.</p>
+                                <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film</p>
+                                <button>
+                                    <a href={`${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`}>Selengkapnya</a>
+                                </button>
+                            </div>
+                        </div>
+                    </ComponentCarousel>
                 </div>
             </div>
         </div>
@@ -157,16 +182,16 @@ const Home = (props) => {
         {/* <div className="home-register-wrapper">
             <div className="home-register-content">
                 <h2>Pendaftaran</h2>
-                <p>Undangan bagi Rumah Produksi Film Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Bantuan Pemerintah Promosi Film Indonesia</p>
+                <p>Undangan bagi Insan Perfilman Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Promosi - Lisensi - Produksi</p>
                 <br />
                 <br />
                 <br />
                 <p>Pendaftaran akan berlangsung mulai dari</p>
                 <br />
-                <p>1 - 10 Oktober 2021</p>
+                <p>8 - 15 Oktober 2021</p>
                 <div className="home-register-button">
                     <button>
-                        <a href={ROUTES.registerTerms}>Syarat Pendaftaran</a>
+                        <a href={ROUTES.registerTacticalTerms}>Syarat Pendaftaran</a>
                     </button>
                     <button>
                         <a href={ROUTES.downloadForm}>Unduh Formulir</a>
