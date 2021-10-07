@@ -5,7 +5,7 @@ const TextAreaWithCounter = ({
     name = "",
     value = "",
     onChange = () => {},
-    maxLength="200",
+    maxLength=false,
     rows="10"
 }) => {
     const [numberOfChars, setNumberOfChars] = useState(0)
@@ -20,7 +20,7 @@ const TextAreaWithCounter = ({
             maxLength={maxLength}
             rows={rows}
         ></textarea>
-        <span>{numberOfChars}/{maxLength}</span>
+        {maxLength && <span>{numberOfChars}/{maxLength}</span>}
     </div>)
 }
 

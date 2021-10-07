@@ -459,6 +459,7 @@ const UploadTacticalForm = () => {
                                 radioButtons={Object.keys(LEGAL_FORMAL_TYPES).map(function(k){return LEGAL_FORMAL_TYPES[k]})}
                                 unselectedColor="var(--main-light-green)"
                                 selectedColor="var(--main-light-green)"
+                                selected={legalFormalType}
                             />
 
                             {legalFormalType === LEGAL_FORMAL_TYPES.none.val &&
@@ -533,6 +534,7 @@ const UploadTacticalForm = () => {
                                 radioButtons={Object.keys(KRITERIA_FILM).map(function(k){return KRITERIA_FILM[k]})}
                                 unselectedColor="var(--main-light-green)"
                                 selectedColor="var(--main-light-green)"
+                                selected={kriteriaFilm}
                             />
                         </div>
 
@@ -543,6 +545,7 @@ const UploadTacticalForm = () => {
                                 radioButtons={Object.keys(KATEGORI_FILM).map(function(k){return KATEGORI_FILM[k]})}
                                 unselectedColor="var(--main-light-green)"
                                 selectedColor="var(--main-light-green)"
+                                selected={kategoriFilm}
                             />
                         </div>
                     </div>
@@ -707,7 +710,7 @@ const UploadTacticalForm = () => {
                                 name="movie-other-resource"
                                 value={movieOtherResource}
                                 onChange={(e) => setMovieOtherResource(e.target.value)}
-                                maxLength="400"
+                                // maxLength="400"
                             />
                         </div>
                     </div>
@@ -743,7 +746,7 @@ const UploadTacticalForm = () => {
                                 name="movie-crew-milestone"
                                 value={movieCrewMilestone}
                                 onChange={(e) => setMovieCrewMilestone(e.target.value)}
-                                maxLength="400"
+                                // maxLength="400"
                             />
                         </div>
                     </div>
@@ -809,7 +812,7 @@ const UploadTacticalForm = () => {
                         <UploadFileField
                             title="UNGGAH AD/ART KOMUNITAS PERFILMAN DAN MINIMAL SUDAH BERDIRI SEJAK 1 JANUARI 2019 *"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-akta-pendirian-file"
+                            id="upload-form-adart"
                             type={acceptedFileFormatString.pdf}
                             fileName={aktaPendirianFile.name}
                             setData = {(data) => setAktaPendirianFile({...data})}
@@ -855,6 +858,7 @@ const UploadTacticalForm = () => {
                                 ]}
                                 unselectedColor="var(--main-light-green)"
                                 selectedColor="var(--main-light-green)"
+                                selected={String(rekeningANBadanUsaha)}
                             />
                         </div>
                     </div>
@@ -876,6 +880,7 @@ const UploadTacticalForm = () => {
                                 ]}
                                 unselectedColor="var(--main-light-green)"
                                 selectedColor="var(--main-light-green)"
+                                selected={String(stakeholderResmi)}
                             />
                         </div>
                     </div>
@@ -891,9 +896,9 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title="UNGGAH SURAT PERNYATAAN KOMUNITAS PERFILMAN (LAMPIRAN B.1) *"
-                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
-                            type={acceptedFileFormatString.docx}
+                            type={acceptedFileFormatString.pdf}
                             fileName={lampiranB1.name}
                             setData = {(data) => setLampiranB1({...data})}
                         />
@@ -902,9 +907,9 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title="UNGGAH SURAT PERNYATAAN TANGGUNG JAWAB MUTLAK (LAMPIRAN 1) *"
-                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-akta-pendirian-file"
-                            type={acceptedFileFormatString.docx}
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-sptjm"
+                            type={acceptedFileFormatString.pdf}
                             fileName={lampiran1.name}
                             setData = {(data) => setLampiran1({...data})}
                         />
@@ -913,9 +918,9 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title="UNGGAH SURAT PERNYATAAN TIDAK MENERIMA BANTUAN PEMERINTAH PROMOSI FILM INDONESIA DAN/ATAU BANTUAN K/L LAINNYA (LAMPIRAN 2) *"
-                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-akta-pendirian-file"
-                            type={acceptedFileFormatString.docx}
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-sptmbppfi"
+                            type={acceptedFileFormatString.pdf}
                             fileName={lampiran2.name}
                             setData = {(data) => setLampiran2({...data})}
                         />
@@ -924,9 +929,9 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title="UNGGAH SURAT PERNYATAAN FILM MASIH DALAM TAHAP PERENCANAAN/PRODUKSI  (LAMPIRAN 3) *"
-                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-akta-pendirian-file"
-                            type={acceptedFileFormatString.docx}
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-spfmdtpp"
+                            type={acceptedFileFormatString.pdf}
                             fileName={lampiran3.name}
                             setData = {(data) => setLampiran3({...data})}
                         />
@@ -935,9 +940,9 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title="UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 4) *"
-                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-akta-pendirian-file"
-                            type={acceptedFileFormatString.docx}
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-spbpbpfi"
+                            type={acceptedFileFormatString.pdf}
                             fileName={lampiran4.name}
                             setData = {(data) => setLampiran4({...data})}
                         />
@@ -946,9 +951,9 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title="UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 5) *"
-                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-akta-pendirian-file"
-                            type={acceptedFileFormatString.docx}
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-ringkasan-profil"
+                            type={acceptedFileFormatString.pdf}
                             fileName={lampiran5.name}
                             setData = {(data) => setLampiran5({...data})}
                         />
@@ -957,9 +962,9 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title="UNGGAH DOKUMEN PENDUKUNG PROPOSAL BANTUAN PEMERINTAH BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 6) *"
-                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-akta-pendirian-file"
-                            type={acceptedFileFormatString.docx}
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-proposal-bantuan"
+                            type={acceptedFileFormatString.pdf}
                             fileName={lampiran6.name}
                             setData = {(data) => setLampiran6({...data})}
                         />
@@ -968,9 +973,9 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title="UNGGAH PENGAJUAN RINCIAN ANGGARAN BIAYA PRODUKSI FILM (LAMPIRAN 7) *"
-                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-akta-pendirian-file"
-                            type={acceptedFileFormatString.docx}
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-akta-rabp"
+                            type={acceptedFileFormatString.pdf}
                             fileName={lampiran7.name}
                             setData = {(data) => setLampiran7({...data})}
                         />
@@ -979,9 +984,9 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title={`UNGGAH SURAT REKOMENDASI STAKEHOLDER RESMI BPI UNTUK KOMUNITAS PERFILMAN (LAMPIRAN B.2) ${stakeholderResmi === 0 ? "*" : ""}`}
-                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-akta-pendirian-file"
-                            type={acceptedFileFormatString.docx}
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-srsrbpi"
+                            type={acceptedFileFormatString.pdf}
                             fileName={lampiranB2.name}
                             setData = {(data) => setLampiranB2({...data})}
                         />
@@ -990,9 +995,9 @@ const UploadTacticalForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title={`UNGGAH SURAT PERNYATAAN PENGGUNAAN REKENING ATAS NAMA PRIBADI UNTUK MEWAKILI KOMUNITAS PERFILMAN.(LAMPIRAN B.3) ${rekeningANBadanUsaha === 0 ? "*" : ""}`}
-                            subtitle="(File docx, max 5MB, Lengkapi dengan Nama Pendaftar)"
-                            id="upload-form-akta-pendirian-file"
-                            type={acceptedFileFormatString.docx}
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id="upload-form-sppranp"
+                            type={acceptedFileFormatString.pdf}
                             fileName={lampiranB3.name}
                             setData = {(data) => setLampiranB3({...data})}
                         />
