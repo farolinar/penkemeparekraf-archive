@@ -281,7 +281,7 @@ const UploadTacticalForm = () => {
                 sptmbppfi_fname: lampiran2.name,
                 sptmbppfi_file: lampiran2.file,
                 spfmdtp_fname: lampiran3.name,
-                spfmdtp_file: lampiran3.name,
+                spfmdtp_file: lampiran3.file,
                 spbppfi_fname: lampiran4.name,
                 spbppfi_file: lampiran4.file,
                 ringkasan_profil_fname: lampiran5.name,
@@ -813,7 +813,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN TIDAK MENERIMA BANTUAN PEMERINTAH PROMOSI FILM\
+                            title="UNGGAH SURAT PERNYATAAN TIDAK MENERIMA BANTUAN PEMERINTAH PROMOSI FILM
                             INDONESIA DAN/ATAU BANTUAN K/L LAINNYA (LAMPIRAN 2) *"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-surat-pernyataan-tidak-menerima-bantuan"
@@ -825,7 +825,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN FILM MASIH DALAM TAHAP PERENCANAAN/\
+                            title="UNGGAH SURAT PERNYATAAN FILM MASIH DALAM TAHAP PERENCANAAN/
                             PRODUKSI  (LAMPIRAN 3) *"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-surat-pernyataan-dalam-tahap-perencanaan"
@@ -837,7 +837,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PRODUKSI FILM\
+                            title="UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PRODUKSI FILM
                             INDONESIA (LAMPIRAN 4) *"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-spbpbpfi"
@@ -849,7 +849,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN\
+                            title="UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN
                             BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 5) *"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-ringkasan-profil"
@@ -861,7 +861,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH DOKUMEN PENDUKUNG PROPOSAL BANTUAN PEMERINTAH BAGI\
+                            title="UNGGAH DOKUMEN PENDUKUNG PROPOSAL BANTUAN PEMERINTAH BAGI
                             PRODUKSI FILM INDONESIA (LAMPIRAN 6) *"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-dokumen-pendukung"

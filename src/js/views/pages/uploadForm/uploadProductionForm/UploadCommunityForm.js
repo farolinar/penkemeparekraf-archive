@@ -90,37 +90,37 @@ const UploadFileField = ({
 const LEGAL_FORMAL_TYPES = {
     yayasan: {
         text: "Yayasan",
-        val: "legal-formal-yayasan"
+        val: "yayasan"
     },
     perkumpulan: {
         text: "Perkumpulan",
-        val: "legal-formal-perkumpulan"
+        val: "perkumpulan"
     },
     none: {
         text: "Belum Ada",
-        val: "legal-formal-none"
+        val: "belum ada"
     }
 }
 
 const KRITERIA_FILM = {
     siap_produksi: {
         text: "Film Siap Produksi",
-        val: "kriteria-siap-produksi"
+        val: "ready_production"
     },
     dalam_penyelesaian: {
         text: "Film Dalam Tahap Penyelesaian",
-        val: "kriteria-dalam-penyelesaian"
+        val: "on_progress"
     }
 }
 
 const KATEGORI_FILM = {
     film_pendek: {
         text: "Film Pendek",
-        val: "kategori-film-pendek"
+        val: "movie"
     },
     film_dokumenter: {
         text: "Film Dokumenter Pendek",
-        val: "kategori-film-dokumenter"
+        val: "documentary"
     }
 }
 
@@ -230,8 +230,9 @@ const UploadTacticalForm = () => {
 
     const validationsOne = () => {
         // return true;
+        let additionalValidation = true;
         if(legalFormalType === LEGAL_FORMAL_TYPES.none.val) {
-            return legalFormalNoneOptions.option_1 ||
+            additionalValidation = legalFormalNoneOptions.option_1 ||
                 legalFormalNoneOptions.option_2 ||
                 legalFormalNoneOptions.option_3 ||
                 legalFormalNoneOptions.option_4 ||
@@ -241,11 +242,13 @@ const UploadTacticalForm = () => {
                 legalFormalNoneOptions.option_8 ||
                 legalFormalNoneOptions.option_9
         }
-        return name
+        return additionalValidation
+            && name
             && idNumber
             && companyName
             && waNumber
             && email
+            && movieCrewMilestone
             && legalFormalType
             && kriteriaFilm
             && kategoriFilm
@@ -269,13 +272,15 @@ const UploadTacticalForm = () => {
     }
 
     const validationsTwo = () => {
-        if(rekeningANBadanUsaha === 0) {
-            return lampiranB3.file
-        }
-        if(stakeholderResmi === 0) {
-            return lampiranB2.file
-        }
-        return aktaPendirianFile.file
+        // if(rekeningANBadanUsaha === 0) {
+        //     return lampiranB3.file
+        // }
+        // if(stakeholderResmi === 0) {
+        //     return lampiranB2.file
+        // }
+        return (rekeningANBadanUsaha === 0 ? lampiranB3.file : true)
+            && (stakeholderResmi === 0 ? lampiranB2.file : true)
+            && aktaPendirianFile.file
             && idNumberFile.file
             && cardNumberFile.file
             && (rekeningANBadanUsaha === 1 || rekeningANBadanUsaha === 0)
@@ -352,7 +357,7 @@ const UploadTacticalForm = () => {
                 sptmbppfi_fname: lampiran2.name,
                 sptmbppfi_file: lampiran2.file,
                 spfmdtp_fname: lampiran3.name,
-                spfmdtp_file: lampiran3.name,
+                spfmdtp_file: lampiran3.file,
                 spbppfi_fname: lampiran4.name,
                 spbppfi_file: lampiran4.file,
                 ringkasan_profil_fname: lampiran5.name,
@@ -741,7 +746,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-crew-milestone">PRESTASI DARI TENAGA KERJA (KRU DAN PEMAIN)</label>
+                            <label htmlFor="movie-crew-milestone">PRESTASI DARI TENAGA KERJA (KRU DAN PEMAIN) *</label>
                             <TextAreaWithCounter
                                 name="movie-crew-milestone"
                                 value={movieCrewMilestone}
