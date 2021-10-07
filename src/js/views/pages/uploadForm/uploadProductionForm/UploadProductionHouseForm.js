@@ -174,6 +174,14 @@ const UploadTacticalForm = () => {
     const [page, setPage] = useState(1)
     const [showDisclaimer, setShowDisclaimer] = useState(true)
 
+    const [inputValidations, setInputValidations] = useState({
+        movieSynopsis: "",
+        movieStatement: "",
+        movieVision: "",
+        movieDirectorDetail: "",
+        movieProdHouseDetail: ""
+    })
+
     const validationsOne = () => {
         // return true;
         return name
@@ -224,6 +232,9 @@ const UploadTacticalForm = () => {
     }
 
     const validations = () => {
+        for (let k in inputValidations) {
+            if (inputValidations[k]) return false
+        }
         return validationsOne() && validationsTwo() && verifyCheck;
     }
 
@@ -560,8 +571,15 @@ const UploadTacticalForm = () => {
                             <TextAreaWithCounter
                                 name="movie-synopsis"
                                 value={movieSynopsis}
-                                onChange={(e) => setMovieSynopsis(e.target.value)}
+                                onChange={(e, validation) => {
+                                    setMovieSynopsis(e.target.value)
+                                    let temp = {...inputValidations}
+                                    temp.movieSynopsis = validation
+                                    setInputValidations(temp)
+                                }}
+                                minLength="200"
                                 maxLength="400"
+                                valida
                             />
                         </div>
                     </div>
@@ -572,7 +590,13 @@ const UploadTacticalForm = () => {
                             <TextAreaWithCounter
                                 name="movie-director-statement"
                                 value={movieStatement}
-                                onChange={(e) => setMovieStatement(e.target.value)}
+                                onChange={(e, validation) => {
+                                    setMovieStatement(e.target.value)
+                                    let temp = {...inputValidations}
+                                    temp.movieStatement = validation
+                                    setInputValidations(temp)
+                                }}
+                                minLength="200"
                                 maxLength="400"
                             />
                         </div>
@@ -584,7 +608,13 @@ const UploadTacticalForm = () => {
                             <TextAreaWithCounter
                                 name="movie-producer-vision"
                                 value={movieVision}
-                                onChange={(e) => setMovieVision(e.target.value)}
+                                onChange={(e, validation) => {
+                                    setMovieVision(e.target.value)
+                                    let temp = {...inputValidations}
+                                    temp.movieVision = validation
+                                    setInputValidations(temp)
+                                }}
+                                minLength="200"
                                 maxLength="400"
                             />
                         </div>
@@ -608,7 +638,13 @@ const UploadTacticalForm = () => {
                             <TextAreaWithCounter
                                 name="movie-producer-vision"
                                 value={movieProdHouseDetail}
-                                onChange={(e) => setMovieProdHouseDetail(e.target.value)}
+                                onChange={(e, validation) => {
+                                    setMovieProdHouseDetail(e.target.value)
+                                    let temp = {...inputValidations}
+                                    temp.movieProdHouseDetail = validation
+                                    setInputValidations(temp)
+                                }}
+                                minLength="200"
                                 maxLength="400"
                             />
                         </div>
@@ -620,7 +656,13 @@ const UploadTacticalForm = () => {
                             <TextAreaWithCounter
                                 name="movie-director-detail"
                                 value={movieDirectorDetail}
-                                onChange={(e) => setMovieDirectorDetail(e.target.value)}
+                                onChange={(e, validation) => {
+                                    setMovieDirectorDetail(e.target.value)
+                                    let temp = {...inputValidations}
+                                    temp.movieDirectorDetail = validation
+                                    setInputValidations(temp)
+                                }}
+                                minLength="200"
                                 maxLength="400"
                             />
                         </div>
