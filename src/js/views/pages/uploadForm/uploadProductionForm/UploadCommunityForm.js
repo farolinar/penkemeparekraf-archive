@@ -318,7 +318,6 @@ const UploadTacticalForm = () => {
                 film_community_name: companyName,
                 whatsapp: waNumber,
                 bentuk_legal_formal: legalFormalType,
-                participated_portfolio_option: getParticipateOptions(),
                 email: email,
                 film_criteria: kriteriaFilm,
                 film_category: kategoriFilm,
@@ -370,6 +369,9 @@ const UploadTacticalForm = () => {
                 surat_rekomendasi_bpi_file: lampiranB2.file,
                 surat_pernyataan_rekening_komunitas_fname: lampiranB3.name,
                 surat_pernyataan_rekening_komunitas_file: lampiranB3.file
+            }
+            if(legalFormalType === LEGAL_FORMAL_TYPES.none.val) {
+                data["participated_portfolio_option"] = getParticipateOptions();
             }
             let formData = new FormData();
             for (let field in data) {
