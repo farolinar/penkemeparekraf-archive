@@ -39,14 +39,14 @@ const MAIN_FORMS = [
 const RUMAH_PRODUKSI_FORMS = [
     {
         name: "Unduh Lampiran A.1  - Format Surat Pernyataan Rumah Produksi",
-        url: "https://drive.google.com/uc?export=download&id=10ScewotKlx8sMvMwGbflNEHxCRbNdAHe"
+        url: "https://drive.google.com/uc?export=download&id=1AY9DT7EVmdnHC9Lr9DR6gr9idZHibq_x"
     },
 ]
 
 const KOMUNITAS_PERFILMAN_FORMS = [
     {
         name: "Unduh Lampiran B.1 - Format Surat Pernyataan Komunitas Perfilman",
-        url: "https://drive.google.com/uc?export=download&id=1L2iw-DyubETTZWc3yacu2j-Spx3Y5SOV"
+        url: "https://drive.google.com/uc?export=download&id=1yEmm62Zp7-ZL4vFISlHcn7T1NSAs4u2T"
     },
     {
         name: "Unduh Lampiran B.2 - Format Surat Rekomendasi Stakeholder Resmi Badan Perfilman Indonesia untuk Komunitas Perfilman",
