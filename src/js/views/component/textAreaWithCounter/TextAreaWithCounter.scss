@@ -1,6 +1,10 @@
 .textarea-counter-wrapper {
-    span {
+    .info-right {
         float: right;
+        margin-right: 10px;
+    }
+    .info-left {
+        float: left;
         margin-right: 10px;
     }
 }
