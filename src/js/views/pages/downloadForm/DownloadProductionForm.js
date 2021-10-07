@@ -63,9 +63,11 @@ const DownloadForm = () => {
         <div className="download-form-production-wrapper download-form-wrapper" id={ANCHOR.downloadTacticalForm}>
             <h3>Unduh Format Lampiran Bantuan Pemerintah Promosi Film Indonesia</h3>
             <h5>FORMULIR PENDAFTARAN</h5>
-            <p>1. Seluruh dokumen asli legalitas, identitas dan stempel badan usaha Rumah Produksi atau Komunitas Perfilman serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika Rumah Produksi atau Komunitas Perfilman terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)
+            <p>1. Anggaran Bantuan Pemerintah Bagi Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan, Rumah Produksi / Komunitas Perfilman yang melakukan pendaftaran pada skema produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kementerian Pariwisata dan Ekonomi Kreatif/Badan Pariwisata dan Ekonomi Kreatif apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia
             <br />
-            2. Penjelasan poin 1 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan</p>
+            2. Seluruh dokumen asli legalitas, identitas dan stempel badan usaha Rumah Produksi atau Komunitas Perfilman serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika Rumah Produksi atau Komunitas Perfilman terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)
+            <br />
+            3. Penjelasan poin 2 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan</p>
             
             <h6>DOKUMEN UNTUK RUMAH PRODUKSI DAN KOMUNITAS PERFILMAN</h6>
             <div className="download-forms">
