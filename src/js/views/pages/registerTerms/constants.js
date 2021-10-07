@@ -89,7 +89,7 @@ export const MAIN_TERMS = {
                         <li>Minikino Film Week, Denpasar</li>
                         <li>Minikino Monthly Screening, Denpasar</li>
                         <li>Jogja - NETPAC Asian Film Festival, Yogyakarta</li>
-                        <li>Arkipel, Jakarta International Documentary and Experimental FIlm Festival, Jakarta</li>
+                        <li>Arkipel, Jakarta International Documentary and Experimental Film Festival, Jakarta</li>
                         <li>Film, Musik, Makan, Jakarta</li>
                         <li>Program Pemutaran di Klub DIY Menonton, Yogyakarta</li>
                         <li>Program Pemutaran di Kinosaurus, Jakarta</li>
@@ -432,7 +432,7 @@ export const DOCUMENT_TERMS = {
                 "h.	Menerima seluruh hasil yang akan diputuskan tanpa ada upaya apapun termasuk dan tidak terbatas pada\
                 upaya hukum maupun upaya lain yang berpotensi menimbulkan kerugian bagi Tim Kurator dan/atau\
                 Kemenparekraf/Baparekraf",
-                "i. emahami ketentuan pengajuan proposal mengenai Anggaran Bantuan Pemerintah Bagi Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan, Komunitas Perfilman yang melakukan pendaftaran pada skema produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kemenparekraf/ Baparekraf apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia",
+                "i. Memahami ketentuan pengajuan proposal mengenai Anggaran Bantuan Pemerintah Bagi Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan, Komunitas Perfilman yang melakukan pendaftaran pada skema produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kemenparekraf/ Baparekraf apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia",
                 "j.	Sanggup untuk bertanggung jawab baik secara perdata maupun secara pidana terhadap seluruh dana Bantuan\
                 Pemerintah yang diberikan"
             ]
