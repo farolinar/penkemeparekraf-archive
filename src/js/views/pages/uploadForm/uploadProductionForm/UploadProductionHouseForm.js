@@ -181,6 +181,7 @@ const UploadTacticalForm = () => {
             && idNumber
             && companyName
             && waNumber
+            && movieCrewMilestone
             && badanUsahaType
             && kriteriaFilm
             && kategoriFilm
@@ -627,7 +628,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-crew-milestone">PRESTASI DARI TENAGA KERJA (KRU DAN PEMAIN)</label>
+                            <label htmlFor="movie-crew-milestone">PRESTASI DARI TENAGA KERJA (KRU DAN PEMAIN) *</label>
                             <TextAreaWithCounter
                                 name="movie-crew-milestone"
                                 value={movieCrewMilestone}
