@@ -48,6 +48,12 @@ const RegisterTerms = () => {
                                     <div className="register-term-children">
                                         {
                                             term.children.map((child, idx) => {
+                                                if(child.grandchildren) {
+                                                    return <Fragment>
+                                                        <p>{child.text}</p>
+                                                        <p>{child.grandchildren}</p>
+                                                    </Fragment>
+                                                }
                                                 return <p>{child}</p>
                                             })
                                         }
@@ -77,6 +83,12 @@ const RegisterTerms = () => {
                                     <div className="register-term-children">
                                         {
                                             term.children.map((child, idx) => {
+                                                if(child.grandchildren) {
+                                                    return <Fragment>
+                                                        <p>{child.text}</p>
+                                                        <p>{child.grandchildren}</p>
+                                                    </Fragment>
+                                                }
                                                 return <p>{child}</p>
                                             })
                                         }
@@ -121,6 +133,12 @@ const RegisterTerms = () => {
                                     <div className="register-term-children">
                                         {
                                             term.children.map((child, idx) => {
+                                                if(child.grandchildren) {
+                                                    return <Fragment>
+                                                        <p>{child.text}</p>
+                                                        <p>{child.grandchildren}</p>
+                                                    </Fragment>
+                                                }
                                                 return <p>{child}</p>
                                             })
                                         }
@@ -150,6 +168,12 @@ const RegisterTerms = () => {
                                     <div className="register-term-children">
                                         {
                                             term.children.map((child, idx) => {
+                                                if(child.grandchildren) {
+                                                    return <Fragment>
+                                                        <p>{child.text}</p>
+                                                        <p>{child.grandchildren}</p>
+                                                    </Fragment>
+                                                }
                                                 return <p>{child}</p>
                                             })
                                         }
@@ -185,6 +209,12 @@ const RegisterTerms = () => {
                                     <div className="register-term-children">
                                         {
                                             term.children.map((child, idx) => {
+                                                if(child.grandchildren) {
+                                                    return <Fragment>
+                                                        <p>{child.text}</p>
+                                                        <p>{child.grandchildren}</p>
+                                                    </Fragment>
+                                                }
                                                 return <p>{child}</p>
                                             })
                                         }

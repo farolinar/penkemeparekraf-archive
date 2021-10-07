@@ -79,7 +79,25 @@ export const MAIN_TERMS = {
             text: "Komunitas Perfilman mengajukan 1 (satu) film siap produksi atau film yang dalam tahap penyelesaian produksi di tahun 2021",
         },
         {
-            text: "Komunitas Perfilman yang berhak mendaftar berbentuk yayasan atau perkumpulan yang dimiliki oleh Warga Negara Indonesia (WNI) dan sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan AD/ART Komunitas",
+            text: "Komunitas Perfilman yang berhak mendaftar adalah komunitas perfilman yang memiliki bentuk organisasi legal formal yayasan atau perkumpulan yang dimiliki oleh Warga Negara Indonesia (WNI) dan sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan Anggaran Dasar/Anggaran Dasar Rumah Tangga Komunitas. Apabila komunitas perfilman belum memiliki bentuk legal formal yayasan atau perkumpulan, maka wajib menunjukkan bukti pengalaman berpartisipasi dalam kegiatan perfilman yang diakui oleh Tim Kurator.",
+            children: [
+                {
+                    text: "a. Yang dimaksud dengan kegiatan perfilman yang diakui oleh Tim Kurator adalah kegiatan-kegiatan spesifik yang telah diakui keberadaannya dalam ekosistem perfilman nasional dan telah menjadi barometer perkembangan Film Pendek dan Film Dokumenter Pendek di Indonesia. Kegiatan-kegiatan tersebut adalah:",
+                    grandchildren: <ul>
+                        <li>Festival Film Indonesia</li>
+                        <li>Festival Film Dokumenter, Yogyakarta</li>
+                        <li>Minikino Film Week, Denpasar</li>
+                        <li>Minikino Monthly Screening, Denpasar</li>
+                        <li>Jogja - NETPAC Asian Film Festival, Yogyakarta</li>
+                        <li>Arkipel, Jakarta International Documentary and Experimental FIlm Festival, Jakarta</li>
+                        <li>Film, Musik, Makan, Jakarta</li>
+                        <li>Program Pemutaran di Klub DIY Menonton, Yogyakarta</li>
+                        <li>Program Pemutaran di Kinosaurus, Jakarta</li>
+                        <li>Program Pemutaran di Kineforum, Jakarta</li>
+                    </ul>
+                },
+                "b.	Yang dimaksud dengan pengalaman berpartisipasi adalah produser/sutradara pernah memproduksi karya film pendek/film dokumenter pendek yang masuk dalam kompetisi/shortlist/kurasi program pemutaran film/kompetisi/festival film sesuai dengan 10 (sepuluh) kegiatan yang disebutkan dalam point A di atas dalam kurun waktu 2019 - 2021."
+            ]
         },
         {
             text: "Komunitas Perfilman yang berhak mendaftar adalah komunitas film yang terdaftar sebagai stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia (BPI). Apabila komunitas film bukanlah stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia, maka wajib melampirkan surat rekomendasi resmi dari asosiasi/lembaga/institusi yang merupakan stakeholder resmi Badan Perfilman Indonesia yang menyatakan jaminan kebenaran keberadaan komunitas film tersebut.",
