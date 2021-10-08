@@ -26,7 +26,10 @@ const MENU = [
             {
                 name: "Promosi",
                 class: "",
-                url: `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`
+                url: (window.location.pathname === ROUTES.program  ?
+                    `#${ANCHOR.programPromosiTaktikalFilm}`
+                    :
+                    `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`)
             },
             {
                 name: "Lisensi",
@@ -36,7 +39,10 @@ const MENU = [
             {
                 name: "Produksi",
                 class: "",
-                url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
+                url: (window.location.pathname === ROUTES.program  ?
+                    `#${ANCHOR.programProduksiFilm}`
+                    :
+                    `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`)
             },
         ]
     },
