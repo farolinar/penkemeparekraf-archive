@@ -20,6 +20,10 @@
           box-sizing: content-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .app {
   font-family: 'Signika', sans-serif;
   overflow-x: hidden;

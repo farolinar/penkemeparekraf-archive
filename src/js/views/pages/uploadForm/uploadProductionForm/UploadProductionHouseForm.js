@@ -718,7 +718,14 @@ const UploadTacticalForm = () => {
                 </div>
 
                 <div
-                    onClick={() => setPage(2)}
+                    onClick={() => {
+                        setPage(2)
+                        // document.body.scrollTop = 0;
+                        // document.documentElement.scrollTop = 0;
+                        $("html, body").animate({ 
+                            scrollTop: 0 
+                        }, "fast");
+                    }}
                     className="submit-button"
                     // style={validationsOne() ? {} : {
                     //     backgroundColor: "#e5e5e5",
@@ -970,7 +977,14 @@ const UploadTacticalForm = () => {
                     </div>
 
                     <div
-                        onClick={() => {setPage(1)}}
+                        onClick={() => {
+                            setPage(1)
+                            // document.body.scrollTop = 0;
+                            // document.documentElement.scrollTop = 0;
+                            $("html, body").animate({ 
+                                scrollTop: 0 
+                            }, "fast");
+                        }}
                         className="submit-button"
                     >
                         Back
