@@ -258,7 +258,7 @@ const UploadTacticalForm = () => {
             && companyName
             && waNumber
             && email
-            && movieCrewMilestone
+            // && movieCrewMilestone
             && legalFormalType
             && kriteriaFilm
             && kategoriFilm
@@ -290,7 +290,7 @@ const UploadTacticalForm = () => {
         // }
         return (rekeningANBadanUsaha === 0 ? lampiranB3.file : true)
             && (stakeholderResmi === 0 ? lampiranB2.file : true)
-            && aktaPendirianFile.file
+            && (legalFormalType === LEGAL_FORMAL_TYPES.none.val ? true : aktaPendirianFile.file)
             && idNumberFile.file
             && cardNumberFile.file
             && (rekeningANBadanUsaha === 1 || rekeningANBadanUsaha === 0)
@@ -791,7 +791,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-crew-milestone">PRESTASI DARI TENAGA KERJA (KRU DAN PEMAIN) *</label>
+                            <label htmlFor="movie-crew-milestone">PRESTASI DARI TENAGA KERJA (KRU DAN PEMAIN)</label>
                             <TextAreaWithCounter
                                 name="movie-crew-milestone"
                                 value={movieCrewMilestone}
@@ -860,7 +860,8 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH AD/ART KOMUNITAS PERFILMAN DAN MINIMAL SUDAH BERDIRI SEJAK 1 JANUARI 2019 *"
+                            title={`UNGGAH AD/ART KOMUNITAS PERFILMAN DAN MINIMAL SUDAH BERDIRI SEJAK 1 JANUARI 2019 ${legalFormalType === LEGAL_FORMAL_TYPES.none.val ? "" : "*"}`}
+                            info="Keterangan: Wajib dilampirkan apabila komunitas perfilman memiliki bentuk organisasi legal formal yayasan atau perkumpulan"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-adart"
                             type={acceptedFileFormatString.pdf}
