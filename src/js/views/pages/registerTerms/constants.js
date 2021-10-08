@@ -398,7 +398,7 @@ export const DOCUMENT_TERMS = {
             text: "Seluruh dokumen asli legalitas, identitas dan stempel badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)"
         },
         {
-            text: "Penjelasan poin 21 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan",
+            text: "Penjelasan poin 19 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan",
             // children: [
             //     "Tim PEN Film, Direktorat Musik, Film dan Animasi – Deputi Bidang Ekonomi Digital dan Produk KreatifKementerian Pariwisata dan Ekonomi Kreatif, Gedung Kementerian BUMN Lt.17, Jalan Medan Merdeka Selatan No.13, Jakarta Pusat 10110",
             // ]
