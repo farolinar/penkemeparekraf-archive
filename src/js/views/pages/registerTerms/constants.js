@@ -79,7 +79,7 @@ export const MAIN_TERMS = {
             text: "Komunitas Perfilman mengajukan 1 (satu) film siap produksi atau film yang dalam tahap penyelesaian produksi di tahun 2021",
         },
         {
-            text: "Komunitas Perfilman yang berhak mendaftar adalah komunitas perfilman yang memiliki bentuk organisasi legal formal yayasan atau perkumpulan yang dimiliki oleh Warga Negara Indonesia (WNI) dan sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan Anggaran Dasar/Anggaran Dasar Rumah Tangga Komunitas. Apabila komunitas perfilman belum memiliki bentuk legal formal yayasan atau perkumpulan, maka wajib menunjukkan bukti pengalaman berpartisipasi dalam kegiatan perfilman yang diakui oleh Tim Kurator.",
+            text: "Komunitas Perfilman yang berhak mendaftar adalah komunitas perfilman yang memiliki bentuk organisasi legal formal yayasan atau perkumpulan yang dimiliki oleh Warga Negara Indonesia (WNI) dan sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan Anggaran Dasar/Anggaran Dasar Rumah Tangga Komunitas. Apabila komunitas perfilman belum memiliki bentuk legal formal yayasan atau perkumpulan, maka Sutradara atau Produser yang mendaftar wajib memiliki portofolio film yang pernah berpartisipasi di kegiatan perfilman yang diakui oleh Tim Kurator.",
             children: [
                 {
                     text: "a. Yang dimaksud dengan kegiatan perfilman yang diakui oleh Tim Kurator adalah kegiatan-kegiatan spesifik yang telah diakui keberadaannya dalam ekosistem perfilman nasional dan telah menjadi barometer perkembangan Film Pendek dan Film Dokumenter Pendek di Indonesia. Kegiatan-kegiatan tersebut adalah:",
@@ -103,7 +103,7 @@ export const MAIN_TERMS = {
             text: "Komunitas Perfilman yang berhak mendaftar adalah komunitas film yang terdaftar sebagai stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia (BPI). Apabila komunitas film bukanlah stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia, maka wajib melampirkan surat rekomendasi resmi dari asosiasi/lembaga/institusi yang merupakan stakeholder resmi Badan Perfilman Indonesia yang menyatakan jaminan kebenaran keberadaan komunitas film tersebut.",
         },
         {
-            text: "Komunitas Perfilman wajib menyampaikan secara resmi struktur kepengurusan komunitas, dimana tidak terjadi pergantian kepengurusan setelah tanggal 1 Januari 2021",
+            text: "Komunitas Perfilman wajib menyampaikan secara resmi struktur kepengurusan komunitas",
         },
         {
             text: "Pihak yang mendaftarkan Komunitas Perfilman tersebut adalah orang yang secara hukum sah mewakili Komunitas Perfilman sesuai dengan Akta dan/atau AD/ART Komunitas Perfilman dan merupakan Warga Negara Indonesia yang dibuktikan dengan kepemilikan Kartu Tanda Penduduk",
@@ -272,7 +272,7 @@ export const DOCUMENT_TERMS = {
             text: "Seluruh dokumen asli legalitas, identitas dan stempel badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)"
         },
         {
-            text: "Penjelasan poin 20 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan"
+            text: "Penjelasan poin 19 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan"
         },
         {
             text: "Seluruh dokumen pendukung, dokumen legalitas, dan dokumen permohonan yang dikirimkan disusun dengan urutan yang benar, lengkap dengan halaman muka yang merujuk dengan jelas nama Rumah Produksi"
@@ -398,7 +398,7 @@ export const DOCUMENT_TERMS = {
             text: "Seluruh dokumen asli legalitas, identitas dan stempel badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)"
         },
         {
-            text: "Penjelasan poin 20 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan",
+            text: "Penjelasan poin 21 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan",
             // children: [
             //     "Tim PEN Film, Direktorat Musik, Film dan Animasi – Deputi Bidang Ekonomi Digital dan Produk KreatifKementerian Pariwisata dan Ekonomi Kreatif, Gedung Kementerian BUMN Lt.17, Jalan Medan Merdeka Selatan No.13, Jakarta Pusat 10110",
             // ]

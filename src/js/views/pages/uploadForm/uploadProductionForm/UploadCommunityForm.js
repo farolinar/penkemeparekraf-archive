@@ -484,7 +484,7 @@ const UploadTacticalForm = () => {
 
                             {legalFormalType === LEGAL_FORMAL_TYPES.none.val &&
                              <div className="radio-button-dropdown">
-                                 <p>PORTOFOLIO FILM YANG PERNAH BERPARTISIPASI DI *<br />(PILIH MINIMAL 1)</p>
+                                 <p>PORTOFOLIO FILM KARYA PRODUSER ATAU SUTRADARA YANG PERNAH BERPARTISIPASI DI *<br />(PILIH MINIMAL 1)</p>
                                  {
                                      LEGAL_FORMAL_NONE_OPTIONS.map((elem) =>
                                     <Checkbox
