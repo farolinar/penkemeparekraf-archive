@@ -61,7 +61,7 @@ const KOMUNITAS_PERFILMAN_FORMS = [
 const DownloadForm = () => {
     return(<Template>
         <div className="download-form-production-wrapper download-form-wrapper" id={ANCHOR.downloadTacticalForm}>
-            <h3>Unduh Format Lampiran Bantuan Pemerintah Promosi Film Indonesia</h3>
+            <h3>Unduh Format Lampiran Bantuan Pemerintah Produksi Film Indonesia</h3>
             <h5>FORMULIR PENDAFTARAN</h5>
             <p>1. Anggaran Bantuan Pemerintah Bagi Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan, Rumah Produksi / Komunitas Perfilman yang melakukan pendaftaran pada skema produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kementerian Pariwisata dan Ekonomi Kreatif/Badan Pariwisata dan Ekonomi Kreatif apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia
             <br />
