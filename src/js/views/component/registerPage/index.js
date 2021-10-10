@@ -12,11 +12,11 @@ const RegisterPage = () => {
             <div className="register-block register-promosi">
                 <div className="register-block-content">
                     <h2>Promosi</h2>
-                    <p>Pendaftaran akan berlangsung mulai dari<br />1 - 10 Oktober 2021</p>
+                    <p>Pendaftaran telah ditutup</p>
                     <div className="button-wrapper">
-                        <a href={ROUTES.registerTacticalTerms} className="register-button">Syarat Pendaftaran</a>
-                        <a href={ROUTES.downloadTacticalForm} className="register-button">Unduh Formulir</a>
-                        <a href={ROUTES.uploadTacticalForm} className="register-button">Unggah Formulir</a>
+                        // <a href={ROUTES.registerTacticalTerms} className="register-button">Syarat Pendaftaran</a>
+                        // <a href={ROUTES.downloadTacticalForm} className="register-button">Unduh Formulir</a>
+                        // <a href={ROUTES.uploadTacticalForm} className="register-button">Unggah Formulir</a>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,8 @@ const UploadForm = () => {
             <div className="our-program-main-content">
                 <h2>Unggah Formulir</h2>
                 <div className="our-programs">
-                    <a className="our-program" href={ROUTES.uploadTacticalForm}>Promosi</a>
+                    // <a className="our-program" href={ROUTES.uploadTacticalForm}>Promosi</a>
+                    <a className="our-program">Promosi</a>
                     <a className="our-program">Lisensi</a>
                     <a className="our-program" href={ROUTES.uploadProductionForm}>Produksi</a>
                     {/* <div className="our-program">
