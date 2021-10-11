@@ -42,7 +42,6 @@ const DownloadForm = () => {
             <div className="our-program-main-content">
                 <h2>Unduh Formulir</h2>
                 <div className="our-programs">
-                    // <a href={ROUTES.downloadTacticalForm} className="our-program">Promosi</a>
                     <a className="our-program">Promosi</a>
                     <a className="our-program">Lisensi</a>
                     <a href={ROUTES.downloadProductionForm} className="our-program">Produksi</a>
