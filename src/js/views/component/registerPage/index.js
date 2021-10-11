@@ -14,11 +14,6 @@ const RegisterPage = () => {
                     <h2>Promosi</h2>
                     <p>Pendaftaran telah ditutup</p>
                     <div className="button-wrapper">
-                    <!--
-                        <a href={ROUTES.registerTacticalTerms} className="register-button">Syarat Pendaftaran</a>
-                        <a href={ROUTES.downloadTacticalForm} className="register-button">Unduh Formulir</a>
-                        <a href={ROUTES.uploadTacticalForm} className="register-button">Unggah Formulir</a>
-                    --!>
                     </div>
                 </div>
             </div>
