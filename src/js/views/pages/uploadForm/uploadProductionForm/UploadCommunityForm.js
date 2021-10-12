@@ -876,7 +876,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={`UNGGAH AD/ART KOMUNITAS PERFILMAN DAN MINIMAL SUDAH BERDIRI SEJAK 1 JANUARI 2019 ${legalFormalType === LEGAL_FORMAL_TYPES.none.val ? "" : "*"}`}
+                            title={<Fragment>UNGGAH AD/ART KOMUNITAS PERFILMAN DAN MINIMAL SUDAH BERDIRI SEJAK 1 JANUARI 2019 {legalFormalType === LEGAL_FORMAL_TYPES.none.val ? "" : <span style={{color:"var(--main-red)"}}>*</span>}</Fragment>}
                             info="Keterangan: Wajib dilampirkan apabila komunitas perfilman memiliki bentuk organisasi legal formal yayasan atau perkumpulan"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-adart"
@@ -888,7 +888,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SALINAN KTP PENANGGUNG JAWAB / KETUA DARI KOMUNITAS PERFILMAN *"
+                            title={<Fragment>UNGGAH SALINAN KTP PENANGGUNG JAWAB / KETUA DARI KOMUNITAS PERFILMAN <span style={{color:"var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, JPG, JPEG, atau PNG, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-id-number-file"
                             type={acceptedFileFormatString.all}
@@ -899,7 +899,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH DOKUMEN REKENING ATAS NAMA KOMUNITAS PERFILMAN ATAU ATAS NAMA PRIBADI YANG MERUPAKAN PERWAKILAN SAH SECARA HUKUM UNTUK MEWAKILI KOMUNITAS PERFILMAN *"
+                            title={<Fragment>UNGGAH DOKUMEN REKENING ATAS NAMA KOMUNITAS PERFILMAN ATAU ATAS NAMA PRIBADI YANG MERUPAKAN PERWAKILAN SAH SECARA HUKUM UNTUK MEWAKILI KOMUNITAS PERFILMAN <span style={{color:"var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-card-number-file"
                             type={acceptedFileFormatString.pdf}
@@ -962,7 +962,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN KOMUNITAS PERFILMAN (LAMPIRAN B.1) *"
+                            title={<Fragment>UNGGAH SURAT PERNYATAAN KOMUNITAS PERFILMAN (LAMPIRAN B.1) <span style={{color:"var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.pdf}
@@ -973,7 +973,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN TANGGUNG JAWAB MUTLAK (LAMPIRAN 1) *"
+                            title={<Fragment>UNGGAH SURAT PERNYATAAN TANGGUNG JAWAB MUTLAK (LAMPIRAN 1) <span style={{color:"var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-sptjm"
                             type={acceptedFileFormatString.pdf}
@@ -984,7 +984,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN TIDAK MENERIMA BANTUAN PEMERINTAH PROMOSI FILM INDONESIA DAN/ATAU BANTUAN K/L LAINNYA (LAMPIRAN 2) *"
+                            title={<Fragment>UNGGAH SURAT PERNYATAAN TIDAK MENERIMA BANTUAN PEMERINTAH PROMOSI FILM INDONESIA DAN/ATAU BANTUAN K/L LAINNYA (LAMPIRAN 2) <span style={{color:"var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-sptmbppfi"
                             type={acceptedFileFormatString.pdf}
@@ -995,7 +995,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN FILM MASIH DALAM TAHAP PERENCANAAN/PRODUKSI  (LAMPIRAN 3) *"
+                            title={<Fragment>UNGGAH SURAT PERNYATAAN FILM MASIH DALAM TAHAP PERENCANAAN/PRODUKSI  (LAMPIRAN 3) <span style={{color:"var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-spfmdtpp"
                             type={acceptedFileFormatString.pdf}
@@ -1006,7 +1006,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 4) *"
+                            title={<Fragment>UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 4) <span style={{color:"var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-spbpbpfi"
                             type={acceptedFileFormatString.pdf}
@@ -1017,7 +1017,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 5) *"
+                            title={<Fragment>UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 5) <span style={{color:"var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-ringkasan-profil"
                             type={acceptedFileFormatString.pdf}
@@ -1028,7 +1028,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH DOKUMEN PENDUKUNG PROPOSAL BANTUAN PEMERINTAH BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 6) *"
+                            title={<Fragment>UNGGAH DOKUMEN PENDUKUNG PROPOSAL BANTUAN PEMERINTAH BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 6) <span style={{color:"var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-proposal-bantuan"
                             type={acceptedFileFormatString.pdf}
@@ -1039,7 +1039,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH PENGAJUAN RINCIAN ANGGARAN BIAYA PRODUKSI FILM (LAMPIRAN 7) *"
+                            title={<Fragment>UNGGAH PENGAJUAN RINCIAN ANGGARAN BIAYA PRODUKSI FILM (LAMPIRAN 7) <span style={{color:"var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-rabp"
                             type={acceptedFileFormatString.pdf}
@@ -1050,7 +1050,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={`UNGGAH SURAT REKOMENDASI STAKEHOLDER RESMI BPI UNTUK KOMUNITAS PERFILMAN (LAMPIRAN B.2) ${stakeholderResmi === 0 ? "*" : ""}`}
+                            title={<Fragment>UNGGAH SURAT REKOMENDASI STAKEHOLDER RESMI BPI UNTUK KOMUNITAS PERFILMAN (LAMPIRAN B.2) {stakeholderResmi === 0 ? <span style={{color:"var(--main-red)"}}>*</span> : ""}</Fragment>}
                             info="Keterangan: Wajib dilampirkan apabila Komunitas belum terdaftar sebagai stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia (BPI)"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-srsrbpi"
@@ -1062,7 +1062,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={`UNGGAH SURAT PERNYATAAN PENGGUNAAN REKENING ATAS NAMA PRIBADI UNTUK MEWAKILI KOMUNITAS PERFILMAN.(LAMPIRAN B.3) ${rekeningANBadanUsaha === 0 ? "*" : ""}`}
+                            title={<Fragment>UNGGAH SURAT PERNYATAAN PENGGUNAAN REKENING ATAS NAMA PRIBADI UNTUK MEWAKILI KOMUNITAS PERFILMAN.(LAMPIRAN B.3) {rekeningANBadanUsaha === 0 ? <span style={{color:"var(--main-red)"}}>*</span> : ""}</Fragment>}
                             info="Keterangan: Wajib dilampirkan apabila tidak memiliki rekening bank atas nama Komunitas Pefilman"
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-sppranp"
@@ -1144,7 +1144,7 @@ const UploadTacticalForm = () => {
             footerText={
                 <Fragment>
                     <div style={{display: "flex", color: "var(--main-red)"}}>
-                        <div style={{marginRight: "1.5em"}}><span style={{color:"var(--main-red)"}}>*</span></div>
+                        <div style={{marginRight: "1.5em"}}>*</div>
                         <p style={{margin: 0}}>Wajib dilampirkan apabila Komunitas belum terdaftar sebagai stakeholder unsur 
 	                    kegiatan perfilman dalam Badan Perfilman Indonesia (BPI)</p>
                     </div>
