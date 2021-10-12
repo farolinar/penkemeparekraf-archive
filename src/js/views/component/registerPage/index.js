@@ -13,6 +13,7 @@ const RegisterPage = () => {
                 <div className="register-block-content">
                     <h2>Promosi</h2>
                     <p>Pendaftaran telah ditutup</p>
+                    <p>Pendaftaran telah berlangsung tanggal 1-10 Oktober</p>
                     <div className="button-wrapper">
                     </div>
                 </div>
