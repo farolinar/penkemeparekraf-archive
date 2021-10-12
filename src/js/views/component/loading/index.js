@@ -1,7 +1,8 @@
 import React from 'react';
+import { FaCheckCircle } from 'react-icons/fa';
 import "./Loading.scss"
 
-const Loading = ({ visibility }) => {
+const Loading = ({ visibility, isLoading=true, afterLoadingText="" }) => {
     return visibility ? <div
     id="popup-two-button"
     className="overlay target"
@@ -20,7 +21,7 @@ const Loading = ({ visibility }) => {
         className="popup-two-button-message"
         style={{ color: "#000", fontSize: 13, lineHeight: "16px" }}
       >
-        <div className={`LoadingRoll_1234fed`}>
+        {isLoading ? <div className={`LoadingRoll_1234fed`}>
             <div
             className={`lds-ring centered-lds-ring`}
             >
@@ -30,12 +31,15 @@ const Loading = ({ visibility }) => {
             <div></div>
             </div>
         </div>
+        :
+        <FaCheckCircle color="var(--main-blue)" />
+        }
       </div>
       <h3
         style={{ color: "#000", fontSize: 22, margin: "10px auto" }}
         className="popup-two-button-header"
       >
-        Mohon Tunggu
+        {isLoading ? "Mohon Tunggu" : afterLoadingText}
       </h3>
     </div>
   </div> : ""

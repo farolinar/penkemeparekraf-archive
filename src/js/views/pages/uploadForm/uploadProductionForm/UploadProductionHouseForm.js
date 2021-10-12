@@ -171,6 +171,7 @@ const UploadTacticalForm = () => {
     const [verifyCheck, setVerifyCheck] = useState(false)
 
     const [isLoading, setIsLoading] = useState(false)
+    const [isSendingData, setIsSendingData] = useState(false)
     const [page, setPage] = useState(1)
     const [showDisclaimer, setShowDisclaimer] = useState(true)
 
@@ -241,6 +242,7 @@ const UploadTacticalForm = () => {
     const submitData = () => {
         if(validations()) {
             setIsLoading(true)
+            setIsSendingData(true)
             let data = {
                 fullname: name,
                 identity_id: idNumber,
@@ -316,18 +318,25 @@ const UploadTacticalForm = () => {
             .then(response =>  response.json())
             .then(result => {
                 // console.log('Success:', result);
-                setIsLoading(false);
+                // setIsLoading(false);
                 if(result.field_code) {
+                    setIsSendingData(false);
+                    setIsLoading(false);
                     alert(result.message);
                 } else {
-                    alert('Sukses mendaftar!');
-                    window.location.href = "/"
+                    setIsSendingData(false);
+                    // alert('Sukses mendaftar!');
+                    setTimeout(() => {
+                        setIsLoading(false);
+                        window.location.href = "/"
+                    }, 3000);
                 }
             })
             .catch(error => {
                 // console.error('Error:', error);
-                alert(error);
+                setIsSendingData(false);
                 setIsLoading(false);
+                alert(error);
             });
         } else {
             if(!verifyCheck) alert("Harap berikan tanda centang pada pernyataan.")
@@ -336,7 +345,7 @@ const UploadTacticalForm = () => {
     }
 
     return <Template>
-        <Loading visibility={isLoading} />
+        <Loading visibility={isLoading} afterLoadingText="Sukses Mendaftar!" isLoading={isSendingData} />
         <div className="upload-form-wrapper upload-production-form-wrapper">
             {page === 1 ? <Fragment>
                 <h2>Pendaftaran Program Bantuan Pemerintah Produksi Film Indonesia Untuk Rumah Produksi</h2>
