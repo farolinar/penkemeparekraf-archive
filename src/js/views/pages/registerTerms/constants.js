@@ -1,3 +1,6 @@
+import { Fragment } from "react";
+import TableStakeHolder from "./table-stakeholder.png";
+
 export const MAIN_TERMS = {
     tactical: [
         {
@@ -100,7 +103,10 @@ export const MAIN_TERMS = {
             ]
         },
         {
-            text: "Komunitas Perfilman yang berhak mendaftar adalah komunitas film yang terdaftar sebagai stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia (BPI). Apabila komunitas film bukanlah stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia, maka wajib melampirkan surat rekomendasi resmi dari asosiasi/lembaga/institusi yang merupakan stakeholder resmi Badan Perfilman Indonesia yang menyatakan jaminan kebenaran keberadaan komunitas film tersebut.",
+            text: <Fragment>
+                Komunitas Perfilman yang berhak mendaftar adalah komunitas film yang terdaftar sebagai stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia (BPI). Apabila komunitas film bukanlah stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia, maka wajib melampirkan surat rekomendasi resmi dari asosiasi/lembaga/institusi yang merupakan stakeholder resmi Badan Perfilman Indonesia yang menyatakan jaminan kebenaran keberadaan komunitas film tersebut.
+                <img src={TableStakeHolder} style={{width: "100%"}} />
+                </Fragment>,
         },
         {
             text: "Komunitas Perfilman wajib menyampaikan secara resmi struktur kepengurusan komunitas",
