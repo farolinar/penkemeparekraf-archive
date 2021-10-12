@@ -755,7 +755,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH AKTA PENDIRIAN DAN MINIMAL SUDAH BERDIRI SEJAK 1 JANUARI 2019 *"
+                            title={<Fragment>UNGGAH AKTA PENDIRIAN DAN MINIMAL SUDAH BERDIRI SEJAK 1 JANUARI 2019 <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-akta-pendirian-file"
                             type={acceptedFileFormatString.pdf}
@@ -766,7 +766,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SALINAN KTP PENANGGUNG JAWAB / DIREKTUR PH *"
+                            title={<Fragment>UNGGAH SALINAN KTP PENANGGUNG JAWAB / DIREKTUR PH <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, JPG, JPEG, atau PNG, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-id-number-file"
                             type={acceptedFileFormatString.all}
@@ -777,7 +777,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT KETERANGAN DOMISILI USAHA *"
+                            title={<Fragment>UNGGAH SURAT KETERANGAN DOMISILI USAHA <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-keterangan-domisili-usaha-file"
                             type={acceptedFileFormatString.pdf}
@@ -788,7 +788,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH NOMOR INDUK BERUSAHA (NIB) *"
+                            title={<Fragment>UNGGAH NOMOR INDUK BERUSAHA (NIB) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-nomor-induk-file"
                             type={acceptedFileFormatString.pdf}
@@ -799,7 +799,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH TANDA DAFTAR USAHA PERFILMAN (TDUP)*"
+                            title={<Fragment>UNGGAH TANDA DAFTAR USAHA PERFILMAN (TDUP)<span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-tanda-daftar-usaha-file"
                             type={acceptedFileFormatString.pdf}
@@ -810,7 +810,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH DOKUMEN NOMOR POKOK WAJIB PAJAK ATAS NAMA BADAN USAHA *"
+                            title={<Fragment>UNGGAH DOKUMEN NOMOR POKOK WAJIB PAJAK ATAS NAMA BADAN USAHA <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-npwp-file"
                             type={acceptedFileFormatString.pdf}
@@ -821,7 +821,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PEMBERITAHUAN TAHUNAN (SPT) PAJAK 1 TAHUN TERAKHIR *"
+                            title={<Fragment>UNGGAH SURAT PEMBERITAHUAN TAHUNAN (SPT) PAJAK 1 TAHUN TERAKHIR <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-tax-file"
                             type={acceptedFileFormatString.pdf}
@@ -832,7 +832,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH DOKUMEN REKENING ATAS NAMA BADAN USAHA *"
+                            title={<Fragment>UNGGAH DOKUMEN REKENING ATAS NAMA BADAN USAHA <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-card-number-file"
                             type={acceptedFileFormatString.pdf}
@@ -850,7 +850,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN RUMAH PRODUKSI (LAMPIRAN A.1) *"
+                            title={<Fragment>UNGGAH SURAT PERNYATAAN RUMAH PRODUKSI (LAMPIRAN A.1) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-surat-pernyataan-rumah-produksi"
                             type={acceptedFileFormatString.pdf}
@@ -861,7 +861,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN TANGGUNG JAWAB MUTLAK (LAMPIRAN 1) *"
+                            title={<Fragment>UNGGAH SURAT PERNYATAAN TANGGUNG JAWAB MUTLAK (LAMPIRAN 1) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-surat-pernyataan-tanggung-jawab-mutlak"
                             type={acceptedFileFormatString.pdf}
@@ -872,8 +872,8 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN TIDAK MENERIMA BANTUAN PEMERINTAH PROMOSI FILM
-                            INDONESIA DAN/ATAU BANTUAN K/L LAINNYA (LAMPIRAN 2) *"
+                            title={<Fragment>UNGGAH SURAT PERNYATAAN TIDAK MENERIMA BANTUAN PEMERINTAH PROMOSI FILM
+                            INDONESIA DAN/ATAU BANTUAN K/L LAINNYA (LAMPIRAN 2) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-surat-pernyataan-tidak-menerima-bantuan"
                             type={acceptedFileFormatString.pdf}
@@ -884,8 +884,8 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERNYATAAN FILM MASIH DALAM TAHAP PERENCANAAN/
-                            PRODUKSI  (LAMPIRAN 3) *"
+                            title={<Fragment>UNGGAH SURAT PERNYATAAN FILM MASIH DALAM TAHAP PERENCANAAN/
+                            PRODUKSI  (LAMPIRAN 3) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-surat-pernyataan-dalam-tahap-perencanaan"
                             type={acceptedFileFormatString.pdf}
@@ -896,8 +896,8 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PRODUKSI FILM
-                            INDONESIA (LAMPIRAN 4) *"
+                            title={<Fragment>UNGGAH SURAT PERMOHONAN BANTUAN PEMERINTAH BAGI PRODUKSI FILM
+                            INDONESIA (LAMPIRAN 4) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-spbpbpfi"
                             type={acceptedFileFormatString.pdf}
@@ -908,8 +908,8 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN
-                            BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 5) *"
+                            title={<Fragment>UNGGAH RINGKASAN PROFIL PENGUSUL PROPOSAL PERMOHONAN BANTUAN
+                            BAGI PRODUKSI FILM INDONESIA (LAMPIRAN 5) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-ringkasan-profil"
                             type={acceptedFileFormatString.pdf}
@@ -920,8 +920,8 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH DOKUMEN PENDUKUNG PROPOSAL BANTUAN PEMERINTAH BAGI
-                            PRODUKSI FILM INDONESIA (LAMPIRAN 6) *"
+                            title={<Fragment>UNGGAH DOKUMEN PENDUKUNG PROPOSAL BANTUAN PEMERINTAH BAGI
+                            PRODUKSI FILM INDONESIA (LAMPIRAN 6) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-dokumen-pendukung"
                             type={acceptedFileFormatString.pdf}
@@ -932,7 +932,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title="UNGGAH PENGAJUAN RINCIAN ANGGARAN BIAYA PRODUKSI FILM (LAMPIRAN 7) *"
+                            title={<Fragment>UNGGAH PENGAJUAN RINCIAN ANGGARAN BIAYA PRODUKSI FILM (LAMPIRAN 7) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id="upload-form-rabp"
                             type={acceptedFileFormatString.pdf}
