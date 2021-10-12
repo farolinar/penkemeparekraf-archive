@@ -227,6 +227,7 @@ const UploadTacticalForm = () => {
     const [verifyCheck, setVerifyCheck] = useState(false)
 
     const [isLoading, setIsLoading] = useState(false)
+    const [isSendingData, setIsSendingData] = useState(false)
     const [page, setPage] = useState(1)
     const [showDisclaimer, setShowDisclaimer] = useState(true)
 
@@ -325,6 +326,7 @@ const UploadTacticalForm = () => {
     const submitData = () => {
         if(validations()) {
             setIsLoading(true)
+            setIsSendingData(true)
             let data = {
                 fullname: name,
                 identity_id: idNumber,
@@ -399,18 +401,25 @@ const UploadTacticalForm = () => {
             .then(response =>  response.json())
             .then(result => {
                 // console.log('Success:', result);
-                setIsLoading(false);
+                // setIsLoading(false);
                 if(result.field_code) {
+                    setIsSendingData(false);
+                    setIsLoading(false);
                     alert(result.message);
                 } else {
-                    alert('Sukses mendaftar!');
-                    window.location.href = "/"
+                    setIsSendingData(false);
+                    // alert('Sukses mendaftar!');
+                    setTimeout(() => {
+                        setIsLoading(false);
+                        window.location.href = "/"
+                    }, 3000);
                 }
             })
             .catch(error => {
                 // console.error('Error:', error);
-                alert(error);
+                setIsSendingData(false);
                 setIsLoading(false);
+                alert(error);
             });
         } else {
             if(!verifyCheck) alert("Harap berikan tanda centang pada pernyataan.")
@@ -419,7 +428,7 @@ const UploadTacticalForm = () => {
     }
 
     return <Template>
-        <Loading visibility={isLoading} />
+        <Loading visibility={isLoading} afterLoadingText="Sukses Mendaftar !" isLoading={isSendingData} />
         <div className="upload-form-wrapper upload-production-form-wrapper">
             {page === 1 ? <Fragment>
                 <h2>Pendaftaran Program Bantuan Pemerintah Produksi Film Indonesia Untuk Komunitas Perfilman</h2>
@@ -443,7 +452,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="full-name">NAMA LENGKAP *</label>
+                            <label htmlFor="full-name">NAMA LENGKAP <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="full-name"
                                 defaultValue={name}
@@ -452,7 +461,7 @@ const UploadTacticalForm = () => {
                         </div>
 
                         <div className="upload-form-field">
-                            <label htmlFor="id-number">NOMOR IDENTITAS/NIK/PASPOR *</label>
+                            <label htmlFor="id-number">NOMOR IDENTITAS/NIK/PASPOR <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="id-number"
                                 defaultValue={idNumber}
@@ -464,7 +473,7 @@ const UploadTacticalForm = () => {
                         </div>
 
                         <div className="upload-form-field">
-                            <label htmlFor="company-name">NAMA KOMUNITAS PERFILMAN *</label>
+                            <label htmlFor="company-name">NAMA KOMUNITAS PERFILMAN <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="company-name"
                                 defaultValue={companyName}
@@ -473,7 +482,7 @@ const UploadTacticalForm = () => {
                         </div>
 
                         <div className="upload-form-field radio-button">
-                            <label htmlFor="company-name">BENTUK LEGAL FORMAL *</label>
+                            <label htmlFor="company-name">BENTUK LEGAL FORMAL <span style={{color:"var(--main-red)"}}>*</span></label>
                             <RadioButton
                                 onChange={(val) => setLegalFormalType(val)}
                                 radioButtons={Object.keys(LEGAL_FORMAL_TYPES).map(function(k){return LEGAL_FORMAL_TYPES[k]})}
@@ -484,7 +493,7 @@ const UploadTacticalForm = () => {
 
                             {legalFormalType === LEGAL_FORMAL_TYPES.none.val &&
                              <div className="radio-button-dropdown">
-                                 <p>PORTOFOLIO FILM KARYA PRODUSER ATAU SUTRADARA YANG PERNAH BERPARTISIPASI DI *<br />(PILIH MINIMAL 1)</p>
+                                 <p>PORTOFOLIO FILM KARYA PRODUSER ATAU SUTRADARA YANG PERNAH BERPARTISIPASI DI <span style={{color:"var(--main-red)"}}>*</span><br />(PILIH MINIMAL 1)</p>
                                  {
                                      LEGAL_FORMAL_NONE_OPTIONS.map((elem) =>
                                     <Checkbox
@@ -523,7 +532,7 @@ const UploadTacticalForm = () => {
                         </div>
 
                         <div className="upload-form-field">
-                            <label htmlFor="email">ALAMAT EMAIL *</label>
+                            <label htmlFor="email">ALAMAT EMAIL <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="email"
                                 defaultValue={email}
@@ -532,7 +541,7 @@ const UploadTacticalForm = () => {
                         </div>
 
                         <div className="upload-form-field">
-                            <label htmlFor="whatsapp-number">NOMOR WHATSAPP *</label>
+                            <label htmlFor="whatsapp-number">NOMOR WHATSAPP <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 type="text"
                                 name="whatsapp-number"
@@ -548,7 +557,7 @@ const UploadTacticalForm = () => {
                         </div>
 
                         <div className="upload-form-field radio-button">
-                            <label htmlFor="company-name">KRITERIA FILM (Pilih Salah 1) *</label>
+                            <label htmlFor="company-name">KRITERIA FILM (Pilih Salah 1) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <RadioButton
                                 onChange={(val) => setKriteriaFilm(val)}
                                 radioButtons={Object.keys(KRITERIA_FILM).map(function(k){return KRITERIA_FILM[k]})}
@@ -559,7 +568,7 @@ const UploadTacticalForm = () => {
                         </div>
 
                         <div className="upload-form-field radio-button">
-                            <label htmlFor="company-name">KATEGORI FILM (Pilih Salah 1) *</label>
+                            <label htmlFor="company-name">KATEGORI FILM (Pilih Salah 1) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <RadioButton
                                 onChange={(val) => setKategoriFilm(val)}
                                 radioButtons={Object.keys(KATEGORI_FILM).map(function(k){return KATEGORI_FILM[k]})}
@@ -579,7 +588,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-title">JUDUL FILM *</label>
+                            <label htmlFor="movie-title">JUDUL FILM <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="movie-title"
                                 defaultValue={movieTitle}
@@ -590,7 +599,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-duration">DURASI FILM *</label>
+                            <label htmlFor="movie-duration">DURASI FILM <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="movie-duration"
                                 defaultValue={movieDuration}
@@ -601,7 +610,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-genre">GENRE *</label>
+                            <label htmlFor="movie-genre">GENRE <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="movie-genre"
                                 defaultValue={movieGenre}
@@ -612,7 +621,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-writer">NAMA PENULIS *</label>
+                            <label htmlFor="movie-writer">NAMA PENULIS <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="movie-writer"
                                 defaultValue={movieWriter}
@@ -623,7 +632,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-director">NAMA SUTRADARA *</label>
+                            <label htmlFor="movie-director">NAMA SUTRADARA <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="movie-director"
                                 defaultValue={movieDirector}
@@ -634,7 +643,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-producer">NAMA PRODUSER *</label>
+                            <label htmlFor="movie-producer">NAMA PRODUSER <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="movie-producer"
                                 defaultValue={movieProducer}
@@ -656,7 +665,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-cast">DAFTAR NAMA PEMAIN UTAMA DAN PENDUKUNG *</label>
+                            <label htmlFor="movie-cast">DAFTAR NAMA PEMAIN UTAMA DAN PENDUKUNG <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-cast"
                                 value={movieCast}
@@ -667,7 +676,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-target">TARGET PENONTON *</label>
+                            <label htmlFor="movie-target">TARGET PENONTON <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="movie-target"
                                 defaultValue={movieTarget}
@@ -678,7 +687,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-logline">LOGLINE (3 KALIMAT) *</label>
+                            <label htmlFor="movie-logline">LOGLINE (3 KALIMAT) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="movie-logline"
                                 defaultValue={movieLogline}
@@ -689,7 +698,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-synopsis">SINOPSIS (200-400 KATA) *</label>
+                            <label htmlFor="movie-synopsis">SINOPSIS (200-400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-synopsis"
                                 value={movieSynopsis}
@@ -707,7 +716,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-director-statement">DIRECTOR'S STATEMENT (200-400 KATA) *</label>
+                            <label htmlFor="movie-director-statement">DIRECTOR'S STATEMENT (200-400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-director-statement"
                                 value={movieStatement}
@@ -725,7 +734,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-producer-vision">VISI PRODUSER (200-400 KATA) *</label>
+                            <label htmlFor="movie-producer-vision">VISI PRODUSER (200-400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-producer-vision"
                                 value={movieVision}
@@ -755,7 +764,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-producer-vision">PROFIL PRODUSER DAN KOMUNITAS PERFILMAN YANG TERLIBAT (200-400 Kata) *</label>
+                            <label htmlFor="movie-producer-vision">PROFIL PRODUSER DAN KOMUNITAS PERFILMAN YANG TERLIBAT (200-400 Kata) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-producer-vision"
                                 value={movieProdHouseDetail}
@@ -773,7 +782,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-director-detail">PROFIL SUTRADARA (200-400 Kata) *</label>
+                            <label htmlFor="movie-director-detail">PROFIL SUTRADARA (200-400 Kata) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-director-detail"
                                 value={movieDirectorDetail}
@@ -803,7 +812,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="link">TAUTAN DARING DARI CONTOH HASIL KARYA SUTRADARA *</label>
+                            <label htmlFor="link">TAUTAN DARING DARI CONTOH HASIL KARYA SUTRADARA <span style={{color:"var(--main-red)"}}>*</span></label>
                             <p className="upload-file-subtitle">(Link Google Drive, Youtube, dsb. Link harus diawali dengan https:// atau http://)</p>
                             <input 
                                 name="link"
@@ -815,7 +824,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="link">TAUTAN DARING DARI CONTOH HASIL KARYA PRODUSER *</label>
+                            <label htmlFor="link">TAUTAN DARING DARI CONTOH HASIL KARYA PRODUSER <span style={{color:"var(--main-red)"}}>*</span></label>
                             <p className="upload-file-subtitle">(Link Google Drive, Youtube, dsb. Link harus diawali dengan https:// atau http://)</p>
                             <input 
                                 name="link"
@@ -827,7 +836,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="link">TAUTAN DARING DARI HASIL KARYA (PORTOFOLIO) KOMUNITAS PERFILMAN TAHUN 2019-2021 *</label>
+                            <label htmlFor="link">TAUTAN DARING DARI HASIL KARYA (PORTOFOLIO) KOMUNITAS PERFILMAN TAHUN 2019-2021 <span style={{color:"var(--main-red)"}}>*</span></label>
                             <p className="upload-file-subtitle">(Link Google Drive, Youtube, dsb. Link harus diawali dengan https:// atau http://)</p>
                             <input 
                                 name="link"
@@ -901,7 +910,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field radio-button">
-                            <label htmlFor="company-name">APAKAH DOKUMEN REKENING ATAS NAMA KOMUNITAS? *</label>
+                            <label htmlFor="company-name">APAKAH DOKUMEN REKENING ATAS NAMA KOMUNITAS? <span style={{color:"var(--main-red)"}}>*</span></label>
                             <RadioButton
                                 onChange={(val) => setRekeningANBadanUsaha(Number(val))}
                                 radioButtons={[
@@ -923,7 +932,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field radio-button">
-                            <label htmlFor="company-name">APAKAH KOMUNITAS TERDAFTAR SEBAGAI STAKEHOLDER RESMI BADAN PERFILMAN INDONESIA?  *</label>
+                            <label htmlFor="company-name">APAKAH KOMUNITAS TERDAFTAR SEBAGAI STAKEHOLDER RESMI BADAN PERFILMAN INDONESIA?  <span style={{color:"var(--main-red)"}}>*</span></label>
                             <RadioButton
                                 onChange={(val) => setStakeholderResmi(Number(val))}
                                 radioButtons={[
@@ -1135,7 +1144,7 @@ const UploadTacticalForm = () => {
             footerText={
                 <Fragment>
                     <div style={{display: "flex", color: "var(--main-red)"}}>
-                        <div style={{marginRight: "1.5em"}}>*</div>
+                        <div style={{marginRight: "1.5em"}}><span style={{color:"var(--main-red)"}}>*</span></div>
                         <p style={{margin: 0}}>Wajib dilampirkan apabila Komunitas belum terdaftar sebagai stakeholder unsur 
 	                    kegiatan perfilman dalam Badan Perfilman Indonesia (BPI)</p>
                     </div>
@@ -1182,7 +1191,7 @@ const UploadTacticalForm = () => {
                         Produksi Film Indonesia (Lampiran 6)</li>
                     <li>Pengajuan Rincian Anggaran Biaya Produksi Film (Lampiran 7)</li>
                     <li>Surat Rekomendasi Stakeholder Resmi Badan Perfilman 
-	                    Indonesia untuk Komunitas Perfilman (Lampiran B.2) *</li>
+	                    Indonesia untuk Komunitas Perfilman (Lampiran B.2) <span style={{color:"var(--main-red)"}}>*</span></li>
                     <li>Surat Pernyataan Penggunaan Rekening atas Nama Pribadi 
 	                    untuk Mewakili Komunitas Perfilman.(Lampiran B.3) **</li>
                 </ul>
