@@ -32,7 +32,7 @@ const Loading = ({ visibility, isLoading=true, afterLoadingText="" }) => {
             </div>
         </div>
         :
-        <FaCheckCircle color="var(--main-blue)" />
+        <FaCheckCircle color="var(--main-blue)" size={26} />
         }
       </div>
       <h3

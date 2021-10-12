@@ -345,7 +345,7 @@ const UploadTacticalForm = () => {
     }
 
     return <Template>
-        <Loading visibility={isLoading} afterLoadingText="Sukses Mendaftar!" isLoading={isSendingData} />
+        <Loading visibility={isLoading} afterLoadingText="Sukses Mendaftar !" isLoading={isSendingData} />
         <div className="upload-form-wrapper upload-production-form-wrapper">
             {page === 1 ? <Fragment>
                 <h2>Pendaftaran Program Bantuan Pemerintah Produksi Film Indonesia Untuk Rumah Produksi</h2>
