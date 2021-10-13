@@ -698,7 +698,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-synopsis">SINOPSIS (200-400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <label htmlFor="movie-synopsis">SINOPSIS <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-synopsis"
                                 value={movieSynopsis}
@@ -708,15 +708,15 @@ const UploadTacticalForm = () => {
                                     temp.movieSynopsis = validation
                                     setInputValidations(temp)
                                 }}
-                                minLength="200"
-                                maxLength="400"
+                                // minLength="200"
+                                // maxLength="400"
                             />
                         </div>
                     </div>
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-director-statement">DIRECTOR'S STATEMENT (200-400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <label htmlFor="movie-director-statement">DIRECTOR'S STATEMENT <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-director-statement"
                                 value={movieStatement}
@@ -726,15 +726,15 @@ const UploadTacticalForm = () => {
                                     temp.movieStatement = validation
                                     setInputValidations(temp)
                                 }}
-                                minLength="200"
-                                maxLength="400"
+                                // minLength="200"
+                                // maxLength="400"
                             />
                         </div>
                     </div>
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-producer-vision">VISI PRODUSER (200-400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <label htmlFor="movie-producer-vision">VISI PRODUSER <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-producer-vision"
                                 value={movieVision}
@@ -744,8 +744,8 @@ const UploadTacticalForm = () => {
                                     temp.movieVision = validation
                                     setInputValidations(temp)
                                 }}
-                                minLength="200"
-                                maxLength="400"
+                                // minLength="200"
+                                // maxLength="400"
                             />
                         </div>
                     </div>
@@ -764,7 +764,7 @@ const UploadTacticalForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-producer-vision">PROFIL PRODUSER DAN KOMUNITAS PERFILMAN YANG TERLIBAT (200-400 Kata) <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <label htmlFor="movie-producer-vision">PROFIL PRODUSER DAN KOMUNITAS PERFILMAN YANG TERLIBAT <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-producer-vision"
                                 value={movieProdHouseDetail}
@@ -774,15 +774,15 @@ const UploadTacticalForm = () => {
                                     temp.movieProdHouseDetail = validation
                                     setInputValidations(temp)
                                 }}
-                                minLength="200"
-                                maxLength="400"
+                                // minLength="200"
+                                // maxLength="400"
                             />
                         </div>
                     </div>
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-director-detail">PROFIL SUTRADARA (200-400 Kata) <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <label htmlFor="movie-director-detail">PROFIL SUTRADARA <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-director-detail"
                                 value={movieDirectorDetail}
@@ -792,8 +792,8 @@ const UploadTacticalForm = () => {
                                     temp.movieDirectorDetail = validation
                                     setInputValidations(temp)
                                 }}
-                                minLength="200"
-                                maxLength="400"
+                                // minLength="200"
+                                // maxLength="400"
                             />
                         </div>
                     </div>
