@@ -105,6 +105,8 @@ export const MAIN_TERMS = {
         {
             text: <Fragment>
                 Komunitas Perfilman yang berhak mendaftar adalah komunitas film yang terdaftar sebagai stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia (BPI). Apabila komunitas film bukanlah stakeholder unsur kegiatan perfilman dalam Badan Perfilman Indonesia, maka wajib melampirkan surat rekomendasi resmi dari asosiasi/lembaga/institusi yang merupakan stakeholder resmi Badan Perfilman Indonesia yang menyatakan jaminan kebenaran keberadaan komunitas film tersebut.
+                {/* <br /> */}{" "}
+                Berikut ini adalah daftar Stakeholder Badan Perfilman Indonesia:
                 <img src={TableStakeHolder} style={{width: "100%"}} />
                 </Fragment>,
         },
