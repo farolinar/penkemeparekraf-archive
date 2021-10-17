@@ -29,11 +29,9 @@ const RegisterPage = () => {
             <div className="register-block register-lisensi">
                 <div className="register-block-content">
                     <h2>Produksi</h2>
-                    <p>Pendaftaran akan berlangsung mulai dari<br />8 - 17 Oktober 2021</p> 
+                    <p>Pendaftaran telah ditutup</p>
+                    <p>Pendaftaran telah berlangsung tanggal 8-17 Oktober</p>
                     <div className="button-wrapper">
-                        <a href={ROUTES.registerProductionTerms} className="register-button">Syarat Pendaftaran</a>
-                        <a href={ROUTES.downloadProductionForm} className="register-button">Unduh Formulir</a>
-                        <a href={ROUTES.uploadProductionForm} className="register-button">Unggah Formulir</a>
                     </div>
                 </div>
             </div>
