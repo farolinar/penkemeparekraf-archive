@@ -51,7 +51,7 @@ const OpenCall = () => {
 
                 <ul>
                     <li>Seluruh hasil keputusan tidak dapat diganggu gugat</li>
-                    <li>Penerima Bantuan Terpilih akan dihubungi oleh Panitia PEN Film Kemenparekraf melalui email dan nomor HP yang disampaikan pada dokumen pendaftaran</li>
+                    <li>Penerima Bantuan Terpilih akan dihubungi oleh Panitia PEN Film Kemenparekraf/Baparekraf melalui email dan nomor HP yang disampaikan pada dokumen pendaftaran</li>
                 </ul>
 
                 <p>Terima kasih kepada seluruh pendaftar yang telah berpartisipasi dalam pendaftaran Penerima Bantuan Pemerintah Promosi Film Indonesia.</p>
