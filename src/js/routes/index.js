@@ -16,6 +16,7 @@ const RegisterTacticalTerms = lazy(()=>import('../views/pages/registerTerms/Regs
 const RegisterProductionTerms = lazy(()=>import('../views/pages/registerTerms/RegisterProductionTerms'));
 const DownloadTacticalForm = lazy(()=>import('../views/pages/downloadForm/DownloadForm'));
 const DownloadProductionForm = lazy(()=>import('../views/pages/downloadForm/DownloadProductionForm'));
+const Pengumuman = lazy(()=>import('../views/pages/pengumuman'));
 
 const Routes = [
     {
@@ -105,6 +106,12 @@ const Routes = [
     {
         path: ROUTES.registerProductionTerms,
         component: RegisterProductionTerms,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.pengumuman,
+        component: Pengumuman,
         exact: true,
         default: true
     },

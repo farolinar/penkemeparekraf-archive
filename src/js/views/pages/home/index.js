@@ -1,9 +1,9 @@
 import React, { lazy } from "react";
 import LazyLoad from "react-lazyload";
-import highlightOne from '../../../../assets/img/pages/home/highlight-1.jpg';
-import highlightTwo from '../../../../assets/img/pages/home/highlight-2.jpg';
-import highlightThree from '../../../../assets/img/pages/home/highlight-3.jpg';
-import highlightFour from '../../../../assets/img/pages/home/highlight-4.jpg';
+import highlightOne from '../../../../assets/img/pages/home/highlight-1-new.png';
+import highlightTwo from '../../../../assets/img/pages/home/highlight-2-new.png';
+import highlightThree from '../../../../assets/img/pages/home/highlight-3-new.png';
+import highlightFour from '../../../../assets/img/pages/home/highlight-4-new.png';
 import aboutUsUpperDivider from '../../../../assets/img/pages/home/about-us-shape.png';
 import aboutUsHero from '../../../../assets/img/pages/home/about-us-hero.png';
 // import icOurProgramTactical from '../../../../assets/img/pages/home/our-program-tactical-icon.png';
@@ -38,39 +38,7 @@ const SLIDER_IMAGES = [
     },
 ]
 
-// const OurPrograms = [
-//     {
-//         title: "Bantuan Pemerintah Promosi Film Indonesia",
-//         desc: "Program ini mempromosikan film-film Indonesia terpilih yang akan tayang di media layanan multiplatform pada periode Oktober hingga November 2021.",
-//         image: icOurProgramTactical,
-//         url: `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`
-//     },
-//     {
-//         title: "Bantuan Pemerintah Produksi Film Indonesia",
-//         desc: "Bantuan bagi rumah produksi perfilman untuk memproduksi film-film baru yang dapat ditayangkan melalui media penayangan multiplatform legal",
-//         image: icOurProgramProduction,
-//         url: `${ROUTES.program}?s=${ANCHOR.programProduksiFilm}`
-//     }
-// ]
-
 const Home = (props) => {
-
-    // const OurProgramItem = ({item}) => {
-    //     return <div className="our-program-item-wrapper">
-    //         <div className="our-program-item-content">
-    //             <div className="lazyload-wrapper">
-    //                 <img src={item.image} alt="" />
-    //             </div>
-    //             <div className="our-program-item-text">
-    //                 <p className="our-program-title">{item.title}</p>
-    //                 <p className="our-program-desc">{item.desc}</p>
-    //             </div>
-    //         </div>
-    //         <button>
-    //             <a href={item.url}>Selengkapnya</a>
-    //         </button>
-    //     </div>
-    // }
 
     return(<Template>
         <div className="home-image-carousel-wrapper">
@@ -79,7 +47,7 @@ const Home = (props) => {
                     SLIDER_IMAGES.map((item, index) => {
                         return <div style={{position: "relative"}} key={`highlight-${index}`} className="carousel-image-wrapper">
                             <img src={item.src} alt={item.name} />
-                            <div 
+                            {/* <div 
                                 style={{
                                     width: "100%",
                                     height: "100%",
@@ -90,18 +58,18 @@ const Home = (props) => {
                                     top: 0,
                                     left: 0
                                 }}
-                            />
+                            /> */}
                         </div>
                     })
                 }
             </ImageCarousel>
-            <div className="home-title-wrapper">
+            {/* <div className="home-title-wrapper">
                 <h1>Program <br /> Pemulihan Ekonomi Nasional</h1>
                 <h2>Subsektor Film</h2>
                 <div className="home-subtitle-wrapper">
                     <p>Kementerian Pariwisata &amp; Ekonomi Kreatif / <br /> Badan Pariwisata &amp; Ekonomi Kreatif </p>
                 </div>
-            </div>
+            </div> */}
         </div>
 
         <div className="home-about-us-wrapper">

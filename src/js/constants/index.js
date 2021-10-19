@@ -15,7 +15,8 @@ export const ROUTES = {
     contactUs: "/kontak-kami",
     registerTacticalTerms: "/syarat-pendaftaran/bantuan-promosi",
     registerProductionTerms: "/syarat-pendaftaran/bantuan-produksi",
-    program: "/program"
+    program: "/program",
+    pengumuman: "/pengumuman"
 }
 
 export const ANCHOR = {
@@ -23,4 +24,5 @@ export const ANCHOR = {
     programProduksiFilm: "program-produksi-film",
     downloadTacticalForm: "download-form-tactical-wrapper",
     downloadProductionForm: "download-form-production-wrapper",
+    pengumumanPromotion: "pengumuman-promosi"
 }
