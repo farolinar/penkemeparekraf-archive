@@ -8,10 +8,10 @@
     "static/js/2.60def349.chunk.js": "/static/js/2.60def349.chunk.js",
     "static/js/2.60def349.chunk.js.map": "/static/js/2.60def349.chunk.js.map",
     "main.css": "/static/css/main.0d2e4c76.chunk.css",
-    "main.js": "/static/js/main.fbff9685.chunk.js",
-    "main.js.map": "/static/js/main.fbff9685.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e10638e8.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e10638e8.js.map",
+    "main.js": "/static/js/main.8f1f8839.chunk.js",
+    "main.js.map": "/static/js/main.8f1f8839.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bf545679.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bf545679.js.map",
     "static/css/5.f4878a83.chunk.css": "/static/css/5.f4878a83.chunk.css",
     "static/js/5.21039b83.chunk.js": "/static/js/5.21039b83.chunk.js",
     "static/js/5.21039b83.chunk.js.map": "/static/js/5.21039b83.chunk.js.map",
@@ -41,9 +41,9 @@
     "static/js/13.d79f703d.chunk.js.map": "/static/js/13.d79f703d.chunk.js.map",
     "static/js/14.1b1a75ea.chunk.js": "/static/js/14.1b1a75ea.chunk.js",
     "static/js/14.1b1a75ea.chunk.js.map": "/static/js/14.1b1a75ea.chunk.js.map",
-    "static/css/15.9c83ef82.chunk.css": "/static/css/15.9c83ef82.chunk.css",
-    "static/js/15.2bee8941.chunk.js": "/static/js/15.2bee8941.chunk.js",
-    "static/js/15.2bee8941.chunk.js.map": "/static/js/15.2bee8941.chunk.js.map",
+    "static/css/15.9d93d138.chunk.css": "/static/css/15.9d93d138.chunk.css",
+    "static/js/15.f6ba76b9.chunk.js": "/static/js/15.f6ba76b9.chunk.js",
+    "static/js/15.f6ba76b9.chunk.js.map": "/static/js/15.f6ba76b9.chunk.js.map",
     "static/css/16.861db9f2.chunk.css": "/static/css/16.861db9f2.chunk.css",
     "static/js/16.0818a627.chunk.js": "/static/js/16.0818a627.chunk.js",
     "static/js/16.0818a627.chunk.js.map": "/static/js/16.0818a627.chunk.js.map",
@@ -83,7 +83,7 @@
     "static/css/11.b0658daa.chunk.css.map": "/static/css/11.b0658daa.chunk.css.map",
     "static/css/12.ba0a0d71.chunk.css.map": "/static/css/12.ba0a0d71.chunk.css.map",
     "static/css/13.c005a45a.chunk.css.map": "/static/css/13.c005a45a.chunk.css.map",
-    "static/css/15.9c83ef82.chunk.css.map": "/static/css/15.9c83ef82.chunk.css.map",
+    "static/css/15.9d93d138.chunk.css.map": "/static/css/15.9d93d138.chunk.css.map",
     "static/css/16.861db9f2.chunk.css.map": "/static/css/16.861db9f2.chunk.css.map",
     "static/css/17.1b8422e7.chunk.css.map": "/static/css/17.1b8422e7.chunk.css.map",
     "static/css/18.1b8422e7.chunk.css.map": "/static/css/18.1b8422e7.chunk.css.map",
@@ -111,7 +111,7 @@
     "static/media/about-us-text.e20a1a6f.png": "/static/media/about-us-text.e20a1a6f.png",
     "static/media/CarouselPengumuman.scss": "/static/media/carousel-pengumuman-bg.8ac49e19.png",
     "static/media/ContactUs.scss": "/static/media/contact-us-bg.0f42ae00.jpg",
-    "static/media/daftar-pemenang-promosi-film.b2a04803.png": "/static/media/daftar-pemenang-promosi-film.b2a04803.png",
+    "static/media/daftar-pemenang-promosi-film.2ea6bae2.png": "/static/media/daftar-pemenang-promosi-film.2ea6bae2.png",
     "static/media/DownloadForm.scss": "/static/media/download-form-bg.c7566e2e.jpg",
     "static/media/highlight-1-new.524220e1.png": "/static/media/highlight-1-new.524220e1.png",
     "static/media/highlight-2-new.de3e5dc5.png": "/static/media/highlight-2-new.de3e5dc5.png",
@@ -131,10 +131,10 @@
     "static/media/table-stakeholder.b69a6c41.png": "/static/media/table-stakeholder.b69a6c41.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e10638e8.js",
+    "static/js/runtime-main.bf545679.js",
     "static/css/5.f4878a83.chunk.css",
     "static/js/5.21039b83.chunk.js",
     "static/css/main.0d2e4c76.chunk.css",
-    "static/js/main.fbff9685.chunk.js"
+    "static/js/main.8f1f8839.chunk.js"
   ]
 }
