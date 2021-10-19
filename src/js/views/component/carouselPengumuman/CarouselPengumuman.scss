@@ -1,0 +1,37 @@
+.carousel-pengumuman {
+    color: #fff;
+    .carousel-pengumuman-content {
+        display: flex;
+        height: 45vw;
+        .carousel-pengumuman-hero {
+            background-color: var(--main-lighter-green);
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                height: auto !important;
+                width: 520px;
+            }
+        }
+        .carousel-pengumuman-text {
+            background-image: url(./carousel-pengumuman-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 55%;
+            text-align: left;
+            padding: 50px 120px 50px 100px;
+            display: flex;
+            align-items: center;
+
+            a {
+                background-color: #fff;
+                color: var(--main-light-green);
+                padding: 5px 15px;
+                border-radius: 7px;
+            }
+        }
+    }
+    
+}

@@ -16,10 +16,15 @@ import { ANCHOR, ROUTES } from "../../../constants";
 import RegisterPage from "../../component/registerPage";
 import { Fragment } from "react";
 import ComponentCarousel from "../../component/componentCarousel/ComponentCarousel";
+import CarouselPengumuman from "../../component/carouselPengumuman";
 const Template = lazy(()=>import('../../layout/template'));
 const ImageCarousel = lazy(()=>import('../../component/imageCarousel/ImageCarousel'));
 
 const SLIDER_IMAGES = [
+    {
+        src: null,
+        name: "placeholder-pengumuman"
+    },
     {
         src: highlightOne,
         name: "highlight-one"
@@ -45,7 +50,10 @@ const Home = (props) => {
             <ImageCarousel>
                 {
                     SLIDER_IMAGES.map((item, index) => {
-                        return <div style={{position: "relative"}} key={`highlight-${index}`} className="carousel-image-wrapper">
+                        if(index === 0) {
+                            return <CarouselPengumuman />
+                        }
+                        else return <div style={{position: "relative"}} key={`highlight-${index}`} className="carousel-image-wrapper">
                             <img src={item.src} alt={item.name} />
                             {/* <div 
                                 style={{
