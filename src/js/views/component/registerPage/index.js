@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { ROUTES } from "../../../constants";
+import { ROUTES, ANCHOR } from "../../../constants";
 import "./RegisterPage.scss";
 
 const RegisterPage = () => {
@@ -15,6 +15,7 @@ const RegisterPage = () => {
                     <p>Pendaftaran telah ditutup</p>
                     <p>Pendaftaran telah berlangsung tanggal 1-10 Oktober</p>
                     <div className="button-wrapper">
+                        <a href={`${ROUTES.pengumuman}?s=${ANCHOR.pengumumanPromotion}`} className="register-button">Pengumuman</a>
                     </div>
                 </div>
             </div>

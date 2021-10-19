@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ANCHOR, ROUTES } from '../../../constants';
 import Template from '../../layout/template';
 import heroBg from "../../../../assets/img/pages/pengumuman/pengumuman-hero.png"
@@ -8,6 +8,15 @@ import pengumumanPromotion from "../../../../assets/img/pages/pengumuman/daftar-
 import "./Pengumuman.scss";
 
 const OpenCall = () => {
+
+    useEffect(() => {
+        if(window.location.search) {
+            let id = new URLSearchParams(window.location.search);
+            id = id.get('s');
+            window.location.href = `#${id}`
+        }
+    }, [])
+    
     return <Template>
         <div className="pengumuman-wrapper">
             <div className="curve-up">
