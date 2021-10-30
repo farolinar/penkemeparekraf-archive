@@ -32,9 +32,12 @@ const MENU = [
                     `${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`)
             },
             {
-                name: "Lisensi",
-                class: "not-clickable",
-                url: null
+                name: "Pra-Produksi",
+                class: "",
+                url: (window.location.pathname === ROUTES.program  ?
+                    `#${ANCHOR.programPraProduksiFilm}`
+                    :
+                    `${ROUTES.program}?s=${ANCHOR.programPraProduksiFilm}`)
             },
             {
                 name: "Produksi",
@@ -56,16 +59,16 @@ const MENU = [
         url: ROUTES.downloadForm,
         children: null
     },
-    // {
-    //     name: "Unggah Formulir",
-    //     url: ROUTES.uploadForm,
-    //     children: null
-    // },
     {
-        name: "Pengumuman",
-        url: ROUTES.pengumuman,
+        name: "Unggah Formulir",
+        url: ROUTES.uploadForm,
         children: null
     },
+    // {
+    //     name: "Pengumuman",
+    //     url: ROUTES.pengumuman,
+    //     children: null
+    // },
     {
         name: "Kontak Kami",
         url: ROUTES.contactUs,

@@ -31,7 +31,7 @@ const OpenCall = () => {
                     <p>Klik tombol berikut untuk melihat hasil kurasi Program Pemulihan Ekonomi Nasional Subsektor Film</p>
                     <div className="home-register-button">
                         <a href={`#${ANCHOR.pengumumanPromotion}`}>Promosi</a>
-                        <a>Lisensi</a>
+                        <a>Pra-Produksi</a>
                         <a>Produksi</a>
                     </div>
                 </div>

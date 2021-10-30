@@ -213,7 +213,7 @@ export const DOCUMENT_TERMS = {
                 "a.	Data dokumen dan lampiran pendukung yang diberikan adalah benar, dokumen asli dan dapat dipertanggungjawabkan secara hukum (tidak dalam penguasaan pihak lain dan/atau sengketa hak kekayaan intelektual)",
                 "b.	Tidak dalam keadaan Pailit dan/atau dalam keadaan penundaan kewajiban pembayaran hutang (“PKPU”)",
                 "c.	Tidak sedang berada dalam kondisi perkara pengadilan baik secara perdata maupun pidana",
-                "d.	Tidak pernah, tidak sedang dan tidak akan melakukan pengajuan dan/atau menerima bantuan sejenis dari pemerintah pusat maupun daerah, dan/atau Badan Usaha Milik Negara (BUMN), dikecualikan untuk Program Pemulihan Ekonomi Nasional – Skema Lisensi",
+                "d.	Tidak pernah, tidak sedang dan tidak akan melakukan pengajuan dan/atau menerima bantuan sejenis dari pemerintah pusat maupun daerah, dan/atau Badan Usaha Milik Negara (BUMN), dikecualikan untuk Program Pemulihan Ekonomi Nasional – Skema Pra-Produksi",
                 "e.	Tidak ada konflik internal dan/atau kepengurusan ganda, serta tidak berafiliasi kepada salah satu Partai Politik",
                 "f.	Bersedia mengikuti seluruh proses kurasi yang diadakan oleh Kementerian Pariwisata dan Ekonomi Kreatif/Badan Pariwisata dan Ekonomi Kreatif",
                 "g.	Menerima kriteria dan persyaratan pemilihan",

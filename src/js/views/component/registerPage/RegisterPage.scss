@@ -40,8 +40,13 @@
             bottom: 0px;
             width: 100%;
 
+            p {
+                margin: 0;
+            }
+
             .button-wrapper {
                 text-align: center;
+                margin-top: 35px;
                 a {
                     display: block;
                     padding: 8px 20px;

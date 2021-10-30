@@ -7,7 +7,7 @@ const RegisterPage = () => {
         <div className="register-container">
             <div className="register-title">
                 <h2>Pendaftaran</h2>
-                <p>Undangan bagi Insan Perfilman Indonesia untuk berpartisipasi dan<br />mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film<br />melalui Skema Promosi - Lisensi - Produksi</p>
+                <p>Undangan bagi Insan Perfilman Indonesia untuk berpartisipasi dan<br />mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film<br />melalui Skema Promosi - Pra-Produksi - Produksi</p>
             </div>
             <div className="register-block register-promosi">
                 <div className="register-block-content">
@@ -22,8 +22,14 @@ const RegisterPage = () => {
 
             <div className="register-block register-produksi">
                 <div className="register-block-content">
-                    <h2>Lisensi</h2>
-                    <p>Segera Hadir</p>
+                    <h2>Pra-Produksi</h2>
+                    <p>Pendaftaran akan berlangsung mulai dari</p>
+                    <p>3 - 7 November 2021</p>
+                    <div className="button-wrapper">
+                        <a href={ROUTES.registerPraProductionTerms} className="register-button">Syarat Pendaftaran</a>
+                        <a href={ROUTES.downloadPraProductionForm} className="register-button">Unduh Formulir</a>
+                        <a href={ROUTES.uploadPraProductionForm} className="register-button">Unggah Formulir</a>
+                    </div>
                 </div>
             </div>
 

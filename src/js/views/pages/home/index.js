@@ -10,6 +10,7 @@ import aboutUsHero from '../../../../assets/img/pages/home/about-us-hero.png';
 // import icOurProgramProduction from '../../../../assets/img/pages/home/our-program-production-icon.png';
 import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-home-hero.png";
 import programProductionHero from "../../../../assets/img/pages/program/program-production-home-hero.png";
+import programPraProductionHero from "../../../../assets/img/pages/program/program-pra-production-hero.png";
 // import ourProgramBg from '../../../../assets/img/pages/home/our-program-bg.jpg';
 import "./Home.scss";
 import { ANCHOR, ROUTES } from "../../../constants";
@@ -22,12 +23,12 @@ const ImageCarousel = lazy(()=>import('../../component/imageCarousel/ImageCarous
 
 const SLIDER_IMAGES = [
     {
-        src: null,
-        name: "placeholder-pengumuman"
-    },
-    {
         src: highlightOne,
         name: "highlight-one"
+    },
+    {
+        src: null,
+        name: "placeholder-pengumuman"
     },
     {
         src: highlightTwo,
@@ -50,7 +51,7 @@ const Home = (props) => {
             <ImageCarousel>
                 {
                     SLIDER_IMAGES.map((item, index) => {
-                        if(index === 0) {
+                        if(index === 1) {
                             return <CarouselPengumuman />
                         }
                         else return <div style={{position: "relative"}} key={`highlight-${index}`} className="carousel-image-wrapper">
@@ -121,7 +122,7 @@ const Home = (props) => {
                             <div className="our-program-content-text">
                                 <h2>Program Kami</h2>
                                 <h3>Bantuan Pemerintah<br />Promosi Film Indonesia</h3>
-                                <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor film yang terdiri dari Skema Promosi - Lisensi - Produksi</p>
+                                <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor film yang terdiri dari Skema Promosi - Pra-Produksi - Produksi</p>
                                 {/* <br /> */}
                                 <p>Bertujuan untuk meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih dan mendukung kemajuan industri perfilman melalui kegiatan promosi film</p>
                                 {/* <br /> */}
@@ -134,12 +135,30 @@ const Home = (props) => {
                         </div>
                         <div className="our-program-content">
                             <div className="lazyload-wrapper">
+                                <img src={programPraProductionHero} alt="program-kami" />
+                            </div>
+                            <div className="our-program-content-text">
+                                <h2>Program Kami</h2>
+                                <h3>Bantuan Pemerintah<br />Pra-Produksi Film Indonesia</h3>
+                                <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor film yang terdiri dari Skema Promosi - Pra-Produksi - Produksi</p>
+                                {/* <br /> */}
+                                <p>Bertujuan menggerakan Ekosistem Perfilman Indonesia dan mendukung penyerapan tenaga kerja di industri untuk Film Panjang dan/atau Film Dokumenter Panjang Indonesia yang akan melaksanakan Pra-Produksi di tahun 2021</p>
+                                {/* <br /> */}
+                                <p>Target Penerima Bantuan sebanyak 50 Rumah Produksi yang memiliki rencana kegiatan Pra-Produksi atas maksimal 2 film panjang dan/atau film dokumenter panjang.</p>
+                                <p>Nilai bantuan yang diberikan sebesar Rp. 860.000.000,- untuk setiap film yang telah lolos kurasi.</p>
+                                <button>
+                                    <a href={`${ROUTES.program}?s=${ANCHOR.programPraProduksiFilm}`}>Selengkapnya</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="our-program-content">
+                            <div className="lazyload-wrapper">
                                 <img src={programProductionHero} alt="program-kami" />
                             </div>
                             <div className="our-program-content-text">
                                 <h2>Program Kami</h2>
                                 <h3>Bantuan Pemerintah<br />Produksi Film Indonesia</h3>
-                                <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor Film yang terdiri dari Skema Promosi - Lisensi - Produksi.</p>
+                                <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor Film yang terdiri dari Skema Promosi - Pra-Produksi - Produksi.</p>
                                 {/* <br /> */}
                                 <p>Bertujuan mendorong produksi karya kreatif Film Pendek dan Film Dokumenter Pendek, untuk penyerapan tenaga kerja dan menggerakan ekosistem perfilman Indonesia.</p>
                                 {/* <br /> */}
@@ -158,7 +177,7 @@ const Home = (props) => {
         {/* <div className="home-register-wrapper">
             <div className="home-register-content">
                 <h2>Pendaftaran</h2>
-                <p>Undangan bagi Insan Perfilman Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Promosi - Lisensi - Produksi</p>
+                <p>Undangan bagi Insan Perfilman Indonesia untuk berpartisipasi dan mendaftar dalam program Pemulihan Ekonomi Nasional (PEN) Subsektor Film melalui Skema Promosi - Pra-Produksi - Produksi</p>
                 <br />
                 <br />
                 <br />
