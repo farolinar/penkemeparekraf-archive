@@ -122,12 +122,11 @@ const Home = (props) => {
                             <div className="our-program-content-text">
                                 <h2>Program Kami</h2>
                                 <h3>Bantuan Pemerintah<br />Promosi Film Indonesia</h3>
-                                <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor film yang terdiri dari Skema Promosi - Pra-Produksi - Produksi</p>
-                                {/* <br /> */}
                                 <p>Bertujuan untuk meningkatkan minat masyarakat menonton Film Indonesia Siap Tayang Terpilih dan mendukung kemajuan industri perfilman melalui kegiatan promosi film</p>
                                 {/* <br /> */}
-                                <p>Pelaksanaan Promosi dilakukan pada jangka waktu Oktober - 10 Desember 2021 (dimulai sejak tanggal penetapan penerima bantuan terpilih)</p>
-                                <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film</p>
+                                <p>Pelaksanaan Promosi dilakukan pada jangka waktu Oktober - 10 Desember 2021.</p>
+                                <p>Sebanyak 22 Rumah Produksi telah ditetapkan sebagai Penerima Bantuan Terpilih pada Bantuan Pemerintah Promosi Film Indonesia.</p>
+                                <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film.</p>
                                 <button>
                                     <a href={`${ROUTES.program}?s=${ANCHOR.programPromosiTaktikalFilm}`}>Selengkapnya</a>
                                 </button>
@@ -140,8 +139,6 @@ const Home = (props) => {
                             <div className="our-program-content-text">
                                 <h2>Program Kami</h2>
                                 <h3>Bantuan Pemerintah<br />Pra-Produksi Film Indonesia</h3>
-                                <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor film yang terdiri dari Skema Promosi - Pra-Produksi - Produksi</p>
-                                {/* <br /> */}
                                 <p>Bertujuan menggerakan Ekosistem Perfilman Indonesia dan mendukung penyerapan tenaga kerja di industri untuk Film Panjang dan/atau Film Dokumenter Panjang Indonesia yang akan melaksanakan Pra-Produksi di tahun 2021</p>
                                 {/* <br /> */}
                                 <p>Target Penerima Bantuan sebanyak 50 Rumah Produksi yang memiliki rencana kegiatan Pra-Produksi atas maksimal 2 film panjang dan/atau film dokumenter panjang.</p>
@@ -158,8 +155,6 @@ const Home = (props) => {
                             <div className="our-program-content-text">
                                 <h2>Program Kami</h2>
                                 <h3>Bantuan Pemerintah<br />Produksi Film Indonesia</h3>
-                                <p>Sebagai bagian dari Program Pemulihan Ekonomi Nasional sub Sektor Film yang terdiri dari Skema Promosi - Pra-Produksi - Produksi.</p>
-                                {/* <br /> */}
                                 <p>Bertujuan mendorong produksi karya kreatif Film Pendek dan Film Dokumenter Pendek, untuk penyerapan tenaga kerja dan menggerakan ekosistem perfilman Indonesia.</p>
                                 {/* <br /> */}
                                 <p>Pelaksanaan produksi Film Terpilih wajib selesai hingga tahap final pada akhir periode program sampai dengan 10 Desember 2021.</p>
