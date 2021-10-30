@@ -398,17 +398,6 @@ const UploadPraProductionForm = () => {
                             ></input>
                         </div>
 
-                        <div className="upload-form-field radio-button">
-                            <label htmlFor="company-name">BENTUK BADAN USAHA <span style={{color:"var(--main-red)"}}>*</span></label>
-                            <RadioButton
-                                onChange={(val) => setBadanUsahaType(val)}
-                                radioButtons={Object.keys(BADAN_USAHA_TYPES).map(function(k){return BADAN_USAHA_TYPES[k]})}
-                                unselectedColor="var(--main-light-green)"
-                                selectedColor="var(--main-light-green)"
-                                selected={badanUsahaType}
-                            />
-                        </div>
-
                         <div className="upload-form-field">
                             <label htmlFor="email">ALAMAT EMAIL <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
@@ -431,28 +420,6 @@ const UploadPraProductionForm = () => {
                                         : waNumber;
                                     setWANumber(number);
                                 }}
-                            />
-                        </div>
-
-                        <div className="upload-form-field radio-button">
-                            <label htmlFor="company-name">KRITERIA FILM (Pilih Salah 1) <span style={{color:"var(--main-red)"}}>*</span></label>
-                            <RadioButton
-                                onChange={(val) => setKriteriaFilm(val)}
-                                radioButtons={Object.keys(KRITERIA_FILM).map(function(k){return KRITERIA_FILM[k]})}
-                                unselectedColor="var(--main-light-green)"
-                                selectedColor="var(--main-light-green)"
-                                selected={kriteriaFilm}
-                            />
-                        </div>
-
-                        <div className="upload-form-field radio-button">
-                            <label htmlFor="company-name">KATEGORI FILM (Pilih Salah 1) <span style={{color:"var(--main-red)"}}>*</span></label>
-                            <RadioButton
-                                onChange={(val) => setKategoriFilm(val)}
-                                radioButtons={Object.keys(KATEGORI_FILM).map(function(k){return KATEGORI_FILM[k]})}
-                                unselectedColor="var(--main-light-green)"
-                                selectedColor="var(--main-light-green)"
-                                selected={kategoriFilm}
                             />
                         </div>
                     </div>
@@ -499,7 +466,7 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-writer">NAMA PENULIS <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <label htmlFor="movie-writer">NAMA PENULIS SKENARIO <span style={{color:"var(--main-red)"}}>*</span></label>
                             <input 
                                 name="movie-writer"
                                 defaultValue={movieWriter}
@@ -543,23 +510,12 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-cast">DAFTAR NAMA PEMAIN UTAMA DAN PENDUKUNG <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <label htmlFor="movie-cast">DAFTAR NAMA PEMAIN (RENCANA) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-cast"
                                 value={movieCast}
                                 onChange={(e) => setMovieCast(e.target.value)}
                             />
-                        </div>
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <div className="upload-form-field">
-                            <label htmlFor="movie-target">TARGET PENONTON <span style={{color:"var(--main-red)"}}>*</span></label>
-                            <input 
-                                name="movie-target"
-                                defaultValue={movieTarget}
-                                onChange={(e) => setMovieTarget(e.target.value)}
-                            ></input>
                         </div>
                     </div>
 
@@ -571,6 +527,17 @@ const UploadPraProductionForm = () => {
                                 defaultValue={movieLogline}
                                 onChange={(e) => setMovieLogline(e.target.value)}
                             ></input>
+                        </div>
+                    </div>
+
+                    <div className="upload-form-content-wrapper">
+                        <div className="upload-form-field">
+                            <label htmlFor="movie-target">ULASAN TARGET PENONTON (MAKSIMAL 400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <TextAreaWithCounter
+                                name="movie-target"
+                                value={movieCast}
+                                onChange={(e) => setMovieTarget(e.target.value)}
+                            />
                         </div>
                     </div>
 
@@ -631,7 +598,7 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-other-resource">DAFTAR PENDANAAN PRODUKSI DARI SUMBER LAIN / INVESTOR LAIN (JIKA ADA)</label>
+                            <label htmlFor="movie-other-resource">RENCANA PENDANAAN PRODUKSI FILM <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-other-resource"
                                 value={movieOtherResource}
@@ -643,43 +610,7 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="movie-producer-vision">PROFIL PRODUSER DAN RUMAH PRODUKSI YANG TERLIBAT (200-400 Kata) <span style={{color:"var(--main-red)"}}>*</span></label>
-                            <TextAreaWithCounter
-                                name="movie-producer-vision"
-                                value={movieProdHouseDetail}
-                                onChange={(e, validation) => {
-                                    setMovieProdHouseDetail(e.target.value)
-                                    let temp = {...inputValidations}
-                                    temp.movieProdHouseDetail = validation
-                                    setInputValidations(temp)
-                                }}
-                                // minLength="200"
-                                // maxLength="400"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <div className="upload-form-field">
-                            <label htmlFor="movie-director-detail">PROFIL SUTRADARA (200-400 Kata) <span style={{color:"var(--main-red)"}}>*</span></label>
-                            <TextAreaWithCounter
-                                name="movie-director-detail"
-                                value={movieDirectorDetail}
-                                onChange={(e, validation) => {
-                                    setMovieDirectorDetail(e.target.value)
-                                    let temp = {...inputValidations}
-                                    temp.movieDirectorDetail = validation
-                                    setInputValidations(temp)
-                                }}
-                                // minLength="200"
-                                // maxLength="400"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <div className="upload-form-field">
-                            <label htmlFor="movie-crew-milestone">PRESTASI DARI TENAGA KERJA (KRU DAN PEMAIN)</label>
+                            <label htmlFor="movie-crew-milestone">RENCANA DISTRIBUSI ATAU PENAYANGAN FILM <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name="movie-crew-milestone"
                                 value={movieCrewMilestone}
@@ -691,7 +622,7 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="link">TAUTAN DARING DARI CONTOH HASIL KARYA SUTRADARA <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <label htmlFor="link">TAUTAN DARING DARI CONTOH HASIL KARYA (PORTOFOLIO) SUTRADARA <span style={{color:"var(--main-red)"}}>*</span></label>
                             <p className="upload-file-subtitle">(Link Google Drive, Youtube, dsb. Link harus diawali dengan https:// atau http://)</p>
                             <input 
                                 name="link"
@@ -703,24 +634,12 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor="link">TAUTAN DARING DARI CONTOH HASIL KARYA PRODUSER <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <label htmlFor="link">TAUTAN DARING DARI CONTOH HASIL KARYA (PORTOFOLIO) PRODUSER <span style={{color:"var(--main-red)"}}>*</span></label>
                             <p className="upload-file-subtitle">(Link Google Drive, Youtube, dsb. Link harus diawali dengan https:// atau http://)</p>
                             <input 
                                 name="link"
                                 defaultValue={movieProducerExample}
                                 onChange={(e) => setMovieProducerExample(e.target.value)}
-                            ></input>
-                        </div>
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <div className="upload-form-field">
-                            <label htmlFor="link">TAUTAN DARING DARI HASIL KARYA (PORTOFOLIO) RUMAH PRODUKSI TAHUN 2019-2021 <span style={{color:"var(--main-red)"}}>*</span></label>
-                            <p className="upload-file-subtitle">(Link Google Drive, Youtube, dsb. Link harus diawali dengan https:// atau http://)</p>
-                            <input 
-                                name="link"
-                                defaultValue={movieProdHouseExample}
-                                onChange={(e) => setMovieProdHouseExample(e.target.value)}
                             ></input>
                         </div>
                     </div>
