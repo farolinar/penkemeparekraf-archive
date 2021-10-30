@@ -41,10 +41,11 @@ const Program = () => {
             </div>
         </div>
         
-        <div className="grid-wrapper">
+        <div className="grid-wrapper our-program-tactical-grid-wrapper">
             <div></div>
             <div className="our-program-tactical-wrapper" id={ANCHOR.programPromosiTaktikalFilm}>
                 <h2>Bantuan Pemerintah<br />Promosi Film Indonesia</h2>
+                <div className="filler"></div>
                 <div className="our-program-tactical-content">
                     <div className="our-program-tactical-text">
                         {/* <img src={programTacticalText} alt="program-tactical" /> */}
@@ -89,7 +90,7 @@ const Program = () => {
             <div></div>
         </div>
 
-        <div className="grid-wrapper our-program-pra-production-wrapper">
+        <div className="grid-wrapper our-program-tactical-grid-wrapper">
             <div></div>
             <div className="our-program-tactical-wrapper" id={ANCHOR.programPraProduksiFilm}>
                 <h2>Bantuan Pemerintah<br />Pra-Produksi Film Indonesia</h2>
