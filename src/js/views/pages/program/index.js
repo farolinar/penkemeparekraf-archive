@@ -5,6 +5,7 @@ import programTacticalText from "../../../../assets/img/pages/program/program-ta
 import programTacticalHero from "../../../../assets/img/pages/program/program-tactical-hero.png";
 import programProductionText from "../../../../assets/img/pages/program/program-production-text.png";
 import programProductionHero from "../../../../assets/img/pages/program/program-production-hero.png";
+import programPraProductionHero from "../../../../assets/img/pages/program/program-pra-production-hero.png";
 import "./Program.scss";
 import { ANCHOR } from '../../../constants';
 
@@ -20,7 +21,7 @@ const Program = () => {
 
     return <Template>
         <div className="our-program-main-wrapper">
-            <div className="our-program-filter"></div>
+            {/* <div className="our-program-filter"></div> */}
             <div className="our-program-main-content">
                 <h2>Program Kami</h2>
                 <div className="our-programs">
@@ -28,7 +29,7 @@ const Program = () => {
                         <a href={`#${ANCHOR.programPromosiTaktikalFilm}`}>Promosi</a>
                     </div>
                     <div className="our-program">
-                        <a href={null}>Pra-Produksi</a>
+                        <a href={`#${ANCHOR.programPraProduksiFilm}`}>Pra-Produksi</a>
                     </div>
                     <div className="our-program">
                         <a href={`#${ANCHOR.programProduksiFilm}`}>Produksi</a>
@@ -82,6 +83,29 @@ const Program = () => {
                         <p>Target Penerima Bantuan sebanyak 60 Rumah Produksi atau<br />Komunitas Perfilman yang masing-masing menghasilkan 1 film<br />Indonesia, dengan kategori film untuk 30 Film Pendek dan 30<br />Film Dokumenter Pendek. Nilai bantuan yang diberikan sebesar<br />Rp. 250.000.000,- per rumah produksi/komunitas perfilman.</p>
                         <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut<br />biaya dalam keseluruhan rangkaian proses Program Pemulihan<br />Ekonomi Nasional Subsektor Film</p>
                         <p>Anggaran Bantuan Pemerintah Bagi Produksi Film Indonesia saat ini<br />masih dalam tahap pengajuan ke Kementerian Keuangan, Rumah Produksi<br />atau Komunitas Perfilman yang melakukan pendaftaran pada skema produksi<br />dengan ini memahami dan bersedia untuk menerima dan tidak akan<br />menuntut Kementerian Pariwisata dan Ekonomi Kreatif/Badan Pariwisata<br />dan Ekonomi Kreatif apabila pengajuan anggaran dana bantuan pemerintah<br />ini tidak disetujui atau tidak tersedia.</p>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <div className="grid-wrapper our-program-pra-production-wrapper">
+            <div></div>
+            <div className="our-program-tactical-wrapper" id={ANCHOR.programPraProduksiFilm}>
+                <h2>Bantuan Pemerintah<br />Pra-Produksi Film Indonesia</h2>
+                <div className="our-program-tactical-content">
+                    <div className="our-program-tactical-text">
+                        {/* <img src={programTacticalText} alt="program-tactical" /> */}
+                        <p>Sebagai bagian dari Program Bantuan Pemerintah sub<br />Sektor film yang terdiri dari Skema Promosi - Pra-Produksi -<br />Produksi.</p>
+                        <p>Bertujuan menggerakan Ekosistem Perfilman Indonesia dan<br />mendukung penyerapan tenaga kerja di industri untuk Film<br />Panjang dan/atau Film Dokumenter Panjang Indonesia yang<br />akan melaksanakan Pra-Produksi di tahun 2021</p>
+                        <p>Pelaksanaan Pra-Produksi Film Terpilih diantaranya meliputi<br />tahap persiapan dan bagian dari proses produksi suatu film<br />yang mencakup sejumlah kegiatan di antaranya Script<br />Development, Storyboard Development, Survey Lokasi,<br />Workshop Pra-Produksi, dan persiapan-persiapan lainnya yang<br />dilakukan oleh Rumah Produksi. Penggunaan dana bantuan<br />pemerintah wajib diselesaikan hingga akhir periode program<br />sampai dengan 15 Desember 2021.</p>
+                        <p>Target Penerima Bantuan sebanyak 50 Rumah Produksi yang<br />memiliki rencana kegiatan Pra-Produksi atas maksimal 2 film<br />panjang dan/atau film dokumenter panjang.</p>
+                        <p>Nilai bantuan yang diberikan sebesar Rp. 860.000.000,- untuk<br />setiap film yang telah lolos kurasi.</p>
+                        <p>Pendaftar maupun penerima bantuan terpilih tidak akan<br />dipungut biaya dalam keseluruhan rangkaian proses Program<br />Pemulihan Ekonomi Nasional Subsektor Film.</p>
+                        <p>Anggaran Bantuan Pemerintah Pra-Produksi Film Indonesia<br />saat ini masih dalam tahap pengajuan ke Kementerian<br />Keuangan, Rumah Produksi yang melakukan pendaftaran pada<br />skema Pra-Produksi dengan ini memahami dan bersedia untuk<br />menerima dan tidak akan menuntut Kementerian Pariwisata<br />dan Ekonomi Kreatif/Badan Pariwisata dan Ekonomi Kreatif<br />apabila pengajuan anggaran dana bantuan pemerintah ini tidak<br />disetujui atau tidak tersedia.</p>
+                        </div>
+                    <div className="lazyload-wrapper">
+                        <img src={programPraProductionHero} alt="program-tactical" />
                     </div>
                 </div>
             </div>
