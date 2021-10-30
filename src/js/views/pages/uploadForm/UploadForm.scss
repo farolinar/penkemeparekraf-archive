@@ -212,3 +212,15 @@
         background-color: var(--main-light-green);
     }
 }
+
+.modal-disclaimer-pra-production {
+    color: var(--main-blue);
+
+    .modal-header .modal-title, div {
+        color: var(--main-blue) !important;
+    }
+
+    .modal-footer button {
+        background-color: var(--main-blue) !important;
+    }
+}
