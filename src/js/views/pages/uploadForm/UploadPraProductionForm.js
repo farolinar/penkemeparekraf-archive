@@ -348,17 +348,14 @@ const UploadPraProductionForm = () => {
         />
         <div className="upload-form-wrapper upload-production-form-wrapper upload-pra-production-form-wrapper">
             {page === 1 ? <Fragment>
-                <h2>Pendaftaran Program Bantuan Pemerintah Produksi Film Indonesia Untuk Rumah Produksi</h2>
+                <h2>Pendaftaran Program Bantuan Pemerintah Pra-Produksi Film Indonesia</h2>
 
                 <ul className="upload-form-note">
                     <li>
-                        Anggaran Bantuan Pemerintah Bagi Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan, Rumah Produksi yang melakukan pendaftaran pada skema produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kementerian Pariwisata dan Ekonomi Kreatif/Badan Pariwisata dan Ekonomi Kreatif apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia
+                        Seluruh dokumen asli legalitas, identitas dan stempel badan usaha Rumah Produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika Rumah Produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)    
                     </li>
                     <li>
-                        Seluruh dokumen asli legalitas, identitas dan stempel badan usaha rumah produksi serta seluruh dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan Komitmen dan Tandatangan Perjanjian Kerjasama jika rumah produksi terpilih sebagai Penerima Bantuan (rencana lokasi di Jakarta)    
-                    </li>
-                    <li>
-                        Penjelasan poin 2 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan
+                        Penjelasan poin 1 merupakan bahan verifikasi dan persyaratan wajib agar dana bantuan dapat diberikan
                     </li>
                 </ul>
                 <div className="upload-form-section">
