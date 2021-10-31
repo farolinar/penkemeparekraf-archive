@@ -245,6 +245,7 @@ const UploadPraProductionForm = () => {
                 production_house_name: companyName,
                 whatsapp: waNumber,
                 email: email,
+                kategori_film: kategoriFilm,
                 proposal_film_title: movieTitle,
                 proposal_film_duration: movieDuration,
                 proposal_film_genre: movieGenre,
