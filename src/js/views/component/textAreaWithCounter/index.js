@@ -5,9 +5,10 @@ const TextAreaWithCounter = ({
     name = "",
     value = "",
     onChange = () => {},
-    maxLength=false,
-    minLength=false,
-    rows="10"
+    maxLength=undefined,
+    minLength=undefined,
+    rows="10",
+    id=""
 }) => {
     const [numberOfChars, setNumberOfChars] = useState(0)
     const [validation, setValidation] = useState("")
@@ -17,6 +18,7 @@ const TextAreaWithCounter = ({
     return(<div className="textarea-counter-wrapper">
         <textarea 
             name={name}
+            id={id}
             defaultValue={value}
             onChange={(e) => {
                 let msg = ""

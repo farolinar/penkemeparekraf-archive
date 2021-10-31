@@ -2,7 +2,7 @@ import React from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
 import "./Loading.scss"
 
-const Loading = ({ visibility, isLoading=true, afterLoadingText="" }) => {
+const Loading = ({ visibility, isLoading=true, afterLoadingText="", onButtonClick=() => {} }) => {
     return visibility ? <div
     id="popup-two-button"
     className="overlay target"
@@ -32,7 +32,8 @@ const Loading = ({ visibility, isLoading=true, afterLoadingText="" }) => {
             </div>
         </div>
         :
-        <FaCheckCircle color="var(--main-blue)" size={26} />
+        // <FaCheckCircle color="var(--main-blue)" size={26} />
+        null
         }
       </div>
       <h3
@@ -41,6 +42,9 @@ const Loading = ({ visibility, isLoading=true, afterLoadingText="" }) => {
       >
         {isLoading ? "Mohon Tunggu" : afterLoadingText}
       </h3>
+      {!isLoading && <div>
+        <button onClick={onButtonClick}>OK</button>
+      </div>}
     </div>
   </div> : ""
 }
