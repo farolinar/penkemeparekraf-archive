@@ -85,7 +85,7 @@
         justify-content: space-evenly;
         // align-items: center;
         .our-program-tactical-text {
-            width: fit-content;
+            width: 60%;
             // font-size: 1.75vw;
             p:first-child {
                 margin-top: 0;
@@ -95,7 +95,8 @@
             }
         }
         .lazyload-wrapper {
-            width: 35%;
+            width: 40%;
+            padding-left: 20px !important;
             img {
                 width: 100%;
             }
@@ -106,7 +107,7 @@
 
 .our-program-production-wrapper {
     color: black;
-    padding: 50px 0;
+    padding: 50px;
     background-color: #f8f8f8;
     
     h2 {
@@ -151,6 +152,7 @@
         }
         .lazyload-wrapper {
             // width: 30%;
+            // width: 100%;
             margin-top: -100px;
             margin-right: 90px;
             text-align: end;
@@ -160,7 +162,8 @@
             grid-row-start: 2;
             grid-row-end: 2;
             img {
-                width: 70%;
+                width: 100%;
+                max-width: 612px;
             }
         }
         
