@@ -242,7 +242,7 @@ const UploadPraProductionForm = () => {
             let data = {
                 fullname: name,
                 identity_id: idNumber,
-                production_house: companyName,
+                production_house_name: companyName,
                 whatsapp: waNumber,
                 email: email,
                 proposal_film_title: movieTitle,
