@@ -77,7 +77,7 @@ const Program = () => {
                     </div>
                     <div><h2>Bantuan Pemerintah<br />Produksi Film Indonesia</h2></div>
                     <div className="our-program-production-hero">
-                        <p>Bertujuan mendorong produksi karya kreatif Film Pendek<br />dan Film Dokumenter Pendek, untuk penyerapan tenaga<br />kerja dan menggerakan ekosistem perfilman Indonesia.</p>
+                        <p>Bertujuan mendorong produksi karya kreatif Film Pendek<br />dan Film Dokumenter Pendek, untuk penyerapan tenaga<br />kerja dan menggerakkan ekosistem perfilman Indonesia.</p>
                         <p>Pelaksanaan produksi Film Terpilih wajib selesai hingga<br />tahap final pada akhir periode program sampai dengan<br />tanggal 10 Desember 2021.</p>
                         <p>Target Penerima Bantuan sebanyak 60 Rumah Produksi atau<br />Komunitas Perfilman yang masing-masing menghasilkan 1 film<br />Indonesia, dengan kategori film untuk 30 Film Pendek dan 30<br />Film Dokumenter Pendek. Nilai bantuan yang diberikan sebesar<br />Rp. 250.000.000,- per rumah produksi/komunitas perfilman.</p>
                         <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut<br />biaya dalam keseluruhan rangkaian proses Program Pemulihan<br />Ekonomi Nasional Subsektor Film</p>
@@ -95,7 +95,7 @@ const Program = () => {
                 <div className="our-program-tactical-content">
                     <div className="our-program-tactical-text">
                         {/* <img src={programTacticalText} alt="program-tactical" /> */}
-                        <p>Bertujuan menggerakan Ekosistem Perfilman Indonesia dan<br />mendukung penyerapan tenaga kerja di industri untuk Film<br />Panjang dan/atau Film Dokumenter Panjang Indonesia yang<br />akan melaksanakan Pra-Produksi di tahun 2021</p>
+                        <p>Bertujuan menggerakkan Ekosistem Perfilman Indonesia dan<br />mendukung penyerapan tenaga kerja di industri untuk Film<br />Panjang dan/atau Film Dokumenter Panjang Indonesia yang<br />akan melaksanakan Pra-Produksi di tahun 2021</p>
                         <p>Pelaksanaan Pra-Produksi Film Terpilih diantaranya meliputi<br />tahap persiapan dan bagian dari proses produksi suatu film<br />yang mencakup sejumlah kegiatan di antaranya Script<br />Development, Storyboard Development, Survey Lokasi,<br />dan Workshop Pra-Produksi. Penggunaan dana bantuan<br />pemerintah wajib diselesaikan hingga akhir periode program<br />sampai dengan 15 Desember 2021.</p>
                         <p>Target Penerima Bantuan sebanyak 50 Rumah Produksi yang<br />memiliki rencana kegiatan Pra-Produksi Film. Rumah Produksi dapat<br />mengajukan maksimal 2 (dua) proposal kegiatan pra-produksi film panjang dan/atau film dokumenter panjang<br />pada tahun 2021. Nilai bantuan yang diberikan sebesar Rp. 860.000.000,- untuk setiap film yang telah lolos kurasi.</p>
                         <p>Pendaftar maupun penerima bantuan terpilih tidak akan<br />dipungut biaya dalam keseluruhan rangkaian proses Program<br />Pemulihan Ekonomi Nasional Subsektor Film.</p>

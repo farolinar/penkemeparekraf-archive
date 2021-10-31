@@ -139,10 +139,9 @@ const Home = (props) => {
                             <div className="our-program-content-text">
                                 <h2>Program Kami</h2>
                                 <h3>Bantuan Pemerintah<br />Pra-Produksi Film Indonesia</h3>
-                                <p>Bertujuan menggerakan Ekosistem Perfilman Indonesia dan mendukung penyerapan tenaga kerja di industri untuk Film Panjang dan/atau Film Dokumenter Panjang Indonesia yang akan melaksanakan Pra-Produksi di tahun 2021</p>
+                                <p>Bertujuan menggerakkan Ekosistem Perfilman Indonesia dan mendukung penyerapan tenaga kerja di industri untuk Film Panjang dan/atau Film Dokumenter Panjang Indonesia yang akan melaksanakan Pra-Produksi di tahun 2021</p>
                                 {/* <br /> */}
-                                <p>Target Penerima Bantuan sebanyak 50 Rumah Produksi yang memiliki rencana kegiatan Pra-Produksi atas maksimal 2 film panjang dan/atau film dokumenter panjang.</p>
-                                <p>Nilai bantuan yang diberikan sebesar Rp. 860.000.000,- untuk setiap film yang telah lolos kurasi.</p>
+                                <p>Target Penerima Bantuan sebanyak 50 Rumah Produksi yang memiliki rencana kegiatan Pra-Produksi Film. Rumah Produksi dapat mengajukan maksimal 2 (dua) proposal kegiatan pra-produksi film panjang dan/atau film dokumenter panjang pada tahun 2021. Nilai bantuan yang diberikan sebesar Rp. 860.000.000,- untuk setiap film yang telah lolos kurasi.</p>
                                 <button>
                                     <a href={`${ROUTES.program}?s=${ANCHOR.programPraProduksiFilm}`}>Selengkapnya</a>
                                 </button>
@@ -155,7 +154,7 @@ const Home = (props) => {
                             <div className="our-program-content-text">
                                 <h2>Program Kami</h2>
                                 <h3>Bantuan Pemerintah<br />Produksi Film Indonesia</h3>
-                                <p>Bertujuan mendorong produksi karya kreatif Film Pendek dan Film Dokumenter Pendek, untuk penyerapan tenaga kerja dan menggerakan ekosistem perfilman Indonesia.</p>
+                                <p>Bertujuan mendorong produksi karya kreatif Film Pendek dan Film Dokumenter Pendek, untuk penyerapan tenaga kerja dan menggerakkan ekosistem perfilman Indonesia.</p>
                                 {/* <br /> */}
                                 <p>Pelaksanaan produksi Film Terpilih wajib selesai hingga tahap final pada akhir periode program sampai dengan 10 Desember 2021.</p>
                                 <p>Pendaftar maupun penerima bantuan terpilih tidak akan dipungut biaya dalam keseluruhan rangkaian proses Program Pemulihan Ekonomi Nasional Subsektor Film</p>
