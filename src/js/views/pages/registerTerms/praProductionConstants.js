@@ -137,12 +137,12 @@ export const documentTerms = [
         {
         text: "Rincian Anggaran Biaya Bantuan Pemerintah Pra-Produksi Film Indonesia (format pada Unduh Dokumen Pra-Produksi Lampiran 7)",
         children: [
-            "Ruang Lingkup Penggunaan Dana Bantuan Pemerintah Pra-Produksi Film Indonesia",
+            <b>Ruang Lingkup Penggunaan Dana Bantuan Pemerintah Pra-Produksi Film Indonesia</b>,
             "a. Script Development",
             "b. Storyboard Development",
             "c. Survey Lokasi",
             "d. Workshop pra-produksi",
-            "Yang tidak termasuk dalam Penggunaan Dana Bantuan Pemerintah Pra-Produksi Film Indonesia:",
+            <b>Yang tidak termasuk dalam Penggunaan Dana Bantuan Pemerintah Pra-Produksi Film Indonesia:</b>,
             "a. Pembelian belanja barang dalam bentuk apapun",
             "b. Pembelian lahan, tanah untuk usaha",
             "c. Pembayaran atas angsuran pinjaman kredit dan pinjaman lainnya",
