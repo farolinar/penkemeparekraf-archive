@@ -35,7 +35,11 @@ export const fieldIDs = [
     "id-number",
     "company-name",
     "email",
-    "whatsapp-number"
+    "whatsapp-number",
+    "movie-category",
+    "movie-crew",
+    "upload-form-sk-kemenkumham-sk-kemenkumham",
+    "upload-form-sk-kemenkumham-sk-kemenkumham-perubahan"
 ]
 
 export const fieldIDsName = {
@@ -75,5 +79,9 @@ export const fieldIDsName = {
     "id-number": "NOMOR IDENTITAS/NIK/PASPOR",
     "company-name": "NAMA RUMAH PRODUKSI",
     "email": "ALAMAT EMAIL",
-    "whatsapp-number": "NOMOR WHATSAPP"
+    "whatsapp-number": "NOMOR WHATSAPP",
+    "movie-category": "KATEGORI FILM",
+    "movie-crew": "ESTIMASI TOTAL TENAGA KERJA YANG TERLIBAT (PEMERAN DAN KRU)",
+    "upload-form-sk-kemenkumham-sk-kemenkumham": "UNGGAH SK KEMENKUMHAM AKTA PENDIRIAN",
+    "upload-form-sk-kemenkumham-sk-kemenkumham-perubahan": "UNGGAH SK KEMENKUMHAM AKTA PERUBAHAN"
 }

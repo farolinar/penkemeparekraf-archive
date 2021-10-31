@@ -9,6 +9,7 @@ import Template from '../../layout/template';
 import TextAreaWithCounter from '../../component/textAreaWithCounter';
 import PopupOneButton from '../../component/popupOneButton';
 import { fieldIDs, fieldIDsName } from './praProductionFields';
+import RadioButton from '../../component/radioButton';
 
 const acceptedFileFormat = {
     image: ["image/png", "image/jpeg"],
@@ -29,6 +30,17 @@ const acceptedFileFormatValidation = {
     pdf: "pdf",
     docx: ".doc atau .docx",
     all: "jpg, jpeg, png, atau pdf"
+}
+
+const KATEGORI_FILM = {
+    film_pendek: {
+        text: "FILM PANJANG",
+        val: "film_panjang"
+    },
+    film_dokumenter: {
+        text: "FILM DOKUMENTER PANJANG",
+        val: "dokumenter"
+    }
 }
 
 const UploadFileField = ({
@@ -92,6 +104,7 @@ const UploadPraProductionForm = () => {
     const [idNumber, setIDNumber] = useState()
     const [companyName, setCompanyName] = useState()
     const [waNumber, setWANumber] = useState("")
+    const [kategoriFilm, setKategoriFilm] = useState("")
 
     const [movieTitle, setMovieTitle] = useState("")
     const [movieDuration, setMovieDuration] = useState("")
@@ -108,6 +121,7 @@ const UploadPraProductionForm = () => {
     const [movieVision, setMovieVision] = useState("")
     const [movieOtherResource, setMovieOtherResource] = useState("")
     const [movieCrewMilestone, setMovieCrewMilestone] = useState("")
+    const [movieCrew, setMovieCrew] = useState("")
     const [movieDirectorExample, setMovieDirectorExample] = useState("")
     const [movieProducerExample, setMovieProducerExample] = useState("")
 
@@ -119,6 +133,8 @@ const UploadPraProductionForm = () => {
     const [taxFile, setTaxFile] = useState({name: "", file: ""})
     const [aktaPendirianFile, setAktaPendirianFile] = useState({name: "", file: ""})
     const [nomorIndukFile, setNomorIndukFile] = useState({name: "", file: ""})
+    const [skKemenkumhamFile, setSKKemenkumhamFile] = useState({name: "", file: ""})
+    const [skKemenkumhamPerubahanFile, setSKKemenkumhamPerubahanFile] = useState({name: "", file: ""})
 
     const [lampiran1, setLampiran1] = useState({name: "", file: ""})
     const [lampiran2, setLampiran2] = useState({name: "", file: ""})
@@ -171,28 +187,31 @@ const UploadPraProductionForm = () => {
         if(!movieCrewMilestone) temp.push(fieldIDsName[fieldIDs[14]])
         if(!movieDirectorExample) temp.push(fieldIDsName[fieldIDs[15]])
         if(!movieDirectorExample) temp.push(fieldIDsName[fieldIDs[16]])
+        if(!kategoriFilm) temp.push(fieldIDsName[fieldIDs[37]])
+        if(!movieCrew) temp.push(fieldIDsName[fieldIDs[38]])
 
         return temp;
     }
 
     const pageTwoValidations = () => {
         let temp = [];
-        if(aktaPendirianFile.file) temp.push(fieldIDsName[fieldIDs[17]])
-        if(aktaPerubahan.file) temp.push(fieldIDsName[fieldIDs[18]])
-        if(idNumberFile.file) temp.push(fieldIDsName[fieldIDs[19]])
-        if(nomorIndukFile.file) temp.push(fieldIDsName[fieldIDs[20]])
-        if(npwpFile.file) temp.push(fieldIDsName[fieldIDs[21]])
-        if(taxFile.file) temp.push(fieldIDsName[fieldIDs[22]])
-        if(cardNumberFile.file) temp.push(fieldIDsName[fieldIDs[23]])
-        if(profileAndPortfolioFile.file) temp.push(fieldIDsName[fieldIDs[24]])
+        if(!aktaPendirianFile.file) temp.push(fieldIDsName[fieldIDs[17]])
+        if(!aktaPerubahan.file) temp.push(fieldIDsName[fieldIDs[18]])
+        if(!idNumberFile.file) temp.push(fieldIDsName[fieldIDs[19]])
+        if(!nomorIndukFile.file) temp.push(fieldIDsName[fieldIDs[20]])
+        if(!npwpFile.file) temp.push(fieldIDsName[fieldIDs[21]])
+        if(!taxFile.file) temp.push(fieldIDsName[fieldIDs[22]])
+        if(!cardNumberFile.file) temp.push(fieldIDsName[fieldIDs[23]])
+        if(!profileAndPortfolioFile.file) temp.push(fieldIDsName[fieldIDs[24]])
+        if(!skKemenkumhamFile.file) temp.push(fieldIDsName[fieldIDs[39]])
 
-        if(lampiran1.file) temp.push(fieldIDsName[fieldIDs[25]])
-        if(lampiran2.file) temp.push(fieldIDsName[fieldIDs[26]])
-        if(lampiran3.file) temp.push(fieldIDsName[fieldIDs[27]])
-        if(lampiran4.file) temp.push(fieldIDsName[fieldIDs[28]])
-        if(lampiran5.file) temp.push(fieldIDsName[fieldIDs[29]])
-        if(lampiran6.file) temp.push(fieldIDsName[fieldIDs[30]])
-        if(lampiran7.file) temp.push(fieldIDsName[fieldIDs[31]])
+        if(!lampiran1.file) temp.push(fieldIDsName[fieldIDs[25]])
+        if(!lampiran2.file) temp.push(fieldIDsName[fieldIDs[26]])
+        if(!lampiran3.file) temp.push(fieldIDsName[fieldIDs[27]])
+        if(!lampiran4.file) temp.push(fieldIDsName[fieldIDs[28]])
+        if(!lampiran5.file) temp.push(fieldIDsName[fieldIDs[29]])
+        if(!lampiran6.file) temp.push(fieldIDsName[fieldIDs[30]])
+        if(!lampiran7.file) temp.push(fieldIDsName[fieldIDs[31]])
 
         return temp
     }
@@ -227,48 +246,57 @@ const UploadPraProductionForm = () => {
                 whatsapp: waNumber,
                 email: email,
                 proposal_film_title: movieTitle,
-                proposal_duration: movieDuration,
-                proposal_genre: movieGenre,
-                proposal_writer: movieWriter,
-                proposal_director: movieDirector,
-                proposal_producer: movieProducer,
-                proposal_animator: movieAnimator,
+                proposal_film_duration: movieDuration,
+                proposal_film_genre: movieGenre,
+                proposal_film_author: movieWriter,
+                proposal_film_director_name: movieDirector,
+                proposal_film_producer_name: movieProducer,
+                proposal_film_animator_name: movieAnimator,
                 proposal_actors: movieCast,
+                proposal_est_crews_number: movieCrew,
                 proposal_target_audience: movieTarget,
                 proposal_logline: movieLogline,
                 proposal_synopsis: movieSynopsis,
                 proposal_director_statement: movieStatement,
                 proposal_producer_vision: movieVision,
-                proposal_funding_list: movieOtherResource,
-                proposal_crew_achievements: movieCrewMilestone,
-                proposal_hasil_karya_link_sutradara: movieDirectorExample,
-                proposal_hasil_karya_link_produser: movieProducerExample,
-                akta_pendirian_fname: aktaPendirianFile.name,
-                akta_pendirian_file: aktaPendirianFile.file,
-                ktp_direktur_fname: idNumberFile.name,
-                ktp_direktur_file: idNumberFile.file,
-                nib_fname: nomorIndukFile.name,
-                nib_file: nomorIndukFile.file,
-                npwp_fname: npwpFile.name,
-                npwp_file: npwpFile.file,
-                spt_fname: taxFile.name,
-                spt_file: taxFile.file,
-                rekening_fname: cardNumberFile.name,
-                rekening_file: cardNumberFile.file,
-                sptjm_fname: lampiran1.name,
-                sptjm_file: lampiran1.file,
-                sptmbppfi_fname: lampiran2.name,
-                sptmbppfi_file: lampiran2.file,
-                spfmdtp_fname: lampiran3.name,
-                spfmdtp_file: lampiran3.file,
-                spbppfi_fname: lampiran4.name,
-                spbppfi_file: lampiran4.file,
-                ringkasan_profil_fname: lampiran5.name,
-                ringkasan_profil_file: lampiran5.file,
-                dokumen_pendukung_fname: lampiran6.name,
-                dokumen_pendukung_file: lampiran6.file,
-                rabp_fname: lampiran7.name,
-                rabp_file: lampiran7.file
+                proposal_funding_plan: movieOtherResource,
+                proposal_distribution_plan: movieCrewMilestone,
+                proposal_director_portfolio_link: movieDirectorExample,
+                proposal_producer_portfolio_link: movieProducerExample,
+                dokumen_legalitas_akta_pendirian_fname: aktaPendirianFile.name,
+                dokumen_legalitas_akta_pendirian_file: aktaPendirianFile.file,
+                dokumen_legalitas_sk_kemenkumham_fname: skKemenkumhamFile.name,
+                dokumen_legalitas_sk_kemenkumham_file: skKemenkumhamFile.file,
+                dokumen_legalitas_akta_perubahan_fname: aktaPerubahan.name,
+                dokumen_legalitas_akta_perubahan_file: aktaPerubahan.file,
+                dokumen_legalitas_sk_akta_perubahan_fname: skKemenkumhamPerubahanFile.name,
+                dokumen_legalitas_sk_akta_perubahan_file: skKemenkumhamPerubahanFile.file,
+                dokumen_legalitas_ktp_penanggungjawab_fname: idNumberFile.name,
+                dokumen_legalitas_ktp_penanggungjawab_file: idNumberFile.file,
+                dokumen_legalitas_nib_fname: nomorIndukFile.name,
+                dokumen_legalitas_nib_file: nomorIndukFile.file,
+                dokumen_legalitas_npwp_fname: npwpFile.name,
+                dokumen_legalitas_npwp_file: npwpFile.file,
+                dokumen_legalitas_spt_fname: taxFile.name,
+                dokumen_legalitas_spt_file: taxFile.file,
+                dokumen_legalitas_rekening_fname: cardNumberFile.name,
+                dokumen_legalitas_rekening_file: cardNumberFile.file,
+                dokumen_legalitas_portfolio_badan_usaha_fname: nomorIndukFile.name,
+                dokumen_legalitas_portfolio_badan_usaha_file: nomorIndukFile.file,
+                berkas_lampiran_sprp_fname: lampiran1.name,
+                berkas_lampiran_sprp_file: lampiran1.file,
+                berkas_lampiran_sptjm_fname: lampiran2.name,
+                berkas_lampiran_sptjm_file: lampiran2.file,
+                berkas_lampiran_spfmdtp_fname: lampiran3.name,
+                berkas_lampiran_spfmdtp_file: lampiran3.file,
+                berkas_lampiran_spbp_fname: lampiran4.name,
+                berkas_lampiran_spbp_file: lampiran4.file,
+                berkas_lampiran_dokumen_pendukung_proposal_fname: lampiran5.name,
+                berkas_lampiran_dokumen_pendukung_proposal_file: lampiran5.file,
+                berkas_lampiran_dokumen_proposal_bantuan_fname: lampiran6.name,
+                berkas_lampiran_dokumen_proposal_bantuan_file: lampiran6.file,
+                berkas_lampiran_rincian_anggaran_fname: lampiran7.name,
+                berkas_lampiran_rincian_anggaran_file: lampiran7.file
             }
             let formData = new FormData();
             for (let field in data) {
@@ -395,6 +423,17 @@ const UploadPraProductionForm = () => {
                                         : waNumber;
                                     setWANumber(number);
                                 }}
+                            />
+                        </div>
+
+                        <div className="upload-form-field radio-button">
+                            <label htmlFor={fieldIDs[37]}>KATEGORI FILM (Pilih Salah 1) <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <RadioButton
+                                onChange={(val) => setKategoriFilm(val)}
+                                radioButtons={Object.keys(KATEGORI_FILM).map(function(k){return KATEGORI_FILM[k]})}
+                                unselectedColor="var(--main-light-green)"
+                                selectedColor="var(--main-light-green)"
+                                selected={kategoriFilm}
                             />
                         </div>
                     </div>
@@ -586,6 +625,41 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
+                            <label htmlFor={fieldIDs[12]}>VISI PRODUSER (200-400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <TextAreaWithCounter
+                                name={fieldIDs[12]}
+                                id={fieldIDs[12]}
+                                value={movieVision}
+                                onChange={(e, validation) => {
+                                    setMovieVision(e.target.value)
+                                    let temp = {...inputValidations}
+                                    temp.movieVision = validation
+                                    setInputValidations(temp)
+                                }}
+                                // minLength="200"
+                                // maxLength="400"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="upload-form-content-wrapper">
+                        <div className="upload-form-field">
+                            <label htmlFor={fieldIDs[38]}>ESTIMASI TOTAL TENAGA KERJA YANG TERLIBAT (PEMERAN DAN KRU) <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <TextAreaWithCounter
+                                name={fieldIDs[38]}
+                                id={fieldIDs[38]}
+                                value={movieCrew}
+                                onChange={(e, validation) => {
+                                    setMovieCrew(e.target.value)
+                                }}
+                                // minLength="200"
+                                // maxLength="400"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="upload-form-content-wrapper">
+                        <div className="upload-form-field">
                             <label htmlFor={fieldIDs[13]}>RENCANA PENDANAAN PRODUKSI FILM <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name={fieldIDs[13]}
@@ -658,8 +732,7 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={<Fragment>UNGGAH AKTA PENDIRIAN DAN SK KEMENKUMHAM
-                                (MINIMAL BERDIRI SEJAK 1 JANUARI 2019) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
+                            title={<Fragment>UNGGAH AKTA PENDIRIAN <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[17]}
                             type={acceptedFileFormatString.pdf}
@@ -670,13 +743,36 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={<Fragment>UNGGAH AKTA PERUBAHAN DAN SK KEMENKUMHAM (TERKAIT SUSUNAN 
-                                KEPENGURUSAN YANG BERLAKU APABILA ADA PERUBAHAN DARI AKTA PENDIRIAN) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
+                            title={<Fragment>UNGGAH SK KEMENKUMHAM AKTA PENDIRIAN <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id={fieldIDs[39]}
+                            type={acceptedFileFormatString.pdf}
+                            fileName={skKemenkumhamFile.name}
+                            setData = {(data) => setSKKemenkumhamFile({...data})}
+                        />
+                    </div>
+
+                    <div className="upload-form-content-wrapper">
+                        <UploadFileField
+                            title={<Fragment>UNGGAH AKTA PERUBAHAN (TERKAIT SUSUNAN KEPENGURUSAN YANG BERLAKU
+                                APABILA ADA PERUBAHAN DARI AKTA PENDIRIAN) </Fragment>}
                             subtitle="(File PDF, JPG, JPEG, atau PNG, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[18]}
                             type={acceptedFileFormatString.all}
                             fileName={aktaPerubahan.name}
                             setData = {(data) => setAktaPerubahanFile({...data})}
+                        />
+                    </div>
+
+                    <div className="upload-form-content-wrapper">
+                        <UploadFileField
+                            title={<Fragment>UNGGAH SK KEMENKUMHAM (TERKAIT SUSUNAN KEPENGURUSAN YANG BERLAKU
+                                APABILA ADA PERUBAHAN DARI AKTA PENDIRIAN) </Fragment>}
+                            subtitle="(File PDF, JPG, JPEG, atau PNG, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            id={fieldIDs[40]}
+                            type={acceptedFileFormatString.all}
+                            fileName={skKemenkumhamPerubahanFile.name}
+                            setData = {(data) => setSKKemenkumhamPerubahanFile({...data})}
                         />
                     </div>
 
@@ -716,7 +812,9 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={<Fragment>UNGGAH SURAT PEMBERITAHUAN TAHUNAN (SPT) PAJAK 1 TAHUN TERAKHIR <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
+                            title={<Fragment>UNGGAH SURAT PEMBERITAHUAN TAHUNAN (SPT) PAJAK 1 TAHUN TERAKHIR <span style={{color: "var(--main-red)"}}>*</span>
+                                <br /><span style={{textTransform: "none"}}>(Jika keterangan kurang bayar harap melampirkan bukti setor atas kekurangan pembayaran tersebut)</span>
+                            </Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[22]}
                             type={acceptedFileFormatString.pdf}
