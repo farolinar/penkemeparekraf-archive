@@ -186,7 +186,7 @@ const UploadPraProductionForm = () => {
         if(!movieOtherResource) temp.push(fieldIDsName[fieldIDs[13]])
         if(!movieCrewMilestone) temp.push(fieldIDsName[fieldIDs[14]])
         if(!movieDirectorExample) temp.push(fieldIDsName[fieldIDs[15]])
-        if(!movieDirectorExample) temp.push(fieldIDsName[fieldIDs[16]])
+        if(!movieProducerExample) temp.push(fieldIDsName[fieldIDs[16]])
         if(!kategoriFilm) temp.push(fieldIDsName[fieldIDs[37]])
         if(!movieCrew) temp.push(fieldIDsName[fieldIDs[38]])
 
@@ -196,7 +196,7 @@ const UploadPraProductionForm = () => {
     const pageTwoValidations = () => {
         let temp = [];
         if(!aktaPendirianFile.file) temp.push(fieldIDsName[fieldIDs[17]])
-        if(!aktaPerubahan.file) temp.push(fieldIDsName[fieldIDs[18]])
+        // if(!aktaPerubahan.file) temp.push(fieldIDsName[fieldIDs[18]])
         if(!idNumberFile.file) temp.push(fieldIDsName[fieldIDs[19]])
         if(!nomorIndukFile.file) temp.push(fieldIDsName[fieldIDs[20]])
         if(!npwpFile.file) temp.push(fieldIDsName[fieldIDs[21]])
@@ -225,13 +225,13 @@ const UploadPraProductionForm = () => {
         setValidationOne([...validationsOne])
 
         let validationsTwo = []
-        setShowValidationOnePopup(false)
+        setShowValidationTwoPopup(false)
         if(validationsOne.length === 0) {
             validationsTwo = pageTwoValidations()
             setValidationTwo([...validationsTwo])
-            setShowValidationOnePopup(validationsTwo.length > 0)
+            setShowValidationTwoPopup(validationsTwo.length > 0)
         }
-
+        
         return (validationsOne.length === 0) && (validationsTwo.length === 0) && verifyCheck;
     }
 
@@ -253,7 +253,7 @@ const UploadPraProductionForm = () => {
                 proposal_film_director_name: movieDirector,
                 proposal_film_producer_name: movieProducer,
                 proposal_film_animator_name: movieAnimator,
-                proposal_actors: movieCast,
+                proposal_film_actors_name: movieCast,
                 proposal_est_crews_number: movieCrew,
                 proposal_target_audience: movieTarget,
                 proposal_logline: movieLogline,
@@ -560,7 +560,7 @@ const UploadPraProductionForm = () => {
                             <TextAreaWithCounter
                                 name={fieldIDs[9]}
                                 id={fieldIDs[9]}
-                                value={movieCast}
+                                value={movieTarget}
                                 onChange={(e) => setMovieTarget(e.target.value)}
                             />
                         </div>
@@ -738,7 +738,7 @@ const UploadPraProductionForm = () => {
                         <UploadFileField
                             title={<Fragment>UNGGAH AKTA PERUBAHAN (TERKAIT SUSUNAN KEPENGURUSAN YANG BERLAKU
                                 APABILA ADA PERUBAHAN DARI AKTA PENDIRIAN) </Fragment>}
-                            subtitle="(File PDF, JPG, JPEG, atau PNG, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[18]}
                             type={acceptedFileFormatString.pdf}
                             fileName={aktaPerubahan.name}
@@ -750,7 +750,7 @@ const UploadPraProductionForm = () => {
                         <UploadFileField
                             title={<Fragment>UNGGAH SK KEMENKUMHAM (TERKAIT SUSUNAN KEPENGURUSAN YANG BERLAKU
                                 APABILA ADA PERUBAHAN DARI AKTA PENDIRIAN) </Fragment>}
-                            subtitle="(File PDF, JPG, JPEG, atau PNG, max 5MB, Lengkapi dengan Nama Pendaftar)"
+                            subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[40]}
                             type={acceptedFileFormatString.pdf}
                             fileName={skKemenkumhamPerubahanFile.name}
@@ -907,7 +907,7 @@ const UploadPraProductionForm = () => {
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
                             title={<Fragment>Unggah Rincian Anggaran Biaya (RAB) Bantuan Pemerintah Pra-Produksi
-                                Film Indonesia (Lampiran 7) * <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
+                                Film Indonesia (Lampiran 7) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[31]}
                             type={acceptedFileFormatString.pdf}
