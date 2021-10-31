@@ -47,15 +47,15 @@ export const fieldIDsName = {
     "movie-duration": "DURASI FILM",
     "movie-genre": "GENRE",
     "movie-writer": "NAMA PENULIS SKENARIO",
-    "movie-director": "NAMA SUTRADARA",
+    "movie-director": "NAMA SUTRADARA", // 4
     "movie-producer": "NAMA PRODUSER",
     "movie-animator": "NAMA ANIMATOR",
-    "movie-cast": "DAFTAR NAMA PEMAIN (RENCANA)",
+    "movie-cast": "DAFTAR NAMA PEMAIN (RENCANA)", // 7
     "movie-logline": "LOGLINE (3 KALIMAT)",
     "movie-target": "ULASAN TARGET PENONTON (MAKSIMAL 400 KATA)",
     "movie-synopsis": "SINOPSIS (200-400 KATA)",
     "movie-director-statement": "DIRECTOR'S STATEMENT (200-400 KATA)",
-    "movie-producer-vision": "VISI PRODUSER (200-400 KATA)",
+    "movie-producer-vision": "VISI PRODUSER (200-400 KATA)", // 12
     "movie-other-resource": "RENCANA PENDANAAN PRODUKSI FILM",
     "movie-crew-milestone": "RENCANA DISTRIBUSI ATAU PENAYANGAN FILM",
     "movie-director-portfolio-link": "TAUTAN DARING DARI CONTOH HASIL KARYA (PORTOFOLIO) SUTRADARA",
@@ -75,7 +75,7 @@ export const fieldIDsName = {
     "upload-form-lampiran-5": "LAMPIRAN 5",
     "upload-form-lampiran-6": "LAMPIRAN 6",
     "upload-form-lampiran-7": "LAMPIRAN 7",
-    "full-name": "NAMA LENGKAP",
+    "full-name": "NAMA LENGKAP", // 32
     "id-number": "NOMOR IDENTITAS/NIK/PASPOR",
     "company-name": "NAMA RUMAH PRODUKSI",
     "email": "ALAMAT EMAIL",

@@ -167,9 +167,9 @@ const UploadPraProductionForm = () => {
         // return true;
         let temp = [];
         if(!name) temp.push(fieldIDsName[fieldIDs[32]])
-        if(!email) temp.push(fieldIDsName[fieldIDs[33]])
-        if(!idNumber) temp.push(fieldIDsName[fieldIDs[34]])
-        if(!companyName) temp.push(fieldIDsName[fieldIDs[35]])
+        if(!email) temp.push(fieldIDsName[fieldIDs[35]])
+        if(!idNumber) temp.push(fieldIDsName[fieldIDs[33]])
+        if(!companyName) temp.push(fieldIDsName[fieldIDs[34]])
         if(!waNumber) temp.push(fieldIDsName[fieldIDs[36]])
         if(!movieTitle) temp.push(fieldIDsName[fieldIDs[0]])
         if(!movieDuration) temp.push(fieldIDsName[fieldIDs[1]])
