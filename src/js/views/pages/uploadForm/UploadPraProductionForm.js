@@ -626,25 +626,6 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor={fieldIDs[12]}>VISI PRODUSER (200-400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
-                            <TextAreaWithCounter
-                                name={fieldIDs[12]}
-                                id={fieldIDs[12]}
-                                value={movieVision}
-                                onChange={(e, validation) => {
-                                    setMovieVision(e.target.value)
-                                    let temp = {...inputValidations}
-                                    temp.movieVision = validation
-                                    setInputValidations(temp)
-                                }}
-                                // minLength="200"
-                                // maxLength="400"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <div className="upload-form-field">
                             <label htmlFor={fieldIDs[38]}>ESTIMASI TOTAL TENAGA KERJA YANG TERLIBAT (PEMERAN DAN KRU) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name={fieldIDs[38]}
@@ -759,7 +740,7 @@ const UploadPraProductionForm = () => {
                                 APABILA ADA PERUBAHAN DARI AKTA PENDIRIAN) </Fragment>}
                             subtitle="(File PDF, JPG, JPEG, atau PNG, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[18]}
-                            type={acceptedFileFormatString.all}
+                            type={acceptedFileFormatString.pdf}
                             fileName={aktaPerubahan.name}
                             setData = {(data) => setAktaPerubahanFile({...data})}
                         />
@@ -771,7 +752,7 @@ const UploadPraProductionForm = () => {
                                 APABILA ADA PERUBAHAN DARI AKTA PENDIRIAN) </Fragment>}
                             subtitle="(File PDF, JPG, JPEG, atau PNG, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[40]}
-                            type={acceptedFileFormatString.all}
+                            type={acceptedFileFormatString.pdf}
                             fileName={skKemenkumhamPerubahanFile.name}
                             setData = {(data) => setSKKemenkumhamPerubahanFile({...data})}
                         />
