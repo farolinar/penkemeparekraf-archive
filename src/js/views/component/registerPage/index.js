@@ -24,7 +24,7 @@ const RegisterPage = () => {
                 <div className="register-block-content">
                     <h2>Pra-Produksi</h2>
                     <p>Pendaftaran akan berlangsung mulai dari</p>
-                    <p>3 - 7 November 2021</p>
+                    <p>2 - 7 November 2021</p>
                     <div className="button-wrapper">
                         <a href={ROUTES.registerPraProductionTerms} className="register-button">Syarat Pendaftaran</a>
                         <a href={ROUTES.downloadPraProductionForm} className="register-button">Unduh Formulir</a>

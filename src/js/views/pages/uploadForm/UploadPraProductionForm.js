@@ -1016,7 +1016,7 @@ const UploadPraProductionForm = () => {
                     <li>Akta Pendirian dan SK Kemenkumham</li>
                     <li>Akta Perubahan dan SK Kemenkumham (terkait susunan kepengurusan yang berlaku apabila ada perubahan dari akta pendirian)</li>
                     <li>Salinan KTP Penanggung jawab / Direktur PH</li>
-                    <li>Nomor Induk Berusaha (NIB) dengan nomor KBLI 74141 (Aktivitas Desain Khusus yakni Film, Video, Program TV, Animasi dan Komik)</li>
+                    <li>Nomor Induk Berusaha (NIB)</li>
                     <li>Dokumen Nomor Pokok Wajib Pajak atas nama Badan Usaha</li>
                     <li>Surat Pemberitahuan Tahunan (SPT) Pajak 1 tahun terakhir</li>
                     <li>Dokumen Rekening atas nama Badan Usaha</li>
@@ -1030,16 +1030,13 @@ const UploadPraProductionForm = () => {
                     <li>Surat Pernyataan Rumah Produksi (Lampiran 1)</li>
                     <li>Surat Pernyataan Tanggung Jawab Mutlak (Lampiran 2)</li> 
                     <li>Surat Pernyataan Tidak Menerima Bantuan Pemerintah 
-                        Promosi Film Indonesia dan/atau Bantuan K/L Lainnya 
+                        PEN-Film Skema Lainnya dan/atau Bantuan K/L Lainnya 
                         (Lampiran 3)</li>
-                    <li>Surat Pernyataan Film Masih Dalam Tahap Perencanaan/ 
-                        Produksi  (Lampiran 3)</li>
                     <li>Surat Permohonan Bantuan Pemerintah Pra-Produksi 
 	                    Film Indonesia (Lampiran 4)</li>
                     <li>Ringkasan Profil Pengusul Proposal Permohonan 
 	                    Bantuan Pemerintah Pra-Produksi Film Indonesia (Lampiran 5)</li>
-                    <li>Dokumen Pendukung Proposal Bantuan Pemerintah 
-                        Pra-Produksi Film Indonesia (Lampiran 6)</li>
+                    <li>Proposal Bantuan Pemerintah Pra-Produksi Film Indonesia (Lampiran 6)</li>
                     <li>Rincian Anggaran (RAB) Bantuan Pemerintah 
                         Pra-Produksi Film Indonesia (Lampiran 7)</li>
                 </ul>

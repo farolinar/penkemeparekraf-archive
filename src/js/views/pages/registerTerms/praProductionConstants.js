@@ -6,10 +6,10 @@ export const productionHouseTerms = [
         text: "Rumah Produksi dapat mengajukan maksimal 2 (dua) proposal kegiatan Pra-Produksi film panjang dan/atau film dokumenter panjang pada tahun 2021. Dengan mengunggah Proposal secara terpisah untuk masing masing Judul Film.",
     },
     {
-        text: "Rumah Produksi yang berhak mendaftar telah berbadan usaha dalam bentuk Perseroan Terbatas (PT) yang kepemilikan sahamnya dimiliki oleh  Warga Negara Indonesia (WNI), atau badan hukum Indonesia, dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia, sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan akta pendirian badan usaha",
+        text: "Rumah Produksi yang berhak mendaftar adalah badan usaha berbentuk Perseroan Terbatas (PT) sesuai dengan ketentuan perundang-undangan yang berlaku dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia, serta sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan Akta Pendirian dan SK Pengesahan Badan Hukum Perseroan dari Menteri Hukum dan Hak Asasi Manusia",
     },
     {
-        text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan, dengan melampirkan Akta Perubahan terakhir terkait pergantian tersebut",
+        text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan, dengan melampirkan Akta Perubahan terakhir terkait susunan kepengurusan badan usaha apabila ada perubahan dari akta pendirian",
     },
     {
         text: "Pihak yang mendaftarkan Rumah Produksi tersebut adalah orang yang secara hukum sah mewakili Rumah Produksi sesuai dengan Akta dan/atau AD/ART Rumah Produksi/selevel direksi dan merupakan Warga Negara Indonesia yang dibuktikan dengan kepemilikan Kartu Tanda Penduduk",
@@ -18,7 +18,7 @@ export const productionHouseTerms = [
         text: "Penanggung Jawab Rumah Produksi cakap secara hukum (berusia minimal 21 tahun atau sudah menikah sebelum berusia 21 tahun) yang dibuktikan dengan Kartu Tanda Penduduk (KTP), merujuk pada Pasal 330 KUH Perdata, dan:",
         children: [
             "a.	tidak sedang menjalani hukuman",
-            "b.	berjiwa sehat/berakal sehat"
+            "b.	berjiwa sehat/berakal"
         ]
     },
     {
@@ -43,10 +43,10 @@ export const productionHouseTerms = [
 
 export const documentTerms = [
     {
-        text: "Akta Pendirian Badan Usaha Rumah Produksi dan minimal sudah berdiri sejak 1 Januari 2019",
+        text: "Akta Pendirian dan SK Kemenkumham Badan Usaha Rumah Produksi dan minimal sudah berdiri sejak 1 Januari 2019",
     },
     {
-        text: "Akta Perubahan Badan Usaha Rumah Produksi terbaru terkait nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan",
+        text: "Akta Perubahan dan SK Kemenkumham Badan Usaha Rumah Produksi terbaru terkait nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan",
     },
     {
         text: "Salinan KTP Penanggung jawab Badan Usaha Rumah Produksi",
@@ -58,10 +58,10 @@ export const documentTerms = [
         text: "Dokumen Nomor Pokok Wajib Pajak atas nama Badan Usaha Rumah Produksi",
     },
     {
-        text: "Surat Pemberitahuan Tahunan (SPT) Pajak 1 tahun terakhir Badan Usaha Rumah Produksi",
+        text: "Surat Pemberitahuan Tahunan (SPT) Pajak 1 tahun terakhir Badan Usaha Rumah Produksi, apabila keterangan pada SPT adalah kurang bayar, harap dilampirkan juga bukti setor pembayaran atas kekurangan tersebut",
     },
     {
-        text: "Dokumen Rekening atas nama Badan Usaha Rumah Produksi",
+        text: "Dokumen Rekening atas nama Badan Usaha Rumah Produksi (menampilkan Kop Bank)",
     },
     {
         text: "Profil dan Portofolio Badan Usaha Rumah Produksi",
@@ -72,21 +72,21 @@ export const documentTerms = [
             "a.	Data dokumen dan lampiran pendukung yang diberikan adalah benar, dokumen asli dan dapat dipertanggungjawabkan secara hukum (tidak dalam penguasaan pihak lain dan/atau sengketa hak kekayaan intelektual)",
             "b.	Tidak dalam keadaan Pailit dan/atau dalam keadaan penundaan kewajiban pembayaran hutang (PKPU)",
             "c.	Tidak sedang berada dalam kondisi perkara pengadilan baik secara perdata maupun pidana",
-            "d.	Tidak pernah, tidak sedang dan tidak akan melakukan pengajuan dan/atau menerima bantuan sejenis dari pemerintah pusat maupun daerah, dan/atau Badan Usaha Milik Negara (BUMN) pada tahun anggaran yang sama",
+            "d.	Tidak pernah, tidak sedang dan tidak akan melakukan pengajuan dan/atau menerima bantuan sejenis dari pemerintah pusat maupun daerah, dan/atau Badan Usaha Milik Negara (BUMN) pada tahun anggaran 2021",
             "e.	Tidak ada konflik internal dan/atau kepengurusan ganda, serta tidak berafiliasi kepada salah satu Partai Politik",
             "f.	Bersedia mengikuti seluruh proses kurasi yang diadakan oleh Kementerian Pariwisata dan Ekonomi Kreatif/Badan Pariwisata dan Ekonomi Kreatif",
             "g.	Menerima kriteria dan persyaratan pemilihan",
-            "h.	Menerima seluruh hasil yang akan diputuskan tanpa ada upaya apapun termasuk dan tidak terbatas pada upaya hukum maupun upaya lain yang berpotensi menimbulkan kerugian bagi Tim Kurator dan/atau Kemenparekraf/Baparekraf",
-            "i.	Memahami ketentuan pengajuan proposal mengenai Anggaran Bantuan Pemerintah Pra-Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan. Rumah Produksi yang melakukan pendaftaran pada skema  Pra-Produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kemenparekraf/ Baparekraf apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia.",
+            "h. Menerima seluruh hasil yang akan diputuskan tanpa ada upaya apapun termasuk dan tidak terbatas pada upaya hukum maupun upaya lain yang berpotensi menimbulkan kerugian bagi Tim Kurator dan/atau Kemenparekraf/Baparekraf",
+            "i. Memahami ketentuan pengajuan proposal mengenai Anggaran Bantuan Pemerintah Pra-Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan. Rumah Produksi yang melakukan pendaftaran pada skema  Pra-Produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kemenparekraf/ Baparekraf apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia.",
             "j.	Sanggup untuk bertanggung jawab baik secara perdata maupun secara pidana terhadap seluruh dana Bantuan Pemerintah yang diberikan",
         ]
     },
     {
         text: "Surat Pernyataan Tanggung Jawab Mutlak (format pada Unduh Dokumen Pra-Produksi Lampiran 2), berisi tentang:",
         children: [
-            "a.	Wajib melaporkan apabila mendapatkan pembiayaan dari investor atau perusahaan lain dalam pelaksanaan Pra-Produksi Film yang diajukan dan pembiayaan tersebut bukan untuk membiayai item yang sama",
+            "a. Wajib melaporkan apabila mendapatkan pembiayaan dari investor atau perusahaan lain dalam pelaksanaan Pra-Produksi Film yang diajukan dan pembiayaan tersebut bukan untuk membiayai item yang sama",
             "b.	Wajib menyerahkan laporan pelaksanaan kegiatan yang dilengkapi dengan dokumentasi dan menyerahkan laporan penggunaan anggaran yang dilengkapi dengan kuitansi/invoice/nota/bukti pembayaran sah lainnya",
-            "c.	Sanggup untuk sesegera mungkin menggunakan dana Bantuan Pemerintah untuk melaksanakan kegiatan pra-produksi film dalam periode pelaksanaan program sesuai dengan rencana penggunaan anggaran yang disetujui ",
+            "c.	Sanggup untuk sesegera mungkin menggunakan dana Bantuan Pemerintah untuk melaksanakan kegiatan pra-produksi film dalam periode pelaksanaan program sesuai dengan rencana penggunaan anggaran yang disetujui",
             "d.	Wajib mengikuti proses audit sehubungan dengan penggunaan dana Bantuan Pemerintah yang diberikan",
             "e.	Bersedia untuk mengembalikan sisa anggaran Bantuan Pemerintah yang tidak terpakai, dengan melampirkan bukti setoran kepada kas negara dan disertai dengan laporan justifikasi",
             "f.	Bersedia untuk mengembalikan seluruh dana Bantuan Pemerintah apabila ditemukan terdapat kecurangan, dan/atau tidak digunakan dana Bantuan Pemerintah tersebut sesuai dengan peruntukkan yang telah ditetapkan",
@@ -110,51 +110,50 @@ export const documentTerms = [
             "c.	Ulasan tentang target penonton (maksimal 400 kata)",
             "d.	Director’s Statement (200-400 kata)",
             "e.	Visi produser (200-400 kata)",
-            "f.	Rencana Pendanaan Produksi Film",
-            "g.	Rencana Distribusi atau Penayangan Film ",
-            "h.	Tautan daring dari contoh hasil karya (portofolio) Sutradara",
-            "i.	Tautan daring dari contoh hasil karya (portofolio) Produser",
+            "f. Estimasi Total Tenaga Kerja yang terlibat (pemeran dan kru)",            
+            "g.	Rencana Pendanaan Produksi Film",
+            "h.	Rencana Distribusi atau Penayangan Film",
+            "i.	Tautan daring dari contoh hasil karya (portofolio) Sutradara",
+            "j.	Tautan daring dari contoh hasil karya (portofolio) Produser",
         ]
     },
     {
         text: "Proposal Bantuan Pemerintah Pra-Produksi Film Indonesia (format pada Unduh Dokumen Pra-Produksi Lampiran 6), berisi tentang:",
         children: [
-            "a.  INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Daftar Nama Pemain Utama dan Pendukung",
-            "b.  Logline (3 kalimat) dan Sinopsis (200 – 400 kata)",
-            "c.  Ulasan tentang Siapa Target Penonton (max 400 kata)",
-            "d.  Director’s Statement (200-400 kata)",
-            "e.  Visi Produser (200-400 kata)",
-            "f.	Total tenaga kerja yang akan dilibatkan (cast + crew)",
-            "g.	Rincian RAB Pra-Produksi (lihat ruang lingkup kegiatan yang dapat dibiayai)",
-            "h.	Detail rencana dan timeline produksi proyek film yang diajukan",
-            "i.	Portofolio produksi film  Rumah Produksi selama tahun 2019-2021",
+            "a. INFORMASI DASAR: Judul, Durasi Film, Tahun Produksi, Genre, Nama Penulis, Nama Sutradara, Nama Produser, Rencana Nama Pemain Utama dan Pendukung ",
+            "b. Logline (3 kalimat) dan Sinopsis (200 – 400 kata)",
+            "c. Ulasan tentang Siapa Target Penonton (max 400 kata)",
+            "d. Director’s Statement (200-400 kata)",
+            "e. Visi Produser (200-400 kata)",
+            "f.	Estimasi total tenaga kerja yang terlibat (pemeran dan kru)",
+            "g. Rencana Pendanaan Produksi Film",
+            "h. Rencana Distribusi atau Penayangan Film",
+            "i. Nilai RAB (Rincian Anggaran Biaya) pra-produksi film",
+            "j. Detail rencana dan timeline produksi film yang diajukan",
+            "k. Portofolio produksi film selama tahun 2019-2021",
             "Dokumen dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film."
         ]
     },
-    {
-        text: <Fragment>
-                Rincian Anggaran Biaya Bantuan Pemerintah Pra-Produksi Film Indonesia (format pada Unduh Dokumen Pra-Produksi Lampiran 7)
-                <br />
-                <br />
-                Ruang Lingkup Penggunaan Dana Bantuan Pemerintah Pra-Produksi Film Indonesia
-                <br />
-                <br />
-                <img src={TableStakeHolder} style={{width: "100%"}} />
-                <br />
-                <br />
-                Yang tidak termasuk dalam Penggunaan Dana Bantuan Pemerintah Pra-Produksi Film Indonesia:
-            </Fragment>,
+        {
+        text: "Rincian Anggaran Biaya Bantuan Pemerintah Pra-Produksi Film Indonesia (format pada Unduh Dokumen Pra-Produksi Lampiran 7)",
         children: [
-            "a.	Pembelian belanja barang dalam bentuk apapun",
-            "b.	Pembelian lahan, tanah untuk usaha",
-            "c.	Pembayaran atas angsuran pinjaman kredit dan pinjaman lainnya",
-            "d.	Jaminan atas pinjaman pada pihak lain dalam bentuk apapun",
-            "e.	Perjalanan dalam negeri untuk keperluan pribadi",
-            "f.	Perjalanan luar negeri",
-            "g.	Penggunaan dana yang tidak terkait biaya Pra-Produksi Film",
-            "h.	Penggunaan dana untuk penambahan aset tetap untuk perusahaan",
-            "i.	Pembayaran gaji atau upah dari pengurus perusahaan, pemilik atau pemegang saham perusahaan",
-            "j.	Pembayaran kontrak pemeran & kru, sewa alat dan/atau kegiatan lainnya yang tidak dapat dibuktikan hasil proses kegiatannya dalam jangka waktu mulainya penandatanganan PKS hingga pelaporan kegiatan atau di akhir tahun anggaran 2021",
+            "Ruang Lingkup Penggunaan Dana Bantuan Pemerintah Pra-Produksi Film Indonesia",
+            "a. Script Development",
+            "b. Storyboard Development",
+            "c. Survey Lokasi",
+            "d. Workshop pra-produksi",
+            "Yang tidak termasuk dalam Penggunaan Dana Bantuan Pemerintah Pra-Produksi Film Indonesia:",
+            "a. Pembelian belanja barang dalam bentuk apapun",
+            "b. Pembelian lahan, tanah untuk usaha",
+            "c. Pembayaran atas angsuran pinjaman kredit dan pinjaman lainnya",
+            "d. Jaminan atas pinjaman pada pihak lain dalam bentuk apapun",
+            "e. Perjalanan dalam negeri untuk keperluan pribadi",
+            "f. Perjalanan luar negeri",
+            "g. Penggunaan dana yang tidak terkait biaya Pra-Produksi Film",
+            "h. Penggunaan dana untuk penambahan aset tetap untuk perusahaan",
+            "i. Pembayaran gaji atau upah dari pengurus perusahaan, pemilik atau pemegang saham perusahaan",
+            "j. Pembayaran kontrak pemeran & kru, sewa alat dan/atau kegiatan lainnya yang tidak dapat dibuktikan hasil proses kegiatannya dalam jangka waktu mulainya penandatanganan PKS hingga pelaporan kegiatan atau di akhir tahun anggaran 2021",
+            "Dokumen dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film."
         ]
     },
     {
