@@ -553,18 +553,6 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <div className="upload-form-field">
-                            <label htmlFor={fieldIDs[9]}>ULASAN TARGET PENONTON (MAKSIMAL 400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
-                            <TextAreaWithCounter
-                                name={fieldIDs[9]}
-                                id={fieldIDs[9]}
-                                value={movieTarget}
-                                onChange={(e) => setMovieTarget(e.target.value)}
-                            />
-                        </div>
-                    </div>
-
-                    <div className="upload-form-content-wrapper">
-                        <div className="upload-form-field">
                             <label htmlFor={fieldIDs[10]}>SINOPSIS (200-400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
                             <TextAreaWithCounter
                                 name={fieldIDs[10]}
@@ -579,6 +567,18 @@ const UploadPraProductionForm = () => {
                                 // minLength="200"
                                 // maxLength="400"
                                 valida
+                            />
+                        </div>
+                    </div>
+
+                    <div className="upload-form-content-wrapper">
+                        <div className="upload-form-field">
+                            <label htmlFor={fieldIDs[9]}>ULASAN TARGET PENONTON (MAKSIMAL 400 KATA) <span style={{color:"var(--main-red)"}}>*</span></label>
+                            <TextAreaWithCounter
+                                name={fieldIDs[9]}
+                                id={fieldIDs[9]}
+                                value={movieTarget}
+                                onChange={(e) => setMovieTarget(e.target.value)}
                             />
                         </div>
                     </div>
@@ -711,7 +711,7 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={<Fragment>UNGGAH AKTA PENDIRIAN <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
+                            title={<Fragment>UNGGAH AKTA PENDIRIAN (MINIMAL BERDIRI SEJAK 1 JANUARI 2019) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[17]}
                             type={acceptedFileFormatString.pdf}
@@ -768,8 +768,7 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={<Fragment>UNGGAH NOMOR INDUK BERUSAHA (NIB) DENGAN NOMOR KBLI 74141
-                                (AKTIVITAS DESAIN KHUSUS YAKNI FILM, VIDEO, PROGRAM TV, ANIMASI DAN KOMIK) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
+                            title={<Fragment>UNGGAH NOMOR INDUK BERUSAHA (NIB) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[20]}
                             type={acceptedFileFormatString.pdf}
@@ -804,7 +803,10 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={<Fragment>UNGGAH DOKUMEN REKENING ATAS NAMA BADAN USAHA <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
+                            // title={<Fragment>UNGGAH DOKUMEN REKENING ATAS NAMA BADAN USAHA <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
+                            title={<Fragment>UNGGAH DOKUMEN REKENING ATAS NAMA BADAN USAHA <span style={{color: "var(--main-red)"}}>*</span>
+                                <br /><span style={{textTransform: "none"}}>(Dokumen menampilkan KOP Bank)</span>
+                            </Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[23]}
                             type={acceptedFileFormatString.pdf}
@@ -891,7 +893,7 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={<Fragment>Unggah Dokumen Pendukung Proposal Bantuan Pemerintah Pra-Produksi
+                            title={<Fragment>Unggah Proposal Bantuan Pemerintah Pra-Produksi
                                 Film Indonesia (Lampiran 6) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[30]}
@@ -1016,7 +1018,7 @@ const UploadPraProductionForm = () => {
                     <li>Ringkasan Profil Pengusul Proposal Permohonan 
 	                    Bantuan Pemerintah Pra-Produksi Film Indonesia (Lampiran 5)</li>
                     <li>Proposal Bantuan Pemerintah Pra-Produksi Film Indonesia (Lampiran 6)</li>
-                    <li>Rincian Anggaran (RAB) Bantuan Pemerintah 
+                    <li>Rincian Anggaran Biaya (RAB) Bantuan Pemerintah 
                         Pra-Produksi Film Indonesia (Lampiran 7)</li>
                 </ul>
             </div>

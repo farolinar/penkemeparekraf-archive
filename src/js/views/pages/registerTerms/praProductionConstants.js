@@ -3,13 +3,13 @@ import TableStakeHolder from "./table-stakeholder-pra-production.png";
 
 export const productionHouseTerms = [
     {
-        text: "Rumah Produksi dapat mengajukan maksimal 2 (dua) proposal kegiatan Pra-Produksi film panjang dan/atau film dokumenter panjang pada tahun 2021. Dengan mengunggah Proposal secara terpisah untuk masing masing Judul Film.",
+        text: "Rumah Produksi dapat mengajukan maksimal 2 (dua) proposal kegiatan Pra-Produksi film panjang dan/atau film dokumenter panjang pada tahun 2021. Dengan mengunggah Proposal secara terpisah untuk masing-masing Judul Film",
     },
     {
         text: "Rumah Produksi yang berhak mendaftar adalah badan usaha berbentuk Perseroan Terbatas (PT) sesuai dengan ketentuan perundang-undangan yang berlaku dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia, serta sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan Akta Pendirian dan SK Pengesahan Badan Hukum Perseroan dari Menteri Hukum dan Hak Asasi Manusia",
     },
     {
-        text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan, dengan melampirkan Akta Perubahan terakhir terkait susunan kepengurusan badan usaha apabila ada perubahan dari akta pendirian",
+        text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan, dengan melampirkan Akta Perubahan terakhir terkait susunan kepengurusan badan usaha apabila ada perubahan dari Akta Pendirian",
     },
     {
         text: "Pihak yang mendaftarkan Rumah Produksi tersebut adalah orang yang secara hukum sah mewakili Rumah Produksi sesuai dengan Akta dan/atau AD/ART Rumah Produksi/selevel direksi dan merupakan Warga Negara Indonesia yang dibuktikan dengan kepemilikan Kartu Tanda Penduduk",
@@ -34,7 +34,7 @@ export const productionHouseTerms = [
         text: "Wajib melengkapi persyaratan administrasi dokumen sesuai format yang telah ditentukan",
     },
     {
-        text: "Rumah Produksi yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam pemerintahan",
+        text: "Rumah Produksi yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam Pemerintahan",
     },
     {
         text: "Rumah Produksi sebagai pendaftar maupun penerima bantuan tidak akan dipungut biaya dalam keseluruhan proses ini mulai dari persiapan, pelaksanaan hingga evaluasi.",
@@ -43,7 +43,7 @@ export const productionHouseTerms = [
 
 export const documentTerms = [
     {
-        text: "Akta Pendirian dan SK Kemenkumham Badan Usaha Rumah Produksi dan minimal sudah berdiri sejak 1 Januari 2019",
+        text: "Akta Pendirian dan SK Kemenkumham Badan Usaha Rumah Produksi yang minimal sudah berdiri sejak 1 Januari 2019",
     },
     {
         text: "Akta Perubahan dan SK Kemenkumham Badan Usaha Rumah Produksi terbaru terkait nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan",
@@ -100,7 +100,7 @@ export const documentTerms = [
         text: "Surat Permohonan Bantuan Pemerintah Pra-Produksi Film Indonesia (format pada Unduh Dokumen Pra-Produksi Lampiran 4)",
     },
     {
-        text: "Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah Pra-Produksi Film Indonesia (Lampiran 5)",
+        text: "Ringkasan Profil Pengusul Proposal Permohonan Bantuan Pemerintah Pra-Produksi Film Indonesia (format pada Unduh Dokumen Pra-Produksi Lampiran 5)",
     },
     {
         text: "Proposal yang akan diisi pada form yang tersedia di website pendaftaran Bantuan Pemerintah bagi Pra-Produksi Film Indonesia, berisi informasi sebagai berikut :",
@@ -150,10 +150,10 @@ export const documentTerms = [
             "e. Perjalanan dalam negeri untuk keperluan pribadi",
             "f. Perjalanan luar negeri",
             "g. Penggunaan dana yang tidak terkait biaya Pra-Produksi Film",
-            "h. Penggunaan dana untuk penambahan aset tetap untuk perusahaan",
-            "i. Pembayaran gaji atau upah dari pengurus perusahaan, pemilik atau pemegang saham perusahaan",
-            "j. Pembayaran kontrak pemeran & kru, sewa alat dan/atau kegiatan lainnya yang tidak dapat dibuktikan hasil proses kegiatannya dalam jangka waktu mulainya penandatanganan PKS hingga pelaporan kegiatan atau di akhir tahun anggaran 2021",
-            "Dokumen dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film."
+            // "h. Penggunaan dana untuk penambahan aset tetap untuk perusahaan",
+            "h. Pembayaran gaji atau upah dari pengurus perusahaan, pemilik atau pemegang saham perusahaan",
+            "i. Pembayaran kontrak pemeran & kru, sewa alat dan/atau kegiatan lainnya yang tidak dapat dibuktikan hasil proses kegiatannya dalam jangka waktu mulainya penandatanganan PKS hingga pelaporan kegiatan atau di akhir tahun anggaran 2021",
+            // "Dokumen dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film."
         ]
     },
     {
