@@ -27,7 +27,7 @@ const RegisterTerms = () => {
                 </div>
             </div>
             {showOne && <Fragment><div className="register-terms-content">
-                <ul>
+                <ol>
                     {
                         productionHouseTerms.map((term, idx) => {
                             return <li key={`register-pra-production-terms-main-${idx}`}>
@@ -52,7 +52,7 @@ const RegisterTerms = () => {
                             </li>
                         })
                     }
-                </ul>
+                </ol>
             </div>
             </Fragment>}
 
@@ -77,7 +77,7 @@ const RegisterTerms = () => {
                     </div>
                 </div>
                 <p className="register-terms-content-subtitle">Wajib melampirkan dokumen berikut :</p>
-                <ul>
+                <ol>
                     {
                         documentTerms.map((term, idx) => {
                             return <li key={`register-pra-production-terms-main-${idx}`}>
@@ -102,7 +102,7 @@ const RegisterTerms = () => {
                             </li>
                         })
                     }
-                </ul>
+                </ol>
             </div>}
 
             <div 
@@ -116,7 +116,7 @@ const RegisterTerms = () => {
             </div>
 
             {showThree && <Fragment><div className="register-terms-content">
-                <ul>
+                <ol>
                     {
                         movieTerms.map((term, idx) => {
                             return <li key={`register-pra-production-terms-main-${idx}`}>
@@ -141,7 +141,7 @@ const RegisterTerms = () => {
                             </li>
                         })
                     }
-                </ul>
+                </ol>
             </div>
             </Fragment>}
         </div>
