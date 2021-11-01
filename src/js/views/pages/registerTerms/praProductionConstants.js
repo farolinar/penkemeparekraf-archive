@@ -37,13 +37,13 @@ export const productionHouseTerms = [
         text: "Rumah Produksi yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam Pemerintahan",
     },
     {
-        text: "Rumah Produksi sebagai pendaftar maupun penerima bantuan tidak akan dipungut biaya dalam keseluruhan proses ini mulai dari persiapan, pelaksanaan hingga evaluasi.",
+        text: "Rumah Produksi sebagai pendaftar maupun penerima bantuan tidak akan dipungut biaya dalam keseluruhan proses ini mulai dari persiapan, pelaksanaan hingga evaluasi",
     },
 ]
 
 export const documentTerms = [
     {
-        text: "Akta Pendirian dan SK Kemenkumham Badan Usaha Rumah Produksi yang minimal sudah berdiri sejak 1 Januari 2019",
+        text: "Akta Pendirian dan SK Kemenkumham Badan Usaha Rumah Produksi yang minimal sudah berdiri sebelum tanggal 1 Januari 2019",
     },
     {
         text: "Akta Perubahan dan SK Kemenkumham Badan Usaha Rumah Produksi terbaru terkait nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan",
@@ -58,7 +58,7 @@ export const documentTerms = [
         text: "Dokumen Nomor Pokok Wajib Pajak atas nama Badan Usaha Rumah Produksi",
     },
     {
-        text: "Surat Pemberitahuan Tahunan (SPT) Pajak 1 tahun terakhir Badan Usaha Rumah Produksi, apabila keterangan pada SPT adalah kurang bayar, harap dilampirkan juga bukti setor pembayaran atas kekurangan tersebut",
+        text: "Surat Pemberitahuan Tahunan (SPT) Pajak 1 tahun terakhir Badan Usaha Rumah Produksi. Apabila keterangan pada SPT adalah kurang bayar, harap dilampirkan juga bukti setor pembayaran atas kekurangan tersebut",
     },
     {
         text: "Dokumen Rekening atas nama Badan Usaha Rumah Produksi (menampilkan Kop Bank)",
@@ -77,7 +77,7 @@ export const documentTerms = [
             "f.	Bersedia mengikuti seluruh proses kurasi yang diadakan oleh Kementerian Pariwisata dan Ekonomi Kreatif/Badan Pariwisata dan Ekonomi Kreatif",
             "g.	Menerima kriteria dan persyaratan pemilihan",
             "h. Menerima seluruh hasil yang akan diputuskan tanpa ada upaya apapun termasuk dan tidak terbatas pada upaya hukum maupun upaya lain yang berpotensi menimbulkan kerugian bagi Tim Kurator dan/atau Kemenparekraf/Baparekraf",
-            "i. Memahami ketentuan pengajuan proposal mengenai Anggaran Bantuan Pemerintah Pra-Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan. Rumah Produksi yang melakukan pendaftaran pada skema  Pra-Produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kemenparekraf/ Baparekraf apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia.",
+            "i. Memahami ketentuan pengajuan proposal mengenai Anggaran Bantuan Pemerintah Pra-Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan. Rumah Produksi yang melakukan pendaftaran pada skema  Pra-Produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kemenparekraf/ Baparekraf apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia",
             "j.	Sanggup untuk bertanggung jawab baik secara perdata maupun secara pidana terhadap seluruh dana Bantuan Pemerintah yang diberikan",
         ]
     },
@@ -135,7 +135,7 @@ export const documentTerms = [
         ]
     },
         {
-        text: "Rincian Anggaran Biaya Bantuan Pemerintah Pra-Produksi Film Indonesia (format pada Unduh Dokumen Pra-Produksi Lampiran 7)",
+        text: "Rincian Anggaran Biaya Bantuan Pemerintah Pra-Produksi Film Indonesia, dengan melampirkan data pendukungnya yaitu justifikasi/dasar pembentukan harga dalam RAB (format pada Unduh Dokumen Pra-Produksi Lampiran 7)",
         children: [
             <b>Ruang Lingkup Penggunaan Dana Bantuan Pemerintah Pra-Produksi Film Indonesia</b>,
             "a. Script Development",
@@ -150,10 +150,8 @@ export const documentTerms = [
             "e. Perjalanan dalam negeri untuk keperluan pribadi",
             "f. Perjalanan luar negeri",
             "g. Penggunaan dana yang tidak terkait biaya Pra-Produksi Film",
-            // "h. Penggunaan dana untuk penambahan aset tetap untuk perusahaan",
             "h. Pembayaran gaji atau upah dari pengurus perusahaan, pemilik atau pemegang saham perusahaan",
             "i. Pembayaran kontrak pemeran & kru, sewa alat dan/atau kegiatan lainnya yang tidak dapat dibuktikan hasil proses kegiatannya dalam jangka waktu mulainya penandatanganan PKS hingga pelaporan kegiatan atau di akhir tahun anggaran 2021",
-            // "Dokumen dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film."
         ]
     },
     {
