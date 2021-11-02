@@ -182,6 +182,6 @@ export const movieTerms = [
         text: "Konten film merujuk pada UU no. 33 tahun 2009 tentang perfilman dan tidak mengandung adegan pornografi, kekerasan, radikal (SARA) dan hal-hal lain yang dilarang dalam peraturan perundangan tersebut",
     },
     {
-        text: "Hak Kekayaan Intelektual tetap dimiliki oleh pihak dari Rumah Produksi atau Komunitas Perfilman, karena dana Pemulihan Ekonomi Nasional Perfilman merupakan bantuan pemerintah dalam keadaan Coronavirus Disease 2019. Pihak Kemenparekraf/Baparekraf dan/atau instansi negara lainnya tetap dapat menggunakan materi pada kegiatan-kegiatan kementerian/lembaga/instansi pemerintah non komersial",
+        text: "Hak Kekayaan Intelektual tetap dimiliki oleh pihak dari Rumah Produksi atau Komunitas Perfilman, karena dana Pemulihan Ekonomi Nasional Perfilman merupakan bantuan pemerintah dalam keadaan Coronavirus Disease 2019. Pihak Kemenparekraf/Baparekraf dan/atau instansi negara lainnya tetap dapat menggunakan materi pada kegiatan-kegiatan kementerian/lembaga/instansi pemerintah yang bersifat non-komersial tanpa izin tertulis dan/atau lisan dari Penerima Bantuan",
     },
 ]
