@@ -6,11 +6,11 @@ import "./DownloadForm.scss";
 const MAIN_FORMS = [
     {
         name: "Unduh Lampiran 1 - Format Surat Pernyataan Rumah Produksi",
-        url: "https://drive.google.com/uc?export=download&id=1frt_bTZmjjexJaHXzj5Am9IKpHXXm3zg"
+        url: "https://drive.google.com/uc?export=download&id=1RMDFzUlH4nPqi_Ol7OCR7pUK3Qbm838E"
     },
     {
         name: "Unduh Lampiran 2 - Format Surat Pernyataan Tanggung Jawab Mutlak",
-        url: "https://drive.google.com/uc?export=download&id=1FWSLges3SAERYgX2v1uvKeIBfwjoel-6"
+        url: "https://drive.google.com/uc?export=download&id=1VpsPfckV0ELXQ8eqTs9s4aPFD72pCW6h"
     },
     {
         name: "Unduh Lampiran 3 - Format Surat Pernyataan Tidak Menerima Bantuan Pemerintah PEN-Film Skema Lainnya dan/atau Bantuan K/L Lainnya",
@@ -26,7 +26,7 @@ const MAIN_FORMS = [
     },
     {
         name: "Unduh Lampiran 6 - Format Proposal Bantuan Pemerintah Pra-Produksi Film Indonesia",
-        url: "https://drive.google.com/uc?export=download&id=1yc3LsMyMJdwoGwfCdOMnXA_jxmoC5Utv"
+        url: "https://drive.google.com/uc?export=download&id=1AYhlQPOnR91wefv2Dnj2o4N-QLkfhEFJ"
     },
     {
         name: "Unduh Lampiran 7 - Format Rincian Anggaran Biaya (RAB) Bantuan Pemerintah Pra-Produksi Film Indonesia",
