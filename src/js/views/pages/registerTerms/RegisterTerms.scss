@@ -74,7 +74,7 @@
             }
         }
 
-        ul {
+        ul, ol {
             list-style: auto;
             margin: 0 12vw 50px;
             li {
@@ -83,7 +83,7 @@
             }
             .register-term-children {
                 margin-left: 2vw;
-                ul {
+                ul, ol {
                     margin: 0;
                 }
             }
