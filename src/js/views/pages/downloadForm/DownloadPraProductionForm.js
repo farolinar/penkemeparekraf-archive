@@ -26,7 +26,7 @@ const MAIN_FORMS = [
     },
     {
         name: "Unduh Lampiran 6 - Format Proposal Bantuan Pemerintah Pra-Produksi Film Indonesia",
-        url: "https://drive.google.com/uc?export=download&id=1xplTE0TOw30LhrOLuik-5N-D5tvbs-7V"
+        url: "https://drive.google.com/uc?export=download&id=1yc3LsMyMJdwoGwfCdOMnXA_jxmoC5Utv"
     },
     {
         name: "Unduh Lampiran 7 - Format Rincian Anggaran Biaya (RAB) Bantuan Pemerintah Pra-Produksi Film Indonesia",
