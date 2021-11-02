@@ -17,8 +17,8 @@ export const productionHouseTerms = [
     {
         text: "Penanggung Jawab Rumah Produksi cakap secara hukum (berusia minimal 21 tahun atau sudah menikah sebelum berusia 21 tahun) yang dibuktikan dengan Kartu Tanda Penduduk (KTP), merujuk pada Pasal 330 KUH Perdata, dan:",
         children: [
-            "a.	tidak sedang menjalani hukuman",
-            "b.	berjiwa sehat/berakal"
+            "a.	Tidak sedang menjalani pidana penjara dengan hukuman badan atau hukuman percobaan",
+            "b.	Berjiwa sehat/berakal"
         ]
     },
     {
