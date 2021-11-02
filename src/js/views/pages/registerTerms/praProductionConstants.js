@@ -130,7 +130,7 @@ export const documentTerms = [
             "h. Rencana Distribusi atau Penayangan Film",
             "i. Nilai RAB (Rincian Anggaran Biaya) pra-produksi film",
             "j. Detail rencana dan timeline produksi film yang diajukan",
-            "k. Portofolio produksi film selama tahun 2019-2021",
+            "k. Portofolio produksi film selama tahun 2020-2021",
             "Dokumen dibuat dalam bentuk PDF dengan urutan yang benar dan lengkap serta halaman muka yang merujuk dengan jelas judul film."
         ]
     },
