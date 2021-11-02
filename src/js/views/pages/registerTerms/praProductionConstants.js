@@ -6,7 +6,7 @@ export const productionHouseTerms = [
         text: "Rumah Produksi dapat mengajukan maksimal 2 (dua) proposal kegiatan Pra-Produksi film panjang dan/atau film dokumenter panjang pada tahun 2021. Dengan mengunggah Proposal secara terpisah untuk masing-masing Judul Film",
     },
     {
-        text: "Rumah Produksi yang berhak mendaftar adalah badan usaha berbentuk Perseroan Terbatas (PT) sesuai dengan ketentuan perundang-undangan yang berlaku dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia, serta sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan Akta Pendirian dan SK Pengesahan Badan Hukum Perseroan dari Menteri Hukum dan Hak Asasi Manusia",
+        text: "Rumah Produksi yang berhak mendaftar adalah badan usaha berbentuk Perseroan Terbatas (PT) sesuai dengan ketentuan perundang-undangan yang berlaku dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia (Kemenkumham), serta sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan Akta Pendirian dan SK Pengesahan Badan Hukum Perseroan dari Menteri Hukum dan Hak Asasi Manusia",
     },
     {
         text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan, dengan melampirkan Akta Perubahan terakhir terkait susunan kepengurusan badan usaha apabila ada perubahan dari Akta Pendirian",
@@ -37,7 +37,7 @@ export const productionHouseTerms = [
         text: "Rumah Produksi yang terpilih sebagai penerima bantuan direkomendasikan untuk menggunakan jasa konsultan keuangan untuk memastikan berkas pertanggungjawaban administrasi dan keuangan lengkap dan sesuai dengan aturan yang ada dalam Pemerintahan",
     },
     {
-        text: "Rumah Produksi sebagai pendaftar maupun penerima bantuan tidak akan dipungut biaya dalam keseluruhan proses ini mulai dari persiapan, pelaksanaan hingga evaluasi",
+        text: "Rumah Produksi sebagai pendaftar maupun penerima bantuan tidak dipungut biaya dalam keseluruhan proses ini mulai dari persiapan, pelaksanaan hingga evaluasi",
     },
 ]
 
@@ -173,7 +173,7 @@ export const movieTerms = [
         text: "Film Panjang dan/atau Film Dokumenter Panjang yang akan memasuki tahap Pra-Produksi pada tahun 2021",
     },
     {
-        text: "Film berdurasi cukup panjang untuk diputar sebagai film utama atau satu-satunya film pada sebuah acara pemutaran film dengan durasi minimal 80 menit",
+        text: "Film utama atau satu-satunya film pada sebuah acara pemutaran film dengan durasi minimal 80 menit",
     },
     {
         text: "Film yang didaftarkan wajib menyelesaikan pelaksanaan Pra-Produksi Film dari dana bantuan pada periode program sampai dengan 15 Desember 2021 (dimulai sejak tanggal penandatangan Perjanjian Kerjasama)",
