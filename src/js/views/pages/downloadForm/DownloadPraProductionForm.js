@@ -6,7 +6,7 @@ import "./DownloadForm.scss";
 const MAIN_FORMS = [
     {
         name: "Unduh Lampiran 1 - Format Surat Pernyataan Rumah Produksi",
-        url: "https://drive.google.com/uc?export=download&id=1RMDFzUlH4nPqi_Ol7OCR7pUK3Qbm838E"
+        url: "https://drive.google.com/uc?export=download&id=1Vvc4HaQRznVhD47PHlh3rQK2mHkkzQB0"
     },
     {
         name: "Unduh Lampiran 2 - Format Surat Pernyataan Tanggung Jawab Mutlak",
