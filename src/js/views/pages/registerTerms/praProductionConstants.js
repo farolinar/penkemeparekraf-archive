@@ -6,7 +6,7 @@ export const productionHouseTerms = [
         text: "Rumah Produksi dapat mengajukan maksimal 2 (dua) proposal kegiatan Pra-Produksi film panjang dan/atau film dokumenter panjang pada tahun 2021 dengan mengunggah Proposal secara terpisah untuk masing-masing Judul Film",
     },
     {
-        text: "Rumah Produksi yang berhak mendaftar adalah badan usaha berbentuk Perseroan Terbatas (PT) sesuai dengan ketentuan perundang-undangan yang berlaku dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia (Kemenkumham), serta sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan Akta Pendirian dan SK Pengesahan Badan Hukum Perseroan dari Menteri Hukum dan Hak Asasi Manusia",
+        text: "Rumah Produksi yang berhak mendaftar adalah badan usaha berbentuk Perseroan Terbatas (PT) sesuai dengan ketentuan perundang-undangan yang berlaku dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia (Kemenkumham), serta sudah berdiri sebelum tanggal 1 Januari 2020 yang dibuktikan dengan Akta Pendirian dan SK Pengesahan Badan Hukum Perseroan dari Menteri Hukum dan Hak Asasi Manusia",
     },
     {
         text: "Rumah Produksi wajib menyampaikan secara resmi nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan, dengan melampirkan Akta Perubahan terakhir terkait susunan kepengurusan badan usaha apabila ada perubahan dari Akta Pendirian",
@@ -43,7 +43,7 @@ export const productionHouseTerms = [
 
 export const documentTerms = [
     {
-        text: "Akta Pendirian dan SK Kemenkumham Badan Usaha Rumah Produksi yang minimal sudah berdiri sebelum tanggal 1 Januari 2019",
+        text: "Akta Pendirian dan SK Kemenkumham Badan Usaha Rumah Produksi yang minimal sudah berdiri sebelum tanggal 1 Januari 2020",
     },
     {
         text: "Akta Perubahan dan SK Kemenkumham Badan Usaha Rumah Produksi terbaru terkait nama pemegang saham, nama dewan komisaris, nama dewan direksi, dan nama eksekutif penanggung jawab perusahaan",
