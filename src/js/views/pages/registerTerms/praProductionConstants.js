@@ -3,7 +3,7 @@ import TableStakeHolder from "./table-stakeholder-pra-production.png";
 
 export const productionHouseTerms = [
     {
-        text: "Rumah Produksi dapat mengajukan maksimal 2 (dua) proposal kegiatan Pra-Produksi film panjang dan/atau film dokumenter panjang pada tahun 2021. Dengan mengunggah Proposal secara terpisah untuk masing-masing Judul Film",
+        text: "Rumah Produksi dapat mengajukan maksimal 2 (dua) proposal kegiatan Pra-Produksi film panjang dan/atau film dokumenter panjang pada tahun 2021 dengan mengunggah Proposal secara terpisah untuk masing-masing Judul Film",
     },
     {
         text: "Rumah Produksi yang berhak mendaftar adalah badan usaha berbentuk Perseroan Terbatas (PT) sesuai dengan ketentuan perundang-undangan yang berlaku dan terdaftar di Kementerian Hukum dan HAM Republik Indonesia (Kemenkumham), serta sudah berdiri sebelum tanggal 1 Januari 2019 yang dibuktikan dengan Akta Pendirian dan SK Pengesahan Badan Hukum Perseroan dari Menteri Hukum dan Hak Asasi Manusia",
@@ -25,7 +25,7 @@ export const productionHouseTerms = [
         text: "Wajib memiliki Nomor Induk Berusaha (NIB) yang terdaftar pada sistem OSS (Online Single Submission) – Kementerian Investasi/BKPM (Badan Koordinasi Penanaman Modal) atas nama Rumah Produksi, yang dibuktikan dengan melampirkan Salinan NIB",
     },
     {
-        text: "Wajib memiliki rekening di bank atas nama Rumah Produksi dengan status aktif",
+        text: "Wajib memiliki rekening bank atas nama Rumah Produksi dengan status aktif",
     },
     {
         text: "Wajib melampirkan salinan kartu Nomor Pokok Wajib Pajak (NPWP) atas nama Badan Usaha Rumah Produksi dan bukti pelaporan Surat Pemberitahuan Tahunan (SPT) Pajak untuk 1 tahun terakhir",
