@@ -69,7 +69,7 @@ export const documentTerms = [
     {
         text: "Surat Pernyataan Rumah Produksi (format pada Unduh Dokumen Pra-Produksi Lampiran 1), berisi tentang:",
         children: [
-            "a.	Data dokumen dan lampiran pendukung yang diberikan adalah benar, dokumen asli dan dapat dipertanggungjawabkan secara hukum (tidak dalam penguasaan pihak lain dan/atau sengketa hak kekayaan intelektual)",
+            "a.	Data dokumen dan lampiran pendukung yang diberikan adalah benar, salinan dari dokumen asli dan dapat dipertanggungjawabkan secara hukum (tidak dalam penguasaan pihak lain dan/atau sengketa hak kekayaan intelektual)",
             "b.	Tidak dalam keadaan Pailit dan/atau dalam keadaan penundaan kewajiban pembayaran hutang (PKPU)",
             "c.	Tidak sedang berada dalam kondisi perkara pengadilan baik secara perdata maupun pidana",
             "d.	Tidak pernah, tidak sedang dan tidak akan melakukan pengajuan dan/atau menerima bantuan sejenis dari pemerintah pusat maupun daerah, dan/atau Badan Usaha Milik Negara (BUMN) pada tahun anggaran 2021",
@@ -77,7 +77,7 @@ export const documentTerms = [
             "f.	Bersedia mengikuti seluruh proses kurasi yang diadakan oleh Kementerian Pariwisata dan Ekonomi Kreatif/Badan Pariwisata dan Ekonomi Kreatif",
             "g.	Menerima kriteria dan persyaratan pemilihan",
             "h. Menerima seluruh hasil yang akan diputuskan tanpa ada upaya apapun termasuk dan tidak terbatas pada upaya hukum maupun upaya lain yang berpotensi menimbulkan kerugian bagi Tim Kurator dan/atau Kemenparekraf/Baparekraf",
-            "i. Memahami ketentuan pengajuan proposal mengenai Anggaran Bantuan Pemerintah Pra-Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan. Rumah Produksi yang melakukan pendaftaran pada skema  Pra-Produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut Kemenparekraf/ Baparekraf apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia",
+            "i. Memahami ketentuan pengajuan proposal mengenai Anggaran Bantuan Pemerintah Pra-Produksi Film Indonesia saat ini masih dalam tahap pengajuan ke Kementerian Keuangan. Rumah Produksi yang melakukan pendaftaran pada skema  Pra-Produksi dengan ini memahami dan bersedia untuk menerima dan tidak akan menuntut atau melakukan upaya hukum lainnya kepada Kemenparekraf/ Baparekraf apabila pengajuan anggaran dana bantuan pemerintah ini tidak disetujui atau tidak tersedia",
             "j.	Sanggup untuk bertanggung jawab baik secara perdata maupun secara pidana terhadap seluruh dana Bantuan Pemerintah yang diberikan",
         ]
     },
@@ -85,7 +85,7 @@ export const documentTerms = [
         text: "Surat Pernyataan Tanggung Jawab Mutlak (format pada Unduh Dokumen Pra-Produksi Lampiran 2), berisi tentang:",
         children: [
             "a. Wajib melaporkan apabila mendapatkan pembiayaan dari investor atau perusahaan lain dalam pelaksanaan Pra-Produksi Film yang diajukan dan pembiayaan tersebut bukan untuk membiayai item yang sama",
-            "b.	Wajib menyerahkan laporan pelaksanaan kegiatan yang dilengkapi dengan dokumentasi dan menyerahkan laporan penggunaan anggaran yang dilengkapi dengan kuitansi/invoice/nota/bukti pembayaran sah lainnya",
+            "b.	Wajib menyerahkan laporan pelaksanaan kegiatan yang dilengkapi dengan dokumentasi dan menyerahkan laporan penggunaan anggaran yang dilengkapi dengan surat tagihan (invoice) dan kuitansi/bukti pembayaran sah lainnya serta bukti setor pajak (jika ada)",
             "c.	Sanggup untuk sesegera mungkin menggunakan dana Bantuan Pemerintah untuk melaksanakan kegiatan pra-produksi film dalam periode pelaksanaan program sesuai dengan rencana penggunaan anggaran yang disetujui",
             "d.	Wajib mengikuti proses audit sehubungan dengan penggunaan dana Bantuan Pemerintah yang diberikan",
             "e.	Bersedia untuk mengembalikan sisa anggaran Bantuan Pemerintah yang tidak terpakai, dengan melampirkan bukti setoran kepada kas negara dan disertai dengan laporan justifikasi",
@@ -170,10 +170,7 @@ export const documentTerms = [
 
 export const movieTerms = [
     {
-        text: "Film Panjang dan/atau Film Dokumenter Panjang yang akan memasuki tahap Pra-Produksi pada tahun 2021",
-    },
-    {
-        text: "Film utama atau satu-satunya film pada sebuah acara pemutaran film dengan durasi minimal 80 menit",
+        text: "Film Panjang dan/atau Film Dokumenter Panjang dengan durasi minimal 80 menit yang akan memasuki tahap Pra-Produksi pada tahun 2021",
     },
     {
         text: "Film yang didaftarkan wajib menyelesaikan pelaksanaan Pra-Produksi Film dari dana bantuan pada periode program sampai dengan 15 Desember 2021 (dimulai sejak tanggal penandatangan Perjanjian Kerjasama)",
