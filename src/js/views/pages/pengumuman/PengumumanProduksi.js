@@ -5,7 +5,7 @@ import heroBg from "../../../../assets/img/pages/pengumuman/pengumuman-hero.png"
 import curveUp from "../../../../assets/img/pages/pengumuman/curve-up.png"
 import curveDown from "../../../../assets/img/pages/pengumuman/curve-down.png"
 import pengumumanPromotion from "../../../../assets/img/pages/pengumuman/daftar-pemenang-promosi-film.png"
-import pengumumanProduksiDokumenter from "./daftar-pemenang-produksi-dokumenter.png"
+import pengumumanProduksiDokumenter from "./daftar-pemenang-produksi-dokumenter-pendek.png"
 import pengumumanProduksiFilm from "./daftar-pemenang-produksi-film.png"
 import "./Pengumuman.scss";
 
