@@ -13,7 +13,7 @@ const RegisterPage = () => {
                 <div className="register-block-content">
                     <h2>Promosi</h2>
                     <p>Pendaftaran telah ditutup</p>
-                    <p>Pendaftaran telah berlangsung tanggal 1-10 Oktober</p>
+                    <p>Pendaftaran telah berlangsung tanggal 1-10 Oktober 2021</p>
                     <div className="button-wrapper">
                         <a href={`${ROUTES.pengumuman}?s=${ANCHOR.pengumumanPromotion}`} className="register-button">Pengumuman</a>
                     </div>
@@ -23,12 +23,11 @@ const RegisterPage = () => {
             <div className="register-block register-produksi">
                 <div className="register-block-content">
                     <h2>Pra-Produksi</h2>
+                    <p>Pendaftaran telah ditutup</p>
+                    <p>Pendaftaran telah berlangsung tanggal 2-7 November 2021</p>
                     <p>Pendaftaran akan berlangsung mulai dari</p>
                     <p>2 - 7 November 2021</p>
                     <div className="button-wrapper">
-                        <a href={ROUTES.registerPraProductionTerms} className="register-button">Syarat Pendaftaran</a>
-                        <a href={ROUTES.downloadPraProductionForm} className="register-button">Unduh Formulir</a>
-                        <a href={ROUTES.uploadPraProductionForm} className="register-button">Unggah Formulir</a>
                         <a href={ROUTES.registerFAQ} className="register-button">FAQ Skema Pra-Produksi</a>
                     </div>
                 </div>
@@ -38,7 +37,7 @@ const RegisterPage = () => {
                 <div className="register-block-content">
                     <h2>Produksi</h2>
                     <p>Pendaftaran telah ditutup</p>
-                    <p>Pendaftaran telah berlangsung tanggal 8-17 Oktober</p>
+                    <p>Pendaftaran telah berlangsung tanggal 8-17 Oktobe 2021</p>
                     <div className="button-wrapper">
                         <a href={`${ROUTES.pengumuman}?s=${ANCHOR.pengumumanProduksi}`} className="register-button">Pengumuman</a>
                     </div>
