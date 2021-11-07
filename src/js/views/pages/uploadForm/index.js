@@ -20,7 +20,7 @@ const UploadForm = () => {
                 </div>
             </div>
         </div>
-        {/* <div id={ANCHOR.programPromosiTaktikalFilm}>
+        {/*<div id={ANCHOR.programPromosiTaktikalFilm}>
             <UploadTacticalForm />
         </div> */}
     </Template>
