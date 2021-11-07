@@ -20,6 +20,7 @@ const DownloadTacticalForm = lazy(()=>import('../views/pages/downloadForm/Downlo
 const DownloadProductionForm = lazy(()=>import('../views/pages/downloadForm/DownloadProductionForm'));
 const DownloadPraProductionForm = lazy(()=>import('../views/pages/downloadForm/DownloadPraProductionForm'));
 const Pengumuman = lazy(()=>import('../views/pages/pengumuman'));
+const FAQ = lazy(()=>import('../views/pages/faq'));
 
 const Routes = [
     {
@@ -133,6 +134,12 @@ const Routes = [
     {
         path: ROUTES.pengumuman,
         component: Pengumuman,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.registerFAQ,
+        component: FAQ,
         exact: true,
         default: true
     },

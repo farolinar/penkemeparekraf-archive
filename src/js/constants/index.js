@@ -4,6 +4,7 @@ export const ROUTES = {
     // programPromosiTaktikalFilm: "/program-promosi-taktikal-film",
     // programProduksiFilm: "/program-produksi-film",
     register: "/daftar",
+    registerFAQ: "/daftar/faq",
     downloadForm: "/unduh-formulir",
     uploadForm: "/unggah-formulir",
     uploadTacticalForm: "/unggah-formulir/bantuan-promosi",

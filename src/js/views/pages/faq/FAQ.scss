@@ -1,0 +1,44 @@
+.faq-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+
+  > div {
+    max-width: 80%;
+
+    .faq-title {
+        margin-bottom: 50px;
+      img {
+        width: 100%;
+      }
+    }
+
+    .faq-content-wrapper {
+        ol {
+            list-style: auto;
+
+            .faq-content {
+                margin-bottom: 40px;
+
+                li {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        ul {
+            padding-left: 1.2rem;
+            list-style: disc;
+            li {
+                font-weight: normal !important;
+            }
+        }
+    }
+  }
+}
