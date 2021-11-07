@@ -1,5 +1,6 @@
 
 import { lazy } from "react";
+import { Redirect } from "react-router";
 import { ROUTES } from "../constants";
 const Home = lazy(()=>import('../views/pages/home'));
 const AboutUs = lazy(()=>import('../views/pages/aboutUs'));
@@ -20,6 +21,7 @@ const DownloadTacticalForm = lazy(()=>import('../views/pages/downloadForm/Downlo
 const DownloadProductionForm = lazy(()=>import('../views/pages/downloadForm/DownloadProductionForm'));
 const DownloadPraProductionForm = lazy(()=>import('../views/pages/downloadForm/DownloadPraProductionForm'));
 const Pengumuman = lazy(()=>import('../views/pages/pengumuman'));
+const PengumumanProduksi = lazy(()=>import('../views/pages/pengumuman/PengumumanProduksi'));
 const FAQ = lazy(()=>import('../views/pages/faq'));
 
 const Routes = [
@@ -133,6 +135,17 @@ const Routes = [
     },
     {
         path: ROUTES.pengumuman,
+        component: (props)=><Redirect to={ROUTES.pengumumanProduksi} />,
+        exact: true,
+    },
+    {
+        path: ROUTES.pengumumanProduksi,
+        component: PengumumanProduksi,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.pengumumanPromosi,
         component: Pengumuman,
         exact: true,
         default: true

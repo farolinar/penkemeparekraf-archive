@@ -20,7 +20,9 @@ export const ROUTES = {
     registerProductionTerms: "/syarat-pendaftaran/bantuan-produksi",
     registerPraProductionTerms: "/syarat-pendaftaran/bantuan-pra-produksi",
     program: "/program",
-    pengumuman: "/pengumuman"
+    pengumuman: "/pengumuman",
+    pengumumanPromosi: "/pengumuman/promosi",
+    pengumumanProduksi: "/pengumuman/produksi" 
 }
 
 export const ANCHOR = {

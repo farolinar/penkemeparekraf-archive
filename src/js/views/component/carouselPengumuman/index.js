@@ -36,7 +36,7 @@ const CarouselPengumuman = ({ type }) => {
                 </p>
                 <br />
                 <a
-                  href={`${ROUTES.pengumuman}?s=${ANCHOR.pengumumanPromotion}`}
+                  href={ROUTES.pengumumanPromosi}
                 >
                   Lihat Hasil
                 </a>
@@ -70,7 +70,7 @@ const CarouselPengumuman = ({ type }) => {
                 </p>
                 <br />
                 <a
-                  href={`${ROUTES.pengumuman}?s=${ANCHOR.pengumumanProduksi}`}
+                  href={ROUTES.pengumumanProduksi}
                 >
                   Lihat Hasil
                 </a>
