@@ -711,7 +711,7 @@ const UploadPraProductionForm = () => {
 
                     <div className="upload-form-content-wrapper">
                         <UploadFileField
-                            title={<Fragment>UNGGAH AKTA PENDIRIAN (MINIMAL BERDIRI SEJAK 1 JANUARI 2019) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
+                            title={<Fragment>UNGGAH AKTA PENDIRIAN (MINIMAL BERDIRI SEJAK 1 JANUARI 2020) <span style={{color: "var(--main-red)"}}>*</span></Fragment>}
                             subtitle="(File PDF, max 5MB, Lengkapi dengan Nama Pendaftar)"
                             id={fieldIDs[17]}
                             type={acceptedFileFormatString.pdf}
