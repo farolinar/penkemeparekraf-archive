@@ -35,7 +35,7 @@ const RegisterPage = () => {
                 <div className="register-block-content">
                     <h2>Produksi</h2>
                     <p>Pendaftaran telah ditutup</p>
-                    <p>Pendaftaran telah berlangsung tanggal 8-17 Oktobe 2021</p>
+                    <p>Pendaftaran telah berlangsung tanggal 8-17 Oktober 2021</p>
                     <div className="button-wrapper">
                         <a href={`${ROUTES.pengumuman}?s=${ANCHOR.pengumumanProduksi}`} className="register-button">Pengumuman</a>
                     </div>
