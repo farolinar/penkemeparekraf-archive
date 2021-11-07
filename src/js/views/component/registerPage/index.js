@@ -40,6 +40,7 @@ const RegisterPage = () => {
                     <p>Pendaftaran telah ditutup</p>
                     <p>Pendaftaran telah berlangsung tanggal 8-17 Oktober</p>
                     <div className="button-wrapper">
+                        <a href={`${ROUTES.pengumuman}?s=${ANCHOR.pengumumanProduksi}`} className="register-button">Pengumuman</a>
                     </div>
                 </div>
             </div>

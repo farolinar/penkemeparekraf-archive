@@ -17,18 +17,22 @@ import { ANCHOR, ROUTES } from "../../../constants";
 import RegisterPage from "../../component/registerPage";
 import { Fragment } from "react";
 import ComponentCarousel from "../../component/componentCarousel/ComponentCarousel";
-import CarouselPengumuman from "../../component/carouselPengumuman";
+import CarouselPengumuman, { PENGUMUMAN_TYPES } from "../../component/carouselPengumuman";
 const Template = lazy(()=>import('../../layout/template'));
 const ImageCarousel = lazy(()=>import('../../component/imageCarousel/ImageCarousel'));
 
 const SLIDER_IMAGES = [
     {
-        src: highlightOne,
-        name: "highlight-one"
+        src: null,
+        name: PENGUMUMAN_TYPES.produksi
     },
     {
         src: null,
-        name: "placeholder-pengumuman"
+        name: PENGUMUMAN_TYPES.promosi
+    },
+    {
+        src: highlightOne,
+        name: "highlight-one"
     },
     {
         src: highlightTwo,
@@ -51,8 +55,8 @@ const Home = (props) => {
             <ImageCarousel>
                 {
                     SLIDER_IMAGES.map((item, index) => {
-                        if(index === 1) {
-                            return <CarouselPengumuman />
+                        if(Object.values(PENGUMUMAN_TYPES).indexOf(item.name) > -1) {
+                            return <CarouselPengumuman type={item.name}/>
                         }
                         else return <div style={{position: "relative"}} key={`highlight-${index}`} className="carousel-image-wrapper">
                             <img src={item.src} alt={item.name} />

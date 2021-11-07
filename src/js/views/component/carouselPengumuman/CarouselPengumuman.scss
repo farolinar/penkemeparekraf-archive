@@ -1,37 +1,64 @@
 .carousel-pengumuman {
-    color: #fff;
-    .carousel-pengumuman-content {
-        display: flex;
-        height: 45vw;
-        .carousel-pengumuman-hero {
-            background-color: var(--main-lighter-green);
-            width: 45%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+  color: #fff;
+  .carousel-pengumuman-content {
+    display: flex;
+    height: 45vw;
+    .carousel-pengumuman-hero {
+      background-color: var(--main-lighter-green);
+      width: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-            img {
-                height: auto !important;
-                width: 30vw;
-            }
-        }
-        .carousel-pengumuman-text {
-            background-image: url(./carousel-pengumuman-bg.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 55%;
-            text-align: left;
-            padding: 50px 7vw 50px 6vw;
-            display: flex;
-            align-items: center;
-
-            a {
-                background-color: #fff;
-                color: var(--main-light-green);
-                padding: 5px 15px;
-                border-radius: 7px;
-            }
-        }
+      img {
+        height: auto !important;
+        width: 30vw;
+      }
     }
-    
+    .carousel-pengumuman-text {
+      background-image: url(./carousel-pengumuman-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 55%;
+      text-align: left;
+      padding: 50px 7vw 50px 6vw;
+      display: flex;
+      align-items: center;
+
+      a {
+        background-color: #fff;
+        color: var(--main-light-green);
+        padding: 5px 15px;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+.carousel-pengumuman-produksi {
+  .carousel-pengumuman-content {
+    flex-direction: row-reverse;
+    .carousel-pengumuman-hero {
+      background-color: var(--main-lighter-blue);
+      img {
+          width: 28vw;
+      }
+    }
+    .carousel-pengumuman-text {
+      background-image: url(./carousel-pengumuman-produksi-bg.png);
+      width: 60%;
+      padding: 50px 7vw 50px 10vw;
+
+      h2 {
+          margin-bottom: 20px;
+          margin-top: 80px;
+      }
+      h4 {
+          margin-top: 0;
+      }
+      a {
+        color: var(--main-blue);
+      }
+    }
+  }
 }

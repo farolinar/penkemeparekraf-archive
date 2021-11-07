@@ -129,3 +129,25 @@
         color: var(--main-green);
     }
 }
+
+.pengumuman-produksi-wrapper {
+    background-color: #f2fcff;
+    color: var(--main-blue);
+
+    h2 {
+        color: var(--main-darker-yellow);
+    }
+
+    h4 {
+        color: var(--main-blue);
+    }
+
+
+    .label-table {
+        margin-bottom: 0;
+    }
+
+    .pengumuman-page-note {
+        background-color: var(--main-darker-yellow);
+    }
+}

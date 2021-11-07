@@ -30,5 +30,6 @@ export const ANCHOR = {
     downloadTacticalForm: "download-form-tactical-wrapper",
     downloadProductionForm: "download-form-production-wrapper",
     downloadPraProduksiForm: "download-form-pra-production-wrapper",
-    pengumumanPromotion: "pengumuman-promosi"
+    pengumumanPromotion: "pengumuman-promosi",
+    pengumumanProduksi: "pengumuman-produksi"
 }
