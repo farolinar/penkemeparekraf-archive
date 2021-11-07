@@ -84,10 +84,10 @@ const OpenCall = () => {
                 <h2>Pengumuman Bantuan Pemerintah<br/>Produksi Film Indonesia</h2>
                 <h4>Selamat Kepada Penerima Bantuan Terpilih</h4>
 
-                <h5 className="label-table">Kategori Film Dokumenter Pendek</h4>
+                <h5 className="label-table">Kategori Film Dokumenter Pendek</h5>
                 <img src={pengumumanProduksiDokumenter} alt="Pengumuman Produksi Dokumenter Pendek" />
                 <div style={{height: 30}}></div>
-                <h5 className="label-table">Kategori Film Pendek</h4>
+                <h5 className="label-table">Kategori Film Pendek</h5>
                 <img src={pengumumanProduksiFilm} alt="Pengumuman Produksi Film Pendek" />
 
                 <br />
@@ -105,7 +105,7 @@ const OpenCall = () => {
                     <p>Catatan:</p>
                     <ul>
                         <li>
-                            Seluruh dokumen asli legalitas, identitas dan stempel badan usaha Rumah Produksi serta seluruh 
+                            Seluruh dokumen asli legalitas, identitas dan stempel badan usaha Rumah Produksi atau Komunitas Perfilman serta seluruh 
                             dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan 
                             Komitmen dan Tandatangan Perjanjian Kerjasama
                         </li>
