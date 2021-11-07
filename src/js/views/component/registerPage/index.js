@@ -29,6 +29,7 @@ const RegisterPage = () => {
                         <a href={ROUTES.registerPraProductionTerms} className="register-button">Syarat Pendaftaran</a>
                         <a href={ROUTES.downloadPraProductionForm} className="register-button">Unduh Formulir</a>
                         <a href={ROUTES.uploadPraProductionForm} className="register-button">Unggah Formulir</a>
+                        <a href={ROUTES.registerFAQ} className="register-button">FAQ Skema Pra-Produksi</a>
                     </div>
                 </div>
             </div>
