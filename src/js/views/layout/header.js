@@ -59,16 +59,16 @@ const MENU = [
         url: ROUTES.downloadForm,
         children: null
     },
-    {
-        name: "Unggah Formulir",
-        url: ROUTES.uploadForm,
-        children: null
-    },
     // {
-    //     name: "Pengumuman",
-    //     url: ROUTES.pengumuman,
+    //     name: "Unggah Formulir",
+    //     url: ROUTES.uploadForm,
     //     children: null
     // },
+    {
+        name: "Pengumuman",
+        url: ROUTES.pengumuman,
+        children: null
+    },
     {
         name: "Kontak Kami",
         url: ROUTES.contactUs,
