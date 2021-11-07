@@ -84,10 +84,10 @@ const OpenCall = () => {
                 <h2>Pengumuman Bantuan Pemerintah<br/>Produksi Film Indonesia</h2>
                 <h4>Selamat Kepada Penerima Bantuan Terpilih</h4>
 
-                <h4 className="label-table">Kategori Film Dokumenter Pendek</h4>
+                <h5 className="label-table">Kategori Film Dokumenter Pendek</h4>
                 <img src={pengumumanProduksiDokumenter} alt="Pengumuman Produksi Dokumenter Pendek" />
                 <div style={{height: 30}}></div>
-                <h4 className="label-table">Kategori Film Pendek</h4>
+                <h5 className="label-table">Kategori Film Pendek</h4>
                 <img src={pengumumanProduksiFilm} alt="Pengumuman Produksi Film Pendek" />
 
                 <br />
