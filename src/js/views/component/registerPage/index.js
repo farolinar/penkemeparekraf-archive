@@ -15,7 +15,7 @@ const RegisterPage = () => {
                     <p>Pendaftaran telah ditutup</p>
                     <p>Pendaftaran telah berlangsung tanggal 1-10 Oktober 2021</p>
                     <div className="button-wrapper">
-                        <a href={`${ROUTES.pengumuman}?s=${ANCHOR.pengumumanPromotion}`} className="register-button">Pengumuman</a>
+                        <a href={ROUTES.pengumumanPromosi} className="register-button">Pengumuman</a>
                     </div>
                 </div>
             </div>
@@ -37,6 +37,7 @@ const RegisterPage = () => {
                     <p>Pendaftaran telah ditutup</p>
                     <p>Pendaftaran telah berlangsung tanggal 8-17 Oktober 2021</p>
                     <div className="button-wrapper">
+                        <a href={ROUTES.pengumumanProduksi} className="register-button">Pengumuman</a>
                     </div>
                 </div>
             </div>

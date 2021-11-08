@@ -20,7 +20,9 @@ export const ROUTES = {
     registerProductionTerms: "/syarat-pendaftaran/bantuan-produksi",
     registerPraProductionTerms: "/syarat-pendaftaran/bantuan-pra-produksi",
     program: "/program",
-    pengumuman: "/pengumuman"
+    pengumuman: "/pengumuman",
+    pengumumanPromosi: "/pengumuman/promosi",
+    pengumumanProduksi: "/pengumuman/produksi" 
 }
 
 export const ANCHOR = {
@@ -30,5 +32,6 @@ export const ANCHOR = {
     downloadTacticalForm: "download-form-tactical-wrapper",
     downloadProductionForm: "download-form-production-wrapper",
     downloadPraProduksiForm: "download-form-pra-production-wrapper",
-    pengumumanPromotion: "pengumuman-promosi"
+    pengumumanPromotion: "pengumuman-promosi",
+    pengumumanProduksi: "pengumuman-produksi"
 }
