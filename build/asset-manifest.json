@@ -8,10 +8,10 @@
     "static/js/2.c098a3c1.chunk.js": "/static/js/2.c098a3c1.chunk.js",
     "static/js/2.c098a3c1.chunk.js.map": "/static/js/2.c098a3c1.chunk.js.map",
     "main.css": "/static/css/main.58ca1c53.chunk.css",
-    "main.js": "/static/js/main.5091630c.chunk.js",
-    "main.js.map": "/static/js/main.5091630c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c66fc5eb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c66fc5eb.js.map",
+    "main.js": "/static/js/main.d939092d.chunk.js",
+    "main.js.map": "/static/js/main.d939092d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.00d1e967.js",
+    "runtime-main.js.map": "/static/js/runtime-main.00d1e967.js.map",
     "static/css/5.f4878a83.chunk.css": "/static/css/5.f4878a83.chunk.css",
     "static/js/5.263400e6.chunk.js": "/static/js/5.263400e6.chunk.js",
     "static/js/5.263400e6.chunk.js.map": "/static/js/5.263400e6.chunk.js.map",
@@ -40,8 +40,8 @@
     "static/js/13.fa3b1021.chunk.js": "/static/js/13.fa3b1021.chunk.js",
     "static/js/13.fa3b1021.chunk.js.map": "/static/js/13.fa3b1021.chunk.js.map",
     "static/css/14.a6bb1beb.chunk.css": "/static/css/14.a6bb1beb.chunk.css",
-    "static/js/14.e19c6cde.chunk.js": "/static/js/14.e19c6cde.chunk.js",
-    "static/js/14.e19c6cde.chunk.js.map": "/static/js/14.e19c6cde.chunk.js.map",
+    "static/js/14.ee64a569.chunk.js": "/static/js/14.ee64a569.chunk.js",
+    "static/js/14.ee64a569.chunk.js.map": "/static/js/14.ee64a569.chunk.js.map",
     "static/css/15.a6bb1beb.chunk.css": "/static/css/15.a6bb1beb.chunk.css",
     "static/js/15.f6c46dbe.chunk.js": "/static/js/15.f6c46dbe.chunk.js",
     "static/js/15.f6c46dbe.chunk.js.map": "/static/js/15.f6c46dbe.chunk.js.map",
@@ -129,7 +129,7 @@
     "static/media/about-us-text.e20a1a6f.png": "/static/media/about-us-text.e20a1a6f.png",
     "static/media/CarouselPengumuman.scss": "/static/media/carousel-pengumuman-produksi-bg.1cfd16d3.png",
     "static/media/ContactUs.scss": "/static/media/contact-us-bg.0f42ae00.jpg",
-    "static/media/daftar-pemenang-produksi-dokumenter-pendek.06ce9125.png": "/static/media/daftar-pemenang-produksi-dokumenter-pendek.06ce9125.png",
+    "static/media/daftar-pemenang-produksi-dokumenter-pendek.dfa47aa5.png": "/static/media/daftar-pemenang-produksi-dokumenter-pendek.dfa47aa5.png",
     "static/media/daftar-pemenang-produksi-dokumenter.7a2384fb.png": "/static/media/daftar-pemenang-produksi-dokumenter.7a2384fb.png",
     "static/media/daftar-pemenang-produksi-film.png": "/static/media/daftar-pemenang-produksi-film.84d0f20f.png",
     "static/media/daftar-pemenang-promosi-film.png": "/static/media/daftar-pemenang-promosi-film.2ea6bae2.png",
@@ -157,10 +157,10 @@
     "static/media/title.4f20fb19.png": "/static/media/title.4f20fb19.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c66fc5eb.js",
+    "static/js/runtime-main.00d1e967.js",
     "static/css/5.f4878a83.chunk.css",
     "static/js/5.263400e6.chunk.js",
     "static/css/main.58ca1c53.chunk.css",
-    "static/js/main.5091630c.chunk.js"
+    "static/js/main.d939092d.chunk.js"
   ]
 }
