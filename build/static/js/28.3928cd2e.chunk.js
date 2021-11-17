@@ -1,0 +1,2 @@
+(this["webpackJsonpweb-pen"]=this["webpackJsonpweb-pen"]||[]).push([[28],{147:function(e,s,n){},166:function(e,s,n){"use strict";n.r(s);n(86);var t=n(87),a=(n(147),n(1));s.default=function(e){return Object(a.jsx)(t.Carousel,{autoPlay:!0,dynamicHeight:!1,emulateTouch:!0,infiniteLoop:!0,showIndicators:!1,showStatus:!1,showThumbs:!1,className:"image-carousel-wrapper",children:e.children})}}}]);
+//# sourceMappingURL=28.3928cd2e.chunk.js.map

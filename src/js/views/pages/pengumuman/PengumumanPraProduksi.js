@@ -50,8 +50,8 @@ const OpenCall = () => {
                 <h2>Pengumuman Bantuan Pemerintah<br/>Pra-Produksi Film Indonesia</h2>
                 <h4>Selamat Kepada Penerima Bantuan Terpilih</h4>
 
-                {/* <img src={pengumumanProduksiFilm} alt="Pengumuman Pra-Produksi" /> */}
-                <div style={{height: 30}}>Segera Hadir</div>
+                <img src={pengumumanProduksiFilm} alt="Pengumuman Pra-Produksi" />
+                {/* <div style={{height: 30}}>Segera Hadir</div> */}
 
                 <br />
                 <p style={{color: "var(--main-red)"}}>* Urutan tidak menggambarkan peringkat</p>
