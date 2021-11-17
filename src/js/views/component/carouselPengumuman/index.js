@@ -2,12 +2,14 @@ import React from "react";
 import { Fragment } from "react/cjs/react.production.min";
 import heroBg from "../../../../assets/img/pages/pengumuman/pengumuman-hero.png";
 import heroProduksiBg from "./pengumuman-produksi-hero.png";
+import heroPraProduksiBg from "./pengumuman-pra-produksi-hero.png";
 import { ANCHOR, ROUTES } from "../../../constants";
 import "./CarouselPengumuman.scss";
 
 export const PENGUMUMAN_TYPES = {
   promosi: "placeholder-pengumuman-promosi",
   produksi: "placeholder-pengumuman-produksi",
+  praProduksi: "placeholder-pengumuman-pra-produksi",
 };
 
 const CarouselPengumuman = ({ type }) => {
@@ -79,6 +81,40 @@ const CarouselPengumuman = ({ type }) => {
           </div>
         </div>
       );
+
+      case PENGUMUMAN_TYPES.praProduksi:
+        return (
+          <div className="carousel-pengumuman carousel-pengumuman-pra-produksi">
+            <div className="carousel-pengumuman-content">
+              <div className="carousel-pengumuman-hero">
+                <div>
+                  <img src={heroPraProduksiBg} alt="" />
+                </div>
+              </div>
+              <div className="carousel-pengumuman-text">
+                <div>
+                  <h2>PENGUMUMAN</h2>
+                  <h4>
+                    Penerima Bantuan Pemerintah
+                    <br />
+                    Pra-Produksi Film Indonesia
+                  </h4>
+                  <p>
+                    Klik tombol berikut untuk melihat hasil kurasi Program
+                    Pemulihan Ekonomi Nasional Subsektor Film pada kategori :
+                    Bantuan Pemerintah Pra-Produksi Film Indonesia{" "}
+                  </p>
+                  <br />
+                  <a
+                    href={ROUTES.pengumumanPraProduksi}
+                  >
+                    Lihat Hasil
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
 
     default:
       return <Fragment></Fragment>;

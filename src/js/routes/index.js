@@ -22,6 +22,7 @@ const DownloadProductionForm = lazy(()=>import('../views/pages/downloadForm/Down
 const DownloadPraProductionForm = lazy(()=>import('../views/pages/downloadForm/DownloadPraProductionForm'));
 const Pengumuman = lazy(()=>import('../views/pages/pengumuman'));
 const PengumumanProduksi = lazy(()=>import('../views/pages/pengumuman/PengumumanProduksi'));
+const PengumumanPraProduksi = lazy(()=>import('../views/pages/pengumuman/PengumumanPraProduksi'));
 const FAQ = lazy(()=>import('../views/pages/faq'));
 
 const Routes = [
@@ -135,7 +136,7 @@ const Routes = [
     },
     {
         path: ROUTES.pengumuman,
-        component: (props)=><Redirect to={ROUTES.pengumumanProduksi} />,
+        component: (props)=><Redirect to={ROUTES.pengumumanPraProduksi} />,
         exact: true,
     },
     {
@@ -147,6 +148,12 @@ const Routes = [
     {
         path: ROUTES.pengumumanPromosi,
         component: Pengumuman,
+        exact: true,
+        default: true
+    },
+    {
+        path: ROUTES.pengumumanPraProduksi,
+        component: PengumumanPraProduksi,
         exact: true,
         default: true
     },

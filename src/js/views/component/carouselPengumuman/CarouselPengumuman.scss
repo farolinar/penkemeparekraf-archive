@@ -62,3 +62,30 @@
     }
   }
 }
+
+.carousel-pengumuman-pra-produksi {
+  .carousel-pengumuman-content {
+    .carousel-pengumuman-hero {
+      background-color: #feedc3;
+      img {
+          width: 28vw;
+      }
+    }
+    .carousel-pengumuman-text {
+      background-image: url(./carousel-pengumuman-pra-produksi-bg.png);
+      width: 60%;
+      padding: 50px 7vw 50px 10vw;
+
+      h2 {
+          margin-bottom: 20px;
+          margin-top: 80px;
+      }
+      h4 {
+          margin-top: 0;
+      }
+      a {
+        color: #FF7C3B;
+      }
+    }
+  }
+}

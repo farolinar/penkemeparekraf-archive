@@ -24,6 +24,10 @@ const ImageCarousel = lazy(()=>import('../../component/imageCarousel/ImageCarous
 const SLIDER_IMAGES = [
     {
         src: null,
+        name: PENGUMUMAN_TYPES.praProduksi
+    },
+    {
+        src: null,
         name: PENGUMUMAN_TYPES.produksi
     },
     {

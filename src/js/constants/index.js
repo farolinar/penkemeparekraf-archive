@@ -22,7 +22,8 @@ export const ROUTES = {
     program: "/program",
     pengumuman: "/pengumuman",
     pengumumanPromosi: "/pengumuman/promosi",
-    pengumumanProduksi: "/pengumuman/produksi" 
+    pengumumanProduksi: "/pengumuman/produksi",
+    pengumumanPraProduksi: "/pengumuman/pra-produksi"
 }
 
 export const ANCHOR = {
@@ -33,5 +34,6 @@ export const ANCHOR = {
     downloadProductionForm: "download-form-production-wrapper",
     downloadPraProduksiForm: "download-form-pra-production-wrapper",
     pengumumanPromotion: "pengumuman-promosi",
-    pengumumanProduksi: "pengumuman-produksi"
+    pengumumanProduksi: "pengumuman-produksi",
+    pengumumanPraProduksi: "pengumuman-pra-produksi"
 }

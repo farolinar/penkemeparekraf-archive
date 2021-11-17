@@ -3,7 +3,7 @@ import LazyLoad from 'react-lazyload';
 import Template from '../../layout/template';
 import aboutUsText from '../../../../assets/img/pages/aboutUs/about-us-text.png';
 import aboutUsHero from '../../../../assets/img/pages/aboutUs/about-us-hero.jpg';
-import aboutUsSelection from '../../../../assets/img/pages/aboutUs/about-us-selection-clean.png';
+import aboutUsSelection from '../../../../assets/img/pages/aboutUs/about-us-selection-new.jpg';
 import "./AboutUs.scss";
 
 const AboutUs = () => {
