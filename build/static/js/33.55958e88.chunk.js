@@ -1,0 +1,2 @@
+(this["webpackJsonpweb-pen"]=this["webpackJsonpweb-pen"]||[]).push([[33],{144:function(t,n,e){"use strict";e.d(n,"a",(function(){return r}));var o=e(103);function r(t){return Object(o.a)({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"polyline",attr:{points:"20 6 9 17 4 12"}}]})(t)}}}]);
+//# sourceMappingURL=33.55958e88.chunk.js.map
