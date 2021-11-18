@@ -4,9 +4,10 @@ import Template from '../../layout/template';
 import heroBg from "../../../../assets/img/pages/pengumuman/pengumuman-hero.png"
 import curveUp from "../../../../assets/img/pages/pengumuman/curve-up.png"
 import curveDown from "../../../../assets/img/pages/pengumuman/curve-down.png"
-import pengumumanPromotion from "../../../../assets/img/pages/pengumuman/daftar-pemenang-promosi-film.png"
-import pengumumanProduksiDokumenter from "./daftar-pemenang-produksi-dokumenter-pendek.png"
-import pengumumanProduksiFilm from "./daftar-pemenang-produksi-film.png"
+import pengumumanProduksiFilm1 from "./pra-produksi.png"
+import pengumumanProduksiFilm2 from "./pra-produksi2.png"
+import pengumumanProduksiFilm3 from "./pra-produksi3.png"
+import pengumumanProduksiFilm4 from "./pra-produksi4.png"
 import "./Pengumuman.scss";
 
 const OpenCall = () => {
@@ -50,7 +51,13 @@ const OpenCall = () => {
                 <h2>Pengumuman Bantuan Pemerintah<br/>Pra-Produksi Film Indonesia</h2>
                 <h4>Selamat Kepada Penerima Bantuan Terpilih</h4>
 
-                <img src={pengumumanProduksiFilm} alt="Pengumuman Pra-Produksi" />
+                <img src={pengumumanProduksiFilm1} alt="Pengumuman Pra-Produksi" />
+                <div style={{height: 60}}></div>
+                <img src={pengumumanProduksiFilm2} alt="Pengumuman Pra-Produksi" />
+                <div style={{height: 60}}></div>
+                <img src={pengumumanProduksiFilm3} alt="Pengumuman Pra-Produksi" />
+                <div style={{height: 60}}></div>
+                <img src={pengumumanProduksiFilm4} alt="Pengumuman Pra-Produksi" />
                 {/* <div style={{height: 30}}>Segera Hadir</div> */}
 
                 <br />
@@ -68,7 +75,7 @@ const OpenCall = () => {
                     <p>Catatan:</p>
                     <ul>
                         <li>
-                            Seluruh dokumen asli legalitas, identitas dan stempel badan usaha Rumah Produksi atau Komunitas Perfilman serta seluruh 
+                            Seluruh dokumen asli legalitas, identitas dan stempel badan usaha Rumah Produksi serta seluruh 
                             dokumen persyaratan pendukung asli tandatangan wajib dibawa saat Pelaksanaan Pengikatan 
                             Komitmen dan Tandatangan Perjanjian Kerjasama
                         </li>
